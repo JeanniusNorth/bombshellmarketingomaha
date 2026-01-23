@@ -43,7 +43,7 @@ export function Team() {
             </h2>
             
             <p className="text-black/60 text-sm leading-relaxed mb-12 max-w-md">
-              Our diverse team of creative minds brings together expertise from design, technology, and strategy to build brands that stand out in the digital landscape.
+              Two Omaha marketing pros with 20 years experience in digital marketing, design & web and building businesses.
             </p>
 
             <div className="flex items-start gap-12">
