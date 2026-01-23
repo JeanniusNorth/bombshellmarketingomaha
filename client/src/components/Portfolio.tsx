@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 import goldoniImage from "@/assets/images/portfolio-goldoni.png";
 import brandiniImage from "@/assets/images/portfolio-brandini.png";
+import legacyImage from "@/assets/images/portfolio-legacy.png";
 
 export function Portfolio() {
   const portfolioItems = [
@@ -23,6 +24,12 @@ export function Portfolio() {
       title: "BRANDINI - MERCH STORE PLATFORM",
       image: brandiniImage,
       height: "h-[350px]"
+    },
+    {
+      category: "WEB DESIGN",
+      title: "LEGACY WINDOW & DOOR - WEBSITE DESIGN",
+      image: legacyImage,
+      height: "h-[400px]"
     },
     {
       category: "SOCIAL MEDIA",
