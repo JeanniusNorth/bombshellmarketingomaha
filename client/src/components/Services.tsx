@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import brandDesignImage from "@/assets/images/service-brand-design.jpg";
+import webDesignImage from "@/assets/images/service-web-design.png";
 
 export function Services() {
   const services = [
@@ -17,7 +18,7 @@ export function Services() {
     {
       title: "Web Design",
       description: "Websites that don't just function—they perform. High-octane user experiences.",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
+      image: webDesignImage,
       highlight: true
     },
     {
