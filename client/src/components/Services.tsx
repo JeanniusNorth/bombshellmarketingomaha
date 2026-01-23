@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import brandDesignImage from "@/assets/images/service-brand-design.jpg";
+import logoDesignImage from "@/assets/images/service-logo-design.png";
 import webDesignImage from "@/assets/images/service-web-design.png";
 import photographyImage from "@/assets/images/service-photography.png";
 
@@ -14,7 +14,7 @@ export function Services() {
     {
       title: "Logo & Brand Design",
       description: "Visual identities that sear into memory. Logos, systems, and guidelines that command attention.",
-      image: brandDesignImage
+      image: logoDesignImage
     },
     {
       title: "Web Design",
