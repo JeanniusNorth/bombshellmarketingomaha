@@ -9,14 +9,19 @@ export function Services() {
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "Creative Digital Solutions",
-      description: "Websites and apps that don't just function—they perform. High-octane user experiences.",
+      title: "Logo & Brand Design",
+      description: "Visual identities that sear into memory. Logos, systems, and guidelines that command attention.",
+      image: "https://images.unsplash.com/photo-1626785774573-4b799314346d?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      title: "Web Design",
+      description: "Websites that don't just function—they perform. High-octane user experiences.",
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
       highlight: true
     },
     {
-      title: "Marketing & Campaigns",
-      description: "Data-driven targeting with creative that refuses to be ignored. Maximum ROI, zero fluff.",
+      title: "Brand Photography",
+      description: "Capture the raw energy of your brand. Professional shots that tell your story instantly.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
     }
   ];
@@ -42,7 +47,7 @@ export function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div 
               key={index}
