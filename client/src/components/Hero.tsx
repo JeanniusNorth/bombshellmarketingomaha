@@ -63,6 +63,19 @@ export function Hero() {
               MARKETING
             </h1>
 
+            <div className="mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto">
+                <p className="text-white/80 text-sm leading-relaxed font-medium max-w-md text-center">
+                  We combine explosive creativity with AI precision to blow up your brand awareness. Located in Omaha, NE.
+                </p>
+                
+                <button className="group px-8 py-4 border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center gap-3">
+                  <span>Get Started</span>
+                  <div className="w-5 h-5 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
+                     <ArrowRight className="w-3 h-3 -rotate-45" />
+                  </div>
+                </button>
+            </div>
+
             {/* Hero Image - Sandwiched */}
             {/* <div className="absolute inset-0 z-10 flex items-end justify-center pb-0">
                <div className="relative h-[85%] w-auto aspect-[3/4] md:h-[95%]">
@@ -85,20 +98,8 @@ export function Hero() {
             <Sparkles className="w-10 h-10 text-primary fill-primary" />
           </div>
 
-          {/* Description and Button Block */}
-          <div className="flex flex-col gap-6 items-end mb-12">
-            <p className="text-white/80 text-xs leading-relaxed font-medium max-w-[200px]">
-              We combine explosive creativity with AI precision to blow up your brand awareness. Located in Omaha, NE.
-            </p>
-            
-            <button className="group px-6 py-3 border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all text-white text-[10px] font-bold uppercase tracking-widest flex items-center gap-3">
-              <span>Get Started</span>
-              <div className="w-4 h-4 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
-                 <ArrowRight className="w-3 h-3 -rotate-45" />
-              </div>
-            </button>
-          </div>
-
+          {/* Description and Button Block Removed - Moved to Center */}
+          
            {/* Bottom Right Play Button */}
            <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-black shadow-[0_0_20px_rgba(204,255,0,0.3)] cursor-pointer hover:scale-110 transition-transform">
                <Play className="w-5 h-5 fill-black ml-1" />
