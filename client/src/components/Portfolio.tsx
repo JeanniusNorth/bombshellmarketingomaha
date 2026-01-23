@@ -117,11 +117,11 @@ export function Portfolio() {
             {/* Item 2 - TennisX */}
             <PortfolioItem item={portfolioItems[1]} />
 
-             {/* Item 3 - Goldoni */}
-            <PortfolioItem item={portfolioItems[2]} />
-
              {/* Item 7 - Nebrask.AI */}
             <PortfolioItem item={portfolioItems[5]} />
+
+             {/* Item 3 - Goldoni */}
+            <PortfolioItem item={portfolioItems[2]} />
           </div>
 
           {/* Right Column */}
@@ -132,11 +132,11 @@ export function Portfolio() {
             {/* Item 8 - Dwell */}
             <PortfolioItem item={portfolioItems[6]} />
             
-            {/* Item 9 - Omaha Cookie */}
-            <PortfolioItem item={portfolioItems[7]} />
-
             {/* Item 5 - Legacy */}
             <PortfolioItem item={portfolioItems[4]} />
+
+            {/* Item 9 - Omaha Cookie */}
+            <PortfolioItem item={portfolioItems[7]} />
           </div>
 
         </div>
