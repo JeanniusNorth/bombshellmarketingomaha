@@ -1,34 +1,20 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
-import team1 from "@/assets/images/team-1.jpg";
-import team2 from "@/assets/images/team-2.jpg";
-import team3 from "@/assets/images/team-3.jpg";
-import team4 from "@/assets/images/team-4.jpg";
+import jeannieImage from "@/assets/images/team-jeannie.png";
+import jessImage from "@/assets/images/team-jess.png";
 
 const teamMembers = [
   {
     id: 1,
-    name: "Liam Johnson",
-    role: "Art Director",
-    image: team1,
+    name: "Jeannie North",
+    role: "Digital Marketer & Designer",
+    image: jeannieImage,
   },
   {
     id: 2,
-    name: "Sarah Miller",
-    role: "Lead Designer",
-    image: team2,
-  },
-  {
-    id: 3,
-    name: "Jessica Chen",
-    role: "Marketing Head",
-    image: team3,
-  },
-  {
-    id: 4,
-    name: "David Smith",
-    role: "Senior Developer",
-    image: team4,
+    name: "Jess Goldoni",
+    role: "Digital Marketer & Strategist",
+    image: jessImage,
   },
 ];
 
