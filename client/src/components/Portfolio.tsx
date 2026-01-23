@@ -165,7 +165,7 @@ function PortfolioItem({ item }: { item: any }) {
             </div>
           </div>
         </DialogTrigger>
-        <DialogContent className="max-w-[95vw] w-full h-[90vh] p-0 bg-black border-none rounded-xl overflow-hidden">
+        <DialogContent className="max-w-[95vw] w-full h-[90vh] p-0 bg-black border-none rounded-xl overflow-hidden [&>button]:hidden">
           <VisuallyHidden.Root>
             <DialogTitle>{item.title}</DialogTitle>
           </VisuallyHidden.Root>
