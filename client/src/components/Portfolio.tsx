@@ -94,7 +94,7 @@ export function Portfolio() {
               Transforming Ideas <br/> Into Memorable Brand <br/> Experiences.
             </h2>
             <p className="mt-6 text-black/60 max-w-xl text-sm leading-relaxed">
-              Lorem ipsum dolor amet, consectetur adipiscing elit. Congue aptent placerat neque senectus amet cras efficitur. Aptent malesuada.
+              We craft memorable websites enhanced by AI technology to deliver unique digital experiences that captivate and convert.
             </p>
           </div>
           
