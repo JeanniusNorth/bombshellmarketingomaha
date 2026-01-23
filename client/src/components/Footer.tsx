@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="bg-[#1a1a1a] text-white pt-24 pb-12 border-t border-white/10 font-sans">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 mb-20">
           
           {/* Column 1: Logo & Contact Info */}
           <div className="space-y-12">
@@ -35,18 +35,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Pages */}
-          <div>
-            <h4 className="font-display uppercase text-[#ccff00] text-2xl mb-8">Pages</h4>
-            <ul className="space-y-4 text-sm text-white/60">
-              <li><a href="#" className="hover:text-[#ccff00] transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-[#ccff00] transition-colors">About Us</a></li>
-              <li><a href="#services" className="hover:text-[#ccff00] transition-colors">Our Services</a></li>
-              <li><a href="#portfolio" className="hover:text-[#ccff00] transition-colors">Portfolio</a></li>
-              <li><a href="#" className="hover:text-[#ccff00] transition-colors">FAQs</a></li>
-              <li><a href="#contact" className="hover:text-[#ccff00] transition-colors">Contact Us</a></li>
-            </ul>
-          </div>
+          {/* Column 2: Pages Removed */}
 
           {/* Column 3: Connect With Us */}
           <div>
