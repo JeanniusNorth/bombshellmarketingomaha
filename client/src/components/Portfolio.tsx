@@ -7,6 +7,7 @@ import goldoniImage from "@/assets/images/portfolio-goldoni.png";
 import brandiniImage from "@/assets/images/portfolio-brandini.png";
 import legacyImage from "@/assets/images/portfolio-legacy.png";
 import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
+import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 export function Portfolio() {
@@ -26,6 +27,13 @@ export function Portfolio() {
       image: goldoniImage,
       height: "h-[300px]",
       url: "https://JessGoldoni.com" 
+    },
+    {
+      category: "WEB DESIGN",
+      title: "MIDWEST GRIT FITNESS",
+      image: midwestGritImage,
+      height: "h-[350px]",
+      url: "https://midwest-grit-fitness.replit.app/"
     },
     {
       category: "WEB DESIGN",
@@ -100,8 +108,11 @@ export function Portfolio() {
             {/* Item 2 - Goldoni */}
             <PortfolioItem item={portfolioItems[1]} />
 
-             {/* Item 6 - Nebrask.AI (New Item) */}
-            <PortfolioItem item={portfolioItems[5]} />
+             {/* Item 3 - Midwest Grit (New Item) */}
+            <PortfolioItem item={portfolioItems[2]} />
+
+             {/* Item 7 - Nebrask.AI */}
+            <PortfolioItem item={portfolioItems[6]} />
 
              {/* CTA Card (Black) */}
             <div className="bg-[#1a1a1a] p-12 flex flex-col justify-between min-h-[300px] text-white relative overflow-hidden group">
@@ -133,14 +144,14 @@ export function Portfolio() {
 
           {/* Right Column */}
           <div className="flex flex-col gap-12 md:mt-24">
-             {/* Item 3 - Brandini */}
-             <PortfolioItem item={portfolioItems[2]} />
+             {/* Item 4 - Brandini */}
+             <PortfolioItem item={portfolioItems[3]} />
 
-            {/* Item 4 - Legacy */}
-            <PortfolioItem item={portfolioItems[3]} />
-
-            {/* Item 5 - Bloom & Bliss */}
+            {/* Item 5 - Legacy */}
             <PortfolioItem item={portfolioItems[4]} />
+
+            {/* Item 6 - Bloom & Bliss */}
+            <PortfolioItem item={portfolioItems[5]} />
           </div>
 
         </div>
