@@ -121,11 +121,11 @@ export function Portfolio() {
              {/* Item 4 - Brandini */}
              <PortfolioItem item={portfolioItems[3]} />
 
-            {/* Item 5 - Legacy */}
-            <PortfolioItem item={portfolioItems[4]} />
-            
             {/* Item 8 - Dwell */}
             <PortfolioItem item={portfolioItems[6]} />
+
+            {/* Item 5 - Legacy */}
+            <PortfolioItem item={portfolioItems[4]} />
           </div>
 
         </div>
