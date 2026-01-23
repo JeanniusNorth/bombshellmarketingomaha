@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import brandDesignImage from "@/assets/images/service-brand-design.jpg";
 
 export function Services() {
   const services = [
@@ -11,7 +12,7 @@ export function Services() {
     {
       title: "Logo & Brand Design",
       description: "Visual identities that sear into memory. Logos, systems, and guidelines that command attention.",
-      image: "https://images.unsplash.com/photo-1626785774573-4b799314346d?auto=format&fit=crop&q=80&w=800"
+      image: brandDesignImage
     },
     {
       title: "Web Design",
