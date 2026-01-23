@@ -70,8 +70,8 @@ export function Team() {
             {teamMembers.map((member, index) => (
               <div 
                 key={member.id}
-                className={`relative h-full transition-all duration-500 ease-out cursor-pointer overflow-hidden group ${
-                  activeIndex === index ? 'flex-[3]' : 'flex-1 grayscale hover:grayscale-0'
+                className={`relative h-full transition-all duration-500 ease-out cursor-pointer overflow-hidden group flex-1 ${
+                  activeIndex === index ? 'grayscale-0' : 'grayscale hover:grayscale-0'
                 }`}
                 onMouseEnter={() => setActiveIndex(index)}
               >
