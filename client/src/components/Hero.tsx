@@ -121,6 +121,8 @@ export function Hero() {
                   <span>*</span>
                   <span>Digital Marketing</span>
                   <span>*</span>
+                  <span>Photography</span>
+                  <span>*</span>
                </div>
             ))}
          </div>
