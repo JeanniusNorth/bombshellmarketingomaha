@@ -14,12 +14,12 @@ export default function Home() {
       
       <main>
         <Hero />
-        <Mission />
         {/* <Marquee /> Removed as it is now in Hero */}
         <div className="-mt-12 relative z-20">
             <Services />
         </div>
         <Portfolio />
+        <Mission />
         <Team />
         <About />
       </main>
