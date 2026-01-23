@@ -64,16 +64,16 @@ export function Hero() {
             </h1>
 
             {/* Hero Image - Sandwiched */}
-            <div className="absolute inset-0 z-10 flex items-end justify-center pb-0">
+            {/* <div className="absolute inset-0 z-10 flex items-end justify-center pb-0">
                <div className="relative h-[85%] w-auto aspect-[3/4] md:h-[95%]">
                   <img 
                     src={heroImage} 
                     alt="Creative Director" 
                     className="h-full w-full object-contain object-bottom mix-blend-lighten contrast-125 brightness-90" 
-                    /* Using mix-blend-lighten since the image has a dark blue background close to our bg color */
+                    
                   />
                </div>
-            </div>
+            </div> */}
         </div>
 
 
