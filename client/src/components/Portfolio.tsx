@@ -9,6 +9,7 @@ import legacyImage from "@/assets/images/portfolio-legacy.png";
 import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import dwellImage from "@/assets/images/portfolio-dwell.png";
+import omahaCookieImage from "@/assets/images/portfolio-omahacookie.png";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 export function Portfolio() {
@@ -63,6 +64,13 @@ export function Portfolio() {
       image: dwellImage,
       height: "h-[350px]",
       url: "https://dwell-omaha-design.replit.app/"
+    },
+    {
+      category: "WEB DESIGN",
+      title: "OMAHA COOKIE - BAKERY WEBSITE",
+      image: omahaCookieImage,
+      height: "h-[350px]",
+      url: "https://omaha-cookie.replit.app/"
     }
   ];
 
@@ -123,6 +131,9 @@ export function Portfolio() {
 
             {/* Item 8 - Dwell */}
             <PortfolioItem item={portfolioItems[6]} />
+            
+            {/* Item 9 - Omaha Cookie */}
+            <PortfolioItem item={portfolioItems[7]} />
 
             {/* Item 5 - Legacy */}
             <PortfolioItem item={portfolioItems[4]} />
