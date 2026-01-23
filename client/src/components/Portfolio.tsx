@@ -8,6 +8,7 @@ import brandiniImage from "@/assets/images/portfolio-brandini.png";
 import legacyImage from "@/assets/images/portfolio-legacy.png";
 import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
+import dwellImage from "@/assets/images/portfolio-dwell.png";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 export function Portfolio() {
@@ -55,6 +56,13 @@ export function Portfolio() {
       image: nebraskaiImage,
       height: "h-[400px]",
       url: "https://nebrask.ai/"
+    },
+    {
+      category: "WEB DESIGN",
+      title: "DWELL - OMAHA DESIGN",
+      image: dwellImage,
+      height: "h-[350px]",
+      url: "https://dwell-omaha-design.replit.app/"
     }
   ];
 
@@ -115,6 +123,9 @@ export function Portfolio() {
 
             {/* Item 5 - Legacy */}
             <PortfolioItem item={portfolioItems[4]} />
+            
+            {/* Item 8 - Dwell */}
+            <PortfolioItem item={portfolioItems[6]} />
           </div>
 
         </div>
