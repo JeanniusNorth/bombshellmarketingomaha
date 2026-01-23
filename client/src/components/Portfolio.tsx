@@ -6,6 +6,7 @@ import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 import goldoniImage from "@/assets/images/portfolio-goldoni.png";
 import brandiniImage from "@/assets/images/portfolio-brandini.png";
 import legacyImage from "@/assets/images/portfolio-legacy.png";
+import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 export function Portfolio() {
@@ -46,6 +47,13 @@ export function Portfolio() {
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
       height: "h-[450px]",
       url: null // No website for social media
+    },
+    {
+      category: "AI CONSULTING",
+      title: "NEBRASK.AI - AI CONSULTING FIRM",
+      image: nebraskaiImage,
+      height: "h-[400px]",
+      url: "https://nebrask.ai/"
     }
   ];
 
@@ -91,6 +99,9 @@ export function Portfolio() {
 
             {/* Item 2 - Goldoni */}
             <PortfolioItem item={portfolioItems[1]} />
+
+             {/* Item 6 - Nebrask.AI (New Item) */}
+            <PortfolioItem item={portfolioItems[5]} />
 
              {/* CTA Card (Black) */}
             <div className="bg-[#1a1a1a] p-12 flex flex-col justify-between min-h-[300px] text-white relative overflow-hidden group">
