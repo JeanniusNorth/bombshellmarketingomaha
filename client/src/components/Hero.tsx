@@ -10,10 +10,10 @@ export function Hero() {
            style={{ backgroundImage: 'radial-gradient(circle, #ccff00 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10 flex-1 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <div className="container mx-auto px-4 md:px-8 relative z-10 flex-1 flex flex-col items-center justify-center">
         
-        {/* Left Side Content */}
-        <div className="md:col-span-2 flex flex-col justify-center gap-12 order-2 md:order-1 text-white/80 font-sans">
+        {/* Left Side Content - Absolute on Desktop to allow true centering of Hero */}
+        <div className="md:absolute md:left-8 md:top-1/2 md:-translate-y-1/2 flex flex-row md:flex-col justify-center gap-8 md:gap-12 order-2 md:order-1 text-white/80 font-sans mt-12 md:mt-0 z-20">
           <div className="space-y-1">
             <h3 className="text-3xl font-display text-white">500+</h3>
             <p className="text-xs uppercase tracking-widest text-primary">Happy Clients</p>
@@ -29,7 +29,7 @@ export function Hero() {
         </div>
 
         {/* Center Image & Text */}
-        <div className="md:col-span-10 relative flex flex-col items-center justify-center order-1 md:order-2">
+        <div className="w-full max-w-5xl relative flex flex-col items-center justify-center order-1 md:order-2">
           
           {/* Main Headline Layered Behind/Front */}
           <div className="relative w-full text-center">
@@ -67,7 +67,7 @@ export function Hero() {
             </h1>
 
             {/* Floating Description */}
-            <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-64 text-left z-30">
+            <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-64 text-left z-30 translate-x-[120%]">
               <p className="text-white/70 text-sm mb-6 leading-relaxed">
                 We combine explosive creativity with AI precision to blow up your brand awareness.
               </p>

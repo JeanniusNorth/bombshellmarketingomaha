@@ -26,7 +26,7 @@ export function Navigation() {
               <path d="M12 0L14.5 9L24 12L14.5 15L12 24L9.5 15L0 12L9.5 9L12 0Z" />
             </svg>
           </div>
-          <span className="font-display text-2xl tracking-widest text-white">BOMBSHELL<span className="text-primary">.AI</span></span>
+          <span className="font-display text-2xl tracking-widest text-white">BOMBSHELL</span>
         </div>
       </Link>
 
