@@ -88,7 +88,7 @@ export function Hero() {
           {/* Description and Button Block */}
           <div className="flex flex-col gap-6 items-end mb-12">
             <p className="text-white/80 text-xs leading-relaxed font-medium max-w-[200px]">
-              Lorem ipsum do adipiscing elit Ut elit tellus luctus nec ullamcorper mattis pulvinar.
+              We combine explosive creativity with AI precision to blow up your brand awareness. Located in Omaha, NE.
             </p>
             
             <button className="group px-6 py-3 border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all text-white text-[10px] font-bold uppercase tracking-widest flex items-center gap-3">
