@@ -20,7 +20,8 @@ export function Services() {
       title: "Web Design",
       description: "Websites that don't just function—they perform. High-octane user experiences.",
       image: webDesignImage,
-      highlight: true
+      highlight: true,
+      link: "#portfolio"
     },
     {
       title: "Brand Photography",
@@ -51,10 +52,13 @@ export function Services() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <div 
+          {services.map((service, index) => {
+            const Component = service.link ? 'a' : 'div';
+            return (
+            <Component 
               key={index}
-              className={`group relative border ${service.highlight ? 'border-primary bg-primary' : 'border-white/10 bg-white/5'} p-8 min-h-[400px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300`}
+              href={service.link}
+              className={`group relative border ${service.highlight ? 'border-primary bg-primary' : 'border-white/10 bg-white/5'} p-8 min-h-[400px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 block`}
             >
               <div className="flex justify-between items-start mb-8">
                 <h3 className={`text-2xl font-display uppercase max-w-[70%] leading-none ${service.highlight ? 'text-black' : 'text-white'}`}>
@@ -78,8 +82,8 @@ export function Services() {
               <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/80' : 'text-white/60'}`}>
                 {service.description}
               </p>
-            </div>
-          ))}
+            </Component>
+          )})}
         </div>
 
       </div>
