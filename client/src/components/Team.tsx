@@ -83,14 +83,10 @@ export function Team() {
                 />
                 
                 {/* Overlay Gradient */}
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent transition-opacity duration-300 ${
-                  activeIndex === index ? 'opacity-100' : 'opacity-0'
-                }`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-100 transition-opacity duration-300" />
 
-                {/* Content (Only visible when active) */}
-                <div className={`absolute bottom-0 left-0 p-8 w-full transition-all duration-300 transform ${
-                  activeIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-                }`}>
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 p-8 w-full translate-y-0 opacity-100 transition-all duration-300 transform">
                   <h3 className="text-3xl font-display uppercase text-white mb-1 leading-none">{member.name}</h3>
                   <p className="text-primary text-xs font-bold uppercase tracking-widest">{member.role}</p>
                 </div>
