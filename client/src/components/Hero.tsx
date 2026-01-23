@@ -14,7 +14,7 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-8 relative z-10 flex-1 flex flex-col justify-center h-full pb-56">
         
         {/* === LEFT COLUMN: Stats & Avatars === */}
-        <div className="absolute left-6 md:left-12 top-[20%] z-30 w-48 flex flex-col gap-12">
+        <div className="absolute left-6 md:left-12 top-[20%] -mt-[75px] z-30 w-48 flex flex-col gap-12">
           
           {/* Avatar Group */}
           <div>
