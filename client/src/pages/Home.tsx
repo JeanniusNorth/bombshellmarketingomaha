@@ -5,6 +5,7 @@ import { Mission } from "@/components/Mission";
 import { Services } from "@/components/Services";
 import { Portfolio } from "@/components/Portfolio";
 import { Team } from "@/components/Team";
+import { Testimonials } from "@/components/Testimonials";
 import { About } from "@/components/About";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <Portfolio />
         <Mission />
         <Team />
+        <Testimonials />
         <About />
       </main>
       
