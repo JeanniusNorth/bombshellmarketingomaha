@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import brandDesignImage from "@/assets/images/service-brand-design.jpg";
 import webDesignImage from "@/assets/images/service-web-design.png";
+import photographyImage from "@/assets/images/service-photography.png";
 
 export function Services() {
   const services = [
@@ -24,7 +25,7 @@ export function Services() {
     {
       title: "Brand Photography",
       description: "Capture the raw energy of your brand. Professional shots that tell your story instantly.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+      image: photographyImage
     }
   ];
 
