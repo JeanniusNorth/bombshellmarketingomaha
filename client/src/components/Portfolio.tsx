@@ -16,6 +16,13 @@ export function Portfolio() {
   const portfolioItems = [
     {
       category: "WEB DESIGN",
+      title: "MIDWEST GRIT FITNESS",
+      image: midwestGritImage,
+      height: "h-[350px]",
+      url: "https://midwest-grit-fitness.replit.app/"
+    },
+    {
+      category: "WEB DESIGN",
       title: "TENNISX - AI VIDEO ANALYSIS APP",
       image: tennisxImage,
       height: "h-[400px]",
@@ -27,13 +34,6 @@ export function Portfolio() {
       image: goldoniImage,
       height: "h-[300px]",
       url: "https://JessGoldoni.com" 
-    },
-    {
-      category: "WEB DESIGN",
-      title: "MIDWEST GRIT FITNESS",
-      image: midwestGritImage,
-      height: "h-[350px]",
-      url: "https://midwest-grit-fitness.replit.app/"
     },
     {
       category: "WEB DESIGN",
@@ -102,13 +102,13 @@ export function Portfolio() {
           
           {/* Left Column */}
           <div className="flex flex-col gap-12">
-            {/* Item 1 - TennisX */}
+            {/* Item 1 - Midwest Grit (Moved to top) */}
             <PortfolioItem item={portfolioItems[0]} />
 
-            {/* Item 2 - Goldoni */}
+            {/* Item 2 - TennisX */}
             <PortfolioItem item={portfolioItems[1]} />
 
-             {/* Item 3 - Midwest Grit (New Item) */}
+             {/* Item 3 - Goldoni */}
             <PortfolioItem item={portfolioItems[2]} />
 
              {/* Item 7 - Nebrask.AI */}
