@@ -1,24 +1,27 @@
 import { ArrowUpRight, ArrowRight, Play, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import tennisxImage from "@/assets/images/portfolio-tennisx.png";
+import goldoniImage from "@/assets/images/portfolio-goldoni.png";
+import brandiniImage from "@/assets/images/portfolio-brandini.png";
 
 export function Portfolio() {
   const portfolioItems = [
     {
-      category: "BRANDING & IDENTITY DESIGN",
-      title: "STELLAR VISION - BRANDING & IDENTITY",
-      image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800",
+      category: "WEB DESIGN",
+      title: "TENNISX - AI VIDEO ANALYSIS APP",
+      image: tennisxImage,
       height: "h-[400px]"
     },
     {
-      category: "MOTION GRAPHICS",
-      title: "VELOCITY - MOTION GRAPHICS & VIDEO",
-      image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+      category: "WEB DESIGN",
+      title: "GOLDONI LEGISLATURE - CAMPAIGN SITE",
+      image: goldoniImage,
       height: "h-[300px]"
     },
     {
       category: "WEB DESIGN",
-      title: "HORIZON HUB - WEBSITE DESIGN",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800",
+      title: "BRANDINI - MERCH STORE PLATFORM",
+      image: brandiniImage,
       height: "h-[350px]"
     },
     {
