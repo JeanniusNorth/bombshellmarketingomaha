@@ -1,22 +1,23 @@
 import { Star, Quote, ArrowRight } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import chrisImage from "@/assets/images/testimonial-chris.jpg";
+import shaneImage from "@/assets/images/testimonial-shane.jpg";
 
 export function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      text: "Bombshell AI Marketing completely transformed our online presence. Their AI-driven approach identified audience segments we didn't even know existed, doubling our conversion rate in just three months.",
-      author: "Sarah Jenkins",
-      role: "CEO, TechFlow Solutions",
-      image: "https://i.pravatar.cc/150?u=sarah"
-    },
-    {
-      id: 2,
       text: "Working with Bombshell was seamless. They understood the Brandini vision immediately and executed a strategy that put our merchandise platform on the map. Highly recommended.",
       author: "Chris Harwood",
       role: "Brandini",
       image: chrisImage
+    },
+    {
+      id: 2,
+      text: "Our new website design is fantastic. It's clean, modern, and exactly what we needed to showcase our window and door products. The team really listened to our needs.",
+      author: "Shane",
+      role: "Legacy Window & Door",
+      image: shaneImage
     }
   ];
 
