@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Play } from "lucide-react";
+import { ArrowRight, Sparkles, Play, Star } from "lucide-react";
 import heroImage from "@/assets/hero-creative.png";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
@@ -34,6 +34,28 @@ export function Hero() {
             </div>
           </div>
         </div>
+
+
+        {/* Floating Rating Card */}
+        <motion.div 
+          initial={{ x: -100, opacity: 0, rotate: -10 }}
+          animate={{ x: 0, opacity: 1, rotate: -6 }}
+          transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
+          className="absolute left-6 md:left-24 bottom-48 md:bottom-32 z-40 bg-white p-5 rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.3)] max-w-[200px] hidden md:block"
+        >
+          <div className="flex items-center gap-3 mb-1">
+            <span className="text-4xl font-display text-black font-bold tracking-tight">4.9</span>
+            <div className="flex text-yellow-400 gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-3 h-3 fill-current" />
+              ))}
+            </div>
+          </div>
+          <p className="text-gray-400 text-[10px] font-bold tracking-widest uppercase mb-3">Client Feedback</p>
+          <div className="bg-[#ccff00] text-black px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
+            Top Rated
+          </div>
+        </motion.div>
 
 
         {/* === CENTER: Headline & Image === */}
