@@ -14,7 +14,7 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-8 relative z-10 flex-1 flex flex-col justify-center h-full pb-56">
         
         {/* === LEFT COLUMN: Stats & Avatars === */}
-        <div className="absolute left-6 md:left-12 top-[20%] -mt-[75px] z-30 w-48 flex flex-col gap-12">
+        <div className="hidden md:flex absolute left-6 md:left-12 top-[20%] -mt-[75px] z-30 w-48 flex-col gap-12">
           
           {/* Avatar Group Removed */}
 
@@ -40,7 +40,7 @@ export function Hero() {
         <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none">
             
             {/* Top Text: CREATIVE (BOMBSHELL) - Behind Image */}
-            <h1 className="text-[15vw] leading-[0.8] font-display text-primary uppercase relative z-0 tracking-tighter mix-blend-normal mt-[50px]">
+            <h1 className="text-[15vw] leading-[0.8] font-display text-primary uppercase relative z-0 tracking-tighter mix-blend-normal mt-0 md:mt-[50px]">
               BOMBSHELL
             </h1>
 
@@ -50,8 +50,8 @@ export function Hero() {
               MARKETING
             </h1>
 
-            <div className="mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-[150px]">
-                <p className="text-white/80 text-sm leading-relaxed font-medium max-w-md text-center">
+            <div className="mt-4 md:mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-32 md:mb-[150px]">
+                <p className="text-white/80 text-sm leading-relaxed font-medium max-w-md text-center px-4">
                   We combine explosive creativity with AI precision to blow up your brand awareness. Located in Omaha, NE.
                 </p>
                 
@@ -78,7 +78,7 @@ export function Hero() {
 
 
         {/* === RIGHT COLUMN: Description & Button === */}
-        <div className="absolute right-6 md:right-12 top-[15%] z-30 w-64 h-[70%] flex flex-col justify-between items-end text-right">
+        <div className="hidden md:flex absolute right-6 md:right-12 top-[15%] z-30 w-64 h-[70%] flex-col justify-between items-end text-right">
           
           {/* Top Right Decorative Star */}
           <div className="w-20 h-20 border border-white/20 rounded-full flex items-center justify-center animate-spin-slow">
