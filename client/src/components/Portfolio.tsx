@@ -133,10 +133,10 @@ export function Portfolio() {
             <PortfolioItem item={portfolioItems[6]} />
             
             {/* Item 9 - Omaha Cookie */}
-            <PortfolioItem item={portfolioItems[7]} />
+            <PortfolioItem item={portfolioItems[4]} />
 
             {/* Item 5 - Legacy */}
-            <PortfolioItem item={portfolioItems[4]} />
+            <PortfolioItem item={portfolioItems[7]} />
           </div>
 
         </div>
