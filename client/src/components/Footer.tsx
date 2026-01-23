@@ -25,13 +25,6 @@ export function Footer() {
                   Omaha, NE 68102
                 </p>
               </div>
-
-              <div>
-                <h4 className="font-display uppercase text-lg mb-2">Call Us</h4>
-                <p className="text-white/60 text-sm">
-                  +1 (402) 555-0123
-                </p>
-              </div>
             </div>
           </div>
 
@@ -72,10 +65,6 @@ export function Footer() {
           {/* Column 4: Big Contact */}
           <div className="flex flex-col gap-8">
             <div>
-               <div className="flex items-end gap-2 leading-none mb-2">
-                 <h3 className="font-display text-3xl md:text-4xl">(+1) 402 555 0123</h3>
-                 <span className="text-[#ccff00] font-bold text-[10px] uppercase tracking-wider mb-1 opacity-50 block md:hidden lg:block">Phone Number</span>
-               </div>
                <div className="flex items-end gap-2 leading-none">
                  <h3 className="font-display text-3xl md:text-3xl lg:text-3xl break-all">hello@bombshell.com</h3>
                  <span className="text-[#ccff00] font-bold text-[10px] uppercase tracking-wider mb-1 opacity-50 block md:hidden lg:block">Email Address</span>

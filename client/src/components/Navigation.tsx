@@ -44,10 +44,6 @@ export function Navigation() {
 
       {/* Contact Button & Mobile Menu */}
       <div className="flex items-center gap-4">
-        <div className="hidden md:flex flex-col items-end text-right">
-          <span className="text-xs text-white/60 font-sans">PHONE NUMBER</span>
-          <span className="text-sm font-bold text-white tracking-wider">+1 800 555 0199</span>
-        </div>
         
         <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-black md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
