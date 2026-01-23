@@ -50,13 +50,6 @@ export function Portfolio() {
       url: "https://legacywindowco.com/"
     },
     {
-      category: "SOCIAL MEDIA",
-      title: "BLOOM & BLISS - SOCIAL MEDIA CAMPAIGN",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
-      height: "h-[450px]",
-      url: null // No website for social media
-    },
-    {
       category: "AI CONSULTING",
       title: "NEBRASK.AI - AI CONSULTING FIRM",
       image: nebraskaiImage,
@@ -112,34 +105,7 @@ export function Portfolio() {
             <PortfolioItem item={portfolioItems[2]} />
 
              {/* Item 7 - Nebrask.AI */}
-            <PortfolioItem item={portfolioItems[6]} />
-
-             {/* CTA Card (Black) */}
-            <div className="bg-[#1a1a1a] p-12 flex flex-col justify-between min-h-[300px] text-white relative overflow-hidden group">
-               <div className="relative z-10">
-                 <h3 className="text-4xl font-display uppercase leading-tight mb-4">
-                   Our Work Speaks <br/> For Itself
-                 </h3>
-                 <p className="text-white/60 text-xs max-w-xs leading-relaxed mb-8">
-                   From startups to global brands, we've made crafted impactful designs that tell stories.
-                 </p>
-                 
-                 <div className="flex items-center gap-6 mt-auto pt-8">
-                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-black">
-                       <Phone className="w-5 h-5" />
-                    </div>
-                    <div className="flex flex-col">
-                       <span className="text-[10px] text-white/50 uppercase tracking-widest">Phone Number</span>
-                       <span className="text-sm font-bold">+43 879 5673 9876</span>
-                    </div>
-                 </div>
-
-                 <button className="mt-8 w-full border border-white/20 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors flex items-center justify-center gap-2">
-                    View All Portfolio
-                    <ArrowRight className="w-3 h-3" />
-                 </button>
-               </div>
-            </div>
+            <PortfolioItem item={portfolioItems[5]} />
           </div>
 
           {/* Right Column */}
@@ -149,9 +115,6 @@ export function Portfolio() {
 
             {/* Item 5 - Legacy */}
             <PortfolioItem item={portfolioItems[4]} />
-
-            {/* Item 6 - Bloom & Bliss */}
-            <PortfolioItem item={portfolioItems[5]} />
           </div>
 
         </div>
