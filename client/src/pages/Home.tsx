@@ -23,7 +23,6 @@ export default function Home() {
         <Mission />
         <Team />
         <Testimonials />
-        <About />
       </main>
       
       <footer className="bg-black text-white py-12 border-t border-white/10">
