@@ -11,7 +11,7 @@ export function Hero() {
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10 flex-1 flex flex-col justify-center h-full pb-32">
+      <div className="container mx-auto px-4 md:px-8 relative z-10 flex-1 flex flex-col justify-center h-full pb-56">
         
         {/* === LEFT COLUMN: Stats & Avatars === */}
         <div className="absolute left-6 md:left-12 top-[20%] z-30 w-48 flex flex-col gap-12">
