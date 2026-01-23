@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 // import { Marquee } from "@/components/Marquee"; // Integrated into Hero
+import { Mission } from "@/components/Mission";
 import { Services } from "@/components/Services";
 import { Portfolio } from "@/components/Portfolio";
 import { Team } from "@/components/Team";
@@ -13,6 +14,7 @@ export default function Home() {
       
       <main>
         <Hero />
+        <Mission />
         {/* <Marquee /> Removed as it is now in Hero */}
         <div className="-mt-12 relative z-20">
             <Services />
