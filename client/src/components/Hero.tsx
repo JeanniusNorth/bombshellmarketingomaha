@@ -58,7 +58,7 @@ export function Hero() {
                 <button className="group px-8 py-4 border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center gap-3">
                   <span>Get Started</span>
                   <div className="w-5 h-5 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
-                     <ArrowRight className="w-3 h-3 -rotate-45" />
+                     <ArrowRight className="w-3 h-3" />
                   </div>
                 </button>
             </div>
