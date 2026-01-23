@@ -30,10 +30,17 @@
   --radius-sm: 0rem;
   --radius-md: 0rem;
   --radius-lg: 0rem;
+
+  --animate-marquee: marquee 20s linear infinite;
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
 }
 
 :root {
-  /* Deep Electric Blue Background */
+  /* Deep Electric Blue Background matching image blend */
   --background: 240 60% 15%; /* #0f1261 approx */
   --foreground: 0 0% 100%;
 
@@ -67,7 +74,6 @@
 }
 
 .dark {
-  /* Same as light for this specific branding since it's always dark/neon */
   --background: 240 60% 15%;
   --foreground: 0 0% 100%;
   --primary: 75 100% 50%;

@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
-import { Marquee } from "@/components/Marquee";
+// import { Marquee } from "@/components/Marquee"; // Integrated into Hero
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 
@@ -11,8 +11,10 @@ export default function Home() {
       
       <main>
         <Hero />
-        <Marquee />
-        <Services />
+        {/* <Marquee /> Removed as it is now in Hero */}
+        <div className="mt-24">
+            <Services />
+        </div>
         <About />
       </main>
       
