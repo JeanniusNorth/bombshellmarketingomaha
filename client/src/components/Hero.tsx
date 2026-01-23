@@ -16,20 +16,7 @@ export function Hero() {
         {/* === LEFT COLUMN: Stats & Avatars === */}
         <div className="absolute left-6 md:left-12 top-[20%] -mt-[75px] z-30 w-48 flex flex-col gap-12">
           
-          {/* Avatar Group */}
-          <div>
-             <div className="flex -space-x-3 mb-4">
-                {[1, 2, 3].map((i) => (
-                  <Avatar key={i} className="w-10 h-10 border-2 border-[#1a1b4b]">
-                    <AvatarImage src={`https://i.pravatar.cc/150?img=${i + 20}`} />
-                    <AvatarFallback>U{i}</AvatarFallback>
-                  </Avatar>
-                ))}
-             </div>
-             <p className="text-[10px] text-white/90 uppercase leading-relaxed font-bold tracking-widest max-w-[140px]">
-               The Expert Team Brings Creativity To Every Project.
-             </p>
-          </div>
+          {/* Avatar Group Removed */}
 
           {/* Stats List */}
           <div className="flex flex-col gap-8">
