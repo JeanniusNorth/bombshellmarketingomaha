@@ -12,8 +12,8 @@ export function Hero() {
 
       <div className="container mx-auto px-4 md:px-8 relative z-10 flex-1 flex flex-col items-center justify-center">
         
-        {/* Left Side Content - Absolute on Desktop to allow true centering of Hero */}
-        <div className="md:absolute md:left-8 md:top-1/2 md:-translate-y-1/2 flex flex-row md:flex-col justify-center gap-8 md:gap-12 order-2 md:order-1 text-white/80 font-sans mt-12 md:mt-0 z-20">
+        {/* Stats Content - Moved to Right */}
+        <div className="md:absolute md:right-8 md:top-1/2 md:-translate-y-1/2 flex flex-row md:flex-col justify-center gap-8 md:gap-12 order-2 md:order-1 text-white/80 font-sans mt-12 md:mt-0 z-20 md:items-end md:text-right">
           <div className="space-y-1">
             <h3 className="text-3xl font-display text-white">500+</h3>
             <p className="text-xs uppercase tracking-widest text-primary">Happy Clients</p>
@@ -66,8 +66,8 @@ export function Hero() {
               MARKETING
             </h1>
 
-            {/* Floating Description */}
-            <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-64 text-left z-30 translate-x-[120%]">
+            {/* Floating Description - Moved to Left */}
+            <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 w-64 text-left z-30 -translate-x-[120%]">
               <p className="text-white/70 text-sm mb-6 leading-relaxed">
                 We combine explosive creativity with AI precision to blow up your brand awareness.
               </p>
