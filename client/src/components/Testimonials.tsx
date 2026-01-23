@@ -1,5 +1,6 @@
 import { Star, Quote, ArrowRight } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import chrisImage from "@/assets/images/testimonial-chris.jpg";
 
 export function Testimonials() {
   const testimonials = [
@@ -12,10 +13,10 @@ export function Testimonials() {
     },
     {
       id: 2,
-      text: "The creative team at Bombshell is unmatched. They took our vague concept and turned it into a powerful brand identity that resonates perfectly with our market. The results speak for themselves.",
-      author: "Marcus Thorne",
-      role: "Founder, Apex Gear",
-      image: "https://i.pravatar.cc/150?u=marcus"
+      text: "Working with Bombshell was seamless. They understood the Brandini vision immediately and executed a strategy that put our merchandise platform on the map. Highly recommended.",
+      author: "Chris Harwood",
+      role: "Brandini",
+      image: chrisImage
     }
   ];
 
