@@ -24,21 +24,21 @@ export function Portfolio() {
       title: "GOLDONI LEGISLATURE - CAMPAIGN SITE",
       image: goldoniImage,
       height: "h-[300px]",
-      url: "https://goldoni-legislature.replit.app/" 
+      url: "https://JessGoldoni.com" 
     },
     {
       category: "WEB DESIGN",
       title: "BRANDINI - MERCH STORE PLATFORM",
       image: brandiniImage,
       height: "h-[350px]",
-      url: "https://brandini-merch.replit.app/"
+      url: "https://TryBrandini.com"
     },
     {
       category: "WEB DESIGN",
       title: "LEGACY WINDOW & DOOR - WEBSITE DESIGN",
       image: legacyImage,
       height: "h-[400px]",
-      url: "https://legacy-window.replit.app/"
+      url: "https://legacywindowco.com/"
     },
     {
       category: "SOCIAL MEDIA",
