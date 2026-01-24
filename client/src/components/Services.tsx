@@ -9,12 +9,14 @@ export function Services() {
     {
       title: "Brand Building & Strategy",
       description: "We forge identities that hit like a shockwave. Strategic positioning meets visual dominance.",
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
+      link: "https://bombshellaimarketing.com/contact"
     },
     {
       title: "Logo & Brand Design",
       description: "Visual identities that sear into memory. Logos, systems, and guidelines that command attention.",
-      image: logoDesignImage
+      image: logoDesignImage,
+      link: "https://bombshellaimarketing.com/contact"
     },
     {
       title: "Web Design",
@@ -26,7 +28,8 @@ export function Services() {
     {
       title: "Brand Photography",
       description: "Capture the raw energy of your brand. Professional shots that tell your story instantly.",
-      image: photographyImage
+      image: photographyImage,
+      link: "https://bombshellaimarketing.com/contact"
     }
   ];
 
