@@ -113,13 +113,13 @@ export function Portfolio() {
 
              {/* Item 3 - Goldoni */}
             <PortfolioItem item={portfolioItems[2]} />
-
-            {/* Item 7 - Varsity Roman Coin */}
-            <PortfolioItem item={portfolioItems[6]} />
           </div>
 
           {/* Right Column */}
           <div className="flex flex-col gap-12 md:mt-24">
+             {/* Item 7 - Varsity Roman Coin */}
+             <PortfolioItem item={portfolioItems[6]} />
+
              {/* Item 4 - Brandini */}
              <PortfolioItem item={portfolioItems[3]} />
 
