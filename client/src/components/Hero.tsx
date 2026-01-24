@@ -72,7 +72,7 @@ export function Hero() {
               MARKETING
             </h1>
 
-            <div className="mt-4 md:mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-32 md:mb-[150px]">
+            <div className="mt-4 md:mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-[50px] md:mb-[150px]">
                 <p className="text-white/80 text-sm leading-relaxed font-medium max-w-md text-center px-4">
                   We combine explosive creativity with AI precision to blow up your brand awareness. Located in Omaha, NE.
                 </p>
