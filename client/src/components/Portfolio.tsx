@@ -10,6 +10,7 @@ import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import dwellImage from "@/assets/images/portfolio-dwell.png";
 import omahaCookieImage from "@/assets/images/portfolio-omahacookie.png";
+import varsityPizzaImage from "@/assets/portfolio-varsity-pizza.jpg";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 export function Portfolio() {
@@ -57,6 +58,13 @@ export function Portfolio() {
       image: dwellImage,
       height: "h-[350px]",
       url: "https://dwell-omaha-design.replit.app/"
+    },
+    {
+      category: "PHOTOGRAPHY",
+      title: "VARSITY ROMAN COIN",
+      image: varsityPizzaImage,
+      height: "h-[350px]",
+      url: ""
     }
   ];
 
@@ -105,6 +113,9 @@ export function Portfolio() {
 
              {/* Item 3 - Goldoni */}
             <PortfolioItem item={portfolioItems[2]} />
+
+            {/* Item 7 - Varsity Roman Coin */}
+            <PortfolioItem item={portfolioItems[6]} />
           </div>
 
           {/* Right Column */}
