@@ -78,9 +78,9 @@ export function Hero() {
                 </p>
                 
                 <div className="flex flex-col md:flex-row gap-4">
-                  <a href="https://bombshellaimarketing.com/contact" className="group px-8 py-4 border border-white/40 hover:bg-white hover:text-black hover:border-white transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center gap-3">
+                  <a href="https://bombshellaimarketing.com/contact" className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3">
                     <span>Get Started</span>
-                    <div className="w-5 h-5 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
+                    <div className="w-5 h-5 rounded-full bg-black text-white flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-colors">
                        <ArrowRight className="w-3 h-3" />
                     </div>
                   </a>
