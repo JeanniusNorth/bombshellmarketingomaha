@@ -52,25 +52,11 @@ export function Portfolio() {
       url: "https://legacywindowco.com/"
     },
     {
-      category: "AI CONSULTING",
-      title: "NEBRASK.AI - AI CONSULTING FIRM",
-      image: nebraskaiImage,
-      height: "h-[400px]",
-      url: "https://nebrask.ai/"
-    },
-    {
       category: "WEB DESIGN",
       title: "DWELL - OMAHA DESIGN",
       image: dwellImage,
       height: "h-[350px]",
       url: "https://dwell-omaha-design.replit.app/"
-    },
-    {
-      category: "WEB DESIGN",
-      title: "OMAHA COOKIE - BAKERY WEBSITE",
-      image: omahaCookieImage,
-      height: "h-[350px]",
-      url: "https://omaha-cookie.replit.app/"
     }
   ];
 
@@ -111,7 +97,7 @@ export function Portfolio() {
           
           {/* Left Column */}
           <div className="flex flex-col gap-12">
-            {/* Item 1 - Midwest Grit (Moved to top) */}
+            {/* Item 1 - Midwest Grit */}
             <PortfolioItem item={portfolioItems[0]} />
 
             {/* Item 2 - TennisX */}
@@ -119,9 +105,6 @@ export function Portfolio() {
 
              {/* Item 3 - Goldoni */}
             <PortfolioItem item={portfolioItems[2]} />
-
-             {/* Item 7 - Nebrask.AI */}
-            <PortfolioItem item={portfolioItems[5]} />
           </div>
 
           {/* Right Column */}
@@ -129,14 +112,11 @@ export function Portfolio() {
              {/* Item 4 - Brandini */}
              <PortfolioItem item={portfolioItems[3]} />
 
-            {/* Item 8 - Dwell */}
-            <PortfolioItem item={portfolioItems[6]} />
-            
-            {/* Item 9 - Omaha Cookie */}
-            <PortfolioItem item={portfolioItems[4]} />
-
             {/* Item 5 - Legacy */}
-            <PortfolioItem item={portfolioItems[7]} />
+            <PortfolioItem item={portfolioItems[4]} />
+            
+            {/* Item 6 - Dwell */}
+            <PortfolioItem item={portfolioItems[5]} />
           </div>
 
         </div>
