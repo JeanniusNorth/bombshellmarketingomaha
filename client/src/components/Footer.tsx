@@ -1,4 +1,4 @@
-import { Sparkles, Pin, Github, Linkedin, Dribbble, Twitter } from "lucide-react";
+import { Sparkles, Pin, Facebook, Linkedin, Dribbble } from "lucide-react";
 
 export function Footer() {
   return (
@@ -35,12 +35,7 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-white/60">
               <li>
                 <a href="#" className="flex items-center gap-3 hover:text-[#ccff00] transition-colors">
-                  <Pin className="w-4 h-4 text-[#ccff00]" /> Pinterest
-                </a>
-              </li>
-              <li>
-                <a href="#" className="flex items-center gap-3 hover:text-[#ccff00] transition-colors">
-                  <Github className="w-4 h-4 text-[#ccff00]" /> Github
+                  <Facebook className="w-4 h-4 text-[#ccff00]" /> Facebook
                 </a>
               </li>
               <li>
@@ -55,7 +50,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="flex items-center gap-3 hover:text-[#ccff00] transition-colors">
-                  <Twitter className="w-4 h-4 text-[#ccff00]" /> X Twitter
+                  <Pin className="w-4 h-4 text-[#ccff00]" /> Pinterest
                 </a>
               </li>
             </ul>
