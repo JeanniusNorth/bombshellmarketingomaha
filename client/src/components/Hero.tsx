@@ -59,7 +59,7 @@ export function Hero() {
 
 
         {/* === CENTER: Headline & Image === */}
-        <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none pt-[50px]">
+        <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none pt-[100px] md:pt-[50px]">
             
             {/* Top Text: CREATIVE (BOMBSHELL) - Behind Image */}
             <h1 className="text-[20vw] md:text-[15vw] leading-[0.8] font-display text-primary uppercase relative z-0 tracking-tighter mix-blend-normal mt-0 md:mt-[50px]">
