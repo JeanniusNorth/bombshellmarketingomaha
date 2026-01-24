@@ -19,8 +19,6 @@ const teamMembers = [
 ];
 
 export function Team() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   return (
     <section id="team" className="bg-[#f0f0f0] py-24 relative overflow-hidden">
       {/* Noise Texture */}
@@ -65,15 +63,12 @@ export function Team() {
             </div>
           </div>
 
-          {/* Right Content - Accordion Team */}
+          {/* Right Content - Team Cards */}
           <div className="lg:col-span-7 h-[500px] flex gap-2">
-            {teamMembers.map((member, index) => (
+            {teamMembers.map((member) => (
               <div 
                 key={member.id}
-                className={`relative h-full transition-all duration-500 ease-out cursor-pointer overflow-hidden group flex-1 ${
-                  activeIndex === index ? 'grayscale-0' : 'grayscale hover:grayscale-0'
-                }`}
-                onMouseEnter={() => setActiveIndex(index)}
+                className="relative h-full transition-all duration-500 ease-out cursor-pointer overflow-hidden group flex-1"
               >
                 {/* Image Background */}
                 <img 
