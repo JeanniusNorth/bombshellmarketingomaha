@@ -123,15 +123,13 @@ export function Hero() {
          <div className="animate-marquee flex gap-8 items-center">
             {[...Array(10)].map((_, i) => (
                <div key={i} className="flex items-center gap-8">
-                  <span>Branding</span>
+                  <span>Brand Building & Strategy</span>
                   <span>*</span>
-                  <span>Graphic Design</span>
+                  <span>Logo & Brand Design</span>
                   <span>*</span>
                   <span>Web Design</span>
                   <span>*</span>
-                  <span>Digital Marketing</span>
-                  <span>*</span>
-                  <span>Photography</span>
+                  <span>Brand Photography</span>
                   <span>*</span>
                </div>
             ))}
