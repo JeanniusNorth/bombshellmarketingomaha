@@ -25,7 +25,7 @@ export function Hero() {
               <p className="text-[10px] uppercase tracking-widest text-white/70 font-bold">Happy Clients</p>
             </div>
             <div className="space-y-1">
-              <h3 className="text-3xl font-display text-white flex items-center gap-1">350<span className="text-primary text-2xl">+</span></h3>
+              <h3 className="text-3xl font-display text-white flex items-center gap-1">300<span className="text-primary text-2xl">+</span></h3>
               <p className="text-[10px] uppercase tracking-widest text-white/70 font-bold">Projects Done</p>
             </div>
             <div className="space-y-1">
