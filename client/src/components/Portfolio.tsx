@@ -11,6 +11,7 @@ import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import dwellImage from "@/assets/images/portfolio-dwell.png";
 import omahaCookieImage from "@/assets/images/portfolio-omahacookie.png";
 import varsityPizzaImage from "@/assets/portfolio-varsity-pizza.jpg";
+import goodLifeImage from "@/assets/portfolio-good-life.png";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 export function Portfolio() {
@@ -65,6 +66,13 @@ export function Portfolio() {
       image: varsityPizzaImage,
       height: "h-[350px]",
       url: ""
+    },
+    {
+      category: "PHOTOGRAPHY",
+      title: "THE GOOD LIFE BAR & GRILL",
+      image: goodLifeImage,
+      height: "h-[350px]",
+      url: ""
     }
   ];
 
@@ -113,6 +121,9 @@ export function Portfolio() {
 
              {/* Item 3 - Goldoni */}
             <PortfolioItem item={portfolioItems[2]} />
+
+            {/* Item 8 - Good Life */}
+            <PortfolioItem item={portfolioItems[7]} />
           </div>
 
           {/* Right Column */}
