@@ -48,9 +48,6 @@ export function Services() {
               Designing for seamless and enjoyable interactions.
             </h2>
           </div>
-          <a href="#" className="border border-white/20 px-6 py-3 text-white text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
-            All Services
-          </a>
         </div>
 
         {/* Services Grid */}
