@@ -21,8 +21,7 @@ export function Footer() {
               <div>
                 <h4 className="font-display uppercase text-lg mb-2">Contact Us</h4>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  123 Market Street, Suite 400<br/>
-                  Omaha, NE 68102
+                  Omaha, Nebraska
                 </p>
               </div>
             </div>
