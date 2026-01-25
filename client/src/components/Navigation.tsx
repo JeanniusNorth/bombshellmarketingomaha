@@ -52,7 +52,11 @@ export function Navigation() {
                 <Menu size={24} />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-background border-l border-white/10 w-full sm:w-[300px]">
+            <SheetContent 
+              side="right" 
+              className="bg-background border-l border-white/10 w-full sm:w-[300px]"
+              onCloseAutoFocus={(e) => e.preventDefault()}
+            >
               <div className="flex flex-col gap-8 mt-12">
                 {navLinks.map((link) => (
                   <a 
