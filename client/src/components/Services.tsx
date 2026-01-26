@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "wouter";
 import logoDesignImage from "@/assets/images/service-logo-design.png";
 import webDesignImage from "@/assets/images/service-web-design.png";
 import photographyImage from "@/assets/images/service-photography.png";
@@ -84,6 +85,17 @@ export function Services() {
               </p>
             </Component>
           )})}
+        </div>
+
+        {/* All Services Button */}
+        <div className="flex justify-center mt-12">
+          <Link 
+            href="/services"
+            className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3"
+          >
+            <span>All Services</span>
+            <ArrowUpRight className="w-4 h-4" />
+          </Link>
         </div>
 
       </div>
