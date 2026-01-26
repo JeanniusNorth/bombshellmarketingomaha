@@ -90,13 +90,13 @@ export function Portfolio() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Our Work</span>
+              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Omaha Web Design Portfolio</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-display text-black uppercase leading-[0.85]">
-              Transforming Ideas <br/> Into Memorable Brand <br/> Experiences.
+              Award-Winning <br/> Web Design & Branding <br/> For Nebraska Businesses
             </h2>
             <p className="mt-6 text-black/60 max-w-xl text-sm leading-relaxed">
-              We craft memorable websites enhanced by AI technology to deliver unique digital experiences that captivate and convert.
+              We craft memorable websites, logos, and brand photography for Omaha businesses. AI-enhanced design that captivates and converts Nebraska audiences.
             </p>
           </div>
           

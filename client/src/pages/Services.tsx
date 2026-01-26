@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowUpRight, Palette, Globe, Target, Camera, Sparkles, Layers } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
@@ -7,48 +8,56 @@ const services = [
   {
     icon: Palette,
     title: "Brand Building & Strategy",
-    description: "We forge identities that hit like a shockwave. Strategic positioning meets visual dominance to create memorable brand experiences.",
+    description: "Omaha's leading brand strategists help you forge identities that hit like a shockwave. Strategic positioning meets visual dominance to create memorable brand experiences that resonate with Nebraska audiences.",
     link: "https://bombshellaimarketing.com/contact",
     highlight: false
   },
   {
     icon: Globe,
     title: "Web Design & Development",
-    description: "Websites that don't just function—they perform. High-octane user experiences built with modern technology and stunning visuals.",
+    description: "Professional web design in Omaha that doesn't just function—it performs. We build high-octane user experiences with modern technology, responsive design, and stunning visuals for Nebraska businesses.",
     link: "https://bombshellaimarketing.com/contact",
     highlight: true
   },
   {
     icon: Target,
     title: "Digital Marketing Strategy",
-    description: "AI-powered marketing strategies that target your ideal audience with precision. Data-driven campaigns that convert.",
+    description: "AI-powered digital marketing strategies for Omaha businesses. We target your ideal audience with precision using data-driven campaigns that convert visitors into customers.",
     link: "https://bombshellaimarketing.com/contact",
     highlight: false
   },
   {
     icon: Layers,
     title: "Logo & Brand Design",
-    description: "Visual identities that sear into memory. Logos, systems, and guidelines that command attention and build recognition.",
+    description: "Custom logo design in Omaha that sears into memory. Our visual identities, brand systems, and guidelines command attention and build recognition for Nebraska brands.",
     link: "https://bombshellaimarketing.com/contact",
     highlight: false
   },
   {
     icon: Sparkles,
     title: "Content Creation Solutions",
-    description: "Compelling content that tells your story. From copywriting to social media, we create content that engages and converts.",
+    description: "Compelling content creation for Omaha businesses. From copywriting to social media management, we create content that engages your Nebraska audience and converts.",
     link: "https://bombshellaimarketing.com/contact",
     highlight: true
   },
   {
     icon: Camera,
     title: "Brand Photography",
-    description: "Capture the raw energy of your brand. Professional shots that tell your story instantly and elevate your visual presence.",
+    description: "Professional brand photography in Omaha, Nebraska. Capture the raw energy of your brand with professional shots that tell your story instantly and elevate your visual presence.",
     link: "https://bombshellaimarketing.com/contact",
     highlight: false
   }
 ];
 
 export default function ServicesPage() {
+  useEffect(() => {
+    document.title = "Marketing Services | Web Design, Logo Design & Brand Photography in Omaha, NE";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Professional web design, logo design, and brand photography services in Omaha, Nebraska. AI-powered marketing agency with 300+ successful projects. Free brand audit available.');
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#f0f0f0]">
       <Navigation />
