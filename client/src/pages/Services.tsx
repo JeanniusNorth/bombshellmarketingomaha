@@ -166,7 +166,7 @@ export default function ServicesPage() {
               <ArrowUpRight className="w-4 h-4" />
             </a>
             <a 
-              href="https://bombshellaimarketing.com/audit" 
+              href="https://style-matcher.replit.app" 
               className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Free Audit</span>
