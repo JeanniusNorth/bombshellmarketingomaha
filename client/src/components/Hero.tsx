@@ -111,16 +111,24 @@ export function Hero() {
         <div className="hidden md:flex absolute right-6 md:right-12 top-[15%] z-30 w-64 h-[70%] flex-col justify-between items-end text-right">
           
           {/* Top Right Decorative Star */}
-          <div className="w-20 h-20 border border-white/20 rounded-full flex items-center justify-center animate-spin-slow">
+          <motion.div 
+            animate={{ rotate: 360 }}
+            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            className="w-20 h-20 border border-white/20 rounded-full flex items-center justify-center"
+          >
             <Sparkles className="w-10 h-10 text-primary fill-primary" />
-          </div>
+          </motion.div>
 
           {/* Description and Button Block Removed - Moved to Center */}
           
            {/* Bottom Right Play Button */}
-           <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-black shadow-[0_0_20px_rgba(204,255,0,0.3)] cursor-pointer hover:scale-110 transition-transform">
+           <motion.div 
+             animate={{ scale: [1, 1.1, 1] }}
+             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+             className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-black shadow-[0_0_20px_rgba(204,255,0,0.3)] cursor-pointer hover:scale-110 transition-transform"
+           >
                <Play className="w-5 h-5 fill-black ml-1" />
-           </div>
+           </motion.div>
 
         </div>
 
