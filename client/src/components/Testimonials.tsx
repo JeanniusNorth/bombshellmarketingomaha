@@ -1,39 +1,33 @@
 import { Star, Quote, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import chrisImage from "@/assets/images/testimonial-chris.jpg";
-import shaneImage from "@/assets/images/testimonial-shane.jpg";
 
 export function Testimonials() {
   const testimonials = [
     {
       id: 1,
       text: "Working with Bombshell was seamless. They understood the Brandini vision immediately and executed a strategy that put our merchandise platform on the map. Highly recommended.",
-      author: "Chris Harwood",
+      author: "Chris",
       role: "Brandini",
-      image: chrisImage
     },
     {
       id: 2,
       text: "Our new website design is fantastic. It's clean, modern, and exactly what we needed to showcase our window and door products. The team really listened to our needs.",
       author: "Shane",
       role: "Legacy Window & Door",
-      image: shaneImage
     },
     {
       id: 3,
       text: "The AI integration for our campaign was a game changer. Bombshell helped us reach our target audience with precision we didn't think was possible.",
       author: "Sarah Jenkins",
       role: "TechFlow",
-      image: ""
     },
     {
       id: 4,
       text: "From the photoshoot to the final website launch, everything was top-notch. The visual identity they created for us perfectly captures our vibe.",
       author: "Mike Ross",
       role: "Urban Eats",
-      image: ""
     }
   ];
 
@@ -117,7 +111,6 @@ export function Testimonials() {
                   <div className="flex items-center justify-between mt-auto">
                     <div className="flex items-center gap-4">
                       <Avatar className="w-14 h-14 border-2 border-[#ccff00]">
-                        <AvatarImage src={testimonial.image} />
                         <AvatarFallback className="text-black bg-[#ccff00] font-bold">{testimonial.author[0]}</AvatarFallback>
                       </Avatar>
                       <div>
