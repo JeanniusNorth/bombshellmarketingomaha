@@ -22,10 +22,10 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#f0f0f0]">
+    <div className="min-h-screen bg-[#201cc5]">
       <Navigation />
       
-      {/* Hero Section */}
+      {/* Hero + Form Section */}
       <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
@@ -34,24 +34,17 @@ export default function ContactPage() {
           <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
             Let's Blow Up<br />Your Business
           </h1>
-          <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
-            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <div className="sr-only">
+            <Link href="/">Home</Link>
             <span>/</span>
-            <span className="text-white">Contact Us</span>
+            <span>Contact Us</span>
           </div>
-          <p className="mt-6 text-white/70 max-w-2xl mx-auto">
+          <p className="text-white/70 max-w-2xl mx-auto mb-12">
             Ready to take your brand to the next level? Get in touch and let's create something explosive together.
           </p>
-        </div>
-      </section>
 
-      {/* Contact Form Section */}
-      <section className="bg-[#f0f0f0] py-20 relative">
-        <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-multiply" 
-             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 shadow-lg">
+          {/* Contact Form */}
+          <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg">
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/7KhLw01ZTte9Et1CkSOm"
               style={{ width: '100%', height: '830px', border: 'none', borderRadius: '3px' }}
