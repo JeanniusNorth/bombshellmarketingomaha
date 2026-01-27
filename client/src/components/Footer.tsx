@@ -17,11 +17,16 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6" itemScope itemType="https://schema.org/LocalBusiness">
+              <meta itemProp="name" content="Bombshell AI Marketing" />
               <div>
-                <h4 className="font-display uppercase text-lg mb-2">Contact Us</h4>
-                <p className="text-white/60 text-sm leading-relaxed">
-                  Omaha, Nebraska
+                <h4 className="font-display uppercase text-lg mb-2">Our Location</h4>
+                <address className="text-white/60 text-sm leading-relaxed not-italic" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                  <span itemProp="addressLocality">Omaha</span>, <span itemProp="addressRegion">Nebraska</span><br />
+                  <span itemProp="addressCountry">United States</span>
+                </address>
+                <p className="text-white/40 text-xs mt-2">
+                  Serving Omaha, Lincoln, and businesses nationwide
                 </p>
               </div>
             </div>
@@ -66,7 +71,7 @@ export function Footer() {
             </div>
 
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-              Based in Omaha, our team of passionate designers and marketers specializes in web design, logo design, and brand photography that elevates your brand and captivates your audience.
+              Omaha's premier AI marketing agency specializing in web design, logo design, and brand photography. Proudly serving Nebraska businesses and clients nationwide with creative excellence.
             </p>
           </div>
 
