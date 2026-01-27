@@ -12,7 +12,7 @@ export function Navigation() {
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "Contact Us", href: "https://bombshellaimarketing.com/contact" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
