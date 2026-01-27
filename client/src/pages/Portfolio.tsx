@@ -33,7 +33,7 @@ export default function PortfolioPage() {
             <span className="text-white">Portfolio</span>
           </div>
           <p className="mt-6 text-white/70 max-w-2xl mx-auto">
-            Explore our collection of web design, logo design, and brand photography projects created for Omaha and Nebraska businesses.
+            Explore our collection of web design, logo design, and brand photography projects created for Omaha businesses.
           </p>
         </div>
       </section>
