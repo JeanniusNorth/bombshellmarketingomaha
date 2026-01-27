@@ -9,26 +9,26 @@ export function Services() {
   const services = [
     {
       title: "Brand Building & Strategy",
-      description: "Omaha's top brand strategists forge identities that hit like a shockwave. Strategic positioning meets visual dominance for Nebraska businesses.",
+      description: "We forge identities that hit like a shockwave. Strategic positioning meets visual dominance—built to make your competition irrelevant.",
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
       link: "/contact"
     },
     {
       title: "Logo & Brand Design",
-      description: "Custom logo design in Omaha that sears into memory. Visual identities, brand systems, and guidelines that command attention.",
+      description: "Logos that sear into memory. Visual identities, brand systems, and guidelines that command attention and refuse to be ignored.",
       image: logoDesignImage,
       link: "/contact"
     },
     {
       title: "Web Design",
-      description: "Professional web design in Omaha, Nebraska. Websites that don't just function—they perform with high-octane user experiences.",
+      description: "Websites that don't just function—they perform. High-octane user experiences engineered for conversion and built to dominate.",
       image: webDesignImage,
       highlight: true,
       link: "#portfolio"
     },
     {
       title: "Brand Photography",
-      description: "Professional brand photography in Omaha. Capture the raw energy of your brand with shots that tell your story instantly.",
+      description: "Capture the raw energy of your brand. Shots that tell your story instantly and make scrolling thumbs stop dead in their tracks.",
       image: photographyImage,
       link: "/contact"
     }
@@ -43,10 +43,10 @@ export function Services() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-white/60 uppercase tracking-widest text-xs font-bold">Omaha Marketing Services</span>
+              <span className="text-white/60 uppercase tracking-widest text-xs font-bold">What We Do</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-display text-white uppercase max-w-3xl leading-[0.9]">
-              Web Design, Logo Design & Brand Photography in Nebraska
+              Creative Firepower For Brands That Refuse To Blend In
             </h2>
           </div>
         </div>

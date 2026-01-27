@@ -90,13 +90,13 @@ export function Portfolio() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Web Design, Branding & Photography Portfolio</span>
+              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Selected Work</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-display text-black uppercase leading-[0.85]">
-              Award-Winning <br/> Web Design & Branding <br/> For Your Business
+              Work That Speaks <br/> Louder Than Words
             </h2>
             <p className="mt-6 text-black/60 max-w-xl text-sm leading-relaxed">
-              Based in Omaha, we craft memorable websites, logos, and brand photography for businesses everywhere. AI-enhanced design that captivates and converts.
+              Based in Omaha, serving businesses everywhere. We craft memorable websites, logos, and brand photography that captivate audiences and convert browsers into believers.
             </p>
           </div>
           
