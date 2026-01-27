@@ -63,7 +63,7 @@ export function CaseStudy() {
               "Bombshell handled our entire product and brand launch. From concept to execution, they brought Brandini to life and helped us build an on-demand merch platform that brands love."
             </blockquote>
 
-            <Link href="/portfolio">
+            <Link href="/portfolio" onClick={() => window.scrollTo(0, 0)}>
               <button 
                 className="bg-[#ccff00] text-black px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-white transition-colors flex items-center gap-2 group mb-12"
                 data-testid="case-study-portfolio-button"
