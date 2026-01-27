@@ -63,10 +63,7 @@ export function Services() {
             >
               <div className="flex justify-between items-start mb-8">
                 <h3 className={`text-2xl font-display uppercase max-w-[70%] leading-none ${service.highlight ? 'text-black' : 'text-white'}`}>
-                  {service.title === "Web Design" ? "Web Design Omaha" : 
-                   service.title === "Logo & Brand Design" ? "Logo Design Omaha" :
-                   service.title === "Brand Photography" ? "Brand Photography Omaha" :
-                   service.title}
+                  {service.title}
                 </h3>
                 <div className={`w-10 h-10 rounded-full border flex items-center justify-center transition-colors
                   ${service.highlight ? 'border-black text-black group-hover:bg-black group-hover:text-primary' : 'border-primary text-primary group-hover:bg-primary group-hover:text-black'}`}>
