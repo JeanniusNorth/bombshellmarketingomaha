@@ -33,11 +33,11 @@ export function Team() {
           <div className="lg:col-span-5 flex flex-col items-start">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Meet The Expert</span>
+              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Meet The Experts</span>
             </div>
             
             <h2 className="text-6xl md:text-7xl font-display text-black uppercase leading-[0.85] mb-8">
-              Team Of <br/> Experts
+              Creativity <br/> Meets Strategy
             </h2>
             
             <p className="text-black/60 text-sm leading-relaxed mb-12 max-w-md">
