@@ -96,7 +96,7 @@ export function Portfolio() {
               Award-Winning <br/> Web Design & Branding <br/> For Your Business
             </h2>
             <p className="mt-6 text-black/60 max-w-xl text-sm leading-relaxed">
-              We craft memorable websites, logos, and brand photography for Omaha businesses. AI-enhanced design that captivates and converts.
+              Based in Omaha, we craft memorable websites, logos, and brand photography for businesses everywhere. AI-enhanced design that captivates and converts.
             </p>
           </div>
           
