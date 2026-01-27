@@ -66,7 +66,7 @@ export function Footer() {
             </div>
 
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-              With a team of passionate designers, marketers, and innovators, we specialize in delivering unique solutions that elevate your brand and captivate your audience.
+              Based in Omaha, our team of passionate designers and marketers specializes in web design, logo design, and brand photography that elevates your brand and captivates your audience.
             </p>
           </div>
 
