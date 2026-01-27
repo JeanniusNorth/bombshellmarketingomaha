@@ -1,139 +1,186 @@
-import { Star, Quote, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Star } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      text: "Working with Bombshell was seamless. They understood the Brandini vision immediately and executed a strategy that put our merchandise platform on the map. Highly recommended.",
+      text: "Working with Bombshell was seamless. They understood the Brandini vision immediately and executed a strategy that put our merchandise platform on the map.",
       author: "Chris",
       role: "Brandini",
     },
     {
       id: 2,
-      text: "Our new website design is fantastic. It's clean, modern, and exactly what we needed to showcase our window and door products. The team really listened to our needs.",
+      text: "Our new website design is fantastic. It's clean, modern, and exactly what we needed to showcase our window and door products.",
       author: "Shane",
       role: "Legacy Window & Door",
     },
     {
       id: 3,
       text: "The AI integration for our campaign was a game changer. Bombshell helped us reach our target audience with precision we didn't think was possible.",
-      author: "Sarah Jenkins",
+      author: "Sarah J",
       role: "TechFlow",
     },
     {
       id: 4,
-      text: "From the photoshoot to the final website launch, everything was top-notch. The visual identity they created for us perfectly captures our vibe.",
-      author: "Mike Ross",
+      text: "From the photoshoot to the final website launch, everything was top-notch. The visual identity they created perfectly captures our vibe.",
+      author: "Mike R",
       role: "Urban Eats",
-    }
+    },
+    {
+      id: 5,
+      text: "Bombshell transformed our online presence completely. We've seen a 200% increase in leads since launching our new site.",
+      author: "Jennifer L",
+      role: "Peak Fitness",
+    },
+    {
+      id: 6,
+      text: "Their brand photography was exceptional. Every shot tells our story exactly how we envisioned it.",
+      author: "David M",
+      role: "Artisan Coffee Co",
+    },
+    {
+      id: 7,
+      text: "The logo design process was collaborative and fun. They nailed our brand identity on the first try.",
+      author: "Amanda T",
+      role: "Bloom Florals",
+    },
+    {
+      id: 8,
+      text: "Best investment we made for our business. The ROI from their marketing strategy has been incredible.",
+      author: "Robert K",
+      role: "Midwest Realty",
+    },
+    {
+      id: 9,
+      text: "Professional, creative, and always on deadline. Bombshell is our go-to agency for all things digital.",
+      author: "Lisa P",
+      role: "Innovate Labs",
+    },
+    {
+      id: 10,
+      text: "They took our outdated website and turned it into a conversion machine. Highly recommend their services.",
+      author: "Marcus W",
+      role: "Elite Auto",
+    },
+    {
+      id: 11,
+      text: "The attention to detail in every project is remarkable. They truly care about delivering excellence.",
+      author: "Nicole B",
+      role: "Serene Spa",
+    },
+    {
+      id: 12,
+      text: "Our e-commerce sales doubled after the rebrand. Bombshell knows how to create designs that convert.",
+      author: "Kevin H",
+      role: "StyleHub",
+    },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Split testimonials into 3 columns
+  const column1 = testimonials.filter((_, i) => i % 3 === 0);
+  const column2 = testimonials.filter((_, i) => i % 3 === 1);
+  const column3 = testimonials.filter((_, i) => i % 3 === 2);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [testimonials.length]);
+  const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
+    <div 
+      className="bg-[#222] rounded-2xl p-6 mb-4 hover:bg-[#2a2a2a] transition-all duration-300 border border-white/5"
+      data-testid={`testimonial-card-${testimonial.id}`}
+    >
+      {/* Stars */}
+      <div className="flex gap-0.5 mb-4">
+        {[...Array(5)].map((_, i) => (
+          <Star key={i} className="w-4 h-4 fill-[#ccff00] text-[#ccff00]" />
+        ))}
+      </div>
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+      {/* Text */}
+      <p className="text-white/80 leading-relaxed text-base mb-6">
+        {testimonial.text}
+      </p>
+
+      {/* Author */}
+      <div className="flex items-center gap-3">
+        <Avatar className="w-10 h-10 border-2 border-[#ccff00]">
+          <AvatarFallback className="text-black bg-[#ccff00] font-bold text-sm">
+            {testimonial.author[0]}
+          </AvatarFallback>
+        </Avatar>
+        <div>
+          <h4 className="font-semibold text-white text-sm">{testimonial.author}</h4>
+          <p className="text-white/50 text-xs">{testimonial.role}</p>
+        </div>
+      </div>
+    </div>
+  );
+
+  const ScrollingColumn = ({ 
+    testimonials, 
+    direction = "up",
+    duration = 30 
+  }: { 
+    testimonials: typeof column1;
+    direction?: "up" | "down";
+    duration?: number;
+  }) => {
+    const duplicatedTestimonials = [...testimonials, ...testimonials];
+    
+    return (
+      <div className="relative h-[600px] overflow-hidden">
+        <motion.div
+          className="flex flex-col"
+          animate={{
+            y: direction === "up" ? [0, -50 * testimonials.length * 4] : [-50 * testimonials.length * 4, 0]
+          }}
+          transition={{
+            y: {
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: duration,
+              ease: "linear",
+            },
+          }}
+        >
+          {duplicatedTestimonials.map((testimonial, index) => (
+            <TestimonialCard key={`${testimonial.id}-${index}`} testimonial={testimonial} />
+          ))}
+        </motion.div>
+        
+        {/* Gradient overlays */}
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#1a1a1a] to-transparent pointer-events-none z-10" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1a1a1a] to-transparent pointer-events-none z-10" />
+      </div>
+    );
   };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
-  // Get current and next testimonial for 2-column layout
-  const visibleTestimonials = [
-    testimonials[currentIndex],
-    testimonials[(currentIndex + 1) % testimonials.length]
-  ];
 
   return (
-    <section className="bg-[#1a1a1a] py-24 text-white font-sans overflow-hidden">
+    <section className="bg-[#1a1a1a] py-24 text-white font-sans overflow-hidden" data-testid="testimonials-section">
       <div className="container mx-auto px-4">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
-          <div className="flex items-center gap-2">
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-2 mb-6">
             <span className="text-[#ccff00] text-xl">✦</span>
             <span className="uppercase tracking-widest text-xs font-bold">Testimonials</span>
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-display uppercase text-center flex-1">
-            What Our Client Says
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-display uppercase">
+            What Our Clients Say
           </h2>
-          
-          <div className="hidden md:flex gap-4">
-            <button onClick={prevSlide} className="w-12 h-12 border border-white/20 hover:bg-[#ccff00] hover:text-black hover:border-[#ccff00] transition-all flex items-center justify-center rounded-full">
-               <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button onClick={nextSlide} className="w-12 h-12 border border-white/20 hover:bg-[#ccff00] hover:text-black hover:border-[#ccff00] transition-all flex items-center justify-center rounded-full">
-               <ChevronRight className="w-5 h-5" />
-            </button>
+        </div>
+
+        {/* Scrolling Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="hidden lg:block">
+            <ScrollingColumn testimonials={column1} direction="up" duration={35} />
           </div>
-        </div>
-
-        {/* Carousel Content */}
-        <div className="relative">
-          <AnimatePresence mode="wait">
-            <motion.div 
-              key={currentIndex}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.5 }}
-              className="grid grid-cols-1 md:grid-cols-2 gap-8"
-            >
-              {visibleTestimonials.map((testimonial) => (
-                <div key={testimonial.id} className="bg-[#222] p-10 md:p-12 relative group hover:bg-[#2a2a2a] transition-colors min-h-[400px] flex flex-col justify-between">
-                  
-                  <div>
-                    {/* Stars */}
-                    <div className="flex gap-1 mb-8">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#ccff00] text-[#ccff00]" />
-                      ))}
-                    </div>
-
-                    {/* Text */}
-                    <p className="text-white/80 leading-relaxed text-lg mb-8">
-                      "{testimonial.text}"
-                    </p>
-                  </div>
-
-                  {/* Footer */}
-                  <div className="flex items-center justify-between mt-auto">
-                    <div className="flex items-center gap-4">
-                      <Avatar className="w-14 h-14 border-2 border-[#ccff00]">
-                        <AvatarFallback className="text-black bg-[#ccff00] font-bold">{testimonial.author[0]}</AvatarFallback>
-                      </Avatar>
-                      <div>
-                        <h4 className="font-display uppercase text-lg leading-none mb-1">{testimonial.author}</h4>
-                        <p className="text-white/50 text-xs font-bold uppercase tracking-wider">{testimonial.role}</p>
-                      </div>
-                    </div>
-                    
-                    <Quote className="w-10 h-10 text-[#ccff00] opacity-50 transform rotate-180" />
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        <div className="mt-8 flex justify-center gap-4 md:hidden">
-            <button onClick={prevSlide} className="w-12 h-12 border border-white/20 hover:bg-[#ccff00] hover:text-black hover:border-[#ccff00] transition-all flex items-center justify-center rounded-full text-white">
-               <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button onClick={nextSlide} className="w-12 h-12 border border-white/20 hover:bg-[#ccff00] hover:text-black hover:border-[#ccff00] transition-all flex items-center justify-center rounded-full text-white">
-               <ChevronRight className="w-5 h-5" />
-            </button>
+          <div>
+            <ScrollingColumn testimonials={column2} direction="down" duration={40} />
+          </div>
+          <div className="hidden md:block">
+            <ScrollingColumn testimonials={column3} direction="up" duration={38} />
+          </div>
         </div>
 
       </div>
