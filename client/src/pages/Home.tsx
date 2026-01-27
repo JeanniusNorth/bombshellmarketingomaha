@@ -7,6 +7,7 @@ import { Portfolio } from "@/components/Portfolio";
 import { CaseStudy } from "@/components/CaseStudy";
 import { Team } from "@/components/Team";
 import { Testimonials } from "@/components/Testimonials";
+import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <Mission />
         <Team />
         <Testimonials />
+        <CallToAction />
       </main>
       
       <Footer />
