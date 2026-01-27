@@ -6,7 +6,7 @@ export function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      text: "Working with Bombshell was seamless. They understood the Brandini vision immediately and executed a strategy that put our merchandise platform on the map.",
+      text: "Bombshell's marketing expertise took Brandini to the next level. Their AI-driven campaigns and creative strategies helped us reach customers we never thought possible. Sales have skyrocketed since partnering with them.",
       author: "Chris",
       role: "Brandini",
     },
