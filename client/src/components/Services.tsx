@@ -20,7 +20,7 @@ export function Services() {
       link: "/contact"
     },
     {
-      title: "Web Design",
+      title: "Web Design & Development",
       description: "Websites that don't just function—they perform. High-octane user experiences engineered for conversion and built to dominate.",
       image: webDesignImage,
       highlight: true,
