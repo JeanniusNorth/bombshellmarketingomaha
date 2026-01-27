@@ -10,7 +10,7 @@ export function CaseStudy() {
         {/* Header */}
         <div className="flex items-center gap-2 mb-6">
           <span className="text-[#ccff00] text-xl">✦</span>
-          <span className="uppercase tracking-widest text-xs font-bold">Featured Case Study</span>
+          <span className="uppercase tracking-widest text-xs font-bold">Featured Bombshell Success Story</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
