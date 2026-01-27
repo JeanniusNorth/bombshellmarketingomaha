@@ -44,24 +44,27 @@ export default function ContactPage() {
           </p>
 
           {/* Contact Form */}
-          <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg">
-            <iframe
-              src="https://api.leadconnectorhq.com/widget/form/7KhLw01ZTte9Et1CkSOm"
-              style={{ width: '100%', height: '830px', border: 'none', borderRadius: '3px' }}
-              id="inline-7KhLw01ZTte9Et1CkSOm"
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="Form 1"
-              data-height="830"
-              data-layout-iframe-id="inline-7KhLw01ZTte9Et1CkSOm"
-              data-form-id="7KhLw01ZTte9Et1CkSOm"
-              title="Contact Form"
-            />
+          <div className="w-full max-w-3xl mx-auto bg-white p-4 sm:p-6 md:p-12 rounded-lg shadow-lg">
+            <div className="w-full min-h-[830px]">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/7KhLw01ZTte9Et1CkSOm"
+                className="w-full min-h-[830px]"
+                style={{ border: 'none', borderRadius: '3px' }}
+                id="inline-7KhLw01ZTte9Et1CkSOm"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Form 1"
+                data-height="830"
+                data-layout-iframe-id="inline-7KhLw01ZTte9Et1CkSOm"
+                data-form-id="7KhLw01ZTte9Et1CkSOm"
+                title="Contact Form"
+              />
+            </div>
           </div>
         </div>
       </section>
