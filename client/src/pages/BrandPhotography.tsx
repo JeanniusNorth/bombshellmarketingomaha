@@ -46,24 +46,24 @@ const photographyServices = [
 
 const portfolioImages = [
   {
-    src: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
-    category: "Team Photos",
-    title: "Corporate Headshots"
+    src: "/photo-headshot.png",
+    category: "Headshots",
+    title: "Professional Portrait"
   },
   {
-    src: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
-    category: "Office Space",
-    title: "Modern Workspace"
+    src: "/photo-churro.png",
+    category: "Food & Beverage",
+    title: "Dessert Styling"
   },
   {
-    src: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800",
-    category: "Product",
-    title: "Lifestyle Products"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800",
+    src: "/photo-pizza.png",
     category: "Food & Beverage",
     title: "Restaurant Menu"
+  },
+  {
+    src: "/photo-product.png",
+    category: "Product",
+    title: "Branded Merchandise"
   }
 ];
 
