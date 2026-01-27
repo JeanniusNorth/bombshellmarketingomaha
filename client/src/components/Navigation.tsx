@@ -9,7 +9,7 @@ export function Navigation() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "#team" },
+    { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact Us", href: "https://bombshellaimarketing.com/contact" },
