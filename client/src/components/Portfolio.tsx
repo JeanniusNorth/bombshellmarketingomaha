@@ -1,4 +1,5 @@
-import { ArrowUpRight, ArrowRight, Play, Phone, ExternalLink, X } from "lucide-react";
+import { ArrowUpRight, ArrowRight, Play, Phone, ExternalLink, X, Camera } from "lucide-react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { useState } from "react";
@@ -65,7 +66,8 @@ export function Portfolio() {
       title: "VARSITY ROMAN COIN",
       image: varsityPizzaImage,
       height: "h-[350px]",
-      url: ""
+      url: "",
+      link: "/brand-photography"
     },
     {
       category: "PHOTOGRAPHY",
@@ -206,6 +208,32 @@ function PortfolioItem({ item }: { item: any }) {
           </div>
         </DialogContent>
       </Dialog>
+    );
+  }
+
+  // If there's an internal link, wrap in Link
+  if (item.link) {
+    return (
+      <Link href={item.link} onClick={() => window.scrollTo(0, 0)}>
+        <div className="group cursor-pointer">
+          <div className="overflow-hidden mb-6 bg-gray-200 relative">
+            <img 
+              src={item.image} 
+              alt={item.title}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+               <div className="bg-primary text-black px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                  View Portfolio <Camera className="w-4 h-4" />
+               </div>
+            </div>
+          </div>
+          <div className="space-y-1">
+            <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest">{item.category}</p>
+            <h3 className="text-xl font-display text-black uppercase">{item.title}</h3>
+          </div>
+        </div>
+      </Link>
     );
   }
 
