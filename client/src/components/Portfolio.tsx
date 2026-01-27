@@ -96,7 +96,7 @@ export function Portfolio() {
               Work That Speaks <br/> Louder Than Words
             </h2>
             <p className="mt-6 text-black/60 max-w-xl text-sm leading-relaxed">
-              Omaha's premier AI-powered marketing agency. We combine explosive creativity with precision to deliver stunning web design, logo design, and brand photography for businesses.
+              Based in Omaha, serving businesses everywhere. We craft memorable websites, logos, and brand photography that captivate audiences and convert browsers into believers.
             </p>
           </div>
           
