@@ -30,7 +30,7 @@ export function Services() {
       title: "Brand Photography",
       description: "Capture the raw energy of your brand. Shots that tell your story instantly and make scrolling thumbs stop dead in their tracks.",
       image: photographyImage,
-      link: "/contact"
+      link: "/brand-photography"
     }
   ];
 
