@@ -9,42 +9,42 @@ const services = [
     icon: Palette,
     title: "Brand Building & Strategy",
     description: "Omaha's leading brand strategists help you forge identities that hit like a shockwave. Strategic positioning meets visual dominance to create memorable brand experiences that resonate with Nebraska audiences.",
-    link: "https://bombshellaimarketing.com/contact",
+    link: "/contact",
     highlight: false
   },
   {
     icon: Globe,
     title: "Web Design & Development",
     description: "Professional web design in Omaha that doesn't just function—it performs. We build high-octane user experiences with modern technology, responsive design, and stunning visuals for Nebraska businesses.",
-    link: "https://bombshellaimarketing.com/contact",
+    link: "/contact",
     highlight: true
   },
   {
     icon: Target,
     title: "Digital Marketing Strategy",
     description: "AI-powered digital marketing strategies for Omaha businesses. We target your ideal audience with precision using data-driven campaigns that convert visitors into customers.",
-    link: "https://bombshellaimarketing.com/contact",
+    link: "/contact",
     highlight: false
   },
   {
     icon: Layers,
     title: "Logo & Brand Design",
     description: "Custom logo design in Omaha that sears into memory. Our visual identities, brand systems, and guidelines command attention and build recognition for Nebraska brands.",
-    link: "https://bombshellaimarketing.com/contact",
+    link: "/contact",
     highlight: false
   },
   {
     icon: Sparkles,
     title: "Content Creation Solutions",
     description: "Compelling content creation for Omaha businesses. From copywriting to social media management, we create content that engages your Nebraska audience and converts.",
-    link: "https://bombshellaimarketing.com/contact",
+    link: "/contact",
     highlight: true
   },
   {
     icon: Camera,
     title: "Brand Photography",
     description: "Professional brand photography in Omaha, Nebraska. Capture the raw energy of your brand with professional shots that tell your story instantly and elevate your visual presence.",
-    link: "https://bombshellaimarketing.com/contact",
+    link: "/contact",
     highlight: false
   }
 ];
@@ -168,7 +168,7 @@ export default function ServicesPage() {
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a 
-              href="https://bombshellaimarketing.com/contact" 
+              href="/contact" 
               className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>

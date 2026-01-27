@@ -11,13 +11,13 @@ export function Services() {
       title: "Brand Building & Strategy",
       description: "Omaha's top brand strategists forge identities that hit like a shockwave. Strategic positioning meets visual dominance for Nebraska businesses.",
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
-      link: "https://bombshellaimarketing.com/contact"
+      link: "/contact"
     },
     {
       title: "Logo & Brand Design",
       description: "Custom logo design in Omaha that sears into memory. Visual identities, brand systems, and guidelines that command attention.",
       image: logoDesignImage,
-      link: "https://bombshellaimarketing.com/contact"
+      link: "/contact"
     },
     {
       title: "Web Design",
@@ -30,7 +30,7 @@ export function Services() {
       title: "Brand Photography",
       description: "Professional brand photography in Omaha. Capture the raw energy of your brand with shots that tell your story instantly.",
       image: photographyImage,
-      link: "https://bombshellaimarketing.com/contact"
+      link: "/contact"
     }
   ];
 

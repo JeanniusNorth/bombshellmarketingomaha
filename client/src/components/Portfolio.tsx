@@ -100,7 +100,7 @@ export function Portfolio() {
             </p>
           </div>
           
-          <a href="https://bombshellaimarketing.com/contact" className="group px-6 py-3 border border-black hover:bg-black hover:text-black hover:text-white transition-all text-black text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+          <a href="/contact" className="group px-6 py-3 border border-black hover:bg-black hover:text-black hover:text-white transition-all text-black text-xs font-bold uppercase tracking-widest flex items-center gap-2">
             Contact Us
             <div className="w-5 h-5 rounded-full bg-black text-white group-hover:bg-white group-hover:text-black flex items-center justify-center transition-colors">
                <ArrowRight className="w-3 h-3 -rotate-45" />
