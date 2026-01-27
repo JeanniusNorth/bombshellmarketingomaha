@@ -90,7 +90,7 @@ export function Portfolio() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Selected Work</span>
+              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Our Work</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-display text-black uppercase leading-[0.85]">
               Work That Speaks <br/> Louder Than Words
