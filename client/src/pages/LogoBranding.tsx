@@ -151,41 +151,8 @@ export default function LogoBrandingPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-20 bg-[#f0f0f0]">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-4">
-              Our Branding Services
-            </h2>
-            <p className="text-black/60 max-w-2xl mx-auto">
-              From initial concept to complete brand system, we offer comprehensive branding solutions tailored to your needs.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {brandingServices.map((service, index) => (
-              <div 
-                key={index}
-                className={`p-8 transition-all hover:-translate-y-1 ${
-                  service.highlight 
-                    ? 'bg-[#201cc5] text-white' 
-                    : 'bg-white text-black'
-                }`}
-              >
-                <service.icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-primary' : 'text-[#201cc5]'}`} />
-                <h3 className="text-xl font-display uppercase mb-4">{service.title}</h3>
-                <p className={`text-sm leading-relaxed ${service.highlight ? 'text-white/70' : 'text-black/60'}`}>
-                  {service.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Portfolio Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#f0f0f0]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-4">
@@ -221,6 +188,39 @@ export default function LogoBrandingPage() {
               View Full Portfolio
               <ArrowUpRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-4">
+              Our Branding Services
+            </h2>
+            <p className="text-black/60 max-w-2xl mx-auto">
+              From initial concept to complete brand system, we offer comprehensive branding solutions tailored to your needs.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {brandingServices.map((service, index) => (
+              <div 
+                key={index}
+                className={`p-8 transition-all hover:-translate-y-1 ${
+                  service.highlight 
+                    ? 'bg-[#201cc5] text-white' 
+                    : 'bg-white text-black'
+                }`}
+              >
+                <service.icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-primary' : 'text-[#201cc5]'}`} />
+                <h3 className="text-xl font-display uppercase mb-4">{service.title}</h3>
+                <p className={`text-sm leading-relaxed ${service.highlight ? 'text-white/70' : 'text-black/60'}`}>
+                  {service.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
