@@ -50,17 +50,17 @@ export function Portfolio() {
     },
     {
       category: "WEB DESIGN",
-      title: "LEGACY WINDOW & DOOR - WEBSITE DESIGN",
-      image: legacyImage,
-      height: "h-[400px]",
-      url: "https://legacywindowco.com/"
-    },
-    {
-      category: "WEB DESIGN",
       title: "DWELL - OMAHA DESIGN",
       image: dwellImage,
       height: "h-[350px]",
       url: "https://dwell-omaha-design.replit.app/"
+    },
+    {
+      category: "WEB DESIGN",
+      title: "LEGACY WINDOW & DOOR - WEBSITE DESIGN",
+      image: legacyImage,
+      height: "h-[400px]",
+      url: "https://legacywindowco.com/"
     },
     {
       category: "PHOTOGRAPHY",
