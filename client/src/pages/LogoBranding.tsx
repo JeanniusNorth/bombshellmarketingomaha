@@ -147,17 +147,6 @@ export default function LogoBrandingPage() {
               </div>
             ))}
           </div>
-
-          <div className="text-center mt-12">
-            <Link 
-              href="/portfolio" 
-              onClick={() => window.scrollTo(0, 0)}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#201cc5] text-white text-xs font-bold uppercase tracking-widest hover:bg-black transition-colors"
-            >
-              View Full Portfolio
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
         </div>
       </section>
 
