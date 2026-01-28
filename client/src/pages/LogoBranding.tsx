@@ -132,18 +132,18 @@ export default function LogoBrandingPage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-4xl mx-auto">
             {portfolioLogos.map((item, index) => (
-              <div key={index} className="group">
-                <div className="overflow-hidden mb-4 bg-gray-100">
+              <div key={index} className="group text-center">
+                <div className="overflow-hidden mb-6 bg-black rounded-lg">
                   <img 
                     src={item.src} 
                     alt={item.title}
-                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest mb-1">{item.category}</p>
-                <h3 className="text-lg font-display text-black uppercase">{item.title}</h3>
+                <h3 className="text-xl font-display text-black uppercase">{item.title}</h3>
               </div>
             ))}
           </div>
