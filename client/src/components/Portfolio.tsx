@@ -27,19 +27,19 @@ export function Portfolio() {
       url: "https://midwest-grit-fitness.replit.app/"
     },
     {
-      category: "WEB DESIGN",
-      title: "TENNISX - AI VIDEO ANALYSIS APP",
-      image: tennisxImage,
-      height: "h-[400px]",
-      url: "https://tennis-x-website.replit.app/"
-    },
-    {
       category: "LOGO & BRANDING",
       title: "THE LEAGUE - MEN'S HEALTH CLINIC",
       image: theLeagueImage,
       height: "h-[300px]",
       url: "",
       link: "/logo-branding"
+    },
+    {
+      category: "WEB DESIGN",
+      title: "TENNISX - AI VIDEO ANALYSIS APP",
+      image: tennisxImage,
+      height: "h-[400px]",
+      url: "https://tennis-x-website.replit.app/"
     },
     {
       category: "WEB DESIGN",
@@ -119,10 +119,10 @@ export function Portfolio() {
             {/* Item 1 - Midwest Grit */}
             <PortfolioItem item={portfolioItems[0]} />
 
-            {/* Item 2 - TennisX */}
+            {/* Item 2 - The League */}
             <PortfolioItem item={portfolioItems[1]} />
 
-             {/* Item 3 - The League */}
+             {/* Item 3 - TennisX */}
             <PortfolioItem item={portfolioItems[2]} />
 
             {/* Item 8 - Good Life */}
