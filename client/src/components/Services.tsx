@@ -17,7 +17,7 @@ export function Services() {
       title: "Logo & Brand Design",
       description: "Logos that sear into memory. Visual identities, brand systems, and guidelines that command attention and refuse to be ignored.",
       image: logoDesignImage,
-      link: "/contact"
+      link: "/logo-branding"
     },
     {
       title: "Web Design & Development",
