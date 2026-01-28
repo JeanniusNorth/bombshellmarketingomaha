@@ -39,7 +39,7 @@ export function Footer() {
             <h4 className="font-display uppercase text-[#ccff00] text-2xl mb-8">Connect With Us</h4>
             <ul className="space-y-4 text-sm text-white/60">
               <li>
-                <a href="#" className="flex items-center gap-3 hover:text-[#ccff00] transition-colors">
+                <a href="https://www.facebook.com/share/1Ro1Funqhk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-[#ccff00] transition-colors">
                   <Facebook className="w-4 h-4 text-[#ccff00]" /> Facebook
                 </a>
               </li>
