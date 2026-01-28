@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { useState } from "react";
 import tennisxImage from "@/assets/images/portfolio-tennisx.png";
-import goldoniImage from "@/assets/images/portfolio-goldoni.png";
+import theLeagueImage from "@/assets/images/portfolio-the-league.png";
 import brandiniImage from "@/assets/images/portfolio-brandini.png";
 import legacyImage from "@/assets/images/portfolio-legacy.png";
 import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
@@ -34,11 +34,12 @@ export function Portfolio() {
       url: "https://tennis-x-website.replit.app/"
     },
     {
-      category: "WEB DESIGN",
-      title: "GOLDONI LEGISLATURE - CAMPAIGN SITE",
-      image: goldoniImage,
+      category: "LOGO & BRANDING",
+      title: "THE LEAGUE - MEN'S HEALTH CLINIC",
+      image: theLeagueImage,
       height: "h-[300px]",
-      url: "https://JessGoldoni.com" 
+      url: "",
+      link: "/logo-branding"
     },
     {
       category: "WEB DESIGN",
@@ -121,7 +122,7 @@ export function Portfolio() {
             {/* Item 2 - TennisX */}
             <PortfolioItem item={portfolioItems[1]} />
 
-             {/* Item 3 - Goldoni */}
+             {/* Item 3 - The League */}
             <PortfolioItem item={portfolioItems[2]} />
 
             {/* Item 8 - Good Life */}
