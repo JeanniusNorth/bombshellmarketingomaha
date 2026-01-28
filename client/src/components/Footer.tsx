@@ -71,7 +71,7 @@ export function Footer() {
             </div>
 
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-              Omaha's premier AI marketing agency specializing in web design, logo design, and brand photography. Proudly serving Nebraska businesses and clients nationwide with creative excellence.
+              Specializing in web design, logo design, and brand photography. Proudly serving Nebraska businesses and clients nationwide with creative excellence.
             </p>
           </div>
 
