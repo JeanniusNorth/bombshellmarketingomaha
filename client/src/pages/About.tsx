@@ -100,7 +100,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-black/70 leading-relaxed">
                 <p>
-                  Bio coming soon.
+                  Jess Goldoni is a digital marketing strategist and business consultant with more than 20 years of experience helping organizations grow with clarity, precision, and results. She has led marketing strategy and digital transformation initiatives for businesses and campaigns across industries including law, finance, healthcare, agriculture, and economic development.
+                </p>
+                <p>
+                  Jess is known for cutting through complexity and turning scattered ideas into focused, actionable marketing systems. In addition to her consulting work, she has taught at the University of Nebraska Omaha and delivers corporate AI and marketing strategy training, helping teams modernize how they attract, convert, and retain customers.
                 </p>
               </div>
             </div>
