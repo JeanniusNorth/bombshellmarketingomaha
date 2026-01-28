@@ -62,7 +62,7 @@ export default function AboutPage() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-primary text-xl">✦</span>
-                <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Founder & Creative Director</span>
+                <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Digital Marketer & Creative Director</span>
               </div>
               <h2 className="text-5xl md:text-6xl font-display text-black uppercase leading-[0.9] mb-6">
                 Jeannie North

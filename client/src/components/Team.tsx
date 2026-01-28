@@ -7,7 +7,7 @@ const teamMembers = [
   {
     id: 1,
     name: "Jeannie North",
-    role: "Digital Marketer & Designer",
+    role: "Digital Marketer & Creative Director",
     image: jeannieImage,
   },
   {
