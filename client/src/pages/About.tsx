@@ -4,6 +4,8 @@ import { ArrowUpRight } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Team } from "@/components/Team";
 import { Footer } from "@/components/Footer";
+import jeannieImage from "@/assets/images/team-jeannie.png";
+import jessImage from "@/assets/images/team-jess.png";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -40,6 +42,83 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <Team />
+
+      {/* Jeannie Bio Section */}
+      <section className="bg-white py-20 relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="aspect-[4/5] overflow-hidden">
+                <img 
+                  src={jeannieImage} 
+                  alt="Jeannie North"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary flex items-center justify-center">
+                <span className="text-black text-4xl">✦</span>
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-primary text-xl">✦</span>
+                <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Founder & Creative Director</span>
+              </div>
+              <h2 className="text-5xl md:text-6xl font-display text-black uppercase leading-[0.9] mb-6">
+                Jeannie North
+              </h2>
+              <div className="space-y-4 text-black/70 leading-relaxed">
+                <p>
+                  Jeannie North is a digital marketing strategist, brand designer, and growth-driven founder who builds bold brands that convert. She leads full-scale brand execution, from logos and visual systems to high-performing websites, content strategy, and revenue-focused campaigns.
+                </p>
+                <p>
+                  With a foundation in web development and years of experience as a commercial photographer, Jeannie operates at the intersection of creative and technical. She understands how brands should look, how they should function, and how they actually make money. That edge has helped her build and scale multiple brands from scratch, several reaching viral traction through sharp positioning, high-impact visuals, and unapologetically direct messaging.
+                </p>
+                <p>
+                  Today, Jeannie runs Bombshell Marketing, leading projects across digital marketing, AI-powered tools, e-commerce, and content platforms. Her work helps brands stand out fast, scale with intention, and stop blending in.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Jess Bio Section */}
+      <section className="bg-[#f0f0f0] py-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-multiply" 
+             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-primary text-xl">✦</span>
+                <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Digital Marketer & Strategist</span>
+              </div>
+              <h2 className="text-5xl md:text-6xl font-display text-black uppercase leading-[0.9] mb-6">
+                Jess Goldoni
+              </h2>
+              <div className="space-y-4 text-black/70 leading-relaxed">
+                <p>
+                  Bio coming soon.
+                </p>
+              </div>
+            </div>
+            <div className="relative order-1 lg:order-2">
+              <div className="aspect-[4/5] overflow-hidden">
+                <img 
+                  src={jessImage} 
+                  alt="Jess Goldoni"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary flex items-center justify-center">
+                <span className="text-black text-4xl">✦</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="bg-[#201cc5] py-20 relative overflow-hidden">
