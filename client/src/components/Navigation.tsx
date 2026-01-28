@@ -1,16 +1,23 @@
 import { Link } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+
+  const serviceLinks = [
+    { name: "Web Design & Development", href: "/services" },
+    { name: "Logo & Branding", href: "/logo-branding" },
+    { name: "Brand Photography", href: "/brand-photography" },
+  ];
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact Us", href: "/contact" },
   ];
@@ -31,15 +38,63 @@ export function Navigation() {
 
       {/* Desktop Nav */}
       <div className="hidden md:flex items-center gap-8">
-        {navLinks.map((link) => (
+        <a 
+          href="/"
+          className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+        >
+          Home
+        </a>
+        <a 
+          href="/about"
+          className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+        >
+          About Us
+        </a>
+        
+        {/* Services Dropdown */}
+        <div 
+          className="relative"
+          onMouseEnter={() => setServicesOpen(true)}
+          onMouseLeave={() => setServicesOpen(false)}
+        >
           <a 
-            key={link.name} 
-            href={link.href}
-            className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+            href="/services"
+            className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors flex items-center gap-1"
           >
-            {link.name}
+            Services
+            <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
           </a>
-        ))}
+          
+          {servicesOpen && (
+            <div className="absolute top-full left-0 pt-2">
+              <div className="bg-black/95 backdrop-blur-sm border border-white/10 py-2 min-w-[220px]">
+                {serviceLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="block px-4 py-3 text-white/70 hover:text-primary hover:bg-white/5 text-sm font-semibold tracking-wide transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <a 
+          href="/portfolio"
+          className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+        >
+          Portfolio
+        </a>
+        <a 
+          href="/contact"
+          className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+        >
+          Contact Us
+        </a>
       </div>
 
       {/* Contact Button & Mobile Menu */}
@@ -57,17 +112,64 @@ export function Navigation() {
               className="bg-background border-l border-white/10 w-full sm:w-[300px]"
               onCloseAutoFocus={(e) => e.preventDefault()}
             >
-              <div className="flex flex-col gap-8 mt-12">
-                {navLinks.map((link) => (
-                  <a 
-                    key={link.name} 
-                    href={link.href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-2xl font-display text-white hover:text-primary uppercase"
+              <div className="flex flex-col gap-6 mt-12">
+                <a 
+                  href="/"
+                  onClick={() => setIsOpen(false)}
+                  className="text-2xl font-display text-white hover:text-primary uppercase"
+                >
+                  Home
+                </a>
+                <a 
+                  href="/about"
+                  onClick={() => setIsOpen(false)}
+                  className="text-2xl font-display text-white hover:text-primary uppercase"
+                >
+                  About Us
+                </a>
+                
+                {/* Mobile Services Dropdown */}
+                <div>
+                  <button 
+                    onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                    className="text-2xl font-display text-white hover:text-primary uppercase flex items-center gap-2 w-full text-left"
                   >
-                    {link.name}
-                  </a>
-                ))}
+                    Services
+                    <ChevronDown className={`w-5 h-5 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {mobileServicesOpen && (
+                    <div className="ml-4 mt-4 flex flex-col gap-3">
+                      {serviceLinks.map((link) => (
+                        <a
+                          key={link.name}
+                          href={link.href}
+                          onClick={() => {
+                            setIsOpen(false);
+                            window.scrollTo(0, 0);
+                          }}
+                          className="text-lg text-white/70 hover:text-primary transition-colors"
+                        >
+                          {link.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                <a 
+                  href="/portfolio"
+                  onClick={() => setIsOpen(false)}
+                  className="text-2xl font-display text-white hover:text-primary uppercase"
+                >
+                  Portfolio
+                </a>
+                <a 
+                  href="/contact"
+                  onClick={() => setIsOpen(false)}
+                  className="text-2xl font-display text-white hover:text-primary uppercase"
+                >
+                  Contact Us
+                </a>
               </div>
             </SheetContent>
           </Sheet>
