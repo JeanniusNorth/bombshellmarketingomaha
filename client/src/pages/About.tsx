@@ -62,10 +62,10 @@ export default function AboutPage() {
               <ArrowUpRight className="w-4 h-4" />
             </a>
             <a 
-              href="https://style-matcher.replit.app" 
+              href="https://audit.bombshellmarketingomaha.com/" 
               className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
-              <span>Free Audit</span>
+              <span>Free Website Audit</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>

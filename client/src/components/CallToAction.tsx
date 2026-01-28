@@ -27,13 +27,13 @@ export function CallToAction() {
           </a>
           
           <a 
-            href="https://style-matcher.replit.app"
+            href="https://audit.bombshellmarketingomaha.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="group px-8 py-4 bg-transparent text-white border border-white hover:bg-white hover:text-black transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
             data-testid="cta-audit-button"
           >
-            Free Audit
+            Free Website Audit
             <ArrowUpRight className="w-4 h-4" />
           </a>
         </div>
