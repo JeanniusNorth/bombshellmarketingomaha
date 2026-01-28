@@ -4,12 +4,6 @@ import { ArrowUpRight, Palette, PenTool, Layers, FileText, Brush, Sparkles } fro
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
-import brandiniImage from "@/assets/images/portfolio-brandini.png";
-import goldoniImage from "@/assets/images/portfolio-goldoni.png";
-import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
-import legacyImage from "@/assets/images/portfolio-legacy.png";
-import dwellImage from "@/assets/images/portfolio-dwell.png";
-import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 
 const brandingServices = [
   {
@@ -52,34 +46,9 @@ const brandingServices = [
 
 const portfolioLogos = [
   {
-    src: brandiniImage,
-    title: "Brandini",
-    category: "Merch Platform"
-  },
-  {
-    src: goldoniImage,
-    title: "Goldoni Legislature",
-    category: "Political Campaign"
-  },
-  {
-    src: midwestGritImage,
-    title: "Midwest Grit Fitness",
-    category: "Fitness Brand"
-  },
-  {
-    src: legacyImage,
-    title: "Legacy Window & Door",
-    category: "Home Services"
-  },
-  {
-    src: dwellImage,
-    title: "Dwell Omaha",
-    category: "Design Studio"
-  },
-  {
-    src: tennisxImage,
-    title: "TennisX",
-    category: "Sports Tech"
+    src: "/logo-the-league.png",
+    title: "The League",
+    category: "Men's Health Clinic"
   }
 ];
 
