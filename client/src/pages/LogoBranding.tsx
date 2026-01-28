@@ -4,6 +4,12 @@ import { ArrowUpRight, Palette, PenTool, Layers, FileText, Brush, Sparkles } fro
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
+import brandiniImage from "@/assets/images/portfolio-brandini.png";
+import goldoniImage from "@/assets/images/portfolio-goldoni.png";
+import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
+import legacyImage from "@/assets/images/portfolio-legacy.png";
+import dwellImage from "@/assets/images/portfolio-dwell.png";
+import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 
 const brandingServices = [
   {
@@ -46,24 +52,34 @@ const brandingServices = [
 
 const portfolioLogos = [
   {
-    src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
-    title: "Modern Minimalist",
-    category: "Tech Startup"
+    src: brandiniImage,
+    title: "Brandini",
+    category: "Merch Platform"
   },
   {
-    src: "https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&q=80&w=800",
-    title: "Bold & Dynamic",
+    src: goldoniImage,
+    title: "Goldoni Legislature",
+    category: "Political Campaign"
+  },
+  {
+    src: midwestGritImage,
+    title: "Midwest Grit Fitness",
     category: "Fitness Brand"
   },
   {
-    src: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=800",
-    title: "Elegant Script",
-    category: "Boutique"
+    src: legacyImage,
+    title: "Legacy Window & Door",
+    category: "Home Services"
   },
   {
-    src: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&q=80&w=800",
-    title: "Geometric Clean",
-    category: "Architecture Firm"
+    src: dwellImage,
+    title: "Dwell Omaha",
+    category: "Design Studio"
+  },
+  {
+    src: tennisxImage,
+    title: "TennisX",
+    category: "Sports Tech"
   }
 ];
 
@@ -164,6 +180,47 @@ export default function LogoBrandingPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-4">
+              Recent Branding Work
+            </h2>
+            <p className="text-black/60 max-w-2xl mx-auto">
+              A selection of brand identities we've created for businesses across industries.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {portfolioLogos.map((item, index) => (
+              <div key={index} className="group">
+                <div className="overflow-hidden mb-4 bg-gray-100">
+                  <img 
+                    src={item.src} 
+                    alt={item.title}
+                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest mb-1">{item.category}</p>
+                <h3 className="text-lg font-display text-black uppercase">{item.title}</h3>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link 
+              href="/portfolio" 
+              onClick={() => window.scrollTo(0, 0)}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#201cc5] text-white text-xs font-bold uppercase tracking-widest hover:bg-black transition-colors"
+            >
+              View Full Portfolio
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
