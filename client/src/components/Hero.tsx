@@ -72,7 +72,7 @@ export function Hero() {
 
             <div className="mt-4 md:mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-[50px] md:mb-[150px]">
                 <p className="text-white/80 text-sm leading-relaxed font-medium max-w-md text-center px-4">
-                  We combine explosive creativity with precision to deliver stunning web design, logo design, and brand photography for businesses.
+                  We combine explosive creativity with precision to deliver stunning web design, logo design, and brand photography for businesses. Based in Omaha, NE.
                 </p>
                 
                 <div className="flex flex-col md:flex-row gap-4">
