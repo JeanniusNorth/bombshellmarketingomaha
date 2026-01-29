@@ -11,12 +11,14 @@ import AboutPage from "@/pages/About";
 import ContactPage from "@/pages/Contact";
 import BrandPhotographyPage from "@/pages/BrandPhotography";
 import LogoBrandingPage from "@/pages/LogoBranding";
+import WebDesignPage from "@/pages/WebDesign";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/services" component={ServicesPage} />
+      <Route path="/web-design" component={WebDesignPage} />
       <Route path="/portfolio" component={PortfolioPage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/contact" component={ContactPage} />

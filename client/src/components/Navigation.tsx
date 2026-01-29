@@ -10,7 +10,7 @@ export function Navigation() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   const serviceLinks = [
-    { name: "Web Design & Development", href: "/services" },
+    { name: "Web Design & Development", href: "/web-design" },
     { name: "Logo & Branding", href: "/logo-branding" },
     { name: "Brand Photography", href: "/brand-photography" },
   ];
