@@ -198,22 +198,21 @@ export default function WebDesignPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#1a1a1a]">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-primary text-xl">✦</span>
-            <span className="text-black/60 uppercase tracking-widest text-xs font-bold">How We Work</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-12">
-            Our Process
+          <h2 className="text-4xl md:text-5xl font-display text-white uppercase leading-[0.9] mb-4 text-center">
+            Our Design Process
           </h2>
+          <p className="text-white/60 text-center max-w-2xl mx-auto mb-16">
+            A proven methodology that delivers results. Every project follows our strategic approach.
+          </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {processSteps.map((step, index) => (
               <div key={index} className="relative">
-                <div className="text-7xl font-display text-primary/20 mb-4">{step.number}</div>
-                <h3 className="text-xl font-display uppercase text-black mb-3">{step.title}</h3>
-                <p className="text-sm text-black/60 leading-relaxed">{step.description}</p>
+                <div className="text-7xl font-display text-primary mb-4">{step.number}</div>
+                <h3 className="text-lg font-display uppercase text-white mb-3">{step.title}</h3>
+                <p className="text-sm text-white/60 leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
