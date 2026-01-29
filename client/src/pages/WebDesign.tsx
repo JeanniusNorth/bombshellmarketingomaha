@@ -1,11 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import { ArrowUpRight, Globe, Code, Smartphone, Zap, Search, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, Globe, Code, Smartphone, Zap, Search, ShieldCheck, ExternalLink, X } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import brandiniImage from "@/assets/images/portfolio-brandini.png";
 import dwellImage from "@/assets/images/portfolio-dwell.png";
+import tennisxImage from "@/assets/images/portfolio-tennisx.png";
+import legacyImage from "@/assets/images/portfolio-legacy.png";
+import goldoniImage from "@/assets/images/portfolio-goldoni.png";
 
 const services = [
   {
@@ -48,16 +54,34 @@ const portfolioItems = [
     url: "https://midwest-grit-fitness.replit.app/"
   },
   {
+    title: "TENNISX - AI VIDEO ANALYSIS",
+    category: "WEB DESIGN",
+    image: tennisxImage,
+    url: "https://tennis-x-website.replit.app/"
+  },
+  {
     title: "BRANDINI - MERCH STORE",
     category: "WEB DESIGN",
     image: brandiniImage,
     url: "https://TryBrandini.com"
   },
   {
+    title: "LEGACY WINDOW & DOOR",
+    category: "WEB DESIGN",
+    image: legacyImage,
+    url: "https://legacywindowco.com/"
+  },
+  {
     title: "DWELL - OMAHA DESIGN",
     category: "WEB DESIGN",
     image: dwellImage,
     url: "https://dwell-omaha-design.replit.app/"
+  },
+  {
+    title: "GOLDONI LEGISLATURE",
+    category: "WEB DESIGN",
+    image: goldoniImage,
+    url: "https://JessGoldoni.com"
   }
 ];
 
@@ -85,6 +109,8 @@ const processSteps = [
 ];
 
 export default function WebDesignPage() {
+  const [selectedProject, setSelectedProject] = useState<{title: string, url: string} | null>(null);
+
   useEffect(() => {
     document.title = "Web Design & Development | Omaha Website Design | Bombshell Marketing";
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -130,13 +156,11 @@ export default function WebDesignPage() {
             Recent Web Projects
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {portfolioItems.map((item, index) => (
-              <a 
+              <div 
                 key={index}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => setSelectedProject({ title: item.title, url: item.url })}
                 className="group cursor-pointer"
               >
                 <div className="overflow-hidden mb-4 bg-gray-200 relative aspect-[4/3]">
@@ -147,17 +171,51 @@ export default function WebDesignPage() {
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <div className="bg-primary text-black px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
-                      View Website <ArrowUpRight className="w-4 h-4" />
+                      Preview Website <ExternalLink className="w-4 h-4" />
                     </div>
                   </div>
                 </div>
                 <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest mb-1">{item.category}</p>
                 <h3 className="text-xl font-display text-black uppercase">{item.title}</h3>
-              </a>
+              </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Website Preview Modal */}
+      <Dialog open={!!selectedProject} onOpenChange={(open) => !open && setSelectedProject(null)}>
+        <DialogContent className="max-w-[95vw] w-full h-[90vh] p-0 bg-black border-none rounded-xl overflow-hidden [&>button]:hidden">
+          <VisuallyHidden.Root>
+            <DialogTitle>{selectedProject?.title}</DialogTitle>
+          </VisuallyHidden.Root>
+          <div className="w-full h-full flex flex-col">
+            <div className="bg-black text-white px-4 py-3 flex items-center justify-between border-b border-white/10">
+              <div className="flex items-center gap-3">
+                <h3 className="font-display uppercase text-lg">{selectedProject?.title}</h3>
+                <a href={selectedProject?.url} target="_blank" rel="noopener noreferrer" className="text-xs text-white/50 hover:text-primary flex items-center gap-1">
+                  Open in new tab <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+              <DialogClose asChild>
+                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 rounded-full h-8 w-8">
+                  <X className="w-4 h-4" />
+                </Button>
+              </DialogClose>
+            </div>
+            <div className="flex-1 bg-white w-full h-full relative">
+              {selectedProject && (
+                <iframe 
+                  src={selectedProject.url} 
+                  className="w-full h-full border-0"
+                  title={`${selectedProject.title} Website Preview`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
+              )}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       {/* Services Grid */}
       <section className="py-20 bg-[#f0f0f0]">
