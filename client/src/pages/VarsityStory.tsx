@@ -22,11 +22,11 @@ const galleryImages = [
   { src: varsity1, alt: "Pizza in branded box", size: "large" },
   { src: varsity2, alt: "Hands grabbing pizza slices", size: "tall" },
   { src: varsity3, alt: "Gourmet sub sandwiches", size: "wide" },
-  { src: varsity4, alt: "Taco pizza", size: "medium" },
   { src: varsity5, alt: "Buffalo wings with ranch", size: "medium" },
+  { src: varsity4, alt: "Taco pizza", size: "medium" },
   { src: varsity6, alt: "Chicken sandwich with fries", size: "large" },
-  { src: varsity7, alt: "Curly fries with dip", size: "medium" },
   { src: varsity8, alt: "Spaghetti and meatball on fork", size: "tall" },
+  { src: varsity7, alt: "Curly fries with dip", size: "medium" },
   { src: varsity9, alt: "Multiple pizzas display", size: "large" },
   { src: varsity10, alt: "Penne pasta with marinara", size: "medium" },
 ];
