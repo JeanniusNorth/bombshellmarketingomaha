@@ -212,9 +212,9 @@ export default function GoodLifeStoryPage() {
             <Button 
               variant="ghost" 
               size="icon" 
-              className="absolute top-4 right-4 z-50 text-white hover:bg-white/10 rounded-full h-10 w-10"
+              className="absolute top-4 right-4 z-50 text-white bg-black/50 hover:bg-black/80 rounded-full h-12 w-12 border border-white/30"
             >
-              <X className="w-6 h-6" />
+              <X className="w-7 h-7" />
             </Button>
           </DialogClose>
           {selectedImage && (
