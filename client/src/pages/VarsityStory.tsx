@@ -21,9 +21,9 @@ import varsity10 from "@/assets/images/varsity-10.jpg";
 const galleryImages = [
   { src: varsity1, alt: "Pizza in branded box", size: "large" },
   { src: varsity2, alt: "Hands grabbing pizza slices", size: "tall" },
-  { src: varsity5, alt: "Buffalo wings with ranch", size: "medium" },
-  { src: varsity3, alt: "Gourmet sub sandwiches", size: "wide" },
   { src: varsity4, alt: "Taco pizza", size: "medium" },
+  { src: varsity3, alt: "Gourmet sub sandwiches", size: "wide" },
+  { src: varsity5, alt: "Buffalo wings with ranch", size: "medium" },
   { src: varsity7, alt: "Curly fries with dip", size: "medium" },
   { src: varsity6, alt: "Chicken sandwich with fries", size: "large" },
   { src: varsity9, alt: "Multiple pizzas display", size: "large" },
