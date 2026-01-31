@@ -207,7 +207,7 @@ export default function VarsityStoryPage() {
 
       {/* Lightbox Modal */}
       <Dialog open={!!selectedImage} onOpenChange={(open) => !open && setSelectedImage(null)}>
-        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-black/95 border-none overflow-hidden [&>button]:hidden flex items-center justify-center">
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-black/95 border-none overflow-hidden flex items-center justify-center">
           <VisuallyHidden.Root>
             <DialogTitle>Image Preview</DialogTitle>
           </VisuallyHidden.Root>
