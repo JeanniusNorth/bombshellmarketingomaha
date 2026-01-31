@@ -64,19 +64,19 @@ export function Portfolio() {
     },
     {
       category: "PHOTOGRAPHY",
-      title: "VARSITY ROMAN COIN",
-      image: varsityPizzaImage,
-      height: "h-[350px]",
-      url: "",
-      link: "/portfolio/varsity-roman-coin"
-    },
-    {
-      category: "PHOTOGRAPHY",
       title: "THE GOOD LIFE BAR & GRILL",
       image: goodLifeImage,
       link: "/portfolio/good-life",
       height: "h-[350px]",
       url: ""
+    },
+    {
+      category: "PHOTOGRAPHY",
+      title: "VARSITY ROMAN COIN",
+      image: varsityPizzaImage,
+      height: "h-[350px]",
+      url: "",
+      link: "/portfolio/varsity-roman-coin"
     }
   ];
 
