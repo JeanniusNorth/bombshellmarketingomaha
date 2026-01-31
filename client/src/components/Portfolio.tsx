@@ -74,6 +74,7 @@ export function Portfolio() {
       category: "PHOTOGRAPHY",
       title: "THE GOOD LIFE BAR & GRILL",
       image: goodLifeImage,
+      link: "/portfolio/good-life",
       height: "h-[350px]",
       url: ""
     }

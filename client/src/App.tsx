@@ -13,6 +13,7 @@ import BrandPhotographyPage from "@/pages/BrandPhotography";
 import LogoBrandingPage from "@/pages/LogoBranding";
 import WebDesignPage from "@/pages/WebDesign";
 import VarsityStoryPage from "@/pages/VarsityStory";
+import GoodLifeStoryPage from "@/pages/GoodLifeStory";
 
 function Router() {
   return (
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/brand-photography" component={BrandPhotographyPage} />
       <Route path="/logo-branding" component={LogoBrandingPage} />
       <Route path="/portfolio/varsity-roman-coin" component={VarsityStoryPage} />
+      <Route path="/portfolio/good-life" component={GoodLifeStoryPage} />
       <Route component={NotFound} />
     </Switch>
   );
