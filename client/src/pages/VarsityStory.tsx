@@ -100,9 +100,42 @@ export default function VarsityStoryPage() {
       <section className="py-12 bg-[#1a1a1a]">
         <div className="container mx-auto px-4">
           <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
-            {galleryImages.map((image, index) => (
+            {galleryImages.slice(0, 5).map((image, index) => (
               <div 
                 key={index}
+                className="break-inside-avoid cursor-pointer group relative overflow-hidden"
+                onClick={() => setSelectedImage(image.src)}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
+              </div>
+            ))}
+            
+            {/* CTA Box */}
+            <div className="break-inside-avoid bg-[#201cc5] p-8 flex flex-col justify-center items-center text-center min-h-[300px]">
+              <span className="text-primary text-2xl mb-4">✦</span>
+              <h3 className="text-2xl font-display text-white uppercase mb-4">
+                Want Photos Like These?
+              </h3>
+              <p className="text-white/70 text-sm mb-6">
+                Let's make your menu irresistible.
+              </p>
+              <a 
+                href="/contact"
+                className="px-6 py-3 bg-primary text-black text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors flex items-center gap-2"
+              >
+                <span>Get Started</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </div>
+
+            {galleryImages.slice(5).map((image, index) => (
+              <div 
+                key={index + 5}
                 className="break-inside-avoid cursor-pointer group relative overflow-hidden"
                 onClick={() => setSelectedImage(image.src)}
               >
