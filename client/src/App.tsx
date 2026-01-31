@@ -12,6 +12,7 @@ import ContactPage from "@/pages/Contact";
 import BrandPhotographyPage from "@/pages/BrandPhotography";
 import LogoBrandingPage from "@/pages/LogoBranding";
 import WebDesignPage from "@/pages/WebDesign";
+import VarsityStoryPage from "@/pages/VarsityStory";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/contact" component={ContactPage} />
       <Route path="/brand-photography" component={BrandPhotographyPage} />
       <Route path="/logo-branding" component={LogoBrandingPage} />
+      <Route path="/portfolio/varsity-roman-coin" component={VarsityStoryPage} />
       <Route component={NotFound} />
     </Switch>
   );

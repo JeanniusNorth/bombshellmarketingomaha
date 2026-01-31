@@ -68,7 +68,7 @@ export function Portfolio() {
       image: varsityPizzaImage,
       height: "h-[350px]",
       url: "",
-      link: "/brand-photography"
+      link: "/portfolio/varsity-roman-coin"
     },
     {
       category: "PHOTOGRAPHY",
