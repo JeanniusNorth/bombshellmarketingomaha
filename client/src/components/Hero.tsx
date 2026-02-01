@@ -61,7 +61,7 @@ export function Hero() {
           initial={{ x: -100, opacity: 0, rotate: -10 }}
           animate={{ x: 0, opacity: 1, rotate: -6 }}
           transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
-          className="absolute left-4 md:left-24 top-4 md:top-auto md:bottom-32 z-40 bg-white p-2 md:p-5 rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.3)] max-w-[120px] md:max-w-[200px] scale-75 md:scale-100"
+          className="absolute left-4 md:left-24 top-1 md:top-auto md:bottom-32 z-40 bg-white p-2 md:p-5 rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.3)] max-w-[120px] md:max-w-[200px] scale-75 md:scale-100"
         >
           <div className="flex items-center gap-2 md:gap-3 mb-1">
             <span className="text-2xl md:text-4xl font-display text-black font-bold tracking-tight">4.9</span>
