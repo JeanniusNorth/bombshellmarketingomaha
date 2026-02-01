@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
+import { motion } from "framer-motion";
 import jeannieImage from "@/assets/images/team-jeannie.png";
 import jessImage from "@/assets/images/team-jess.png";
 
@@ -27,7 +28,13 @@ export function Team() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
           
           {/* Left Content */}
           <div className="lg:col-span-5 flex flex-col items-start">
@@ -89,7 +96,7 @@ export function Team() {
             ))}
           </div>
 
-        </div>
+        </motion.div>
       </div>
     </section>
   );

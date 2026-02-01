@@ -159,7 +159,13 @@ export function Testimonials() {
       <div className="container mx-auto px-4">
         
         {/* Header */}
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <div className="flex items-center justify-center gap-2 mb-6">
             <span className="text-[#ccff00] text-xl">✦</span>
             <span className="uppercase tracking-widest text-xs font-bold">Testimonials</span>
@@ -168,7 +174,7 @@ export function Testimonials() {
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-display uppercase">
             What Our Clients Say
           </h2>
-        </div>
+        </motion.div>
 
         {/* Scrolling Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

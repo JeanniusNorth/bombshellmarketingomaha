@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function CallToAction() {
   return (
@@ -7,7 +8,13 @@ export function CallToAction() {
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10 text-center">
+      <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+        className="container mx-auto px-4 relative z-10 text-center"
+      >
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase mb-6">
           Ready To Start Your Project?
         </h2>
@@ -37,7 +44,7 @@ export function CallToAction() {
             <ArrowUpRight className="w-4 h-4" />
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

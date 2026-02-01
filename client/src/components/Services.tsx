@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
+import { motion } from "framer-motion";
 import logoDesignImage from "@/assets/images/service-logo-design.png";
 import webDesignImage from "@/assets/images/service-web-design.png";
 import photographyImage from "@/assets/images/service-photography.png";
@@ -39,7 +40,13 @@ export function Services() {
       <div className="container mx-auto px-4">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8 border-b border-white/10 pb-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8 border-b border-white/10 pb-8"
+        >
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
@@ -49,10 +56,16 @@ export function Services() {
               Creative Firepower For Brands That Refuse To Blend In
             </h2>
           </div>
-        </div>
+        </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
           {services.map((service, index) => {
             const Component = service.link ? 'a' : 'div';
             return (
@@ -85,7 +98,7 @@ export function Services() {
               </p>
             </Component>
           )})}
-        </div>
+        </motion.div>
 
         {/* All Services Button */}
         <div className="flex justify-center mt-12">

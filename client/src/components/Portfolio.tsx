@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 import theLeagueImage from "@/assets/images/portfolio-the-league.png";
 import brandiniImage from "@/assets/images/portfolio-brandini.png";
@@ -90,7 +91,13 @@ export function Portfolio() {
       <div className="container mx-auto px-4 relative z-10">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8"
+        >
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
@@ -110,10 +117,16 @@ export function Portfolio() {
                <ArrowRight className="w-3 h-3 -rotate-45" />
             </div>
           </a>
-        </div>
+        </motion.div>
 
         {/* Portfolio Grid - Masonry-ish Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
+        >
           
           {/* Left Column */}
           <div className="flex flex-col gap-12">
@@ -145,7 +158,7 @@ export function Portfolio() {
             <PortfolioItem item={portfolioItems[5]} />
           </div>
 
-        </div>
+        </motion.div>
       </div>
     </section>
   );
