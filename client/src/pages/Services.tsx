@@ -1,8 +1,8 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowUpRight, Palette, Globe, Target, Camera, Sparkles, Layers } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 const services = [
   {
@@ -50,15 +50,14 @@ const services = [
 ];
 
 export default function ServicesPage() {
-  useEffect(() => {
-    document.title = "Marketing Services | Web Design, Logo Design & Brand Photography in Omaha, NE";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional web design, logo design, and brand photography services in Omaha, Nebraska. AI-powered marketing agency with 300+ successful projects. Free brand audit available.');
-    }
-  }, []);
-
   return (
+    <>
+      <SEO 
+        title="Marketing Services | Web Design, Logo Design & Brand Photography Omaha"
+        description="Professional web design, logo design, and brand photography services in Omaha, Nebraska. Marketing agency with 300+ successful projects. Free brand audit available."
+        canonicalPath="/services"
+        keywords="web design services Omaha, logo design services Nebraska, brand photography services, marketing agency Omaha"
+      />
     <div className="min-h-screen bg-[#f0f0f0]">
       <Navigation />
       
@@ -187,5 +186,6 @@ export default function ServicesPage() {
 
       <Footer />
     </div>
+    </>
   );
 }

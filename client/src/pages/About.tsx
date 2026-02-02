@@ -1,22 +1,21 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowUpRight } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Team } from "@/components/Team";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import jeannieImage from "@/assets/images/team-jeannie.png";
 import jessImage from "@/assets/images/team-jess.png";
 
 export default function AboutPage() {
-  useEffect(() => {
-    document.title = "About Us | Bombshell AI Marketing - Omaha Web Design & Branding Agency";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Meet the team behind Bombshell AI Marketing. Based in Omaha with 20+ years experience in web design, logo design, and brand photography. Serving businesses everywhere.');
-    }
-  }, []);
-
   return (
+    <>
+      <SEO 
+        title="About Us | Bombshell Marketing - Omaha Web Design & Branding Agency"
+        description="Meet the team behind Bombshell Marketing. Based in Omaha with 20+ years experience in web design, logo design, and brand photography. Serving businesses everywhere."
+        canonicalPath="/about"
+        keywords="Omaha marketing agency, about Bombshell Marketing, web design team Omaha, branding agency Nebraska"
+      />
     <div className="min-h-screen bg-[#f0f0f0]">
       <Navigation />
       
@@ -156,5 +155,6 @@ export default function AboutPage() {
 
       <Footer />
     </div>
+    </>
   );
 }

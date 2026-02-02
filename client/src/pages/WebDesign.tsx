@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowUpRight, Globe, Code, Smartphone, Zap, Search, ShieldCheck, ExternalLink, X } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
@@ -111,15 +112,14 @@ const processSteps = [
 export default function WebDesignPage() {
   const [selectedProject, setSelectedProject] = useState<{title: string, url: string} | null>(null);
 
-  useEffect(() => {
-    document.title = "Web Design & Development | Omaha Website Design | Bombshell Marketing";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional web design and development in Omaha, Nebraska. Custom websites that look stunning and perform flawlessly. Get your free website audit today.');
-    }
-  }, []);
-
   return (
+    <>
+      <SEO 
+        title="Web Design & Development | Omaha Website Design | Bombshell Marketing"
+        description="Professional web design and development in Omaha, Nebraska. Custom websites that look stunning and perform flawlessly. Get your free website audit today."
+        canonicalPath="/web-design"
+        keywords="web design Omaha, website development Nebraska, custom website design, Omaha web developer, responsive web design"
+      />
     <div className="min-h-screen bg-[#f0f0f0]">
       <Navigation />
       
@@ -310,5 +310,6 @@ export default function WebDesignPage() {
 
       <Footer />
     </div>
+    </>
   );
 }

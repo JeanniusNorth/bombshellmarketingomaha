@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowUpRight, X } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
@@ -33,15 +34,14 @@ const galleryImages = [
 export default function VarsityStoryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  useEffect(() => {
-    document.title = "Varsity Roman Coin | Brand Photography Case Study | Bombshell Marketing";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Brand photography case study for Varsity Roman Coin pizza restaurant in Omaha, Nebraska. See how we captured mouthwatering food photography that drives sales.');
-    }
-  }, []);
-
   return (
+    <>
+      <SEO 
+        title="Varsity Roman Coin | Brand Photography Case Study | Bombshell Marketing"
+        description="Brand photography case study for Varsity Roman Coin pizza restaurant in Omaha, Nebraska. See how we captured mouthwatering food photography that drives sales."
+        canonicalPath="/portfolio/varsity-roman-coin"
+        keywords="food photography Omaha, restaurant photography, pizza photography, brand photography case study"
+      />
     <div className="min-h-screen bg-[#1a1a1a]">
       <Navigation />
       
@@ -232,5 +232,6 @@ export default function VarsityStoryPage() {
 
       <Footer />
     </div>
+    </>
   );
 }

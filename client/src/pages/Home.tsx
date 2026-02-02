@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
-// import { Marquee } from "@/components/Marquee"; // Integrated into Hero
 import { Mission } from "@/components/Mission";
 import { Services } from "@/components/Services";
 import { Portfolio } from "@/components/Portfolio";
@@ -9,10 +8,17 @@ import { Team } from "@/components/Team";
 import { Testimonials } from "@/components/Testimonials";
 import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <SEO 
+        title="Bombshell Marketing | Omaha Web Design, Logo Design & Brand Photography"
+        description="Omaha's top-rated marketing agency for web design, logo design, and brand photography. 20+ years of expertise, 300+ successful projects. Based in Omaha, serving businesses everywhere."
+        canonicalPath="/"
+        keywords="web design Omaha, logo design Omaha, brand photography Omaha, Omaha web designer, Omaha logo designer, brand photographer Omaha, Nebraska web design, Omaha marketing agency"
+      />
       <Navigation />
       
       <main>

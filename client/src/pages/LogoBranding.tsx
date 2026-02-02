@@ -4,6 +4,7 @@ import { ArrowUpRight, Palette, PenTool, Layers, FileText, Brush, Sparkles } fro
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
+import { SEO } from "@/components/SEO";
 
 const brandingServices = [
   {
@@ -54,15 +55,17 @@ const portfolioLogos = [
 
 export default function LogoBrandingPage() {
   useEffect(() => {
-    document.title = "Logo Design & Branding Omaha | Professional Brand Identity Services";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional logo design and branding services in Omaha, Nebraska. Custom logos, brand identity, style guides, and visual design. Build a brand that stands out with Bombshell AI Marketing.');
-    }
     window.scrollTo(0, 0);
   }, []);
 
   return (
+    <>
+      <SEO 
+        title="Logo Design & Branding Omaha | Professional Brand Identity Services"
+        description="Professional logo design and branding services in Omaha, Nebraska. Custom logos, brand identity, style guides, and visual design. Build a brand that stands out with Bombshell Marketing."
+        canonicalPath="/logo-branding"
+        keywords="logo design Omaha, branding services Nebraska, brand identity, custom logo design, Omaha logo designer"
+      />
     <div className="min-h-screen bg-[#f0f0f0]">
       <Navigation />
       
@@ -217,5 +220,6 @@ export default function LogoBrandingPage() {
 
       <Footer />
     </div>
+    </>
   );
 }

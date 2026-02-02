@@ -2,15 +2,10 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 export default function ContactPage() {
   useEffect(() => {
-    document.title = "Contact Us | Bombshell AI Marketing - Omaha Web Design & Branding";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Contact Bombshell AI Marketing for web design, logo design, and brand photography. Based in Omaha, serving businesses everywhere. Let\'s blow up your business together.');
-    }
-
     const script = document.createElement('script');
     script.src = 'https://link.msgsndr.com/js/form_embed.js';
     script.async = true;
@@ -22,6 +17,13 @@ export default function ContactPage() {
   }, []);
 
   return (
+    <>
+      <SEO 
+        title="Contact Us | Bombshell Marketing - Omaha Web Design & Branding"
+        description="Contact Bombshell Marketing for web design, logo design, and brand photography. Based in Omaha, serving businesses everywhere. Let's blow up your business together."
+        canonicalPath="/contact"
+        keywords="contact Bombshell Marketing, Omaha web design contact, get a quote, marketing agency Omaha"
+      />
     <div className="min-h-screen bg-[#201cc5]">
       <Navigation />
       
@@ -71,5 +73,6 @@ export default function ContactPage() {
 
       <Footer />
     </div>
+    </>
   );
 }

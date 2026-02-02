@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowUpRight, X } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
@@ -30,15 +31,14 @@ const galleryImages = [
 export default function GoodLifeStoryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  useEffect(() => {
-    document.title = "The Good Life Bar & Grill | Brand Photography Case Study | Bombshell Marketing";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Brand photography case study for The Good Life Bar & Grill in Omaha, Nebraska. See how we captured the vibrant atmosphere, delicious food, and craft cocktails.');
-    }
-  }, []);
-
   return (
+    <>
+      <SEO 
+        title="The Good Life Bar & Grill | Brand Photography Case Study | Bombshell Marketing"
+        description="Brand photography case study for The Good Life Bar & Grill in Omaha, Nebraska. See how we captured the vibrant atmosphere, delicious food, and craft cocktails."
+        canonicalPath="/portfolio/good-life"
+        keywords="bar photography Omaha, restaurant photography, food and drink photography, brand photography case study"
+      />
     <div className="min-h-screen bg-[#1a1a1a]">
       <Navigation />
       
@@ -229,5 +229,6 @@ export default function GoodLifeStoryPage() {
 
       <Footer />
     </div>
+    </>
   );
 }

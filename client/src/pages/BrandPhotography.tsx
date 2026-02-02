@@ -4,6 +4,7 @@ import { ArrowUpRight, Camera, Users, Building, ShoppingBag, Utensils, Heart } f
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
+import { SEO } from "@/components/SEO";
 
 const photographyServices = [
   {
@@ -69,15 +70,17 @@ const portfolioImages = [
 
 export default function BrandPhotographyPage() {
   useEffect(() => {
-    document.title = "Brand Photography Omaha | Professional Business & Product Photography";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional brand photography in Omaha, Nebraska. Headshots, product photography, food photography, and lifestyle brand imagery. Elevate your visual presence with Bombshell AI Marketing.');
-    }
     window.scrollTo(0, 0);
   }, []);
 
   return (
+    <>
+      <SEO 
+        title="Brand Photography Omaha | Professional Business & Product Photography"
+        description="Professional brand photography in Omaha, Nebraska. Headshots, product photography, food photography, and lifestyle brand imagery. Elevate your visual presence with Bombshell Marketing."
+        canonicalPath="/brand-photography"
+        keywords="brand photography Omaha, product photography Nebraska, headshots Omaha, food photography, commercial photographer"
+      />
     <div className="min-h-screen bg-[#f0f0f0]">
       <Navigation />
       
@@ -228,5 +231,6 @@ export default function BrandPhotographyPage() {
       <CallToAction />
       <Footer />
     </div>
+    </>
   );
 }

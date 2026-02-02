@@ -1,20 +1,19 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowUpRight } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Portfolio } from "@/components/Portfolio";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 export default function PortfolioPage() {
-  useEffect(() => {
-    document.title = "Portfolio | Web Design & Brand Photography in Omaha, Nebraska";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'View our portfolio of web design, logo design, and brand photography projects for Omaha and Nebraska businesses. Award-winning creative work by Bombshell AI Marketing.');
-    }
-  }, []);
-
   return (
+    <>
+      <SEO 
+        title="Portfolio | Web Design & Brand Photography Omaha | Bombshell Marketing"
+        description="View our portfolio of web design, logo design, and brand photography projects for Omaha and Nebraska businesses. Award-winning creative work by Bombshell Marketing."
+        canonicalPath="/portfolio"
+        keywords="web design portfolio Omaha, brand photography portfolio, logo design examples, Nebraska web design projects"
+      />
     <div className="min-h-screen bg-[#e6e6e6]">
       <Navigation />
       
@@ -74,5 +73,6 @@ export default function PortfolioPage() {
 
       <Footer />
     </div>
+    </>
   );
 }
