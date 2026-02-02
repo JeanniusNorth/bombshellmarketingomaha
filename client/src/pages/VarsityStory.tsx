@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowUpRight, X } from "lucide-react";
 import { Navigation } from "@/components/Navigation";

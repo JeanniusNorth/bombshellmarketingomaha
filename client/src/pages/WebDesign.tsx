@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowUpRight, Globe, Code, Smartphone, Zap, Search, ShieldCheck, ExternalLink, X } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
