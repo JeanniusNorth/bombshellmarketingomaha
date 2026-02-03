@@ -21,7 +21,7 @@ const teamMembers = [
 
 export function Team() {
   return (
-    <section id="team" className="bg-[#f0f0f0] py-24 relative overflow-hidden">
+    <section id="team" className="bg-white py-24 relative overflow-hidden">
       {/* Noise Texture */}
       <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-multiply" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>

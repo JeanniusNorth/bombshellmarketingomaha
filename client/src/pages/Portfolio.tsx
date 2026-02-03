@@ -17,7 +17,7 @@ export default function PortfolioPage() {
         canonicalPath="/portfolio"
         keywords="web design portfolio Omaha, brand photography portfolio, logo design examples, Nebraska web design projects"
       />
-    <div className="min-h-screen bg-[#e6e6e6]">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Hero Section */}

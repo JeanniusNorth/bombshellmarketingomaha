@@ -81,7 +81,7 @@ export default function BrandPhotographyPage() {
         canonicalPath="/brand-photography"
         keywords="brand photography Omaha, product photography Nebraska, headshots Omaha, food photography, commercial photographer"
       />
-    <div className="min-h-screen bg-[#f0f0f0]">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Hero Section */}

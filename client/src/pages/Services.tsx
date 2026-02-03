@@ -61,7 +61,7 @@ export default function ServicesPage() {
         canonicalPath="/services"
         keywords="web design services Omaha, logo design services Nebraska, brand photography services, marketing agency Omaha"
       />
-    <div className="min-h-screen bg-[#f0f0f0]">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Hero Section */}

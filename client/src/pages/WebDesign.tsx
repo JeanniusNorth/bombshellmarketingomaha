@@ -122,7 +122,7 @@ export default function WebDesignPage() {
         canonicalPath="/web-design"
         keywords="web design Omaha, website development Nebraska, custom website design, Omaha web developer, responsive web design"
       />
-    <div className="min-h-screen bg-[#f0f0f0]">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Hero Section */}
@@ -220,7 +220,7 @@ export default function WebDesignPage() {
       </Dialog>
 
       {/* Services Grid */}
-      <section className="py-20 bg-[#f0f0f0]">
+      <section className="py-20 bg-white">
         <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-multiply" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>

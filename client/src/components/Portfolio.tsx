@@ -85,7 +85,7 @@ export function Portfolio() {
   const { openContactModal } = useContactModal();
 
   return (
-    <section id="portfolio" className="bg-[#e6e6e6] py-24 relative overflow-hidden">
+    <section id="portfolio" className="bg-white py-24 relative overflow-hidden">
       {/* Noise Texture */}
       <div className="absolute inset-0 opacity-40 pointer-events-none mix-blend-multiply" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>

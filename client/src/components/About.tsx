@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export function About() {
   return (
-    <section id="about" className="bg-[#e5e5e5] py-24 text-black relative">
+    <section id="about" className="bg-white py-24 text-black relative">
        {/* Texture Overlay */}
        <div className="absolute inset-0 opacity-40 pointer-events-none" 
             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>

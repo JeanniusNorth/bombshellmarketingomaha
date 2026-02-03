@@ -19,7 +19,7 @@ export default function AboutPage() {
         canonicalPath="/about"
         keywords="Omaha marketing agency, about Bombshell Marketing, web design team Omaha, branding agency Nebraska"
       />
-    <div className="min-h-screen bg-[#f0f0f0]">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Hero Section */}
@@ -86,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* Jess Bio Section */}
-      <section className="bg-[#f0f0f0] py-20 relative overflow-hidden">
+      <section className="bg-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-multiply" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>

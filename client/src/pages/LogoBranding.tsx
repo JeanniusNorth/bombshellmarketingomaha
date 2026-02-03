@@ -66,7 +66,7 @@ export default function LogoBrandingPage() {
         canonicalPath="/logo-branding"
         keywords="logo design Omaha, branding services Nebraska, brand identity, custom logo design, Omaha logo designer"
       />
-    <div className="min-h-screen bg-[#f0f0f0]">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
       {/* Hero Section */}
@@ -124,7 +124,7 @@ export default function LogoBrandingPage() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 bg-[#f0f0f0]">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-4">
