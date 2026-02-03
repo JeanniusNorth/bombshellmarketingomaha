@@ -112,10 +112,10 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               </div>
               <div>
                 <DialogTitle className="text-xl font-bold text-black mb-1">
-                  Request a Quote
+                  Let's Start Something Great
                 </DialogTitle>
                 <DialogDescription className="text-gray-500 text-sm">
-                  Tell us about your project and we'll create a custom proposal.
+                  Tell us a bit about your brand and we'll be in touch within 24 hours.
                 </DialogDescription>
               </div>
             </div>
@@ -262,7 +262,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     Sending...
                   </>
                 ) : (
-                  "Request Quote"
+                  "Let's Talk"
                 )}
               </button>
             </div>
