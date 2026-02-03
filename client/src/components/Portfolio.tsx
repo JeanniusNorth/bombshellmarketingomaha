@@ -36,6 +36,14 @@ export function Portfolio() {
       link: "/logo-branding"
     },
     {
+      category: "PHOTOGRAPHY",
+      title: "THE GOOD LIFE BAR & GRILL",
+      image: goodLifeImage,
+      link: "/portfolio/good-life",
+      height: "h-[350px]",
+      url: ""
+    },
+    {
       category: "WEB DESIGN",
       title: "MIDWEST GRIT FITNESS",
       image: midwestGritImage,
@@ -57,12 +65,11 @@ export function Portfolio() {
       url: "https://dwell-omaha-design.replit.app/"
     },
     {
-      category: "PHOTOGRAPHY",
-      title: "THE GOOD LIFE BAR & GRILL",
-      image: goodLifeImage,
-      link: "/portfolio/good-life",
-      height: "h-[350px]",
-      url: ""
+      category: "WEB DESIGN",
+      title: "TENNISX - AI VIDEO ANALYSIS APP",
+      image: tennisxImage,
+      height: "h-[400px]",
+      url: "https://tennis-x-website.replit.app/"
     },
     {
       category: "PHOTOGRAPHY",
@@ -71,13 +78,6 @@ export function Portfolio() {
       height: "h-[350px]",
       url: "",
       link: "/portfolio/varsity-roman-coin"
-    },
-    {
-      category: "WEB DESIGN",
-      title: "TENNISX - AI VIDEO ANALYSIS APP",
-      image: tennisxImage,
-      height: "h-[400px]",
-      url: "https://tennis-x-website.replit.app/"
     }
   ];
 
