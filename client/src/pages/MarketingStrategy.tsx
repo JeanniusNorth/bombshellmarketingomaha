@@ -124,7 +124,7 @@ export default function MarketingStrategyPage() {
               <img 
                 src={chrisImage} 
                 alt="Chris - Brand Strategy Client" 
-                className="w-full h-auto shadow-2xl"
+                className="w-full h-auto shadow-2xl rounded-2xl"
               />
               <div className="absolute -bottom-4 -right-4 bg-primary p-4">
                 <Quote className="w-8 h-8 text-black" />
