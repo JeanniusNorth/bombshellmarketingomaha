@@ -136,26 +136,23 @@ export default function MarketingStrategyPage() {
                 <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Client Success Story</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-6">
-                BRANDINI: From Local to National
+                BRANDINI
               </h2>
-              <p className="text-black/60 text-lg leading-relaxed mb-6">
-                When Chris came to us with BRANDINI, he had great products but no cohesive brand strategy. We developed a complete marketing plan that included brand positioning, product photography, and a multi-channel digital campaign.
+              <p className="text-black/70 text-sm uppercase tracking-widest mb-4">Chris, Founder</p>
+              <p className="text-black/60 text-lg leading-relaxed mb-6 italic">
+                "Bombshell handled our entire product and brand launch. From concept to execution, they brought Brandini to life and helped us build an on-demand merch platform that brands love."
               </p>
               <p className="text-black/60 leading-relaxed mb-8">
-                Within 6 months, BRANDINI's brand recognition increased by 300% and online sales tripled. Today, BRANDINI products are sold nationwide and the brand is recognized as a leader in the industry.
+                We partnered with Chris to launch BRANDINI from the ground up—developing the brand identity, photography, marketing strategy, and go-to-market plan that turned his vision into a thriving business.
               </p>
-              <div className="grid grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <div className="text-3xl font-display text-[#201cc5] mb-1">300%</div>
-                  <div className="text-xs text-black/50 uppercase tracking-wider">Brand Growth</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-display text-[#201cc5] mb-1">3x</div>
-                  <div className="text-xs text-black/50 uppercase tracking-wider">Sales Increase</div>
+                  <div className="text-3xl font-display text-[#201cc5] mb-1">+340%</div>
+                  <div className="text-xs text-black/50 uppercase tracking-wider">Brand Awareness After Launch</div>
                 </div>
                 <div>
                   <div className="text-3xl font-display text-[#201cc5] mb-1">50+</div>
-                  <div className="text-xs text-black/50 uppercase tracking-wider">Retail Partners</div>
+                  <div className="text-xs text-black/50 uppercase tracking-wider">Partner Brands in First Quarter</div>
                 </div>
               </div>
             </div>
