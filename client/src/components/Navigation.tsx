@@ -15,6 +15,7 @@ export function Navigation() {
     { name: "Web Design & Development", href: "/web-design" },
     { name: "Logo & Branding", href: "/logo-branding" },
     { name: "Brand Photography", href: "/brand-photography" },
+    { name: "Marketing & Digital Strategy", href: "/marketing-strategy" },
   ];
 
   const navLinks = [

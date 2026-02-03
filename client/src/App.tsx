@@ -15,6 +15,7 @@ import LogoBrandingPage from "@/pages/LogoBranding";
 import WebDesignPage from "@/pages/WebDesign";
 import VarsityStoryPage from "@/pages/VarsityStory";
 import GoodLifeStoryPage from "@/pages/GoodLifeStory";
+import MarketingStrategyPage from "@/pages/MarketingStrategy";
 
 function Router() {
   return (
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/contact" component={ContactPage} />
       <Route path="/brand-photography" component={BrandPhotographyPage} />
       <Route path="/logo-branding" component={LogoBrandingPage} />
+      <Route path="/marketing-strategy" component={MarketingStrategyPage} />
       <Route path="/portfolio/varsity-roman-coin" component={VarsityStoryPage} />
       <Route path="/portfolio/good-life" component={GoodLifeStoryPage} />
       <Route component={NotFound} />

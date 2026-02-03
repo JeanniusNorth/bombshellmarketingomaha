@@ -9,10 +9,10 @@ import photographyImage from "@/assets/images/service-photography.png";
 export function Services() {
   const services = [
     {
-      title: "Brand Building & Strategy",
-      description: "We forge identities that hit like a shockwave. Strategic positioning meets visual dominance—built to make your competition irrelevant.",
+      title: "Marketing & Digital Strategy",
+      description: "Campaigns that hit like a shockwave. Strategic planning meets digital innovation—built to dominate your market.",
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
-      link: "/contact"
+      link: "/marketing-strategy"
     },
     {
       title: "Logo & Brand Design",

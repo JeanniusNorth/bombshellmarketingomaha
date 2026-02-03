@@ -8,9 +8,9 @@ import { useContactModal } from "@/contexts/ContactModalContext";
 const services = [
   {
     icon: Palette,
-    title: "Brand Building & Strategy",
-    description: "Omaha's leading brand strategists help you forge identities that hit like a shockwave. Strategic positioning meets visual dominance to create memorable brand experiences that resonate with Nebraska audiences.",
-    link: "/contact",
+    title: "Marketing & Digital Strategy",
+    description: "Omaha's leading marketing strategists help you build campaigns that hit like a shockwave. Strategic planning meets digital innovation to drive growth and dominate your market.",
+    link: "/marketing-strategy",
     highlight: false
   },
   {
