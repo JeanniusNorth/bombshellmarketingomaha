@@ -7,6 +7,7 @@ import { SEO } from "@/components/SEO";
 import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
+import { useContactModal } from "@/contexts/ContactModalContext";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import brandiniImage from "@/assets/images/portfolio-brandini.png";
 import dwellImage from "@/assets/images/portfolio-dwell.png";
@@ -111,6 +112,7 @@ const processSteps = [
 
 export default function WebDesignPage() {
   const [selectedProject, setSelectedProject] = useState<{title: string, url: string} | null>(null);
+  const { openContactModal } = useContactModal();
 
   return (
     <>
@@ -290,13 +292,13 @@ export default function WebDesignPage() {
             Let's create a website that works as hard as you do. Get a free website audit and see how we can transform your online presence.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a 
-              href="/contact" 
+            <button 
+              onClick={openContactModal}
               className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
-            </a>
+            </button>
             <a 
               href="https://audit.bombshellmarketingomaha.com/" 
               className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"

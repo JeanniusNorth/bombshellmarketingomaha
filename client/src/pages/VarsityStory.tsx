@@ -7,6 +7,7 @@ import { SEO } from "@/components/SEO";
 import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
+import { useContactModal } from "@/contexts/ContactModalContext";
 
 import varsity1 from "@/assets/images/varsity-1.jpg";
 import varsity2 from "@/assets/images/varsity-2.jpg";
@@ -33,6 +34,7 @@ const galleryImages = [
 
 export default function VarsityStoryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const { openContactModal } = useContactModal();
 
   return (
     <>
@@ -123,13 +125,13 @@ export default function VarsityStoryPage() {
               <p className="text-white/70 text-sm mb-6">
                 Let's make your menu irresistible.
               </p>
-              <a 
-                href="/contact"
+              <button 
+                onClick={openContactModal}
                 className="px-6 py-3 bg-primary text-black text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors flex items-center gap-2"
               >
                 <span>Get Started</span>
                 <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </button>
             </div>
 
             {galleryImages.slice(5).map((image, index) => (
@@ -187,13 +189,13 @@ export default function VarsityStoryPage() {
             Let's create stunning photography that captures your brand's essence and drives real results.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a 
-              href="/contact" 
+            <button 
+              onClick={openContactModal}
               className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
-            </a>
+            </button>
             <a 
               href="/brand-photography" 
               className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"

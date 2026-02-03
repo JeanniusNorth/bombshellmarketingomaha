@@ -4,10 +4,13 @@ import { Navigation } from "@/components/Navigation";
 import { Team } from "@/components/Team";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import { useContactModal } from "@/contexts/ContactModalContext";
 import jeannieImage from "@/assets/images/team-jeannie.png";
 import jessImage from "@/assets/images/team-jess.png";
 
 export default function AboutPage() {
+  const { openContactModal } = useContactModal();
+
   return (
     <>
       <SEO 
@@ -135,13 +138,13 @@ export default function AboutPage() {
             Let's create something explosive together. Get a free brand audit and see how our team can transform your business with stunning web design, logo design, or brand photography.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a 
-              href="/contact" 
+            <button 
+              onClick={openContactModal}
               className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
-            </a>
+            </button>
             <a 
               href="https://audit.bombshellmarketingomaha.com/" 
               className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"

@@ -3,11 +3,13 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { useContactModal } from "@/contexts/ContactModalContext";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const { openContactModal } = useContactModal();
 
   const serviceLinks = [
     { name: "Web Design & Development", href: "/web-design" },
@@ -89,12 +91,12 @@ export function Navigation() {
         >
           Portfolio
         </a>
-        <a 
-          href="/contact"
+        <button 
+          onClick={openContactModal}
           className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
         >
           Contact Us
-        </a>
+        </button>
       </div>
 
       {/* Contact Button & Mobile Menu */}
@@ -163,13 +165,12 @@ export function Navigation() {
                 >
                   Portfolio
                 </a>
-                <a 
-                  href="/contact"
-                  onClick={() => setIsOpen(false)}
-                  className="text-2xl font-display text-white hover:text-primary uppercase"
+                <button 
+                  onClick={() => { setIsOpen(false); openContactModal(); }}
+                  className="text-2xl font-display text-white hover:text-primary uppercase text-left"
                 >
                   Contact Us
-                </a>
+                </button>
               </div>
             </SheetContent>
           </Sheet>

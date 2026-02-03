@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Play, Star } from "lucide-react";
 import heroImage from "@/assets/hero-creative.png";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useContactModal } from "@/contexts/ContactModalContext";
 
 export function Hero() {
+  const { openContactModal } = useContactModal();
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#201cc5]">
       {/* Background Texture/Grain */}
@@ -122,12 +125,12 @@ export function Hero() {
                   transition={{ duration: 0.5, delay: 0.8 }}
                   className="flex flex-col md:flex-row gap-4"
                 >
-                  <a href="/contact" className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3">
+                  <button onClick={openContactModal} className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3">
                     <span>Get Started</span>
                     <div className="w-5 h-5 rounded-full bg-black text-white flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-colors">
                        <ArrowRight className="w-3 h-3" />
                     </div>
-                  </a>
+                  </button>
                   <a href="https://audit.bombshellmarketingomaha.com/" className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center gap-3">
                     <span>Free Website Audit</span>
                     <div className="w-5 h-5 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
