@@ -132,31 +132,45 @@ export function Portfolio() {
           
           {/* Left Column */}
           <div className="flex flex-col gap-12">
-            {/* Item 1 - Midwest Grit */}
+            {/* Item 1 - Nebrask.AI */}
             <PortfolioItem item={portfolioItems[0]} />
 
             {/* Item 2 - The League */}
             <PortfolioItem item={portfolioItems[1]} />
 
-             {/* Item 3 - TennisX */}
+             {/* Item 3 - Good Life */}
             <PortfolioItem item={portfolioItems[2]} />
 
-            {/* Item 8 - Good Life */}
-            <PortfolioItem item={portfolioItems[7]} />
+            {/* Midwest Grit - shows here on mobile, hidden on desktop */}
+            <div className="block md:hidden">
+              <PortfolioItem item={portfolioItems[3]} />
+            </div>
+
+            {/* Item 8 - Roman Coin - hidden on mobile, shows on desktop */}
+            <div className="hidden md:block">
+              <PortfolioItem item={portfolioItems[7]} />
+            </div>
           </div>
 
           {/* Right Column */}
           <div className="flex flex-col gap-12 md:mt-24">
-             {/* Item 7 - Varsity Roman Coin */}
+             {/* TennisX */}
              <PortfolioItem item={portfolioItems[6]} />
 
-             {/* Item 4 - Brandini */}
-             <PortfolioItem item={portfolioItems[3]} />
+             {/* Midwest Grit - hidden on mobile, shows on desktop */}
+             <div className="hidden md:block">
+               <PortfolioItem item={portfolioItems[3]} />
+             </div>
 
-            {/* Item 5 - Legacy */}
+             {/* Roman Coin - shows here on mobile, hidden on desktop */}
+             <div className="block md:hidden">
+               <PortfolioItem item={portfolioItems[7]} />
+             </div>
+
+            {/* Brandini */}
             <PortfolioItem item={portfolioItems[4]} />
             
-            {/* Item 6 - Dwell */}
+            {/* Dwell */}
             <PortfolioItem item={portfolioItems[5]} />
           </div>
 
