@@ -216,7 +216,7 @@ Be specific and actionable with issues. For bounceReasons, explain why visitors 
     model: "gpt-5.2",
     messages: [{ role: "user", content: prompt }],
     response_format: { type: "json_object" },
-    max_tokens: 1500,
+    max_completion_tokens: 1500,
   });
 
   const content = response.choices[0]?.message?.content || "{}";
