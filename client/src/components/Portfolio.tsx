@@ -132,6 +132,11 @@ export function Portfolio() {
           
           {/* Left Column */}
           <div className="flex flex-col gap-12">
+            {/* TennisX - shows at top on mobile only */}
+            <div className="block md:hidden">
+              <PortfolioItem item={portfolioItems[6]} />
+            </div>
+
             {/* Item 1 - Nebrask.AI */}
             <PortfolioItem item={portfolioItems[0]} />
 
@@ -181,11 +186,6 @@ export function Portfolio() {
             
             {/* Dwell */}
             <PortfolioItem item={portfolioItems[5]} />
-
-            {/* TennisX - shows at bottom on mobile only */}
-            <div className="block md:hidden">
-              <PortfolioItem item={portfolioItems[6]} />
-            </div>
           </div>
 
         </motion.div>
