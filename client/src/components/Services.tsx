@@ -72,14 +72,14 @@ export function Services() {
             <Component 
               key={index}
               href={service.link}
-              className={`group relative border ${service.highlight ? 'border-primary bg-primary' : 'border-white/10 bg-white/5'} p-8 min-h-[400px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 block`}
+              className={`group relative border ${service.highlight ? 'border-primary bg-primary' : 'border-[#201cc5]/20 bg-white'} p-8 min-h-[400px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 block shadow-lg`}
             >
               <div className="flex justify-between items-start mb-8">
-                <h3 className={`text-2xl font-display uppercase max-w-[70%] leading-none ${service.highlight ? 'text-black' : 'text-white'}`}>
+                <h3 className={`text-2xl font-display uppercase max-w-[70%] leading-none ${service.highlight ? 'text-black' : 'text-[#201cc5]'}`}>
                   {service.title}
                 </h3>
                 <div className={`w-10 h-10 rounded-full border flex items-center justify-center transition-colors
-                  ${service.highlight ? 'border-black text-black group-hover:bg-black group-hover:text-primary' : 'border-primary text-primary group-hover:bg-primary group-hover:text-black'}`}>
+                  ${service.highlight ? 'border-black text-black group-hover:bg-black group-hover:text-primary' : 'border-[#201cc5] text-[#201cc5] group-hover:bg-[#201cc5] group-hover:text-white'}`}>
                   <ArrowUpRight size={20} />
                 </div>
               </div>
@@ -93,7 +93,7 @@ export function Services() {
                 />
               </div>
 
-              <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/80' : 'text-white/60'}`}>
+              <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/80' : 'text-gray-600'}`}>
                 {service.description}
               </p>
             </Component>
