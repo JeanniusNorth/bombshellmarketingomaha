@@ -23,6 +23,13 @@ export function Portfolio() {
   const portfolioItems = [
     {
       category: "WEB DESIGN",
+      title: "NEBRASK.AI - AI TRAINING PLATFORM",
+      image: nebraskaiImage,
+      height: "h-[350px]",
+      url: "https://nebraskai.replit.app/"
+    },
+    {
+      category: "WEB DESIGN",
       title: "MIDWEST GRIT FITNESS",
       image: midwestGritImage,
       height: "h-[350px]",
