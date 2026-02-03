@@ -71,7 +71,7 @@ export function Footer() {
                  onClick={openContactModal}
                  className="flex items-end gap-2 leading-none hover:opacity-80 transition-opacity cursor-pointer text-left"
                >
-                 <h3 className="font-display text-3xl md:text-3xl lg:text-3xl break-all">hello@bombshellmarketingomaha.com</h3>
+                 <h3 className="font-display text-2xl break-all">hello@bombshellmarketingomaha.com</h3>
                  <span className="text-[#ccff00] font-bold text-[10px] uppercase tracking-wider mb-1 opacity-50 block md:hidden lg:block">Contact Us</span>
                </button>
             </div>
