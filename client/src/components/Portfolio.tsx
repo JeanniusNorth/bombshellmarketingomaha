@@ -138,15 +138,22 @@ export function Portfolio() {
             {/* Item 2 - The League */}
             <PortfolioItem item={portfolioItems[1]} />
 
-             {/* Item 3 - Good Life */}
-            <PortfolioItem item={portfolioItems[2]} />
+            {/* Good Life - shows here on mobile only */}
+            <div className="block md:hidden">
+              <PortfolioItem item={portfolioItems[2]} />
+            </div>
+
+            {/* Midwest Grit - shows here on desktop, hidden on mobile */}
+            <div className="hidden md:block">
+              <PortfolioItem item={portfolioItems[3]} />
+            </div>
 
             {/* Midwest Grit - shows here on mobile, hidden on desktop */}
             <div className="block md:hidden">
               <PortfolioItem item={portfolioItems[3]} />
             </div>
 
-            {/* Item 8 - Roman Coin - hidden on mobile, shows on desktop */}
+            {/* Roman Coin - hidden on mobile, shows on desktop */}
             <div className="hidden md:block">
               <PortfolioItem item={portfolioItems[7]} />
             </div>
@@ -159,9 +166,9 @@ export function Portfolio() {
                <PortfolioItem item={portfolioItems[6]} />
              </div>
 
-             {/* Midwest Grit - hidden on mobile, shows on desktop */}
+             {/* Good Life - hidden on mobile, shows on desktop */}
              <div className="hidden md:block">
-               <PortfolioItem item={portfolioItems[3]} />
+               <PortfolioItem item={portfolioItems[2]} />
              </div>
 
              {/* Roman Coin - shows here on mobile, hidden on desktop */}
