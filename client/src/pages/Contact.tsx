@@ -89,10 +89,10 @@ export default function ContactPage() {
                 </Link>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="bg-[#1a1a1a] p-8 md:p-12">
+              <form onSubmit={handleSubmit} className="bg-primary p-8 md:p-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="firstName" className="block text-white/60 text-xs uppercase tracking-widest mb-2 font-bold">
+                    <label htmlFor="firstName" className="block text-black/60 text-xs uppercase tracking-widest mb-2 font-bold">
                       First Name *
                     </label>
                     <input
@@ -102,13 +102,13 @@ export default function ContactPage() {
                       required
                       value={formData.firstName}
                       onChange={handleChange}
-                      className="w-full bg-[#2a2a2a] border-2 border-transparent focus:border-primary text-white px-4 py-4 outline-none transition-colors placeholder:text-white/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="John"
                       data-testid="input-firstName"
                     />
                   </div>
                   <div>
-                    <label htmlFor="lastName" className="block text-white/60 text-xs uppercase tracking-widest mb-2 font-bold">
+                    <label htmlFor="lastName" className="block text-black/60 text-xs uppercase tracking-widest mb-2 font-bold">
                       Last Name *
                     </label>
                     <input
@@ -118,7 +118,7 @@ export default function ContactPage() {
                       required
                       value={formData.lastName}
                       onChange={handleChange}
-                      className="w-full bg-[#2a2a2a] border-2 border-transparent focus:border-primary text-white px-4 py-4 outline-none transition-colors placeholder:text-white/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="Doe"
                       data-testid="input-lastName"
                     />
@@ -127,7 +127,7 @@ export default function ContactPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="email" className="block text-white/60 text-xs uppercase tracking-widest mb-2 font-bold">
+                    <label htmlFor="email" className="block text-black/60 text-xs uppercase tracking-widest mb-2 font-bold">
                       Email Address *
                     </label>
                     <input
@@ -137,13 +137,13 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-[#2a2a2a] border-2 border-transparent focus:border-primary text-white px-4 py-4 outline-none transition-colors placeholder:text-white/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="john@company.com"
                       data-testid="input-email"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-white/60 text-xs uppercase tracking-widest mb-2 font-bold">
+                    <label htmlFor="phone" className="block text-black/60 text-xs uppercase tracking-widest mb-2 font-bold">
                       Phone Number
                     </label>
                     <input
@@ -152,7 +152,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full bg-[#2a2a2a] border-2 border-transparent focus:border-primary text-white px-4 py-4 outline-none transition-colors placeholder:text-white/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="(555) 123-4567"
                       data-testid="input-phone"
                     />
@@ -160,7 +160,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="mb-6">
-                  <label htmlFor="company" className="block text-white/60 text-xs uppercase tracking-widest mb-2 font-bold">
+                  <label htmlFor="company" className="block text-black/60 text-xs uppercase tracking-widest mb-2 font-bold">
                     Company / Business Name
                   </label>
                   <input
@@ -169,7 +169,7 @@ export default function ContactPage() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full bg-[#2a2a2a] border-2 border-transparent focus:border-primary text-white px-4 py-4 outline-none transition-colors placeholder:text-white/30"
+                    className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                     placeholder="Your Company Name"
                     data-testid="input-company"
                   />
@@ -177,7 +177,7 @@ export default function ContactPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label htmlFor="service" className="block text-white/60 text-xs uppercase tracking-widest mb-2 font-bold">
+                    <label htmlFor="service" className="block text-black/60 text-xs uppercase tracking-widest mb-2 font-bold">
                       Service Interested In *
                     </label>
                     <select
@@ -186,10 +186,10 @@ export default function ContactPage() {
                       required
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full bg-[#2a2a2a] border-2 border-transparent focus:border-primary text-white px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
                       data-testid="select-service"
                     >
-                      <option value="" className="text-white/30">Select a service...</option>
+                      <option value="" className="text-black/30">Select a service...</option>
                       <option value="web-design">Web Design & Development</option>
                       <option value="logo-branding">Logo Design & Branding</option>
                       <option value="brand-photography">Brand Photography</option>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label htmlFor="budget" className="block text-white/60 text-xs uppercase tracking-widest mb-2 font-bold">
+                    <label htmlFor="budget" className="block text-black/60 text-xs uppercase tracking-widest mb-2 font-bold">
                       Estimated Budget
                     </label>
                     <select
@@ -206,10 +206,10 @@ export default function ContactPage() {
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full bg-[#2a2a2a] border-2 border-transparent focus:border-primary text-white px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
                       data-testid="select-budget"
                     >
-                      <option value="" className="text-white/30">Select budget range...</option>
+                      <option value="" className="text-black/30">Select budget range...</option>
                       <option value="under-2500">Under $2,500</option>
                       <option value="2500-5000">$2,500 - $5,000</option>
                       <option value="5000-10000">$5,000 - $10,000</option>
@@ -220,7 +220,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="mb-8">
-                  <label htmlFor="message" className="block text-white/60 text-xs uppercase tracking-widest mb-2 font-bold">
+                  <label htmlFor="message" className="block text-black/60 text-xs uppercase tracking-widest mb-2 font-bold">
                     Tell Us About Your Project *
                   </label>
                   <textarea
@@ -230,7 +230,7 @@ export default function ContactPage() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full bg-[#2a2a2a] border-2 border-transparent focus:border-primary text-white px-4 py-4 outline-none transition-colors resize-none placeholder:text-white/30"
+                    className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors resize-none placeholder:text-black/30"
                     placeholder="What are your goals? What challenges are you facing? How can we help you stand out?"
                     data-testid="textarea-message"
                   />
@@ -239,7 +239,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary text-black py-5 font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                  className="w-full bg-[#201cc5] text-white py-5 font-bold uppercase tracking-widest text-sm hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                   data-testid="button-submit"
                 >
                   {isSubmitting ? (
@@ -255,7 +255,7 @@ export default function ContactPage() {
                   )}
                 </button>
 
-                <p className="text-white/40 text-xs text-center mt-6">
+                <p className="text-black/40 text-xs text-center mt-6">
                   By submitting this form, you agree to be contacted about our services.
                 </p>
               </form>
