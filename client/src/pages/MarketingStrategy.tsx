@@ -136,13 +136,13 @@ export default function MarketingStrategyPage() {
                 <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Client Success Story</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-6">
-                From Local to National Brand
+                BRANDINI: From Local to National
               </h2>
               <p className="text-black/60 text-lg leading-relaxed mb-6">
-                When Chris came to us, he had great products but no cohesive brand strategy. We developed a complete marketing plan that included brand positioning, product photography, and a multi-channel digital campaign.
+                When Chris came to us with BRANDINI, he had great products but no cohesive brand strategy. We developed a complete marketing plan that included brand positioning, product photography, and a multi-channel digital campaign.
               </p>
               <p className="text-black/60 leading-relaxed mb-8">
-                Within 6 months, his brand recognition increased by 300% and online sales tripled. Today, his products are sold nationwide and his brand is recognized as a leader in his industry.
+                Within 6 months, BRANDINI's brand recognition increased by 300% and online sales tripled. Today, BRANDINI products are sold nationwide and the brand is recognized as a leader in the industry.
               </p>
               <div className="grid grid-cols-3 gap-6">
                 <div>
