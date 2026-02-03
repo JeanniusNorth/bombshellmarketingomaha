@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
-import { ArrowUpRight, Target, TrendingUp, BarChart3, Users, Megaphone, Zap } from "lucide-react";
+import { ArrowUpRight, Target, TrendingUp, BarChart3, Users, Megaphone, Zap, Quote } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
 import { SEO } from "@/components/SEO";
+import chrisImage from "@/assets/images/case-study-chris.jpg";
 
 const strategyServices = [
   {
@@ -109,6 +110,53 @@ export default function MarketingStrategyPage() {
               <div className="text-center">
                 <div className="text-4xl font-display text-[#201cc5] mb-2">100%</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Data-Driven</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Study Section */}
+      <section className="py-20 bg-[#f8f8f8] relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img 
+                src={chrisImage} 
+                alt="Chris - Brand Strategy Client" 
+                className="w-full h-auto shadow-2xl"
+              />
+              <div className="absolute -bottom-4 -right-4 bg-primary p-4">
+                <Quote className="w-8 h-8 text-black" />
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-primary text-xl">✦</span>
+                <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Client Success Story</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-6">
+                From Local to National Brand
+              </h2>
+              <p className="text-black/60 text-lg leading-relaxed mb-6">
+                When Chris came to us, he had great products but no cohesive brand strategy. We developed a complete marketing plan that included brand positioning, product photography, and a multi-channel digital campaign.
+              </p>
+              <p className="text-black/60 leading-relaxed mb-8">
+                Within 6 months, his brand recognition increased by 300% and online sales tripled. Today, his products are sold nationwide and his brand is recognized as a leader in his industry.
+              </p>
+              <div className="grid grid-cols-3 gap-6">
+                <div>
+                  <div className="text-3xl font-display text-[#201cc5] mb-1">300%</div>
+                  <div className="text-xs text-black/50 uppercase tracking-wider">Brand Growth</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-display text-[#201cc5] mb-1">3x</div>
+                  <div className="text-xs text-black/50 uppercase tracking-wider">Sales Increase</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-display text-[#201cc5] mb-1">50+</div>
+                  <div className="text-xs text-black/50 uppercase tracking-wider">Retail Partners</div>
+                </div>
               </div>
             </div>
           </div>
