@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Play, Star } from "lucide-react";
 import heroImage from "@/assets/hero-creative.png";
+import heroWomanImage from "@/assets/images/hero-woman.png";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useContactModal } from "@/contexts/ContactModalContext";
 
@@ -80,6 +81,20 @@ export function Hero() {
           </div>
         </motion.div>
 
+
+        {/* === HERO WOMAN IMAGE (Desktop Only) === */}
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
+          className="hidden md:block absolute right-[5%] lg:right-[10%] top-[15%] z-10 pointer-events-none"
+        >
+          <img 
+            src={heroWomanImage} 
+            alt="Creative professional" 
+            className="h-[70vh] max-h-[600px] w-auto object-contain"
+          />
+        </motion.div>
 
         {/* === CENTER: Headline & Image === */}
         <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none pt-[100px] md:pt-[50px]">
