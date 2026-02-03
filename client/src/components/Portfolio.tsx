@@ -8,7 +8,6 @@ import { useContactModal } from "@/contexts/ContactModalContext";
 import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 import theLeagueImage from "@/assets/images/portfolio-the-league.png";
 import brandiniImage from "@/assets/images/portfolio-brandini.png";
-import legacyImage from "@/assets/images/portfolio-legacy.png";
 import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import dwellImage from "@/assets/images/portfolio-dwell.png";
@@ -29,13 +28,6 @@ export function Portfolio() {
       url: "https://nebraskai.replit.app/"
     },
     {
-      category: "WEB DESIGN",
-      title: "MIDWEST GRIT FITNESS",
-      image: midwestGritImage,
-      height: "h-[350px]",
-      url: "https://midwest-grit-fitness.replit.app/"
-    },
-    {
       category: "LOGO & BRANDING",
       title: "THE LEAGUE - MEN'S HEALTH CLINIC",
       image: theLeagueImage,
@@ -45,10 +37,10 @@ export function Portfolio() {
     },
     {
       category: "WEB DESIGN",
-      title: "TENNISX - AI VIDEO ANALYSIS APP",
-      image: tennisxImage,
-      height: "h-[400px]",
-      url: "https://tennis-x-website.replit.app/"
+      title: "MIDWEST GRIT FITNESS",
+      image: midwestGritImage,
+      height: "h-[350px]",
+      url: "https://midwest-grit-fitness.replit.app/"
     },
     {
       category: "WEB DESIGN",
@@ -65,13 +57,6 @@ export function Portfolio() {
       url: "https://dwell-omaha-design.replit.app/"
     },
     {
-      category: "WEB DESIGN",
-      title: "LEGACY WINDOW & DOOR - WEBSITE DESIGN",
-      image: legacyImage,
-      height: "h-[400px]",
-      url: "https://legacywindowco.com/"
-    },
-    {
       category: "PHOTOGRAPHY",
       title: "THE GOOD LIFE BAR & GRILL",
       image: goodLifeImage,
@@ -86,6 +71,13 @@ export function Portfolio() {
       height: "h-[350px]",
       url: "",
       link: "/portfolio/varsity-roman-coin"
+    },
+    {
+      category: "WEB DESIGN",
+      title: "TENNISX - AI VIDEO ANALYSIS APP",
+      image: tennisxImage,
+      height: "h-[400px]",
+      url: "https://tennis-x-website.replit.app/"
     }
   ];
 
