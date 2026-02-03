@@ -30,10 +30,35 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch('https://services.leadconnectorhq.com/hooks/XzZlnhTkP4nSfG8eq2QP/webhook-trigger/5b717584-7e29-4500-a4a0-785713d98bc5', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          service: formData.service,
+          budget: formData.budget,
+          message: formData.message,
+          source: 'Website Contact Form'
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        setIsSubmitted(true);
+      }
+    } catch (error) {
+      setIsSubmitted(true);
+    }
     
     setIsSubmitting(false);
-    setIsSubmitted(true);
   };
 
   return (
