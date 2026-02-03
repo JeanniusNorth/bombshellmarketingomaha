@@ -87,7 +87,7 @@ export function Hero() {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4, type: "spring" }}
-          className="hidden md:block absolute right-[5%] lg:right-[10%] top-[15%] z-10 pointer-events-none"
+          className="hidden md:block absolute right-[-2%] lg:right-[2%] top-[15%] z-5 pointer-events-none"
         >
           <img 
             src={heroWomanImage} 
