@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bombshellaimarketing.com/sitemap.xml
+Sitemap: https://bombshellmarketingomaha.com/sitemap.xml
