@@ -1,0 +1,148 @@
+const BASE_URL = "https://bombshellmarketingomaha.com";
+
+interface PageMeta {
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  ogTitle: string;
+  ogDescription: string;
+}
+
+const pageMeta: Record<string, PageMeta> = {
+  "/": {
+    title: "Bombshell Marketing | Web Design, Logo Design & Brand Photography in Omaha, NE",
+    description: "Bombshell Marketing is Omaha's top-rated agency for web design, logo design, and brand photography. Over 300 projects delivered with 4.9-star ratings. Serving Nebraska businesses and clients nationwide. Get a free website audit today.",
+    keywords: "web design Omaha, logo design Omaha, brand photography Omaha, Omaha web designer, Omaha logo designer, brand photographer Omaha, Nebraska web design, Omaha marketing agency, digital marketing Omaha, branding agency Omaha, website development Omaha, Omaha web design company",
+    canonical: "/",
+    ogTitle: "Bombshell Marketing | #1 Web Design & Logo Design Agency in Omaha",
+    ogDescription: "Omaha's top-rated marketing agency for web design, logo design, and brand photography. 300+ successful projects delivered. Get a free website audit.",
+  },
+  "/about": {
+    title: "About Bombshell Marketing | Omaha's Premier Creative Agency",
+    description: "Learn about Bombshell Marketing, Omaha's premier creative agency. We specialize in web design, logo design, and brand photography with over 300 successful projects. Meet our team and discover our creative process.",
+    keywords: "about Bombshell Marketing, Omaha creative agency, marketing team Omaha, web design agency Omaha Nebraska, creative professionals Omaha",
+    canonical: "/about",
+    ogTitle: "About Bombshell Marketing | Omaha's Premier Creative Agency",
+    ogDescription: "Meet the team behind Omaha's top-rated creative agency. 300+ projects, 225+ happy clients, and a passion for explosive design.",
+  },
+  "/web-design": {
+    title: "Web Design Omaha | Professional Website Design Services | Bombshell Marketing",
+    description: "Professional web design services in Omaha, Nebraska. Custom responsive websites, e-commerce solutions, and modern web development. Bombshell Marketing delivers stunning websites that convert visitors into customers. Free website audit available.",
+    keywords: "web design Omaha, website design Omaha, Omaha web designer, website development Nebraska, responsive web design Omaha, custom website Omaha, e-commerce web design Omaha, professional web design Omaha NE, web design company Omaha",
+    canonical: "/web-design",
+    ogTitle: "Web Design Omaha | Custom Websites That Convert | Bombshell Marketing",
+    ogDescription: "Professional web design services in Omaha, NE. Custom responsive websites built to convert visitors into customers. Free website audit.",
+  },
+  "/logo-branding": {
+    title: "Logo Design & Branding Omaha | Custom Logo Design Services | Bombshell Marketing",
+    description: "Custom logo design and brand identity services in Omaha, Nebraska. Professional logo creation, brand guidelines, and visual identity development. Bombshell Marketing creates memorable brands that stand out.",
+    keywords: "logo design Omaha, branding Omaha, brand identity Omaha, custom logo Omaha, logo designer Omaha Nebraska, brand development Omaha, visual identity Omaha, logo design company Omaha",
+    canonical: "/logo-branding",
+    ogTitle: "Logo Design & Branding Omaha | Custom Brand Identity | Bombshell Marketing",
+    ogDescription: "Custom logo design and brand identity services in Omaha, NE. Memorable logos and cohesive brand identities that make your business stand out.",
+  },
+  "/brand-photography": {
+    title: "Brand Photography Omaha | Professional Photography Services | Bombshell Marketing",
+    description: "Professional brand photography services in Omaha, Nebraska. Product photography, headshots, lifestyle branding, and commercial photography. Bombshell Marketing captures your brand's story through stunning visuals.",
+    keywords: "brand photography Omaha, product photography Omaha, commercial photographer Omaha, headshot photographer Omaha, lifestyle photography Nebraska, professional photographer Omaha, business photography Omaha",
+    canonical: "/brand-photography",
+    ogTitle: "Brand Photography Omaha | Professional Commercial Photography | Bombshell Marketing",
+    ogDescription: "Professional brand photography in Omaha, NE. Product photos, headshots, and lifestyle imagery that tell your brand's story.",
+  },
+  "/marketing-strategy": {
+    title: "Marketing & Digital Strategy Omaha | AI Marketing Services | Bombshell Marketing",
+    description: "Marketing and digital strategy services in Omaha, Nebraska. AI-powered marketing, brand strategy, social media marketing, and digital growth solutions. Bombshell Marketing helps businesses grow with data-driven strategies.",
+    keywords: "digital marketing Omaha, marketing strategy Omaha, AI marketing Omaha, social media marketing Omaha, digital strategy Nebraska, brand strategy Omaha, marketing agency Omaha",
+    canonical: "/marketing-strategy",
+    ogTitle: "Marketing & Digital Strategy Omaha | AI-Powered Growth | Bombshell Marketing",
+    ogDescription: "AI-powered marketing and digital strategy in Omaha, NE. Data-driven strategies that deliver measurable growth for your business.",
+  },
+  "/portfolio": {
+    title: "Portfolio | Web Design & Brand Photography Projects | Bombshell Marketing Omaha",
+    description: "View our portfolio of web design, logo design, and brand photography projects for Omaha and Nebraska businesses. See real results from 300+ projects delivered by Bombshell Marketing.",
+    keywords: "web design portfolio Omaha, brand photography portfolio, logo design examples, Nebraska web design projects, marketing agency portfolio Omaha",
+    canonical: "/portfolio",
+    ogTitle: "Our Work | Web Design & Brand Photography Portfolio | Bombshell Marketing",
+    ogDescription: "Explore 300+ web design, logo design, and brand photography projects. Real work for real businesses in Omaha and beyond.",
+  },
+  "/portfolio/good-life": {
+    title: "The Good Life Bar & Grill Case Study | Brand Photography Omaha | Bombshell Marketing",
+    description: "See how Bombshell Marketing transformed The Good Life Bar & Grill's brand through professional photography in Omaha, Nebraska. Full case study with results.",
+    keywords: "brand photography case study, restaurant photography Omaha, The Good Life Bar Grill, commercial photography Omaha",
+    canonical: "/portfolio/good-life",
+    ogTitle: "The Good Life Bar & Grill | Brand Photography Case Study | Bombshell Marketing",
+    ogDescription: "How professional brand photography transformed The Good Life Bar & Grill's visual presence in Omaha.",
+  },
+  "/portfolio/varsity-roman-coin": {
+    title: "Varsity Roman Coin Case Study | Brand Photography Omaha | Bombshell Marketing",
+    description: "See how Bombshell Marketing captured Varsity Roman Coin's brand through professional photography in Omaha, Nebraska. Full case study with results.",
+    keywords: "product photography case study, restaurant photography Omaha, Varsity Roman Coin, food photography Omaha",
+    canonical: "/portfolio/varsity-roman-coin",
+    ogTitle: "Varsity Roman Coin | Brand Photography Case Study | Bombshell Marketing",
+    ogDescription: "Professional brand photography case study for Varsity Roman Coin in Omaha, NE.",
+  },
+  "/services": {
+    title: "Marketing Services | Web Design, Logo Design & Brand Photography Omaha",
+    description: "Professional web design, logo design, brand photography, and digital marketing services in Omaha, Nebraska. 300+ successful projects. Get a free brand audit today.",
+    keywords: "web design services Omaha, logo design services Nebraska, brand photography services, marketing agency Omaha, digital marketing services Omaha",
+    canonical: "/services",
+    ogTitle: "Our Services | Web Design, Branding & Photography | Bombshell Marketing",
+    ogDescription: "Full-service marketing agency in Omaha. Web design, logo design, brand photography, and digital strategy. 300+ projects delivered.",
+  },
+};
+
+export function getPageMeta(pathname: string): PageMeta {
+  return pageMeta[pathname] || pageMeta["/"];
+}
+
+export function injectMetaTags(html: string, pathname: string): string {
+  const meta = getPageMeta(pathname);
+
+  html = html.replace(
+    /<title>[^<]*<\/title>/,
+    `<title>${meta.title}</title>`
+  );
+
+  html = html.replace(
+    /<meta name="description" content="[^"]*" \/>/,
+    `<meta name="description" content="${meta.description}" />`
+  );
+
+  html = html.replace(
+    /<meta name="keywords" content="[^"]*" \/>/,
+    `<meta name="keywords" content="${meta.keywords}" />`
+  );
+
+  html = html.replace(
+    /<link rel="canonical" href="[^"]*" \/>/,
+    `<link rel="canonical" href="${BASE_URL}${meta.canonical}" />`
+  );
+
+  html = html.replace(
+    /<meta property="og:title" content="[^"]*" \/>/,
+    `<meta property="og:title" content="${meta.ogTitle}" />`
+  );
+
+  html = html.replace(
+    /<meta property="og:description" content="[^"]*" \/>/,
+    `<meta property="og:description" content="${meta.ogDescription}" />`
+  );
+
+  html = html.replace(
+    /<meta property="og:url" content="[^"]*" \/>/,
+    `<meta property="og:url" content="${BASE_URL}${meta.canonical}" />`
+  );
+
+  html = html.replace(
+    /<meta name="twitter:title" content="[^"]*" \/>/,
+    `<meta name="twitter:title" content="${meta.ogTitle}" />`
+  );
+
+  html = html.replace(
+    /<meta name="twitter:description" content="[^"]*" \/>/,
+    `<meta name="twitter:description" content="${meta.ogDescription}" />`
+  );
+
+  return html;
+}

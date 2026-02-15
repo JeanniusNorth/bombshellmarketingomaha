@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <SEO 
-        title="Bombshell Marketing | Omaha Web Design, Logo Design & Brand Photography"
-        description="Omaha's top-rated marketing agency for web design, logo design, and brand photography. 20+ years of expertise, 300+ successful projects. Based in Omaha, serving businesses everywhere."
+        title="Bombshell Marketing | Web Design, Logo Design & Brand Photography in Omaha, NE"
+        description="Bombshell Marketing is Omaha's top-rated agency for web design, logo design, and brand photography. Over 300 projects delivered with 4.9-star ratings. Serving Nebraska businesses and clients nationwide. Get a free website audit today."
         canonicalPath="/"
-        keywords="web design Omaha, logo design Omaha, brand photography Omaha, Omaha web designer, Omaha logo designer, brand photographer Omaha, Nebraska web design, Omaha marketing agency"
+        keywords="web design Omaha, logo design Omaha, brand photography Omaha, Omaha web designer, Omaha logo designer, brand photographer Omaha, Nebraska web design, Omaha marketing agency, digital marketing Omaha, branding agency Omaha, website development Omaha, Omaha web design company"
       />
       <Navigation />
       
