@@ -100,7 +100,49 @@ const pageMeta: Record<string, PageMeta> = {
   },
 };
 
+const blogArticleMeta: Record<string, { title: string; description: string; keywords: string }> = {
+  "web-design-cost-omaha-2026": {
+    title: "How Much Does Web Design Cost in Omaha? (2026 Guide) | Bombshell Marketing",
+    description: "Wondering what you'll pay for a professional website in Omaha? We break down typical pricing, what affects cost, and how to get the most value from your investment.",
+    keywords: "web design cost Omaha, website pricing Nebraska, how much does web design cost, Omaha web design pricing 2026",
+  },
+  "5-signs-omaha-business-needs-new-logo": {
+    title: "5 Signs Your Omaha Business Needs a New Logo | Bombshell Marketing",
+    description: "Your logo is the face of your brand. Here are five telltale signs it might be time for a refresh and how a new logo can transform your Omaha business.",
+    keywords: "logo redesign Omaha, new logo signs, Omaha logo design, brand refresh Nebraska, logo update",
+  },
+  "omaha-restaurant-professional-brand-photography": {
+    title: "Why Every Omaha Restaurant Needs Professional Brand Photography | Bombshell Marketing",
+    description: "In a city that loves food, your restaurant's photos can make or break the first impression. Learn how professional brand photography drives more customers.",
+    keywords: "restaurant photography Omaha, food photography Nebraska, brand photography restaurants, Omaha food photos",
+  },
+  "seo-small-businesses-omaha-beginners-guide": {
+    title: "SEO for Small Businesses in Omaha: A Complete Beginner's Guide | Bombshell Marketing",
+    description: "New to SEO? This beginner-friendly guide covers everything Omaha business owners need to know about getting found on Google and driving more local traffic.",
+    keywords: "SEO Omaha, small business SEO Nebraska, local SEO guide, Google ranking Omaha, SEO beginners guide",
+  },
+  "roi-professional-branding-omaha-companies": {
+    title: "The ROI of Professional Branding for Omaha Companies | Bombshell Marketing",
+    description: "Professional branding isn't just about looking good—it's about business growth. Discover why more Omaha companies are investing in their brand.",
+    keywords: "branding ROI Omaha, professional branding Nebraska, brand investment, Omaha branding agency, brand strategy ROI",
+  },
+};
+
 export function getPageMeta(pathname: string): PageMeta {
+  if (pathname.startsWith("/blog/")) {
+    const slug = pathname.replace("/blog/", "");
+    const articleMeta = blogArticleMeta[slug];
+    if (articleMeta) {
+      return {
+        title: articleMeta.title,
+        description: articleMeta.description,
+        keywords: articleMeta.keywords,
+        canonical: pathname,
+        ogTitle: articleMeta.title,
+        ogDescription: articleMeta.description,
+      };
+    }
+  }
   return pageMeta[pathname] || pageMeta["/"];
 }
 
