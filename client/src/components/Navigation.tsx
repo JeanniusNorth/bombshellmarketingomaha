@@ -93,6 +93,12 @@ export function Navigation() {
         >
           Portfolio
         </a>
+        <a 
+          href="/blog"
+          className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+        >
+          Blog
+        </a>
         <button 
           onClick={openContactModal}
           className="text-white/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
@@ -166,6 +172,13 @@ export function Navigation() {
                   className="text-2xl font-display text-white hover:text-primary uppercase"
                 >
                   Portfolio
+                </a>
+                <a 
+                  href="/blog"
+                  onClick={() => setIsOpen(false)}
+                  className="text-2xl font-display text-white hover:text-primary uppercase"
+                >
+                  Blog
                 </a>
                 <button 
                   onClick={() => { setIsOpen(false); openContactModal(); }}
