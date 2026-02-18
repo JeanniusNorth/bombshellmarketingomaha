@@ -286,8 +286,8 @@ export default function MarketingStrategyPage() {
         </div>
       </section>
 
-      {/* Why Choose Bombshell Section */}
-      <section className="py-20 bg-white">
+      {/* Why Choose Bombshell Section - Hidden visually, kept for SEO */}
+      <section className="sr-only" aria-hidden="true">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-2 mb-4">

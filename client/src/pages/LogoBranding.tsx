@@ -224,8 +224,8 @@ export default function LogoBrandingPage() {
         </div>
       </section>
 
-      {/* Why Choose Bombshell Section */}
-      <section className="py-20 bg-white">
+      {/* Why Choose Bombshell Section - Hidden visually, kept for SEO */}
+      <section className="sr-only" aria-hidden="true">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-8 text-center">
