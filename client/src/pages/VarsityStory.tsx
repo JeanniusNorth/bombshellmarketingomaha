@@ -43,6 +43,11 @@ export default function VarsityStoryPage() {
         description="Brand photography case study for Varsity Roman Coin pizza restaurant in Omaha, Nebraska. See how we captured mouthwatering food photography that drives sales."
         canonicalPath="/portfolio/varsity-roman-coin"
         keywords="food photography Omaha, restaurant photography, pizza photography, brand photography case study"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Portfolio", url: "/portfolio" },
+          { name: "Varsity Roman Coin", url: "/portfolio/varsity-roman-coin" }
+        ]}
       />
     <div className="min-h-screen bg-[#1a1a1a]">
       <Navigation />

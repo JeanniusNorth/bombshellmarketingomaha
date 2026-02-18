@@ -17,35 +17,35 @@ const services = [
     icon: Globe,
     title: "Web Design & Development",
     description: "Professional web design in Omaha that doesn't just function—it performs. We build high-octane user experiences with modern technology, responsive design, and stunning visuals for Nebraska businesses.",
-    link: "/contact",
+    link: "/web-design",
     highlight: true
   },
   {
     icon: Target,
     title: "Digital Marketing Strategy",
     description: "AI-powered digital marketing strategies for Omaha businesses. We target your ideal audience with precision using data-driven campaigns that convert visitors into customers.",
-    link: "/contact",
+    link: "/marketing-strategy",
     highlight: false
   },
   {
     icon: Layers,
     title: "Logo & Brand Design",
     description: "Custom logo design in Omaha that sears into memory. Our visual identities, brand systems, and guidelines command attention and build recognition for Nebraska brands.",
-    link: "/contact",
+    link: "/logo-branding",
     highlight: false
   },
   {
     icon: Sparkles,
     title: "Content Creation Solutions",
     description: "Compelling content creation for Omaha businesses. From copywriting to social media management, we create content that engages your Nebraska audience and converts.",
-    link: "/contact",
+    link: "/marketing-strategy",
     highlight: true
   },
   {
     icon: Camera,
     title: "Brand Photography",
     description: "Professional brand photography in Omaha, Nebraska. Capture the raw energy of your brand with professional shots that tell your story instantly and elevate your visual presence.",
-    link: "/contact",
+    link: "/brand-photography",
     highlight: false
   }
 ];
@@ -59,7 +59,11 @@ export default function ServicesPage() {
         title="Marketing Services | Web Design, Logo Design & Brand Photography Omaha"
         description="Professional web design, logo design, and brand photography services in Omaha, Nebraska. Marketing agency with 300+ successful projects. Free brand audit available."
         canonicalPath="/services"
-        keywords="web design services Omaha, logo design services Nebraska, brand photography services, marketing agency Omaha"
+        keywords="web design services Omaha, logo design services Nebraska, brand photography services, marketing agency Omaha, digital marketing services Omaha"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" }
+        ]}
       />
     <div className="min-h-screen bg-white">
       <Navigation />

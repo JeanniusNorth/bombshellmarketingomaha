@@ -18,6 +18,10 @@ export default function AboutPage() {
         description="Meet the team behind Bombshell Marketing. Based in Omaha with 20+ years experience in web design, logo design, and brand photography. Serving businesses everywhere."
         canonicalPath="/about"
         keywords="Omaha marketing agency, about Bombshell Marketing, web design team Omaha, branding agency Nebraska"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "About Us", url: "/about" }
+        ]}
       />
     <div className="min-h-screen bg-white">
       <Navigation />

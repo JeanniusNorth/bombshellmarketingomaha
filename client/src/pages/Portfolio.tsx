@@ -16,6 +16,10 @@ export default function PortfolioPage() {
         description="View our portfolio of web design, logo design, and brand photography projects for Omaha and Nebraska businesses. Award-winning creative work by Bombshell Marketing."
         canonicalPath="/portfolio"
         keywords="web design portfolio Omaha, brand photography portfolio, logo design examples, Nebraska web design projects"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Portfolio", url: "/portfolio" }
+        ]}
       />
     <div className="min-h-screen bg-white">
       <Navigation />

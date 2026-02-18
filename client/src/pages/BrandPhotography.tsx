@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
 import { SEO } from "@/components/SEO";
+import { FAQSection } from "@/components/FAQSection";
 
 const photographyServices = [
   {
@@ -68,6 +69,33 @@ const portfolioImages = [
   }
 ];
 
+const photographyFAQs = [
+  {
+    question: "How much does brand photography cost in Omaha?",
+    answer: "Brand photography sessions in Omaha typically range from $500 to $3,000+ depending on the scope, location, and number of deliverables. At Bombshell Marketing, we offer packages for headshots, product photography, lifestyle shoots, and full-day brand story sessions. Contact us for a custom quote based on your specific needs."
+  },
+  {
+    question: "How long is a typical photo shoot?",
+    answer: "Most brand photography sessions last 2 to 4 hours, though full-day shoots are available for larger projects. Headshot sessions can be completed in about an hour. We plan every detail in advance so your time on set is efficient and productive."
+  },
+  {
+    question: "How many photos will I receive?",
+    answer: "The number of final edited photos depends on your package, but most sessions deliver 30 to 100+ professionally edited images. Every photo is individually color-corrected, retouched, and optimized for both web and print use."
+  },
+  {
+    question: "Do you provide styling and creative direction?",
+    answer: "Yes! Our team provides full creative direction including wardrobe guidance, prop styling, and shot composition. We create a detailed shot list before every session so we capture everything you need for your marketing materials, website, and social media."
+  },
+  {
+    question: "Where do photo shoots take place?",
+    answer: "We shoot on location throughout Omaha and Nebraska—at your business, studio spaces, outdoor locations, or anywhere that tells your brand story. We also have access to professional studio spaces in Omaha for controlled lighting setups and clean product photography."
+  },
+  {
+    question: "How quickly will I receive my photos?",
+    answer: "Most clients receive their fully edited photos within 7 to 14 business days after the shoot. Rush delivery is available for time-sensitive projects. We deliver images through a private online gallery where you can download, share, and organize your photos."
+  }
+];
+
 export default function BrandPhotographyPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -80,6 +108,16 @@ export default function BrandPhotographyPage() {
         description="Professional brand photography in Omaha, Nebraska. Headshots, product photography, food photography, and lifestyle brand imagery. Elevate your visual presence with Bombshell Marketing."
         canonicalPath="/brand-photography"
         keywords="brand photography Omaha, product photography Nebraska, headshots Omaha, food photography, commercial photographer"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Brand Photography", url: "/brand-photography" }
+        ]}
+        service={{
+          name: "Brand Photography",
+          description: "Professional brand photography services in Omaha, Nebraska. Headshots, product photography, food photography, and lifestyle brand imagery.",
+          serviceType: "Photography"
+        }}
       />
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -140,7 +178,7 @@ export default function BrandPhotographyPage() {
                 <div key={i} className="relative overflow-hidden group">
                   <img 
                     src={img.src} 
-                    alt={img.title}
+                    alt={`${img.title} - Brand Photography by Bombshell Marketing Omaha`}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
@@ -228,6 +266,40 @@ export default function BrandPhotographyPage() {
         </div>
       </section>
 
+      {/* Why Choose Bombshell Section */}
+      <section className="bg-white py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-primary text-xl">✦</span>
+              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Why Bombshell</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-10">
+              Why Omaha Businesses Trust Bombshell for Brand Photography
+            </h2>
+
+            <div className="space-y-6 text-black/70 text-base leading-relaxed">
+              <p>
+                Omaha is home to a thriving community of restaurants, retail shops, service providers, and startups—each with a unique story to tell. At Bombshell Marketing, our brand photography team understands the local market and knows how to create images that resonate with Midwestern audiences while standing out in a crowded digital landscape. Whether you need professional headshots for your leadership team or lifestyle imagery for a new product launch, we bring the creative eye and technical skill to make it happen.
+              </p>
+
+              <p>
+                We've partnered with some of Omaha's most recognized brands to deliver photography that drives real results. From capturing the energy and flavor of local restaurants like <Link href="/portfolio/good-life" className="text-[#201cc5] underline hover:text-primary transition-colors">Good Life Eat & Drink</Link> to producing polished product photography for growing e-commerce brands, our portfolio speaks for itself. Every shoot is backed by strategic thinking—we don't just take pretty pictures, we create visual assets designed to convert visitors into customers.
+              </p>
+
+              <p>
+                What sets us apart is our full-service approach. Brand photography is just one piece of the puzzle. We integrate your photography with <Link href="/web-design" className="text-[#201cc5] underline hover:text-primary transition-colors">custom web design</Link>, social media strategy, and brand identity so every visual touchpoint is consistent and compelling. Small businesses in Omaha trust us because we treat every project—whether it's a quick headshot session or a full-day brand shoot—with the same level of professionalism and attention to detail.
+              </p>
+
+              <p>
+                Our photographers are experienced in a wide range of industries, from food and beverage to professional services, fitness, and real estate. We stay current with the latest trends in commercial photography and invest in top-tier equipment to ensure every image meets the highest standards. If you're looking for a brand photographer in Omaha who genuinely cares about your business and delivers photos you'll be proud to share, Bombshell Marketing is the team to call.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <FAQSection faqs={photographyFAQs} heading="Brand Photography FAQs" subheading="Common questions about our Omaha photography services" />
       <CallToAction />
       <Footer />
     </div>

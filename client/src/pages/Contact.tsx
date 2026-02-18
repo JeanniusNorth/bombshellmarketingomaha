@@ -68,6 +68,10 @@ export default function ContactPage() {
         description="Contact Bombshell Marketing for web design, logo design, and brand photography. Based in Omaha, serving businesses everywhere. Let's blow up your business together."
         canonicalPath="/contact"
         keywords="contact Bombshell Marketing, Omaha web design contact, get a quote, marketing agency Omaha"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Contact", url: "/contact" }
+        ]}
       />
     <div className="min-h-screen bg-[#201cc5]">
       <Navigation />

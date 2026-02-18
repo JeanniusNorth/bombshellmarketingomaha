@@ -4,6 +4,7 @@ import { ArrowUpRight, Globe, Code, Smartphone, Zap, Search, ShieldCheck, Extern
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import { FAQSection } from "@/components/FAQSection";
 import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
@@ -87,6 +88,33 @@ const portfolioItems = [
   }
 ];
 
+const webDesignFAQs = [
+  {
+    question: "How much does web design cost in Omaha?",
+    answer: "Web design costs in Omaha typically range from $3,000 to $15,000+ depending on the project scope. At Bombshell Marketing, we tailor every website to your specific business needs—whether it's a simple branding site or a full e-commerce platform. We offer free consultations to provide an accurate quote based on your goals."
+  },
+  {
+    question: "How long does it take to build a website?",
+    answer: "Most custom websites take 4 to 8 weeks from kickoff to launch. This includes our discovery phase, custom design mockups, development, content integration, and thorough testing. Larger projects with e-commerce or custom functionality may take 8 to 12 weeks. We keep you updated at every stage."
+  },
+  {
+    question: "Do you build mobile-friendly websites?",
+    answer: "Absolutely. Every website we design at Bombshell Marketing is built with a mobile-first approach. Over 60% of web traffic comes from mobile devices, so we ensure your site looks and performs flawlessly on phones, tablets, and desktops. Responsive design is included in every project."
+  },
+  {
+    question: "What platform do you build websites on?",
+    answer: "We build custom websites using modern technologies like React, Next.js, and WordPress depending on your needs. For businesses that need to update content frequently, we set up user-friendly content management systems. For maximum performance and SEO, we often recommend custom-coded solutions that load faster than template-based sites."
+  },
+  {
+    question: "Will I be able to update my website myself?",
+    answer: "Yes! We build every website with ease of management in mind. Whether we use a CMS like WordPress or a custom solution, we provide training so you can update text, images, and content on your own. Plus, we offer ongoing maintenance and support packages if you'd rather have us handle updates."
+  },
+  {
+    question: "Do you include SEO with web design?",
+    answer: "Yes—SEO is built into every website we create. This includes proper site structure, fast load times, mobile optimization, meta tags, schema markup, image optimization, and clean code. We set the foundation for strong Google rankings from day one. We also offer ongoing SEO and digital marketing services to help you climb to the top of search results in Omaha and beyond."
+  }
+];
+
 const processSteps = [
   {
     number: "01",
@@ -121,6 +149,16 @@ export default function WebDesignPage() {
         description="Professional web design and development in Omaha, Nebraska. Custom websites that look stunning and perform flawlessly. Get your free website audit today."
         canonicalPath="/web-design"
         keywords="web design Omaha, website development Nebraska, custom website design, Omaha web developer, responsive web design"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Web Design", url: "/web-design" }
+        ]}
+        service={{
+          name: "Web Design & Development",
+          description: "Professional custom web design and development services in Omaha, Nebraska. Responsive websites built for performance and conversions.",
+          serviceType: "Web Design"
+        }}
       />
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -168,7 +206,7 @@ export default function WebDesignPage() {
                 <div className="overflow-hidden mb-4 bg-gray-200 relative aspect-[4/3]">
                   <img 
                     src={item.image} 
-                    alt={item.title}
+                    alt={`${item.title} - Custom Web Design by Bombshell Marketing Omaha`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -257,6 +295,36 @@ export default function WebDesignPage() {
         </div>
       </section>
 
+      {/* Why Choose Bombshell Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-primary text-xl">✦</span>
+              <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Why Us</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-8">
+              Why Choose Bombshell for Web Design in Omaha
+            </h2>
+
+            <div className="space-y-6 text-black/70 leading-relaxed">
+              <p>
+                At Bombshell Marketing, we understand that your website is more than just a digital brochure—it's the foundation of your brand's online presence. As an Omaha-based web design agency, we've helped dozens of local businesses across Nebraska build websites that not only look exceptional but drive real results. From small startups in the Old Market to established companies in West Omaha, we bring the same level of dedication and creativity to every project.
+              </p>
+              <p>
+                What sets us apart from other web design agencies in Omaha is our holistic approach. We don't just design websites—we craft complete digital experiences that align with your brand identity. Our team works closely with you to understand your business goals, target audience, and competitive landscape before writing a single line of code. This strategic foundation ensures your website serves as a powerful tool for growth, not just a pretty face online. Take a look at our <Link href="/portfolio" className="text-[#201cc5] font-bold hover:underline">portfolio</Link> to see the results for yourself.
+              </p>
+              <p>
+                Every website we build is custom-designed and hand-coded for maximum performance. We don't rely on cookie-cutter templates—your business is unique, and your website should be too. Our designs are rooted in your brand's visual identity, and if you need help refining your brand before we build, our <Link href="/logo-branding" className="text-[#201cc5] font-bold hover:underline">logo and branding services</Link> can create a cohesive look that carries across every touchpoint, from your website to your business cards.
+              </p>
+              <p>
+                Beyond beautiful design, we prioritize the technical details that matter: fast load times, mobile responsiveness, clean code architecture, and SEO best practices baked in from the start. Nebraska businesses deserve a web partner who understands the local market and delivers websites that compete on a national level. Whether you need a sleek single-page site or a complex e-commerce platform, Bombshell Marketing is ready to bring your vision to life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
       <section className="py-20 bg-[#1a1a1a]">
         <div className="container mx-auto px-4">
@@ -278,6 +346,8 @@ export default function WebDesignPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection faqs={webDesignFAQs} heading="Web Design FAQs" subheading="Common questions about our Omaha web design services" />
 
       {/* CTA Section */}
       <section className="bg-[#201cc5] py-20 relative overflow-hidden">

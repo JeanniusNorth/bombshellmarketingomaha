@@ -5,6 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
 import { SEO } from "@/components/SEO";
+import { FAQSection } from "@/components/FAQSection";
 
 const brandingServices = [
   {
@@ -53,6 +54,33 @@ const portfolioLogos = [
   }
 ];
 
+const logoFAQs = [
+  {
+    question: "How much does logo design cost in Omaha?",
+    answer: "Professional logo design in Omaha typically ranges from $1,500 to $5,000+ depending on the scope of your brand identity project. At Bombshell Marketing, our logo packages include multiple initial concepts, revision rounds, and final files in all formats you'll need. We offer free consultations to discuss your vision and provide a custom quote."
+  },
+  {
+    question: "How long does the logo design process take?",
+    answer: "Our logo design process typically takes 2 to 4 weeks from initial consultation to final delivery. This includes our discovery phase, concept development, presentation of multiple directions, and collaborative refinement. Rush timelines are available for businesses with tight deadlines."
+  },
+  {
+    question: "How many logo concepts will I receive?",
+    answer: "We typically present 3 to 5 unique logo concepts based on our discovery process. Each concept represents a different strategic direction for your brand. After you select your preferred direction, we refine it through multiple rounds of revisions until it's perfect."
+  },
+  {
+    question: "What files will I receive with my logo?",
+    answer: "You'll receive a complete logo package including vector files (AI, EPS, SVG), high-resolution rasters (PNG, JPG), and versions optimized for web, print, social media, and merchandise. We also provide light and dark background versions, a favicon, and color/font specifications."
+  },
+  {
+    question: "Can you redesign my existing logo?",
+    answer: "Absolutely. Many Omaha businesses come to us for logo refreshes and complete rebrands. We can modernize your existing logo while preserving brand recognition, or create an entirely new identity. We'll assess your current brand and recommend the best approach for your business goals."
+  },
+  {
+    question: "Do you create brand guidelines?",
+    answer: "Yes—we offer comprehensive brand guidelines as part of our branding packages. Your brand guide includes logo usage rules, color palette specifications, typography systems, imagery style direction, and application examples. This ensures brand consistency across your entire team and all marketing materials."
+  }
+];
+
 export default function LogoBrandingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -65,6 +93,16 @@ export default function LogoBrandingPage() {
         description="Professional logo design and branding services in Omaha, Nebraska. Custom logos, brand identity, style guides, and visual design. Build a brand that stands out with Bombshell Marketing."
         canonicalPath="/logo-branding"
         keywords="logo design Omaha, branding services Nebraska, brand identity, custom logo design, Omaha logo designer"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Logo & Branding", url: "/logo-branding" }
+        ]}
+        service={{
+          name: "Logo Design & Brand Identity",
+          description: "Custom logo design and comprehensive brand identity services in Omaha, Nebraska. Memorable logos, brand guidelines, and visual identity systems.",
+          serviceType: "Logo Design"
+        }}
       />
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -141,7 +179,7 @@ export default function LogoBrandingPage() {
                 <div className="overflow-hidden mb-6 bg-black rounded-lg">
                   <img 
                     src={item.src} 
-                    alt={item.title}
+                    alt={`${item.title} - Logo Design by Bombshell Marketing Omaha`}
                     className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
@@ -186,6 +224,31 @@ export default function LogoBrandingPage() {
         </div>
       </section>
 
+      {/* Why Choose Bombshell Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-8 text-center">
+              Why Omaha Businesses Choose Bombshell for Logo Design
+            </h2>
+            <div className="space-y-6 text-black/60 text-lg leading-relaxed">
+              <p>
+                When it comes to professional logo design in Omaha, Bombshell Marketing brings a unique blend of strategic insight and creative artistry that sets us apart. We understand the Nebraska business landscape—from thriving startups in the Blackstone District to established enterprises across the metro area—and we design brand identities that resonate with local audiences while standing strong on a national stage.
+              </p>
+              <p>
+                Our approach goes beyond aesthetics. Every logo we create is rooted in research and brand strategy, ensuring your visual identity communicates the right message to your target customers. We take the time to understand your industry, competition, and goals before a single sketch is drawn. This discovery-first process is why Omaha businesses trust us to build brands that drive real results.
+              </p>
+              <p>
+                A great logo is just the beginning. We build complete brand ecosystems that extend across every touchpoint—from your <Link href="/web-design" className="text-[#201cc5] hover:underline font-semibold">custom website design</Link> to print materials, signage, and social media. Our team also offers <Link href="/brand-photography" className="text-[#201cc5] hover:underline font-semibold">professional brand photography</Link> to complement your visual identity with authentic, on-brand imagery that tells your story.
+              </p>
+              <p>
+                Whether you're launching a new venture in Nebraska or refreshing an established Omaha brand, our collaborative design process ensures you're involved every step of the way. We combine your vision with our expertise to deliver a logo and brand identity that you're proud to put on everything—from business cards to billboards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
       <section className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
@@ -214,6 +277,9 @@ export default function LogoBrandingPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection faqs={logoFAQs} heading="Logo Design & Branding FAQs" subheading="Common questions about our Omaha logo design and branding services" />
 
       {/* CTA Section */}
       <CallToAction />

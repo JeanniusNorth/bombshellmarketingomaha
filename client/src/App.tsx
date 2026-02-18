@@ -16,6 +16,7 @@ import WebDesignPage from "@/pages/WebDesign";
 import VarsityStoryPage from "@/pages/VarsityStory";
 import GoodLifeStoryPage from "@/pages/GoodLifeStory";
 import MarketingStrategyPage from "@/pages/MarketingStrategy";
+import BlogPage from "@/pages/Blog";
 
 function Router() {
   return (
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/marketing-strategy" component={MarketingStrategyPage} />
       <Route path="/portfolio/varsity-roman-coin" component={VarsityStoryPage} />
       <Route path="/portfolio/good-life" component={GoodLifeStoryPage} />
+      <Route path="/blog" component={BlogPage} />
       <Route component={NotFound} />
     </Switch>
   );

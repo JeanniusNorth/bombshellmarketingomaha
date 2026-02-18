@@ -1,15 +1,30 @@
 import { useEffect } from "react";
 
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+interface ServiceSchema {
+  name: string;
+  description: string;
+  provider?: string;
+  areaServed?: string;
+  serviceType?: string;
+}
+
 interface SEOProps {
   title: string;
   description: string;
   canonicalPath?: string;
   keywords?: string;
+  breadcrumbs?: BreadcrumbItem[];
+  service?: ServiceSchema;
 }
 
 const BASE_URL = "https://bombshellmarketingomaha.com";
 
-export function SEO({ title, description, canonicalPath = "/", keywords }: SEOProps) {
+export function SEO({ title, description, canonicalPath = "/", keywords, breadcrumbs, service }: SEOProps) {
   useEffect(() => {
     document.title = title;
     
@@ -60,5 +75,55 @@ export function SEO({ title, description, canonicalPath = "/", keywords }: SEOPr
     };
   }, [title, description, canonicalPath, keywords]);
 
-  return null;
+  const breadcrumbSchema = breadcrumbs ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbs.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: `${BASE_URL}${item.url}`,
+    })),
+  } : null;
+
+  const serviceSchema = service ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.name,
+    description: service.description,
+    provider: {
+      "@type": "LocalBusiness",
+      name: service.provider || "Bombshell Marketing",
+      url: BASE_URL,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Omaha",
+        addressRegion: "NE",
+        postalCode: "68102",
+        addressCountry: "US",
+      },
+    },
+    areaServed: {
+      "@type": "State",
+      name: service.areaServed || "Nebraska",
+    },
+    serviceType: service.serviceType || service.name,
+  } : null;
+
+  return (
+    <>
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
+      {serviceSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+      )}
+    </>
+  );
 }

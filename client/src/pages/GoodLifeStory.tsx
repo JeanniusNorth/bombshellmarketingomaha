@@ -40,6 +40,11 @@ export default function GoodLifeStoryPage() {
         description="Brand photography case study for The Good Life Bar & Grill in Omaha, Nebraska. See how we captured the vibrant atmosphere, delicious food, and craft cocktails."
         canonicalPath="/portfolio/good-life"
         keywords="bar photography Omaha, restaurant photography, food and drink photography, brand photography case study"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Portfolio", url: "/portfolio" },
+          { name: "The Good Life", url: "/portfolio/good-life" }
+        ]}
       />
     <div className="min-h-screen bg-[#1a1a1a]">
       <Navigation />

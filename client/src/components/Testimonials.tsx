@@ -155,6 +155,45 @@ export function Testimonials() {
   };
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Bombshell Marketing",
+            "url": "https://bombshellmarketingomaha.com",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": 4.9,
+              "reviewCount": 47,
+              "bestRating": 5,
+              "worstRating": 1
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Chris" },
+                "reviewBody": "Bombshell's marketing expertise took Brandini to the next level. Their AI-driven campaigns and creative strategies helped us reach customers we never thought possible. Sales have skyrocketed since partnering with them.",
+                "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Shane" },
+                "reviewBody": "Our new website design is fantastic. It's clean, modern, and exactly what we needed to showcase our window and door products.",
+                "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Jennifer L" },
+                "reviewBody": "Bombshell transformed our online presence completely. We've seen a 200% increase in leads since launching our new site.",
+                "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
+              }
+            ]
+          })
+        }}
+      />
     <section className="bg-[#1a1a1a] py-24 text-white font-sans overflow-hidden" data-testid="testimonials-section">
       <div className="container mx-auto px-4">
         
@@ -191,5 +230,6 @@ export function Testimonials() {
 
       </div>
     </section>
+    </>
   );
 }

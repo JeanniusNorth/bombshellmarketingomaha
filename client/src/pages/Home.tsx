@@ -18,6 +18,9 @@ export default function Home() {
         description="Bombshell Marketing is Omaha's top-rated agency for web design, logo design, and brand photography. Over 300 projects delivered with 4.9-star ratings. Serving Nebraska businesses and clients nationwide. Get a free website audit today."
         canonicalPath="/"
         keywords="web design Omaha, logo design Omaha, brand photography Omaha, Omaha web designer, Omaha logo designer, brand photographer Omaha, Nebraska web design, Omaha marketing agency, digital marketing Omaha, branding agency Omaha, website development Omaha, Omaha web design company"
+        breadcrumbs={[
+          { name: "Home", url: "/" }
+        ]}
       />
       <Navigation />
       

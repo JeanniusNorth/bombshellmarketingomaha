@@ -88,7 +88,7 @@ export function Services() {
               <div className="relative aspect-video w-full overflow-hidden mb-6 grayscale group-hover:grayscale-0 transition-all">
                 <img 
                   src={service.image} 
-                  alt={service.title} 
+                  alt={`${service.title} - Bombshell Marketing Omaha`} 
                   className="w-full h-full object-cover"
                 />
               </div>

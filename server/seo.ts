@@ -90,6 +90,14 @@ const pageMeta: Record<string, PageMeta> = {
     ogTitle: "Our Services | Web Design, Branding & Photography | Bombshell Marketing",
     ogDescription: "Full-service marketing agency in Omaha. Web design, logo design, brand photography, and digital strategy. 300+ projects delivered.",
   },
+  "/blog": {
+    title: "Marketing Blog | Web Design, Branding & SEO Tips for Omaha Businesses",
+    description: "Expert marketing insights for Omaha businesses. Tips on web design costs, logo design, brand photography, SEO, and digital strategy from Bombshell Marketing.",
+    keywords: "web design blog Omaha, marketing tips Nebraska, SEO guide Omaha, logo design tips, brand photography guide, small business marketing Omaha",
+    canonical: "/blog",
+    ogTitle: "Marketing Insights & Resources | Bombshell Marketing Blog",
+    ogDescription: "Expert tips on web design, branding, photography, and SEO for Omaha businesses. Free guides and insights from Bombshell Marketing.",
+  },
 };
 
 export function getPageMeta(pathname: string): PageMeta {
