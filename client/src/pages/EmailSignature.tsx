@@ -1,10 +1,11 @@
 import { useState, useRef } from "react";
 import { Copy, Check } from "lucide-react";
+import jeannieImage from "@/assets/images/team-jeannie.png";
 
-const SIGNATURE_HTML = `<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; color: #333333; max-width: 500px;">
+const SIGNATURE_HTML = `<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; color: #333333; max-width: 560px;">
   <tr>
     <td style="padding-right: 20px; vertical-align: top; border-right: 3px solid #ccff00;">
-      <img src="https://bombshellmarketingomaha.com/opengraph.jpg" alt="Bombshell Marketing" width="120" style="display: block; border: 0;" />
+      <img src="https://bombshellmarketingomaha.com/team-jeannie.png" alt="Jeannie North" width="130" style="display: block; border: 0; border-radius: 4px;" />
     </td>
     <td style="padding-left: 20px; vertical-align: top;">
       <table cellpadding="0" cellspacing="0" border="0">
@@ -89,7 +90,10 @@ export default function EmailSignaturePage() {
           <p className="text-xs uppercase tracking-widest text-black/40 font-bold mb-6">Preview</p>
           <div
             ref={previewRef}
-            dangerouslySetInnerHTML={{ __html: SIGNATURE_HTML }}
+            dangerouslySetInnerHTML={{ __html: SIGNATURE_HTML.replace(
+              'https://bombshellmarketingomaha.com/team-jeannie.png',
+              jeannieImage
+            ) }}
           />
         </div>
 
