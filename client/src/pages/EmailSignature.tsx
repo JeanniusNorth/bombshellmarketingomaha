@@ -26,7 +26,7 @@ const SIGNATURE_HTML = `<table cellpadding="0" cellspacing="0" border="0" style=
         </tr>
         <tr>
           <td style="font-size: 13px; color: #333333; padding-bottom: 4px;">
-            <a href="mailto:hello@bombshellmarketingomaha.com" style="color: #201cc5; text-decoration: none;">hello@bombshellmarketingomaha.com</a>
+            <a href="mailto:Jeannius.north@gmail.com" style="color: #201cc5; text-decoration: none;">Jeannius.north@gmail.com</a>
           </td>
         </tr>
         <tr>
