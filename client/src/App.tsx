@@ -18,6 +18,7 @@ import GoodLifeStoryPage from "@/pages/GoodLifeStory";
 import MarketingStrategyPage from "@/pages/MarketingStrategy";
 import BlogPage from "@/pages/Blog";
 import BlogArticlePage from "@/pages/BlogArticle";
+import EmailSignaturePage from "@/pages/EmailSignature";
 
 function Router() {
   return (
@@ -35,6 +36,7 @@ function Router() {
       <Route path="/portfolio/good-life" component={GoodLifeStoryPage} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/blog/:slug" component={BlogArticlePage} />
+      <Route path="/email-signature" component={EmailSignaturePage} />
       <Route component={NotFound} />
     </Switch>
   );
