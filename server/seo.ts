@@ -146,6 +146,8 @@ export function getPageMeta(pathname: string): PageMeta {
   return pageMeta[pathname] || pageMeta["/"];
 }
 
+const noIndexPages = ["/social-media", "/email-signature"];
+
 export function injectMetaTags(html: string, pathname: string): string {
   const meta = getPageMeta(pathname);
 
@@ -193,6 +195,13 @@ export function injectMetaTags(html: string, pathname: string): string {
     /<meta name="twitter:description" content="[^"]*" \/>/,
     `<meta name="twitter:description" content="${meta.ogDescription}" />`
   );
+
+  if (noIndexPages.includes(pathname)) {
+    html = html.replace(
+      "</head>",
+      `<meta name="robots" content="noindex, nofollow" />\n</head>`
+    );
+  }
 
   return html;
 }

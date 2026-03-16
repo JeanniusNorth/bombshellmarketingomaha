@@ -19,6 +19,7 @@ import MarketingStrategyPage from "@/pages/MarketingStrategy";
 import BlogPage from "@/pages/Blog";
 import BlogArticlePage from "@/pages/BlogArticle";
 import EmailSignaturePage from "@/pages/EmailSignature";
+import SocialMediaPage from "@/pages/SocialMedia";
 
 function Router() {
   return (
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/blog" component={BlogPage} />
       <Route path="/blog/:slug" component={BlogArticlePage} />
       <Route path="/email-signature" component={EmailSignaturePage} />
+      <Route path="/social-media" component={SocialMediaPage} />
       <Route component={NotFound} />
     </Switch>
   );
