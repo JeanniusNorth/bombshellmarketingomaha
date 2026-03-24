@@ -231,7 +231,7 @@ export default function ProposalPage() {
               </Section>
 
               <Section title="Lead Forecast (Estimated – Conservative)">
-                <P>The following lead projections are conservative estimates based on typical local service SEO performance and lead generation website networks. Actual lead volume will vary depending on search demand, competition, seasonality, service type, and location.</P>
+                <P>The following lead projections are conservative estimates based on typical local service SEO performance and lead generation website networks. Actual lead volume will vary depending on search demand, competition, seasonality, service type, and location. Leads are not guaranteed and these figures are provided as estimates only.</P>
                 <Highlight label="Estimated Leads Per Website" value="1–3 leads/month" sub="once indexed and ranking in search engines" />
 
                 <SectionSmall title="Network Lead Forecast" />
