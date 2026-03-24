@@ -179,9 +179,9 @@ export default function ProposalPage() {
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   <PriceCard
                     label="Website Build"
-                    price="$7,500"
-                    sublabel="one-time"
-                    details={["$250 per website", "30 websites total"]}
+                    price="$250"
+                    sublabel="per website"
+                    details={["30 websites = $7,500 one-time"]}
                   />
                   <PriceCard
                     label="Website Hosting, Maintenance, SEO Updates & Reporting"
