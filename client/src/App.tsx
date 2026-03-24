@@ -40,7 +40,7 @@ function Router() {
       <Route path="/blog/:slug" component={BlogArticlePage} />
       <Route path="/email-signature" component={EmailSignaturePage} />
       <Route path="/social-media" component={SocialMediaPage} />
-      <Route path="/proposal" component={ProposalPage} />
+      <Route path="/MccoyRoofingProposal" component={ProposalPage} />
       <Route component={NotFound} />
     </Switch>
   );
