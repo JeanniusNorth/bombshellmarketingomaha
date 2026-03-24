@@ -20,6 +20,7 @@ import BlogPage from "@/pages/Blog";
 import BlogArticlePage from "@/pages/BlogArticle";
 import EmailSignaturePage from "@/pages/EmailSignature";
 import SocialMediaPage from "@/pages/SocialMedia";
+import ProposalPage from "@/pages/Proposal";
 
 function Router() {
   return (
@@ -39,6 +40,7 @@ function Router() {
       <Route path="/blog/:slug" component={BlogArticlePage} />
       <Route path="/email-signature" component={EmailSignaturePage} />
       <Route path="/social-media" component={SocialMediaPage} />
+      <Route path="/proposal" component={ProposalPage} />
       <Route component={NotFound} />
     </Switch>
   );
