@@ -99,6 +99,10 @@ export default function ProposalPage() {
                   <div className="text-right text-xs text-white/60 font-sans mt-2 hidden md:block">
                     <p className="font-bold text-white/80 uppercase tracking-widest text-[10px] mb-1">Omaha, Nebraska</p>
                     <p>bombshellmarketingomaha.com</p>
+                    <p className="mt-2 text-white/50">Jeannie North</p>
+                    <p className="text-white/40">Owner | Creative Director</p>
+                    <p className="text-white/40">jeannius.north@gmail.com</p>
+                    <p className="text-white/40">415-845-8571</p>
                   </div>
                 </div>
                 <div className="border-t border-white/20 pt-8">
@@ -109,6 +113,10 @@ export default function ProposalPage() {
                   <p className="text-white/70 text-sm font-sans mt-3 max-w-xl leading-relaxed">
                     Omaha & Lincoln Roofing, Storm Damage, and Window Services
                   </p>
+                  <div className="mt-6 pt-5 border-t border-white/10">
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/40 font-bold mb-1">Prepared For</p>
+                    <p className="text-lg font-display text-white uppercase tracking-tight">McCoy Roofing</p>
+                  </div>
                 </div>
               </div>
               <div className="h-1.5 bg-[#ccff00]" />
@@ -425,8 +433,11 @@ export default function ProposalPage() {
                   <p className="text-[10px] uppercase tracking-widest text-white/50 font-bold mt-1">Omaha, Nebraska</p>
                 </div>
                 <div className="text-right text-xs text-white/50">
-                  <p>bombshellmarketingomaha.com</p>
-                  <p className="mt-1">jeannius.north@gmail.com</p>
+                  <p className="font-bold text-white/70">Jeannie North</p>
+                  <p className="text-white/40 mt-0.5">Owner | Creative Director</p>
+                  <p className="mt-1.5">jeannius.north@gmail.com</p>
+                  <p>415-845-8571</p>
+                  <p className="mt-1.5">bombshellmarketingomaha.com</p>
                 </div>
               </div>
             </footer>
