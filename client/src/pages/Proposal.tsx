@@ -185,10 +185,10 @@ export default function ProposalPage() {
                   />
                   <PriceCard
                     label="Website Hosting, Maintenance, SEO Updates & Reporting"
-                    price="$300"
-                    sublabel="per month"
+                    price="$10"
+                    sublabel="per website per month"
                     details={[
-                      "$10 per website per month",
+                      "30 websites = $300/month",
                       "Website hosting & maintenance",
                       "Minor SEO updates",
                       "Blog content updates",
