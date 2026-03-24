@@ -94,10 +94,10 @@ export default function ProposalPage() {
             <div className="px-12 py-14 md:px-16 font-sans">
 
               <Section title="Project Overview">
-                <P>This project will create a network of 30 local lead generation websites targeting specific search terms related to commercial roofing, residential roofing, storm damage repair, and window services in the Omaha and Lincoln metro areas and surrounding communities.</P>
-                <P>Each website will focus on a specific service or keyword group to capture highly targeted search traffic and generate inbound phone calls and quote requests from customers actively searching for these services.</P>
-                <P>Rather than relying on a single website to generate leads, this project creates a network of websites targeting specific services and search terms across Omaha and Lincoln. This increases search visibility across multiple keywords, generates leads from multiple sources, and reduces reliance on paid advertising platforms over time.</P>
-                <P>This strategy allows the company to capture leads from multiple services including roofing, storm damage restoration, and window replacement across multiple cities and service areas.</P>
+                <P>This project will create a network of 30 local lead generation websites targeting high-intent search terms related to commercial roofing, residential roofing, storm damage repair, and window services throughout the Omaha and Lincoln metro areas and surrounding communities.</P>
+                <P>Each website will be built around a specific service or keyword group to capture highly targeted search traffic and generate inbound phone calls and quote requests from customers who are actively searching for these services. These are high-intent searches from customers who already need roofing, storm damage repair, or window services and are looking for a company to contact.</P>
+                <P>Rather than relying on a single website to generate leads, this project builds a lead generation network targeting multiple services, search terms, and service areas across Omaha and Lincoln. This approach increases search visibility across many keywords, generates leads from multiple sources, and reduces reliance on paid advertising platforms over time.</P>
+                <P>By creating multiple websites targeting different services and locations, the company will be positioned to capture leads across commercial roofing, residential roofing, storm damage restoration, and window replacement searches throughout the region. Over time, this network is designed to become a consistent and scalable lead source for the company.</P>
               </Section>
 
               <Section title="Scope of Work">
