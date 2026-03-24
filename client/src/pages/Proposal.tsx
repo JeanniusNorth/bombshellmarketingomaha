@@ -1,9 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import { Download, FileText, Printer } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { FileText, Printer } from "lucide-react";
 
 export default function ProposalPage() {
   const proposalRef = useRef<HTMLDivElement>(null);
-  const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
     const meta = document.createElement("meta");
@@ -17,27 +16,6 @@ export default function ProposalPage() {
 
   const handlePrint = () => {
     window.print();
-  };
-
-  const handleDownloadPNG = async () => {
-    if (!proposalRef.current) return;
-    setDownloading(true);
-    try {
-      const { toPng } = await import("html-to-image");
-      const dataUrl = await toPng(proposalRef.current, {
-        pixelRatio: 2,
-        cacheBust: true,
-        backgroundColor: "#ffffff",
-      });
-      const link = document.createElement("a");
-      link.download = "bombshell-proposal-lead-gen-network.png";
-      link.href = dataUrl;
-      link.click();
-    } catch (err) {
-      console.error("Download failed:", err);
-    } finally {
-      setDownloading(false);
-    }
   };
 
   return (
@@ -54,19 +32,10 @@ export default function ProposalPage() {
               <button
                 onClick={handlePrint}
                 data-testid="button-print-proposal"
-                className="flex items-center gap-2 px-5 py-2.5 border border-gray-300 text-black text-xs font-bold uppercase tracking-widest hover:bg-gray-50 transition-colors"
+                className="flex items-center gap-2 px-5 py-2.5 bg-[#ccff00] text-black text-xs font-bold uppercase tracking-widest hover:bg-[#b8e600] transition-colors"
               >
                 <Printer className="w-3.5 h-3.5" />
                 Save PDF
-              </button>
-              <button
-                onClick={handleDownloadPNG}
-                disabled={downloading}
-                data-testid="button-download-png"
-                className="flex items-center gap-2 px-5 py-2.5 bg-[#ccff00] text-black text-xs font-bold uppercase tracking-widest hover:bg-[#b8e600] transition-colors disabled:opacity-50"
-              >
-                <Download className="w-3.5 h-3.5" />
-                {downloading ? "Generating..." : "Download PNG"}
               </button>
             </div>
           </div>
