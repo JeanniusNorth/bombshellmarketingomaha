@@ -402,6 +402,7 @@ export default function ProposalPage() {
                       <tbody>
                         {[
                           ["Website Builds (30)", "$7,500 one-time"],
+                          ["Domains (30)", "$12–$20 per domain/year"],
                           ["Website Hosting, Maintenance, SEO Updates & Reporting", "$300/month"],
                           ["Estimated Leads", "30–90 per month"],
                           ["Estimated Cost Per Lead Year 1", "$10–$30"],
