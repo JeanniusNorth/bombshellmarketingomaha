@@ -178,6 +178,7 @@ export default function ProposalPage() {
                 <p className="text-xs text-black/50 italic">Google Ads and Meta ads can be used to generate leads immediately while SEO rankings grow.</p>
               </Section>
 
+              <div className="print-page-break" />
               <Section title="Lead Forecast (Estimated – Conservative)">
                 <P>The following lead projections are conservative estimates based on typical local service SEO performance and lead generation website networks. Actual lead volume will vary depending on search demand, competition, seasonality, service type, and location. Leads are not guaranteed and these figures are provided as estimates only.</P>
                 <Highlight label="Estimated Leads Per Website" value="1–3 leads/month" sub="once indexed and ranking in search engines" />
@@ -232,6 +233,7 @@ export default function ProposalPage() {
                 </div>
               </Section>
 
+              <div className="print-page-break" />
               <Section title="Cost Per Lead Estimate">
                 <SectionSmall title="Year 1 (Includes Website Build)" />
                 <div className="grid grid-cols-3 gap-4 mb-6">
@@ -318,6 +320,7 @@ export default function ProposalPage() {
                 <p className="text-sm text-black/50 italic">Reports will be sent monthly.</p>
               </Section>
 
+              <div className="print-page-break" />
               <Section title="Website Ownership & Ongoing Management">
                 <P>The client (McCoy Roofing) will own all domains, websites, leads, and website content developed as part of this project. Upon completion of the website builds and payment of build fees, ownership of the websites and domains will belong to the client.</P>
                 <P>Jeannie North (Bombshell Marketing) will provide ongoing website hosting, maintenance, updates, SEO updates, blog content updates, reporting, and overall website management services for a monthly fee of $300 per month for all websites.</P>
@@ -358,7 +361,7 @@ export default function ProposalPage() {
                 <P>Any additional website builds, major design changes, additional service areas, or additional marketing services outside the scope of this proposal will be quoted separately.</P>
               </Section>
 
-              <div className="page-break-inside-avoid">
+              <div className="print-page-break page-break-inside-avoid">
                 <Section title="Summary Investment">
                   <div className="overflow-hidden border-2 border-[#201cc5] mb-8">
                     <table className="w-full text-sm">
@@ -436,7 +439,7 @@ export default function ProposalPage() {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="mb-12 page-break-inside-avoid">
+    <div className="mb-12 print-section">
       <h3 className="text-xl font-display uppercase tracking-tight text-[#201cc5] mb-5 pb-2 border-b border-[#201cc5]/10">{title}</h3>
       {children}
     </div>
@@ -516,8 +519,13 @@ function StatBox({ label, value, accent }: { label: string; value: string; accen
 const printStyles = `
   @media print {
     .no-print { display: none !important; }
-    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .page-break-inside-avoid { page-break-inside: avoid; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; margin: 0; padding: 0; }
     @page { margin: 0; size: A4; }
+    .page-break-inside-avoid { page-break-inside: avoid; }
+    .print-page-break { page-break-before: always; }
+    .print-section { page-break-inside: avoid; }
+    table { page-break-inside: avoid; }
+    h3 { page-break-after: avoid; }
+    .print-mt { margin-top: 40px; }
   }
 `;
