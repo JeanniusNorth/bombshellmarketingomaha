@@ -184,7 +184,7 @@ export default function ProposalPage() {
                     details={["$250 per website", "30 websites total"]}
                   />
                   <PriceCard
-                    label="Hosting, Maintenance, SEO & Reporting"
+                    label="Website Hosting, Maintenance, SEO Updates & Reporting"
                     price="$300"
                     sublabel="per month"
                     details={[
@@ -288,7 +288,7 @@ export default function ProposalPage() {
                 <SectionSmall title="Year 1 (Includes Website Build)" />
                 <div className="grid grid-cols-3 gap-4 mb-6">
                   <StatBox label="Website Builds" value="$7,500" />
-                  <StatBox label="Annual Hosting" value="$3,600" />
+                  <StatBox label="Annual Hosting, Maintenance, SEO & Reporting" value="$3,600" />
                   <StatBox label="Total Year 1" value="$11,100" accent />
                 </div>
                 <div className="overflow-hidden border border-gray-200 mb-8">
@@ -310,7 +310,7 @@ export default function ProposalPage() {
                   </table>
                 </div>
 
-                <SectionSmall title="Year 2 and Beyond (Hosting Only)" />
+                <SectionSmall title="Year 2 and Beyond (Hosting, Maintenance, SEO Updates & Reporting)" />
                 <p className="text-sm text-black/60 mb-4">Annual cost: <strong className="text-black">$3,600</strong></p>
                 <div className="overflow-hidden border border-gray-200 mb-6">
                   <table className="w-full text-sm">
@@ -363,7 +363,7 @@ export default function ProposalPage() {
               <Section title="Payment Terms">
                 <CheckList items={[
                   "Website build costs are due prior to website development.",
-                  "Monthly hosting and maintenance fees begin once websites are launched.",
+                  "Monthly hosting, maintenance, SEO updates & reporting fees begin once websites are launched.",
                   "Domains are billed annually.",
                   "Ongoing services are billed monthly.",
                 ]} />
@@ -386,7 +386,7 @@ export default function ProposalPage() {
                       <tbody>
                         {[
                           ["Website Builds (30)", "$7,500 one-time"],
-                          ["Monthly Hosting & Maintenance", "$300/month"],
+                          ["Website Hosting, Maintenance, SEO Updates & Reporting", "$300/month"],
                           ["Estimated Leads", "30–90 per month"],
                           ["Estimated Cost Per Lead Year 1", "$10–$30"],
                           ["Estimated Cost Per Lead Year 2+", "$3–$10"],
