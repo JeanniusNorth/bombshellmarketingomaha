@@ -154,27 +154,6 @@ export default function ProposalPage() {
                 <Highlight label="Total Websites" value="30" />
               </Section>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-12 page-break-inside-avoid">
-                <div>
-                  <SectionSmall title="Services & Categories Targeted" />
-                  <TagList items={[
-                    "Commercial Roofing", "Residential Roofing", "Roof Repair", "Flat Roof Repair",
-                    "Roof Leak Repair", "Storm Damage Repair", "Hail Damage Repair",
-                    "Emergency Roof Repair", "Roof Inspections", "Roof Replacement",
-                    "Window Replacement", "Window Installation", "Storm Damage Windows",
-                    "Siding & Storm Restoration",
-                  ]} />
-                </div>
-                <div>
-                  <SectionSmall title="Locations Targeted" />
-                  <TagList items={[
-                    "Omaha", "Lincoln", "Papillion", "Bellevue", "Elkhorn",
-                    "Bennington", "La Vista", "Council Bluffs", "Surrounding areas",
-                  ]} />
-                  <p className="text-xs text-black/40 mt-3 italic">Specific services and locations will be finalized before development begins.</p>
-                </div>
-              </div>
-
               <Section title="Pricing">
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   <PriceCard
@@ -335,6 +314,27 @@ export default function ProposalPage() {
                   <p className="text-lg font-display text-black">$3 – $10 per lead <span className="text-sm font-sans text-black/50">(conservative estimate)</span></p>
                 </div>
               </Section>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-12 page-break-inside-avoid">
+                <div>
+                  <SectionSmall title="Services & Categories Targeted" />
+                  <TagList items={[
+                    "Commercial Roofing", "Residential Roofing", "Roof Repair", "Flat Roof Repair",
+                    "Roof Leak Repair", "Storm Damage Repair", "Hail Damage Repair",
+                    "Emergency Roof Repair", "Roof Inspections", "Roof Replacement",
+                    "Window Replacement", "Window Installation", "Storm Damage Windows",
+                    "Siding & Storm Restoration",
+                  ]} />
+                </div>
+                <div>
+                  <SectionSmall title="Locations Targeted" />
+                  <TagList items={[
+                    "Omaha", "Lincoln", "Papillion", "Bellevue", "Elkhorn",
+                    "Bennington", "La Vista", "Council Bluffs", "Surrounding areas",
+                  ]} />
+                  <p className="text-xs text-black/40 mt-3 italic">Specific services and locations will be finalized before development begins.</p>
+                </div>
+              </div>
 
               <Section title="Reporting">
                 <P>Monthly reports will include:</P>
