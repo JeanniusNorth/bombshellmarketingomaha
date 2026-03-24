@@ -349,8 +349,24 @@ export default function ProposalPage() {
                 <p className="text-sm text-black/50 italic">Reports will be sent monthly.</p>
               </Section>
 
-              <Section title="Website Ownership & Management">
-                <P>All domains, websites, hosting accounts, tracking numbers, and website content are part of the ongoing lead generation and marketing service and will be owned and managed by Bombshell Marketing unless otherwise agreed in writing. The websites are built and maintained as part of the lead generation network and service agreement.</P>
+              <Section title="Website Ownership & Ongoing Management">
+                <P>The client (McCoy Roofing) will own all domains, websites, leads, and website content developed as part of this project. Upon completion of the website builds and payment of build fees, ownership of the websites and domains will belong to the client.</P>
+                <P>Jeannie North (Bombshell Marketing) will provide ongoing website hosting, maintenance, updates, SEO updates, blog content updates, reporting, and overall website management services for a monthly fee of $300 per month for all websites.</P>
+                <P>The monthly service includes:</P>
+                <CheckList items={[
+                  "Website hosting",
+                  "Website maintenance and updates",
+                  "Minor SEO updates and on-page optimization",
+                  "Blog content updates",
+                  "Lead tracking setup and monitoring",
+                  "Monthly performance reporting",
+                  "Website monitoring and uptime management",
+                  "Minor content updates and edits",
+                ]} />
+                <P>Ongoing hosting and website management services are required to maintain website functionality, updates, security, SEO performance, and lead tracking systems.</P>
+                <P>Due to the setup, development, and SEO work involved in building and maintaining the websites, ongoing hosting and website management services require a minimum 12-month service term beginning once the websites are launched.</P>
+                <P>If the client chooses to move hosting to another provider after the minimum term, website files can be transferred upon request. Website transfer, migration, and setup services will be billed separately at an hourly rate or project fee.</P>
+                <P>Monthly hosting and website management services are billed monthly and must remain active for the websites to remain hosted, maintained, updated, and tracked.</P>
               </Section>
 
               <Section title="Lead Volume Disclaimer">
