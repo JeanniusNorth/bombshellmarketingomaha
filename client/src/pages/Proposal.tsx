@@ -96,11 +96,6 @@ export default function ProposalPage() {
               <Section title="Project Overview">
                 <P>This project will create a network of 30 local lead generation websites targeting specific search terms related to commercial roofing, residential roofing, storm damage repair, and window services in the Omaha and Lincoln metro areas and surrounding communities.</P>
                 <P>Each website will focus on a specific service or keyword group to capture highly targeted search traffic and generate inbound phone calls and quote requests from customers actively searching for these services.</P>
-                <P>Targeted search terms and service categories will be reviewed and confirmed with the client prior to development. As part of this process, a Google search term and keyword report will be run to identify high-intent search phrases and opportunities before executing the website builds. This ensures the websites are built around real search demand and not assumptions.</P>
-
-              </Section>
-
-              <Section title="Network Strategy">
                 <P>Rather than relying on a single website to generate leads, this project creates a network of websites targeting specific services and search terms across Omaha and Lincoln. This increases search visibility across multiple keywords, generates leads from multiple sources, and reduces reliance on paid advertising platforms over time.</P>
                 <P>This strategy allows the company to capture leads from multiple services including roofing, storm damage restoration, and window replacement across multiple cities and service areas.</P>
               </Section>
