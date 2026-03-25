@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import { useContactModal } from "@/contexts/ContactModalContext";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
-import brandiniImage from "@/assets/images/portfolio-brandini.png";
+import jaymooreImage from "@/assets/images/portfolio-jaymoore.png";
 import dwellImage from "@/assets/images/portfolio-dwell.png";
 import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 import legacyImage from "@/assets/images/portfolio-legacy.png";
@@ -63,10 +63,10 @@ const portfolioItems = [
     url: "https://tennis-x-website.replit.app/"
   },
   {
-    title: "BRANDINI - MERCH STORE",
+    title: "JAY MOORE LANDSCAPING",
     category: "WEB DESIGN",
-    image: brandiniImage,
-    url: "https://TryBrandini.com"
+    image: jaymooreImage,
+    url: "https://jaymoore.design/"
   },
   {
     title: "LEGACY WINDOW & DOOR",

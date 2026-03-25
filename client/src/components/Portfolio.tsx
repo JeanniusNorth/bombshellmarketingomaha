@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { useContactModal } from "@/contexts/ContactModalContext";
 import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 import theLeagueImage from "@/assets/images/portfolio-the-league.png";
-import brandiniImage from "@/assets/images/portfolio-brandini.png";
+import jaymooreImage from "@/assets/images/portfolio-jaymoore.png";
 import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import dwellImage from "@/assets/images/portfolio-dwell.png";
@@ -52,10 +52,10 @@ export function Portfolio() {
     },
     {
       category: "WEB DESIGN",
-      title: "BRANDINI - MERCH STORE PLATFORM",
-      image: brandiniImage,
+      title: "JAY MOORE LANDSCAPING",
+      image: jaymooreImage,
       height: "h-[350px]",
-      url: "https://TryBrandini.com"
+      url: "https://jaymoore.design/"
     },
     {
       category: "WEB DESIGN",
