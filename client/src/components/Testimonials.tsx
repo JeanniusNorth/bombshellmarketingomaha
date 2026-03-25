@@ -6,9 +6,9 @@ export function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      text: "Bombshell's marketing expertise took Brandini to the next level. Their AI-driven campaigns and creative strategies helped us reach customers we never thought possible. Sales have skyrocketed since partnering with them.",
+      text: "Bombshell designed our website and managed all of our social media. They understood our brand and helped us connect with the right audience. The web design and social strategy have been a huge part of our growth.",
       author: "Chris",
-      role: "Brandini",
+      role: "Merch Club",
     },
     {
       id: 2,
@@ -175,7 +175,7 @@ export function Testimonials() {
               {
                 "@type": "Review",
                 "author": { "@type": "Person", "name": "Chris" },
-                "reviewBody": "Bombshell's marketing expertise took Brandini to the next level. Their AI-driven campaigns and creative strategies helped us reach customers we never thought possible. Sales have skyrocketed since partnering with them.",
+                "reviewBody": "Bombshell designed our website and managed all of our social media. They understood our brand and helped us connect with the right audience. The web design and social strategy have been a huge part of our growth.",
                 "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
               },
               {

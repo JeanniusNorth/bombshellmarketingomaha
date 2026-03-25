@@ -26,7 +26,7 @@ export function CaseStudy() {
             <div className="relative overflow-hidden rounded-2xl">
               <img 
                 src="/chris-brandini.jpg" 
-                alt="Chris - Founder of Brandini" 
+                alt="Chris - Founder of Merch Club" 
                 className="w-full h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 data-testid="case-study-image"
               />
@@ -42,7 +42,7 @@ export function CaseStudy() {
               {/* Text overlay */}
               <div className="absolute bottom-6 left-6">
                 <p className="text-white/80 text-sm mb-1">See the story</p>
-                <h3 className="text-white text-2xl font-display uppercase">Brandini</h3>
+                <h3 className="text-white text-2xl font-display uppercase">Merch Club</h3>
               </div>
             </div>
           </motion.div>
@@ -57,10 +57,10 @@ export function CaseStudy() {
             <h2 className="text-4xl md:text-5xl font-display uppercase mb-2">
               Chris
             </h2>
-            <p className="text-white/60 text-lg mb-6">Founder at Brandini</p>
+            <p className="text-white/60 text-lg mb-6">Founder at Merch Club</p>
             
             <blockquote className="text-xl md:text-2xl text-white/90 leading-relaxed mb-8">
-              "Bombshell handled our entire product and brand launch. From concept to execution, they brought Brandini to life and helped us build an on-demand merch platform that brands love."
+              "Bombshell designed our website and handled all of our social media. They nailed the brand feel and helped us connect with the right audience. The web design and social strategy have been a huge part of our growth."
             </blockquote>
 
             <Link href="/portfolio" onClick={() => window.scrollTo(0, 0)}>
@@ -76,12 +76,12 @@ export function CaseStudy() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <p className="text-4xl md:text-5xl font-display text-[#ccff00] mb-2">+340%</p>
-                <p className="text-white/60 text-sm">Brand awareness increase after launch campaign</p>
+                <p className="text-4xl md:text-5xl font-display text-[#ccff00] mb-2">+280%</p>
+                <p className="text-white/60 text-sm">Social media engagement growth</p>
               </div>
               <div>
-                <p className="text-4xl md:text-5xl font-display text-white mb-2">50+</p>
-                <p className="text-white/60 text-sm">Partner brands onboarded in first quarter</p>
+                <p className="text-4xl md:text-5xl font-display text-white mb-2">3x</p>
+                <p className="text-white/60 text-sm">Increase in website traffic after redesign</p>
               </div>
             </div>
 
