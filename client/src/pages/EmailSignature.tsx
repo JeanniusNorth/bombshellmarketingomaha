@@ -1,51 +1,99 @@
 import { useState, useRef } from "react";
 import { Copy, Check } from "lucide-react";
-import jeannieImage from "@assets/IMG_2708_1771618529805.jpeg";
 
-const SIGNATURE_HTML = `<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; color: #333333; max-width: 560px;">
+const SIGNATURE_HTML = `<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; width: 600px; height: 200px; background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 6px; overflow: hidden;">
   <tr>
-    <td style="padding-right: 20px; vertical-align: top; border-right: 3px solid #ccff00;">
-      <img src="https://bombshellmarketingomaha.com/jeannie-headshot.jpeg" alt="Jeannie North" width="130" style="display: block; border: 0; border-radius: 4px;" />
-    </td>
-    <td style="padding-left: 20px; vertical-align: top;">
-      <table cellpadding="0" cellspacing="0" border="0">
+    <td style="vertical-align: top; width: 210px; padding: 16px 14px;">
+      <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
         <tr>
-          <td style="font-size: 18px; font-weight: bold; color: #000000; padding-bottom: 2px;">
+          <td style="font-size: 22px; font-weight: bold; color: #000000; padding-bottom: 8px; border-bottom: 2px solid #1a1a1a; line-height: 1.1;">
             Jeannie North
           </td>
         </tr>
         <tr>
-          <td style="font-size: 13px; color: #666666; padding-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">
-            Digital Marketer &amp; Creative Director
-          </td>
-        </tr>
-        <tr>
-          <td style="font-size: 13px; color: #333333; padding-bottom: 4px;">
-            <strong>Bombshell Marketing</strong>
-          </td>
-        </tr>
-        <tr>
-          <td style="font-size: 13px; color: #333333; padding-bottom: 4px;">
-            <a href="mailto:jeannius.north@gmail.com" style="color: #201cc5; text-decoration: none;">jeannius.north@gmail.com</a>
-          </td>
-        </tr>
-        <tr>
-          <td style="font-size: 13px; color: #333333; padding-bottom: 12px;">
-            Omaha, Nebraska
-          </td>
-        </tr>
-        <tr>
-          <td style="padding-bottom: 0;">
+          <td style="padding-top: 8px; padding-bottom: 8px;">
             <table cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <td style="padding-right: 8px;">
-                  <a href="https://bombshellmarketingomaha.com" style="display: inline-block; background-color: #ccff00; color: #000000; font-size: 12px; font-weight: bold; text-decoration: none; padding: 6px 14px; text-transform: uppercase; letter-spacing: 1px;">Visit Website</a>
-                </td>
-                <td>
-                  <a href="https://audit.bombshellmarketingomaha.com/" style="display: inline-block; background-color: #201cc5; color: #ffffff; font-size: 12px; font-weight: bold; text-decoration: none; padding: 6px 14px; text-transform: uppercase; letter-spacing: 1px;">Free Audit</a>
+                <td style="background-color: #ccff00; padding: 4px 10px; font-size: 11px; font-weight: bold; color: #000000; text-transform: uppercase; letter-spacing: 0.5px;">
+                  Digital Marketer &amp; Creative Director
                 </td>
               </tr>
             </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 2px;">
+            <table cellpadding="0" cellspacing="0" border="0" style="border: 1.5px solid #1a1a1a; border-radius: 4px; width: 100%;">
+              <tr>
+                <td style="padding: 5px 10px; font-size: 11px; color: #333333; line-height: 1.4;">
+                  Bombshell Marketing<br/>Omaha, Nebraska
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td style="vertical-align: top; width: 190px; padding: 16px 10px; border-left: 2px solid #1a1a1a;">
+      <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+        <tr>
+          <td style="padding-bottom: 6px;">
+            <table cellpadding="0" cellspacing="0" border="0" style="border: 1.5px solid #1a1a1a; border-radius: 4px; width: 100%;">
+              <tr>
+                <td style="padding: 6px 10px; font-size: 12px; color: #333333;">
+                  &#9742; 415-845-8571
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom: 6px;">
+            <table cellpadding="0" cellspacing="0" border="0" style="border: 1.5px solid #1a1a1a; border-radius: 4px; width: 100%;">
+              <tr>
+                <td style="padding: 6px 10px; font-size: 11px; color: #333333;">
+                  <a href="mailto:jeannius.north@gmail.com" style="color: #201cc5; text-decoration: none;">&#9993; jeannius.north@gmail.com</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0" style="border: 1.5px solid #1a1a1a; border-radius: 4px; width: 100%;">
+              <tr>
+                <td style="padding: 6px 10px; font-size: 11px; color: #333333;">
+                  <a href="https://bombshellmarketingomaha.com" style="color: #201cc5; text-decoration: none;">&#127760; bombshellmarketingomaha.com</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td style="vertical-align: top; width: 120px; border-left: 2px solid #1a1a1a; padding: 0;">
+      <img src="https://bombshellmarketingomaha.com/jeannie-headshot.jpeg" alt="Jeannie North" width="120" height="170" style="display: block; border: 0; object-fit: cover; object-position: top;" />
+    </td>
+    <td style="vertical-align: top; width: 56px; padding: 12px 8px; border-left: 2px solid #1a1a1a;">
+      <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+        <tr>
+          <td style="text-align: center; padding-bottom: 6px;">
+            <a href="https://bombshellmarketingomaha.com" style="display: inline-block; background-color: #ccff00; width: 36px; height: 36px; border-radius: 4px; text-align: center; line-height: 36px; text-decoration: none; font-size: 14px; color: #000000; font-weight: bold;" title="Download vCard">&#8595;</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding-bottom: 6px;">
+            <a href="https://www.facebook.com/BombshellMarketingOmaha" style="display: inline-block; width: 36px; height: 36px; border: 1.5px solid #1a1a1a; border-radius: 50%; text-align: center; line-height: 34px; text-decoration: none; font-size: 16px; color: #1a1a1a;" title="Facebook">f</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center; padding-bottom: 6px;">
+            <a href="https://www.instagram.com/bombshellmarketingomaha" style="display: inline-block; width: 36px; height: 36px; border: 1.5px solid #1a1a1a; border-radius: 50%; text-align: center; line-height: 34px; text-decoration: none; font-size: 16px; color: #1a1a1a;" title="Instagram">&#9673;</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <a href="https://audit.bombshellmarketingomaha.com/" style="display: inline-block; background-color: #201cc5; width: 36px; height: 36px; border-radius: 50%; text-align: center; line-height: 36px; text-decoration: none; font-size: 10px; font-weight: bold; color: #ffffff;" title="Free Audit">&#9733;</a>
           </td>
         </tr>
       </table>
@@ -54,14 +102,14 @@ const SIGNATURE_HTML = `<table cellpadding="0" cellspacing="0" border="0" style=
 </table>`;
 
 export default function EmailSignaturePage() {
-  const [copied, setCopied] = useState(false);
+  const [copiedHTML, setCopiedHTML] = useState(false);
   const previewRef = useRef<HTMLDivElement>(null);
 
   const copyHTML = async () => {
     try {
       await navigator.clipboard.writeText(SIGNATURE_HTML);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
+      setCopiedHTML(true);
+      setTimeout(() => setCopiedHTML(false), 2500);
     } catch {
       const textarea = document.createElement("textarea");
       textarea.value = SIGNATURE_HTML;
@@ -69,14 +117,14 @@ export default function EmailSignaturePage() {
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
+      setCopiedHTML(true);
+      setTimeout(() => setCopiedHTML(false), 2500);
     }
   };
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-16 max-w-3xl">
+      <div className="container mx-auto px-4 py-16 max-w-4xl">
         <div className="mb-12 text-center">
           <h1 className="text-4xl md:text-5xl font-display uppercase text-black leading-[0.9] mb-4">
             Email Signature
@@ -86,24 +134,21 @@ export default function EmailSignaturePage() {
           </p>
         </div>
 
-        <div className="mb-8 bg-gray-50 border border-gray-200 p-8 md:p-12">
-          <p className="text-xs uppercase tracking-widest text-black/40 font-bold mb-6">Preview</p>
+        <div className="mb-8 bg-gray-100 border border-gray-200 p-8 md:p-12 flex justify-center">
+          <p className="text-xs uppercase tracking-widest text-black/40 font-bold mb-6 sr-only">Preview</p>
           <div
             ref={previewRef}
-            dangerouslySetInnerHTML={{ __html: SIGNATURE_HTML.replace(
-              'https://bombshellmarketingomaha.com/jeannie-headshot.jpeg',
-              jeannieImage
-            ) }}
+            dangerouslySetInnerHTML={{ __html: SIGNATURE_HTML }}
           />
         </div>
 
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center gap-4 mb-12">
           <button
             onClick={copyHTML}
             className="inline-flex items-center gap-3 bg-primary text-black font-semibold px-10 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
             data-testid="button-copy-signature"
           >
-            {copied ? (
+            {copiedHTML ? (
               <>
                 <Check className="w-5 h-5" />
                 Copied!
@@ -111,16 +156,23 @@ export default function EmailSignaturePage() {
             ) : (
               <>
                 <Copy className="w-5 h-5" />
-                Copy HTML
+                Copy HTML Code
               </>
             )}
           </button>
         </div>
 
+        <div className="mb-8">
+          <p className="text-xs uppercase tracking-widest text-black/40 font-bold mb-4">HTML Source Code</p>
+          <div className="bg-[#1a1a1a] text-green-400 p-6 rounded overflow-x-auto max-h-[400px] overflow-y-auto">
+            <pre className="text-xs leading-relaxed whitespace-pre-wrap break-all font-mono">{SIGNATURE_HTML}</pre>
+          </div>
+        </div>
+
         <div className="bg-[#201cc5]/5 border border-[#201cc5]/10 p-6">
           <p className="text-sm font-bold text-black/70 mb-2 uppercase tracking-wider">How to use</p>
           <ol className="text-sm text-black/60 space-y-2 list-decimal list-inside">
-            <li>Click "Copy HTML" above to copy the signature code</li>
+            <li>Click "Copy HTML Code" above to copy the signature code</li>
             <li>Open your email client's signature settings</li>
             <li>Choose to edit the signature as HTML or source code</li>
             <li>Paste the copied HTML and save</li>
