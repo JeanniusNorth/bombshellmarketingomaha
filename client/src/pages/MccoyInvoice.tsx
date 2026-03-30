@@ -126,7 +126,8 @@ export default function MccoyInvoicePage() {
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.3em] text-black/40 font-bold mb-2">Payment Method</p>
-                  <p className="text-sm text-black/60">Zelle, Check, or Bank Transfer</p>
+                  <p className="text-sm text-black/60">Check or Payment Transfer</p>
+                  <p className="text-xs text-black/40 mt-1">Check made out to Jeannie North</p>
                   <p className="text-[10px] uppercase tracking-[0.3em] text-black/40 font-bold mb-2 mt-4">Status</p>
                   <p className="text-sm font-bold text-orange-500 uppercase">Pending</p>
                 </div>
