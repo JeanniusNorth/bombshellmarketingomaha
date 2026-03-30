@@ -8,7 +8,7 @@ import { useContactModal } from "@/contexts/ContactModalContext";
 import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 import theLeagueImage from "@/assets/images/portfolio-the-league.png";
 import jaymooreImage from "@/assets/images/portfolio-jaymoore.png";
-import merchclubGolfImage from "@/assets/images/portfolio-merchclub-golf.png";
+
 import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import merchclubImage from "@/assets/images/portfolio-merchclub.png";
@@ -35,13 +35,6 @@ export function Portfolio() {
       height: "h-[300px]",
       url: "",
       link: "/logo-branding"
-    },
-    {
-      category: "WEB DESIGN",
-      title: "MERCH CLUB GOLF",
-      image: merchclubGolfImage,
-      height: "h-[350px]",
-      url: "https://golf.merchclub.com/"
     },
     {
       category: "PHOTOGRAPHY",
@@ -189,7 +182,7 @@ export function Portfolio() {
                <PortfolioItem item={portfolioItems[7]} />
              </div>
 
-            {/* Brandini */}
+            {/* Jay Moore */}
             <PortfolioItem item={portfolioItems[4]} />
             
             {/* Merch Club */}
