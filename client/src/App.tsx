@@ -21,6 +21,7 @@ import BlogArticlePage from "@/pages/BlogArticle";
 import EmailSignaturePage from "@/pages/EmailSignature";
 import SocialMediaPage from "@/pages/SocialMedia";
 import ProposalPage from "@/pages/Proposal";
+import MccoyInvoicePage from "@/pages/MccoyInvoice";
 
 function Router() {
   return (
@@ -41,6 +42,7 @@ function Router() {
       <Route path="/email-signature" component={EmailSignaturePage} />
       <Route path="/social-media" component={SocialMediaPage} />
       <Route path="/MccoyRoofingProposal" component={ProposalPage} />
+      <Route path="/MccoyRoofingInvoice" component={MccoyInvoicePage} />
       <Route component={NotFound} />
     </Switch>
   );

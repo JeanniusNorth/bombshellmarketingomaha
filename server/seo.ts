@@ -146,7 +146,7 @@ export function getPageMeta(pathname: string): PageMeta {
   return pageMeta[pathname] || pageMeta["/"];
 }
 
-const noIndexPages = ["/social-media", "/email-signature", "/MccoyRoofingProposal"];
+const noIndexPages = ["/social-media", "/email-signature", "/MccoyRoofingProposal", "/MccoyRoofingInvoice"];
 
 export function injectMetaTags(html: string, pathname: string): string {
   const meta = getPageMeta(pathname);
