@@ -29,6 +29,13 @@ export function Portfolio() {
       url: "https://nebraskai.replit.app/"
     },
     {
+      category: "WEB DESIGN",
+      title: "MERCH CLUB",
+      image: merchclubImage,
+      height: "h-[350px]",
+      url: "https://merchclub.com/"
+    },
+    {
       category: "LOGO & BRANDING",
       title: "THE LEAGUE - MEN'S HEALTH CLINIC",
       image: theLeagueImage,
@@ -57,13 +64,6 @@ export function Portfolio() {
       image: jaymooreImage,
       height: "h-[350px]",
       url: "https://jaymoore.design/"
-    },
-    {
-      category: "WEB DESIGN",
-      title: "MERCH CLUB",
-      image: merchclubImage,
-      height: "h-[350px]",
-      url: "https://merchclub.com/"
     },
     {
       category: "WEB DESIGN",
@@ -138,25 +138,25 @@ export function Portfolio() {
               <PortfolioItem item={portfolioItems[6]} />
             </div>
 
-            {/* Item 1 - Nebrask.AI */}
+            {/* Nebrask.AI */}
             <PortfolioItem item={portfolioItems[0]} />
 
-            {/* Item 2 - The League */}
+            {/* Merch Club */}
             <PortfolioItem item={portfolioItems[1]} />
 
             {/* Good Life - shows here on mobile only */}
             <div className="block md:hidden">
-              <PortfolioItem item={portfolioItems[2]} />
+              <PortfolioItem item={portfolioItems[3]} />
             </div>
 
             {/* Midwest Grit - shows here on desktop, hidden on mobile */}
             <div className="hidden md:block">
-              <PortfolioItem item={portfolioItems[3]} />
+              <PortfolioItem item={portfolioItems[4]} />
             </div>
 
             {/* Midwest Grit - shows here on mobile, hidden on desktop */}
             <div className="block md:hidden">
-              <PortfolioItem item={portfolioItems[3]} />
+              <PortfolioItem item={portfolioItems[4]} />
             </div>
 
             {/* Roman Coin - hidden on mobile, shows on desktop */}
@@ -174,7 +174,7 @@ export function Portfolio() {
 
              {/* Good Life - hidden on mobile, shows on desktop */}
              <div className="hidden md:block">
-               <PortfolioItem item={portfolioItems[2]} />
+               <PortfolioItem item={portfolioItems[3]} />
              </div>
 
              {/* Roman Coin - shows here on mobile, hidden on desktop */}
@@ -182,10 +182,10 @@ export function Portfolio() {
                <PortfolioItem item={portfolioItems[7]} />
              </div>
 
-            {/* Jay Moore */}
-            <PortfolioItem item={portfolioItems[4]} />
+            {/* The League */}
+            <PortfolioItem item={portfolioItems[2]} />
             
-            {/* Merch Club */}
+            {/* Jay Moore */}
             <PortfolioItem item={portfolioItems[5]} />
           </div>
 
