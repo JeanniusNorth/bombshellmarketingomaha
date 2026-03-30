@@ -11,7 +11,7 @@ import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import { useContactModal } from "@/contexts/ContactModalContext";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
 import jaymooreImage from "@/assets/images/portfolio-jaymoore.png";
-import dwellImage from "@/assets/images/portfolio-dwell.png";
+import merchclubImage from "@/assets/images/portfolio-merchclub.png";
 import tennisxImage from "@/assets/images/portfolio-tennisx.png";
 import legacyImage from "@/assets/images/portfolio-legacy.png";
 import goldoniImage from "@/assets/images/portfolio-goldoni.png";
@@ -75,10 +75,10 @@ const portfolioItems = [
     url: "https://legacywindowco.com/"
   },
   {
-    title: "DWELL - OMAHA DESIGN",
+    title: "MERCH CLUB",
     category: "WEB DESIGN",
-    image: dwellImage,
-    url: "https://dwell-omaha-design.replit.app/"
+    image: merchclubImage,
+    url: "https://merchclub.com/"
   },
   {
     title: "GOLDONI LEGISLATURE",

@@ -11,7 +11,7 @@ import jaymooreImage from "@/assets/images/portfolio-jaymoore.png";
 import merchclubGolfImage from "@/assets/images/portfolio-merchclub-golf.png";
 import nebraskaiImage from "@/assets/images/portfolio-nebraskai.png";
 import midwestGritImage from "@/assets/images/portfolio-midwestgrit.png";
-import dwellImage from "@/assets/images/portfolio-dwell.png";
+import merchclubImage from "@/assets/images/portfolio-merchclub.png";
 import omahaCookieImage from "@/assets/images/portfolio-omahacookie.png";
 import varsityPizzaImage from "@/assets/portfolio-varsity-pizza.jpg";
 import goodLifeImage from "@/assets/portfolio-good-life.png";
@@ -67,10 +67,10 @@ export function Portfolio() {
     },
     {
       category: "WEB DESIGN",
-      title: "DWELL - OMAHA DESIGN",
-      image: dwellImage,
+      title: "MERCH CLUB",
+      image: merchclubImage,
       height: "h-[350px]",
-      url: "https://dwell-omaha-design.replit.app/"
+      url: "https://merchclub.com/"
     },
     {
       category: "WEB DESIGN",
@@ -192,7 +192,7 @@ export function Portfolio() {
             {/* Brandini */}
             <PortfolioItem item={portfolioItems[4]} />
             
-            {/* Dwell */}
+            {/* Merch Club */}
             <PortfolioItem item={portfolioItems[5]} />
           </div>
 
