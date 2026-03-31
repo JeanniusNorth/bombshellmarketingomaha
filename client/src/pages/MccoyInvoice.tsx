@@ -136,7 +136,7 @@ export default function MccoyInvoicePage() {
               </div>
 
               <div className="mb-10">
-                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-6">One-Time Website Build</h3>
+                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-6">Due Now — Website Build & Domains</h3>
                 <div className="overflow-hidden border-2 border-[#201cc5]">
                   <table className="w-full text-sm">
                     <thead>
@@ -157,12 +157,21 @@ export default function MccoyInvoicePage() {
                         <td className="px-5 py-4 text-right text-black/80">${lineItems[0].rate.toFixed(2)}</td>
                         <td className="px-5 py-4 text-right font-bold text-black">${lineItems[0].total.toLocaleString()}.00</td>
                       </tr>
+                      <tr className="bg-white">
+                        <td className="px-5 py-4">
+                          <p className="text-black/80 font-medium">{lineItems[2].description}</p>
+                          <p className="text-xs text-black/50 mt-1">{lineItems[2].detail}</p>
+                        </td>
+                        <td className="px-5 py-4 text-center text-black/80">{lineItems[2].qty}</td>
+                        <td className="px-5 py-4 text-right text-black/80">${lineItems[2].rate.toFixed(2)}</td>
+                        <td className="px-5 py-4 text-right font-bold text-black">${domainTotal.toFixed(2)}</td>
+                      </tr>
                     </tbody>
                     <tfoot>
                       <tr className="border-t-2 border-[#201cc5]">
                         <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Total Due (Now)</td>
                         <td className="px-5 py-4 text-right">
-                          <span className="text-xl font-display text-[#201cc5]">${buildTotal.toLocaleString()}.00</span>
+                          <span className="text-xl font-display text-[#201cc5]">${(buildTotal + domainTotal).toFixed(2)}</span>
                         </td>
                       </tr>
                     </tfoot>
@@ -206,55 +215,19 @@ export default function MccoyInvoicePage() {
                 <p className="text-xs text-black/50 mt-3 italic">Lump sum payment due when websites go live. Covers 12 months of hosting, maintenance, SEO updates & reporting.</p>
               </div>
 
-              <div className="mb-10">
-                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-6">Domain Registration (Annual)</h3>
-                <div className="overflow-hidden border-2 border-[#201cc5]">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="bg-[#201cc5] text-white">
-                        <th className="text-left px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Description</th>
-                        <th className="text-center px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Qty</th>
-                        <th className="text-right px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Rate</th>
-                        <th className="text-right px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Amount</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="bg-gray-50">
-                        <td className="px-5 py-4">
-                          <p className="text-black/80 font-medium">{lineItems[2].description}</p>
-                          <p className="text-xs text-black/50 mt-1">{lineItems[2].detail}</p>
-                        </td>
-                        <td className="px-5 py-4 text-center text-black/80">{lineItems[2].qty}</td>
-                        <td className="px-5 py-4 text-right text-black/80">${lineItems[2].rate.toFixed(2)}</td>
-                        <td className="px-5 py-4 text-right font-bold text-black">${domainTotal.toFixed(2)}</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr className="border-t-2 border-[#201cc5]">
-                        <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Annual Domain Total</td>
-                        <td className="px-5 py-4 text-right">
-                          <span className="text-xl font-display text-[#201cc5]">${domainTotal.toFixed(2)}/yr</span>
-                        </td>
-                      </tr>
-                    </tfoot>
-                  </table>
-                </div>
-                <p className="text-xs text-black/50 mt-3 italic">Client (McCoy Roofing) is responsible for paying domain registration fees annually. Domains are owned by the client.</p>
-              </div>
-
               <div className="bg-[#201cc5] text-white px-8 py-8 mb-10">
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="text-center">
-                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Website Builds</p>
-                    <p className="text-3xl font-display text-[#ccff00]">${buildTotal.toLocaleString()}</p>
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Due Now (Builds + Domains)</p>
+                    <p className="text-3xl font-display text-[#ccff00]">${(buildTotal + domainTotal).toFixed(2)}</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Hosting & Services (12 Mo)</p>
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Due When Sites Go Live</p>
                     <p className="text-3xl font-display text-white">${hostingTotal.toLocaleString()}</p>
                   </div>
                   <div className="text-center">
                     <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Total Investment</p>
-                    <p className="text-3xl font-display text-[#ccff00]">${(buildTotal + hostingTotal).toLocaleString()}</p>
+                    <p className="text-3xl font-display text-[#ccff00]">${(buildTotal + domainTotal + hostingTotal).toFixed(2)}</p>
                   </div>
                 </div>
               </div>
