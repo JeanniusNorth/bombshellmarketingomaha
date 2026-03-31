@@ -33,7 +33,7 @@ export function Portfolio() {
       title: "MERCH CLUB",
       image: merchclubImage,
       height: "h-[350px]",
-      url: "https://merchclub.com/"
+      url: "https://merch-club.replit.app/"
     },
     {
       category: "LOGO & BRANDING",

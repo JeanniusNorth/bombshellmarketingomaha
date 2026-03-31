@@ -78,7 +78,7 @@ const portfolioItems = [
     title: "MERCH CLUB",
     category: "WEB DESIGN",
     image: merchclubImage,
-    url: "https://merchclub.com/"
+    url: "https://merch-club.replit.app/"
   },
   {
     title: "GOLDONI LEGISLATURE",
