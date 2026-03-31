@@ -90,6 +90,14 @@ const pageMeta: Record<string, PageMeta> = {
     ogTitle: "Our Services | Web Design, Branding & Photography | Bombshell Marketing",
     ogDescription: "Full-service marketing agency in Omaha. Web design, logo design, brand photography, and digital strategy. 300+ projects delivered.",
   },
+  "/contact": {
+    title: "Contact Bombshell Marketing | Web Design & Branding Agency Omaha, NE",
+    description: "Contact Bombshell Marketing for web design, logo design, brand photography, and digital marketing services in Omaha, Nebraska. Free consultations and website audits available.",
+    keywords: "contact Bombshell Marketing, Omaha marketing agency contact, web design consultation Omaha, free website audit Omaha",
+    canonical: "/contact",
+    ogTitle: "Contact Bombshell Marketing | Omaha's Premier Creative Agency",
+    ogDescription: "Get in touch with Bombshell Marketing for a free consultation. Web design, logo design, and brand photography in Omaha, NE.",
+  },
   "/blog": {
     title: "Marketing Blog | Web Design, Branding & SEO Tips for Omaha Businesses",
     description: "Expert marketing insights for Omaha businesses. Tips on web design costs, logo design, brand photography, SEO, and digital strategy from Bombshell Marketing.",
@@ -203,5 +211,65 @@ export function injectMetaTags(html: string, pathname: string): string {
     );
   }
 
+  const breadcrumb = getBreadcrumbSchema(pathname);
+  if (breadcrumb) {
+    html = html.replace(
+      "</head>",
+      `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>\n</head>`
+    );
+  }
+
   return html;
+}
+
+function getBreadcrumbSchema(pathname: string): object | null {
+  if (pathname === "/" || noIndexPages.includes(pathname)) return null;
+
+  const items: { name: string; url: string }[] = [
+    { name: "Home", url: `${BASE_URL}/` },
+  ];
+
+  const breadcrumbNames: Record<string, string> = {
+    "/about": "About",
+    "/services": "Services",
+    "/web-design": "Web Design",
+    "/logo-branding": "Logo Design & Branding",
+    "/brand-photography": "Brand Photography",
+    "/marketing-strategy": "Marketing Strategy",
+    "/portfolio": "Portfolio",
+    "/contact": "Contact",
+    "/blog": "Blog",
+  };
+
+  if (pathname.startsWith("/portfolio/")) {
+    items.push({ name: "Portfolio", url: `${BASE_URL}/portfolio` });
+    const slug = pathname.replace("/portfolio/", "");
+    const caseNames: Record<string, string> = {
+      "good-life": "The Good Life Bar & Grill",
+      "varsity-roman-coin": "Varsity Roman Coin",
+    };
+    items.push({ name: caseNames[slug] || slug, url: `${BASE_URL}${pathname}` });
+  } else if (pathname.startsWith("/blog/")) {
+    items.push({ name: "Blog", url: `${BASE_URL}/blog` });
+    const slug = pathname.replace("/blog/", "");
+    const articleMeta = blogArticleMeta[slug];
+    if (articleMeta) {
+      items.push({ name: articleMeta.title.split(" | ")[0], url: `${BASE_URL}${pathname}` });
+    }
+  } else if (breadcrumbNames[pathname]) {
+    items.push({ name: breadcrumbNames[pathname], url: `${BASE_URL}${pathname}` });
+  } else {
+    return null;
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": items.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": item.url,
+    })),
+  };
 }

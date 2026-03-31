@@ -5,6 +5,8 @@ import viteConfig from "../vite.config";
 import fs from "fs";
 import path from "path";
 import { nanoid } from "nanoid";
+import { injectMetaTags } from "./seo";
+import { getSSRContent } from "./ssr-content";
 
 const viteLogger = createLogger();
 
@@ -48,7 +50,15 @@ export async function setupVite(server: Server, app: Express) {
         `src="/src/main.tsx"`,
         `src="/src/main.tsx?v=${nanoid()}"`,
       );
-      const page = await vite.transformIndexHtml(url, template);
+      let page = await vite.transformIndexHtml(url, template);
+      page = injectMetaTags(page, req.path);
+      const ssrContent = getSSRContent(req.path);
+      if (ssrContent) {
+        page = page.replace(
+          '<div id="root"></div>',
+          `<div id="root"></div><div id="ssr-content" aria-hidden="true" tabindex="-1" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">${ssrContent.replace(/<a /g, '<a tabindex="-1" ')}</div>`
+        );
+      }
       res.status(200).set({ "Content-Type": "text/html" }).end(page);
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
