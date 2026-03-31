@@ -23,11 +23,11 @@ export default function MccoyInvoicePage() {
 
   const lineItems = [
     { description: "Lead Generation Website Build", detail: "10 websites × $250 per website", qty: 10, rate: 250, total: 2500 },
-    { description: "Website Hosting, Maintenance, SEO Updates & Reporting", detail: "10 websites × $10 per website/month", qty: 10, rate: 10, total: 100 },
+    { description: "Website Hosting, Maintenance, SEO Updates & Reporting (12 Months)", detail: "10 websites × $10 per website/month × 12 months", qty: 10, rate: 120, total: 1200 },
   ];
 
   const buildTotal = 2500;
-  const monthlyTotal = 100;
+  const hostingTotal = 1200;
 
   return (
     <>
@@ -169,7 +169,7 @@ export default function MccoyInvoicePage() {
               </div>
 
               <div className="mb-10">
-                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-6">Monthly Hosting, Maintenance, SEO & Reporting</h3>
+                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-6">Hosting, Maintenance, SEO & Reporting (12 Months)</h3>
                 <div className="overflow-hidden border-2 border-[#201cc5]">
                   <table className="w-full text-sm">
                     <thead>
@@ -177,7 +177,7 @@ export default function MccoyInvoicePage() {
                         <th className="text-left px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Description</th>
                         <th className="text-center px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Qty</th>
                         <th className="text-right px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Rate</th>
-                        <th className="text-right px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Monthly</th>
+                        <th className="text-right px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Amount</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -187,36 +187,36 @@ export default function MccoyInvoicePage() {
                           <p className="text-xs text-black/50 mt-1">{lineItems[1].detail}</p>
                         </td>
                         <td className="px-5 py-4 text-center text-black/80">{lineItems[1].qty}</td>
-                        <td className="px-5 py-4 text-right text-black/80">${lineItems[1].rate.toFixed(2)}/mo</td>
-                        <td className="px-5 py-4 text-right font-bold text-black">${monthlyTotal.toLocaleString()}.00</td>
+                        <td className="px-5 py-4 text-right text-black/80">${lineItems[1].rate.toFixed(2)}</td>
+                        <td className="px-5 py-4 text-right font-bold text-black">${hostingTotal.toLocaleString()}.00</td>
                       </tr>
                     </tbody>
                     <tfoot>
                       <tr className="border-t-2 border-[#201cc5]">
-                        <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Monthly Total</td>
+                        <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Total Due (Lump Sum)</td>
                         <td className="px-5 py-4 text-right">
-                          <span className="text-xl font-display text-[#201cc5]">${monthlyTotal.toLocaleString()}.00/mo</span>
+                          <span className="text-xl font-display text-[#201cc5]">${hostingTotal.toLocaleString()}.00</span>
                         </td>
                       </tr>
                     </tfoot>
                   </table>
                 </div>
-                <p className="text-xs text-black/50 mt-3 italic">Monthly billing begins once websites are launched. Minimum 12-month service term.</p>
+                <p className="text-xs text-black/50 mt-3 italic">Lump sum payment due when websites go live. Covers 12 months of hosting, maintenance, SEO updates & reporting.</p>
               </div>
 
               <div className="bg-[#201cc5] text-white px-8 py-8 mb-10">
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="text-center">
-                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Website Builds (One-Time)</p>
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Website Builds</p>
                     <p className="text-3xl font-display text-[#ccff00]">${buildTotal.toLocaleString()}</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Monthly Hosting & Services</p>
-                    <p className="text-3xl font-display text-white">${monthlyTotal}/mo</p>
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Hosting & Services (12 Mo)</p>
+                    <p className="text-3xl font-display text-white">${hostingTotal.toLocaleString()}</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Annual Hosting & Services</p>
-                    <p className="text-3xl font-display text-white">${(monthlyTotal * 12).toLocaleString()}/yr</p>
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Total Investment</p>
+                    <p className="text-3xl font-display text-[#ccff00]">${(buildTotal + hostingTotal).toLocaleString()}</p>
                   </div>
                 </div>
               </div>
@@ -228,8 +228,7 @@ export default function MccoyInvoicePage() {
                     "10 Lead Generation Websites",
                     "Domain Setup",
                     "SEO-Optimized Service Content",
-                    "Lead Form Setup",
-                    "Call Tracking Phone Numbers",
+                    "Lead Form Setup & Lead Notification Directing",
                     "Google Indexing & Sitemap",
                     "Website Hosting",
                     "Ongoing Maintenance & Updates",
@@ -251,8 +250,8 @@ export default function MccoyInvoicePage() {
                 <div className="bg-gray-50 border border-gray-200 px-6 py-5 text-xs text-black/60 leading-relaxed space-y-3">
                   <p>Domains will be billed annually at approximately $12–$20 per domain per year.</p>
                   <p>Client (McCoy Roofing) owns all domains, websites, leads, and content.</p>
-                  <p>Monthly hosting and services require a minimum 12-month service term beginning once websites are launched.</p>
-                  <p>Website build costs are due prior to website development. Monthly fees begin upon site launch.</p>
+                  <p>Hosting and services are billed as a lump sum covering 12 months, due when websites go live.</p>
+                  <p>Website build costs are due prior to website development.</p>
                 </div>
               </div>
 
