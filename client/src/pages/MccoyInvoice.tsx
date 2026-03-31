@@ -24,10 +24,12 @@ export default function MccoyInvoicePage() {
   const lineItems = [
     { description: "Lead Generation Website Build", detail: "10 websites × $250 per website", qty: 10, rate: 250, total: 2500 },
     { description: "Website Hosting, Maintenance, SEO Updates & Reporting (12 Months)", detail: "10 websites × $10 per website/month × 12 months", qty: 10, rate: 120, total: 1200 },
+    { description: "Domain Registration (Annual)", detail: "10 domains × $13.19 per domain/year (includes tax)", qty: 10, rate: 13.19, total: 131.90 },
   ];
 
   const buildTotal = 2500;
   const hostingTotal = 1200;
+  const domainTotal = 131.90;
 
   return (
     <>
@@ -204,6 +206,42 @@ export default function MccoyInvoicePage() {
                 <p className="text-xs text-black/50 mt-3 italic">Lump sum payment due when websites go live. Covers 12 months of hosting, maintenance, SEO updates & reporting.</p>
               </div>
 
+              <div className="mb-10">
+                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-6">Domain Registration (Annual)</h3>
+                <div className="overflow-hidden border-2 border-[#201cc5]">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-[#201cc5] text-white">
+                        <th className="text-left px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Description</th>
+                        <th className="text-center px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Qty</th>
+                        <th className="text-right px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Rate</th>
+                        <th className="text-right px-5 py-3 text-[10px] uppercase tracking-widest font-bold">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="bg-gray-50">
+                        <td className="px-5 py-4">
+                          <p className="text-black/80 font-medium">{lineItems[2].description}</p>
+                          <p className="text-xs text-black/50 mt-1">{lineItems[2].detail}</p>
+                        </td>
+                        <td className="px-5 py-4 text-center text-black/80">{lineItems[2].qty}</td>
+                        <td className="px-5 py-4 text-right text-black/80">${lineItems[2].rate.toFixed(2)}</td>
+                        <td className="px-5 py-4 text-right font-bold text-black">${domainTotal.toFixed(2)}</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr className="border-t-2 border-[#201cc5]">
+                        <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Annual Domain Total</td>
+                        <td className="px-5 py-4 text-right">
+                          <span className="text-xl font-display text-[#201cc5]">${domainTotal.toFixed(2)}/yr</span>
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <p className="text-xs text-black/50 mt-3 italic">Client (McCoy Roofing) is responsible for paying domain registration fees annually. Domains are owned by the client.</p>
+              </div>
+
               <div className="bg-[#201cc5] text-white px-8 py-8 mb-10">
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="text-center">
@@ -248,7 +286,7 @@ export default function MccoyInvoicePage() {
               <div className="mb-10">
                 <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-4">Notes</h3>
                 <div className="bg-gray-50 border border-gray-200 px-6 py-5 text-xs text-black/60 leading-relaxed space-y-3">
-                  <p>Domains will be billed annually at approximately $12–$20 per domain per year.</p>
+                  <p>Domains are billed annually at $13.19 per domain (includes tax). Client is responsible for annual domain renewal.</p>
                   <p>Client (McCoy Roofing) owns all domains, websites, leads, and content.</p>
                   <p>Hosting and services are billed as a lump sum covering 12 months, due when websites go live.</p>
                   <p>Website build costs are due prior to website development.</p>
