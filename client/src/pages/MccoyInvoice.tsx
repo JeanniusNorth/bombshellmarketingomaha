@@ -18,7 +18,7 @@ export default function MccoyInvoicePage() {
 
   const today = new Date();
   const invoiceDate = today.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
-  const dueDate = new Date(today.getTime() + 15 * 24 * 60 * 60 * 1000).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  const dueDate = "Due on Project Start";
   const invoiceNumber = `BM-${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, "0")}${String(today.getDate()).padStart(2, "0")}-001`;
 
   const lineItems = [
@@ -158,7 +158,7 @@ export default function MccoyInvoicePage() {
                     </tbody>
                     <tfoot>
                       <tr className="border-t-2 border-[#201cc5]">
-                        <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Total Due (One-Time)</td>
+                        <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Total Due (Now)</td>
                         <td className="px-5 py-4 text-right">
                           <span className="text-xl font-display text-[#201cc5]">${buildTotal.toLocaleString()}.00</span>
                         </td>
@@ -193,7 +193,7 @@ export default function MccoyInvoicePage() {
                     </tbody>
                     <tfoot>
                       <tr className="border-t-2 border-[#201cc5]">
-                        <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Total Due (Lump Sum)</td>
+                        <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Total Due (When Sites Go Live)</td>
                         <td className="px-5 py-4 text-right">
                           <span className="text-xl font-display text-[#201cc5]">${hostingTotal.toLocaleString()}.00</span>
                         </td>
