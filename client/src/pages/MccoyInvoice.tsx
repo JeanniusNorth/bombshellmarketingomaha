@@ -233,30 +233,6 @@ export default function MccoyInvoicePage() {
               </div>
 
               <div className="mb-10">
-                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-4">What's Included</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {[
-                    "10 Lead Generation Websites",
-                    "Domain Setup",
-                    "SEO-Optimized Service Content",
-                    "Lead Form Setup & Lead Notification Directing",
-                    "Google Indexing & Sitemap",
-                    "Website Hosting",
-                    "Ongoing Maintenance & Updates",
-                    "Blog Content Updates",
-                    "Monthly Performance Reports",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-3 py-2">
-                      <div className="w-5 h-5 bg-[#ccff00] flex items-center justify-center flex-shrink-0">
-                        <span className="text-black text-xs font-bold">✓</span>
-                      </div>
-                      <p className="text-sm text-black/70">{item}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="mb-10">
                 <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-4">Notes</h3>
                 <div className="bg-gray-50 border border-gray-200 px-6 py-5 text-xs text-black/60 leading-relaxed space-y-3">
                   <p>Domains are billed annually at $13.19 per domain (includes tax). Client is responsible for annual domain renewal.</p>

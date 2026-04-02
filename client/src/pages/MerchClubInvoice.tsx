@@ -175,27 +175,6 @@ export default function MerchClubInvoicePage() {
               </div>
 
               <div className="mb-10">
-                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-4">What's Included</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {[
-                    "Website Design & Development",
-                    "Website Management & Updates",
-                    "Marketing Strategy & Consulting",
-                    "Graphic Design & Visual Assets",
-                    "SEO Optimization & Monitoring",
-                    "Performance Reporting",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-3 py-2">
-                      <div className="w-5 h-5 bg-[#ccff00] flex items-center justify-center flex-shrink-0">
-                        <span className="text-black text-xs font-bold">✓</span>
-                      </div>
-                      <p className="text-sm text-black/70">{item}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="mb-10">
                 <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-4">Notes</h3>
                 <div className="bg-gray-50 border border-gray-200 px-6 py-5 text-xs text-black/60 leading-relaxed space-y-3">
                   <p>This is a monthly recurring invoice. Payment of $2,000.00 is due on the 1st of each month.</p>
