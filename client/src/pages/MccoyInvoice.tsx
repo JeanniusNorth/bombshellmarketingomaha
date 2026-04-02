@@ -35,11 +35,22 @@ export default function MccoyInvoicePage() {
     <>
       <style>{`
         @media print {
+          html, body { margin: 0; padding: 0; }
           body * { visibility: hidden; }
           .print-area, .print-area * { visibility: visible; }
           .print-area { position: absolute; left: 0; top: 0; width: 100%; }
           .no-print { display: none !important; }
-          @page { margin: 0.5in; size: letter; }
+          @page { margin: 0; size: letter; }
+          * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
+          .print-area header { background-color: #201cc5 !important; }
+          .print-area [class*="bg-[#201cc5]"] { background-color: #201cc5 !important; }
+          .print-area [class*="bg-[#ccff00]"] { background-color: #ccff00 !important; }
+          .print-area [class*="bg-gray-50"] { background-color: #f9fafb !important; }
+          .print-area [class*="border-[#201cc5]"] { border-color: #201cc5 !important; }
+          .print-area thead tr { background-color: #201cc5 !important; }
+          .print-area thead th { color: white !important; }
+          .print-area .text-\\[\\#ccff00\\] { color: #ccff00 !important; }
+          .print-area .text-\\[\\#201cc5\\] { color: #201cc5 !important; }
         }
       `}</style>
       <div className="min-h-screen bg-gray-100 print:bg-white">
