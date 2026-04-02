@@ -106,7 +106,9 @@ export default function MerchClubInvoicePage() {
               <div className="grid md:grid-cols-3 gap-8 mb-10 pb-10 border-b border-gray-200">
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.3em] text-black/40 font-bold mb-2">Bill To</p>
-                  <p className="text-sm font-bold text-black">Merch Club</p>
+                  <p className="text-sm font-bold text-black">Chris Harwood</p>
+                  <p className="text-sm text-black/60">Merch Club</p>
+                  <p className="text-sm text-black/60">chris@merchclub.com</p>
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.3em] text-black/40 font-bold mb-2">Invoice Date</p>
