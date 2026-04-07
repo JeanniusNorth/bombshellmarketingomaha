@@ -24,12 +24,10 @@ export default function MccoyInvoicePage() {
   const lineItems = [
     { description: "Lead Generation Website Build", detail: "10 websites × $250 per website", qty: 10, rate: 250, total: 2500 },
     { description: "Website Hosting, Maintenance, SEO Updates & Reporting (12 Months)", detail: "10 websites × $10 per website/month × 12 months", qty: 10, rate: 120, total: 1200 },
-    { description: "Domain Registration (Annual)", detail: "10 domains × $13.19 per domain/year (includes tax)", qty: 10, rate: 13.19, total: 131.90 },
   ];
 
   const buildTotal = 2500;
   const hostingTotal = 1200;
-  const domainTotal = 131.90;
 
   return (
     <>
@@ -147,7 +145,7 @@ export default function MccoyInvoicePage() {
               </div>
 
               <div className="mb-10">
-                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-6">Due Now — Website Build & Domains</h3>
+                <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-6">Due Now — Website Build</h3>
                 <div className="overflow-hidden border-2 border-[#201cc5]">
                   <table className="w-full text-sm">
                     <thead>
@@ -168,21 +166,12 @@ export default function MccoyInvoicePage() {
                         <td className="px-5 py-4 text-right text-black/80">${lineItems[0].rate.toFixed(2)}</td>
                         <td className="px-5 py-4 text-right font-bold text-black">${lineItems[0].total.toLocaleString()}.00</td>
                       </tr>
-                      <tr className="bg-white">
-                        <td className="px-5 py-4">
-                          <p className="text-black/80 font-medium">{lineItems[2].description}</p>
-                          <p className="text-xs text-black/50 mt-1">{lineItems[2].detail}</p>
-                        </td>
-                        <td className="px-5 py-4 text-center text-black/80">{lineItems[2].qty}</td>
-                        <td className="px-5 py-4 text-right text-black/80">${lineItems[2].rate.toFixed(2)}</td>
-                        <td className="px-5 py-4 text-right font-bold text-black">${domainTotal.toFixed(2)}</td>
-                      </tr>
                     </tbody>
                     <tfoot>
                       <tr className="border-t-2 border-[#201cc5]">
                         <td colSpan={3} className="px-5 py-4 text-right font-bold text-black uppercase text-xs tracking-widest">Total Due (Now)</td>
                         <td className="px-5 py-4 text-right">
-                          <span className="text-xl font-display text-[#201cc5]">${(buildTotal + domainTotal).toFixed(2)}</span>
+                          <span className="text-xl font-display text-[#201cc5]">${buildTotal.toLocaleString()}.00</span>
                         </td>
                       </tr>
                     </tfoot>
@@ -229,16 +218,16 @@ export default function MccoyInvoicePage() {
               <div className="bg-[#201cc5] text-white px-8 py-8 mb-10">
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="text-center">
-                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Due Now (Builds + Domains)</p>
-                    <p className="text-3xl font-display text-[#ccff00]">${(buildTotal + domainTotal).toFixed(2)}</p>
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Due Now (Website Builds)</p>
+                    <p className="text-3xl font-display text-[#ccff00]">${buildTotal.toLocaleString()}.00</p>
                   </div>
                   <div className="text-center">
                     <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Due When Sites Go Live</p>
-                    <p className="text-3xl font-display text-white">${hostingTotal.toLocaleString()}</p>
+                    <p className="text-3xl font-display text-white">${hostingTotal.toLocaleString()}.00</p>
                   </div>
                   <div className="text-center">
                     <p className="text-[10px] uppercase tracking-[0.3em] text-white/50 font-bold mb-2">Total Investment</p>
-                    <p className="text-3xl font-display text-[#ccff00]">${(buildTotal + domainTotal + hostingTotal).toFixed(2)}</p>
+                    <p className="text-3xl font-display text-[#ccff00]">${(buildTotal + hostingTotal).toLocaleString()}.00</p>
                   </div>
                 </div>
               </div>
@@ -246,8 +235,7 @@ export default function MccoyInvoicePage() {
               <div className="mb-10">
                 <h3 className="text-lg font-display uppercase tracking-tight text-[#201cc5] mb-4">Notes</h3>
                 <div className="bg-gray-50 border border-gray-200 px-6 py-5 text-xs text-black/60 leading-relaxed space-y-3">
-                  <p>Domains are billed annually at $13.19 per domain (includes tax). Client is responsible for annual domain renewal.</p>
-                  <p>Client (McCoy Roofing) owns all domains, websites, leads, and content.</p>
+                  <p>Client (McCoy Roofing) owns all websites, leads, and content.</p>
                   <p>Hosting and services are billed as a lump sum covering 12 months, due when websites go live.</p>
                   <p>Website build costs are due prior to website development.</p>
                 </div>
