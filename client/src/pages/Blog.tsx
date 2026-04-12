@@ -91,21 +91,21 @@ export default function BlogPage() {
       <div className="min-h-screen bg-white">
         <Navigation />
 
-        <section className="bg-[#D9A3B0] pt-32 pb-20 relative overflow-hidden">
+        <section className="bg-[#EDE3E1] pt-32 pb-20 relative overflow-hidden">
           <div
             className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay"
             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}
           ></div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl md:text-7xl font-display text-[#1A1A1A] uppercase mb-6">
+            <h1 className="text-5xl md:text-7xl font-display text-[#111111] uppercase mb-6">
               Insights & Resources
             </h1>
-            <div className="flex items-center justify-center gap-2 text-[#2A2A2A]/70 text-sm uppercase tracking-widest">
+            <div className="flex items-center justify-center gap-2 text-[#2B2B2B]/70 text-sm uppercase tracking-widest">
               <Link href="/" className="hover:text-primary transition-colors">Home</Link>
               <span>/</span>
               <span className="text-white">Blog</span>
             </div>
-            <p className="mt-6 text-[#2A2A2A]/70 max-w-2xl mx-auto">
+            <p className="mt-6 text-[#2B2B2B]/70 max-w-2xl mx-auto">
               Expert advice on web design, branding, photography, and marketing strategy for Omaha businesses ready to grow.
             </p>
           </div>
@@ -137,13 +137,13 @@ export default function BlogPage() {
                       {featuredArticle.readTime}
                     </span>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-display text-black uppercase leading-tight mb-4 group-hover:text-[#D9A3B0] transition-colors">
+                  <h2 className="text-2xl md:text-3xl font-display text-black uppercase leading-tight mb-4 group-hover:text-[#EDE3E1] transition-colors">
                     {featuredArticle.title}
                   </h2>
                   <p className="text-black/60 leading-relaxed mb-6">
                     {featuredArticle.excerpt}
                   </p>
-                  <span className="inline-flex items-center gap-2 text-[#D9A3B0] text-xs font-bold uppercase tracking-widest">
+                  <span className="inline-flex items-center gap-2 text-[#EDE3E1] text-xs font-bold uppercase tracking-widest">
                     Read Article
                     <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </span>
@@ -184,13 +184,13 @@ export default function BlogPage() {
                           {article.readTime}
                         </span>
                       </div>
-                      <h3 className="text-xl font-display text-black uppercase leading-tight mb-2 group-hover:text-[#D9A3B0] transition-colors">
+                      <h3 className="text-xl font-display text-black uppercase leading-tight mb-2 group-hover:text-[#EDE3E1] transition-colors">
                         {article.title}
                       </h3>
                       <p className="text-black/60 text-sm leading-relaxed mb-4 line-clamp-2">
                         {article.excerpt}
                       </p>
-                      <span className="inline-flex items-center gap-2 text-[#D9A3B0] text-xs font-bold uppercase tracking-widest">
+                      <span className="inline-flex items-center gap-2 text-[#EDE3E1] text-xs font-bold uppercase tracking-widest">
                         Read Article
                         <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                       </span>
@@ -202,23 +202,23 @@ export default function BlogPage() {
           </div>
         </section>
 
-        <section className="bg-[#D9A3B0] py-20 relative overflow-hidden">
+        <section className="bg-[#EDE3E1] py-20 relative overflow-hidden">
           <div
             className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay"
             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}
           ></div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h2 className="text-4xl md:text-6xl font-display text-[#1A1A1A] uppercase mb-6">
+            <h2 className="text-4xl md:text-6xl font-display text-[#111111] uppercase mb-6">
               Ready to Grow Your Business?
             </h2>
-            <p className="text-[#2A2A2A]/70 max-w-2xl mx-auto mb-8">
+            <p className="text-[#2B2B2B]/70 max-w-2xl mx-auto mb-8">
               Whether you need a stunning website, a memorable brand identity, or a marketing strategy that delivers results—Bombshell Marketing is here to help Omaha businesses thrive.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <button
                 onClick={openContactModal}
                 data-testid="blog-cta-contact"
-                className="group px-8 py-4 bg-primary text-[#1A1A1A] border border-primary hover:bg-white hover:text-black hover:border-[#1A1A1A] transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+                className="group px-8 py-4 bg-primary text-[#111111] border border-primary hover:bg-white hover:text-black hover:border-[#111111] transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
               >
                 <span>Contact Us</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -226,7 +226,7 @@ export default function BlogPage() {
               <a
                 href="https://audit.bombshellmarketingomaha.com/"
                 data-testid="blog-cta-audit"
-                className="group px-8 py-4 border border-[#1A1A1A]/20 hover:bg-primary hover:text-white hover:border-primary transition-all text-[#1A1A1A] text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+                className="group px-8 py-4 border border-[#111111]/20 hover:bg-primary hover:text-white hover:border-primary transition-all text-[#111111] text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
               >
                 <span>Free Website Audit</span>
                 <ArrowUpRight className="w-4 h-4" />

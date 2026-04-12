@@ -36,7 +36,7 @@ export function Navigation() {
               <path d="M12 0L14.5 9L24 12L14.5 15L12 24L9.5 15L0 12L9.5 9L12 0Z" />
             </svg>
           </div>
-          <span className="font-display text-2xl tracking-widest text-[#1A1A1A]">BOMBSHELL</span>
+          <span className="font-display text-2xl tracking-widest text-[#111111]">BOMBSHELL</span>
         </div>
       </Link>
 
@@ -44,13 +44,13 @@ export function Navigation() {
       <div className="hidden md:flex items-center gap-8">
         <a 
           href="/"
-          className="text-[#1A1A1A]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+          className="text-[#111111]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
         >
           Home
         </a>
         <a 
           href="/about"
-          className="text-[#1A1A1A]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+          className="text-[#111111]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
         >
           About Us
         </a>
@@ -63,7 +63,7 @@ export function Navigation() {
         >
           <a 
             href="/services"
-            className="text-[#1A1A1A]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors flex items-center gap-1"
+            className="text-[#111111]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors flex items-center gap-1"
           >
             Services
             <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
@@ -71,13 +71,13 @@ export function Navigation() {
           
           {servicesOpen && (
             <div className="absolute top-full left-0 pt-2">
-              <div className="bg-[#1A1A1A]/95 backdrop-blur-sm border border-white/10 py-2 min-w-[220px]">
+              <div className="bg-[#1F1F1F]/95 backdrop-blur-sm border border-white/10 py-2 min-w-[220px]">
                 {serviceLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
                     onClick={() => window.scrollTo(0, 0)}
-                    className="block px-4 py-3 text-[#2A2A2A]/70 hover:text-primary hover:bg-[#1A1A1A]/5 text-sm font-semibold tracking-wide transition-colors"
+                    className="block px-4 py-3 text-[#2B2B2B]/70 hover:text-primary hover:bg-[#111111]/5 text-sm font-semibold tracking-wide transition-colors"
                   >
                     {link.name}
                   </a>
@@ -89,19 +89,19 @@ export function Navigation() {
 
         <a 
           href="/portfolio"
-          className="text-[#1A1A1A]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+          className="text-[#111111]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
         >
           Portfolio
         </a>
         <a 
           href="/blog"
-          className="text-[#1A1A1A]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+          className="text-[#111111]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
         >
           Blog
         </a>
         <button 
           onClick={openContactModal}
-          className="text-[#1A1A1A]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
+          className="text-[#111111]/80 hover:text-primary font-sans text-sm font-semibold tracking-wide uppercase transition-colors"
         >
           Contact Us
         </button>
@@ -110,7 +110,7 @@ export function Navigation() {
       {/* Contact Button & Mobile Menu */}
       <div className="flex items-center gap-4">
         
-        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-[#1A1A1A] md:hidden">
+        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-[#111111] md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="text-black hover:text-black hover:bg-transparent">
@@ -119,21 +119,21 @@ export function Navigation() {
             </SheetTrigger>
             <SheetContent 
               side="right" 
-              className="bg-background border-l border-[#1A1A1A]/10 w-full sm:w-[300px]"
+              className="bg-background border-l border-[#111111]/10 w-full sm:w-[300px]"
               onCloseAutoFocus={(e) => e.preventDefault()}
             >
               <div className="flex flex-col gap-6 mt-12">
                 <a 
                   href="/"
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-display text-[#1A1A1A] hover:text-primary uppercase"
+                  className="text-2xl font-display text-[#111111] hover:text-primary uppercase"
                 >
                   Home
                 </a>
                 <a 
                   href="/about"
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-display text-[#1A1A1A] hover:text-primary uppercase"
+                  className="text-2xl font-display text-[#111111] hover:text-primary uppercase"
                 >
                   About Us
                 </a>
@@ -142,7 +142,7 @@ export function Navigation() {
                 <div>
                   <button 
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                    className="text-2xl font-display text-[#1A1A1A] hover:text-primary uppercase flex items-center gap-2 w-full text-left"
+                    className="text-2xl font-display text-[#111111] hover:text-primary uppercase flex items-center gap-2 w-full text-left"
                   >
                     Services
                     <ChevronDown className={`w-5 h-5 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
@@ -157,7 +157,7 @@ export function Navigation() {
                             setIsOpen(false);
                             window.scrollTo(0, 0);
                           }}
-                          className="text-lg text-[#2A2A2A]/70 hover:text-primary transition-colors"
+                          className="text-lg text-[#2B2B2B]/70 hover:text-primary transition-colors"
                         >
                           {link.name}
                         </a>
@@ -169,20 +169,20 @@ export function Navigation() {
                 <a 
                   href="/portfolio"
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-display text-[#1A1A1A] hover:text-primary uppercase"
+                  className="text-2xl font-display text-[#111111] hover:text-primary uppercase"
                 >
                   Portfolio
                 </a>
                 <a 
                   href="/blog"
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-display text-[#1A1A1A] hover:text-primary uppercase"
+                  className="text-2xl font-display text-[#111111] hover:text-primary uppercase"
                 >
                   Blog
                 </a>
                 <button 
                   onClick={() => { setIsOpen(false); openContactModal(); }}
-                  className="text-2xl font-display text-[#1A1A1A] hover:text-primary uppercase text-left"
+                  className="text-2xl font-display text-[#111111] hover:text-primary uppercase text-left"
                 >
                   Contact Us
                 </button>

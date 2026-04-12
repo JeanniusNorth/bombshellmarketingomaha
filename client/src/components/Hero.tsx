@@ -9,7 +9,7 @@ export function Hero() {
   const { openContactModal } = useContactModal();
 
   return (
-    <div className="relative min-h-[75vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#1A1A1A]">
+    <div className="relative min-h-[75vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#1F1F1F]">
       {/* Background Texture/Grain */}
       <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
@@ -76,7 +76,7 @@ export function Hero() {
             </div>
           </div>
           <p className="text-gray-400 text-[10px] font-bold tracking-widest uppercase mb-3">Client Feedback</p>
-          <div className="bg-[#A995D6] text-[#1A1A1A] px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
+          <div className="bg-[#1FA88F] text-[#111111] px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
             Top Rated
           </div>
         </motion.div>
@@ -104,7 +104,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-[20vw] md:text-[15vw] leading-[0.8] font-display text-[#D9A3B0] uppercase relative z-0 tracking-tighter mix-blend-normal mt-0 md:mt-[50px]"
+              className="text-[20vw] md:text-[15vw] leading-[0.8] font-display text-[#F299A2] uppercase relative z-0 tracking-tighter mix-blend-normal mt-0 md:mt-[50px]"
             >
               <motion.span
                 initial={{ opacity: 0, x: -50 }}
@@ -119,6 +119,7 @@ export function Hero() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="block text-[20vw] md:text-[15vw] leading-[0.8] font-display text-transparent uppercase relative z-20 tracking-tighter mt-[-2vw]"
                 style={{ WebkitTextStroke: '2px #F2C94C' }}
+
               >
                 MARKETING
               </motion.span>
@@ -140,7 +141,7 @@ export function Hero() {
                   transition={{ duration: 0.5, delay: 0.8 }}
                   className="flex flex-col md:flex-row gap-4"
                 >
-                  <button onClick={openContactModal} className="group px-8 py-4 bg-primary text-[#1A1A1A] border border-primary hover:bg-white hover:text-black hover:border-[#1A1A1A] transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3">
+                  <button onClick={openContactModal} className="group px-8 py-4 bg-primary text-[#111111] border border-primary hover:bg-white hover:text-black hover:border-[#111111] transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3">
                     <span>Get Started</span>
                     <div className="w-5 h-5 rounded-full bg-white text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                        <ArrowRight className="w-3 h-3" />
@@ -181,7 +182,7 @@ export function Hero() {
           <motion.div 
             animate={{ rotate: 360 }}
             transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-            className="w-20 h-20 border border-[#1A1A1A]/20 rounded-full flex items-center justify-center"
+            className="w-20 h-20 border border-[#111111]/20 rounded-full flex items-center justify-center"
           >
             <Sparkles className="w-10 h-10 text-primary fill-primary" />
           </motion.div>
@@ -192,7 +193,7 @@ export function Hero() {
            <motion.div 
              animate={{ scale: [1, 1.1, 1] }}
              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-             className="w-14 h-14 rounded-full bg-[#F2C94C] flex items-center justify-center text-[#1A1A1A] shadow-[0_0_20px_rgba(169,149,214,0.3)] cursor-pointer hover:scale-110 transition-transform"
+             className="w-14 h-14 rounded-full bg-[#F2C94C] flex items-center justify-center text-[#111111] shadow-[0_0_20px_rgba(169,149,214,0.3)] cursor-pointer hover:scale-110 transition-transform"
            >
                <Play className="w-5 h-5 fill-black ml-1" />
            </motion.div>
@@ -202,7 +203,7 @@ export function Hero() {
       </div>
       
       {/* Integrated Marquee at the bottom */}
-      <div className="absolute -bottom-1 left-0 w-full z-40 bg-[#A995D6] text-[#1A1A1A] py-3 transform -rotate-1 scale-105 origin-left border-y-2 border-[#1A1A1A]/20 font-display text-xl uppercase tracking-widest overflow-hidden whitespace-nowrap">
+      <div className="absolute -bottom-1 left-0 w-full z-40 bg-[#1FA88F] text-white py-3 transform -rotate-1 scale-105 origin-left border-y-2 border-[#0E7C6B] font-display text-xl uppercase tracking-widest overflow-hidden whitespace-nowrap">
          <div className="animate-marquee flex gap-8 items-center">
             {[...Array(10)].map((_, i) => (
                <div key={i} className="flex items-center gap-8">

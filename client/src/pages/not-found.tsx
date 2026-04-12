@@ -12,20 +12,20 @@ export default function NotFound() {
         description="The page you're looking for doesn't exist. Return to Bombshell Marketing for web design, logo design, and brand photography services in Omaha."
         canonicalPath="/404"
       />
-      <div className="min-h-screen bg-[#D9A3B0]">
+      <div className="min-h-screen bg-[#EDE3E1]">
         <Navigation />
         <section className="pt-32 pb-20 min-h-[60vh] flex items-center justify-center">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-8xl md:text-9xl font-display text-primary mb-6">404</h1>
-            <h2 className="text-3xl md:text-5xl font-display text-[#1A1A1A] uppercase mb-6">
+            <h2 className="text-3xl md:text-5xl font-display text-[#111111] uppercase mb-6">
               Page Not Found
             </h2>
-            <p className="text-[#2A2A2A]/70 max-w-xl mx-auto mb-10">
+            <p className="text-[#2B2B2B]/70 max-w-xl mx-auto mb-10">
               The page you're looking for doesn't exist or has been moved. Let's get you back on track.
             </p>
             <Link 
               href="/"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-[#1A1A1A] font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-[#111111] font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors"
             >
               Back to Home
               <ArrowUpRight className="w-4 h-4" />

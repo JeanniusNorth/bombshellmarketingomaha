@@ -60,7 +60,7 @@ export default function SocialMediaPage() {
               onClick={handleDownload}
               disabled={downloading}
               data-testid="button-download-cover"
-              className="px-6 py-3 bg-[#A995D6] text-[#1A1A1A] text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-[#A995D6] transition-all disabled:opacity-50"
+              className="px-6 py-3 bg-[#1FA88F] text-[#111111] text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-[#1FA88F] transition-all disabled:opacity-50"
             >
               {downloading ? "Generating..." : "Download PNG"}
             </button>
@@ -75,7 +75,7 @@ export default function SocialMediaPage() {
                   height: 312,
                   position: "relative",
                   overflow: "hidden",
-                  backgroundColor: "#D9A3B0",
+                  backgroundColor: "#EDE3E1",
                   fontFamily: "'Anton', sans-serif",
                 }}
                 data-testid="preview-facebook-cover"
@@ -123,7 +123,7 @@ export default function SocialMediaPage() {
                   <div
                     style={{
                       fontSize: 110,
-                      color: "#A995D6",
+                      color: "#1FA88F",
                       letterSpacing: "-0.04em",
                       fontFamily: "'Anton', sans-serif",
                       textTransform: "uppercase",
@@ -136,7 +136,7 @@ export default function SocialMediaPage() {
                     style={{
                       fontSize: 110,
                       color: "transparent",
-                      WebkitTextStroke: "1.5px #A995D6",
+                      WebkitTextStroke: "1.5px #1FA88F",
                       letterSpacing: "-0.04em",
                       fontFamily: "'Anton', sans-serif",
                       textTransform: "uppercase",
@@ -202,7 +202,7 @@ export default function SocialMediaPage() {
                     left: 0,
                     right: 0,
                     height: 32,
-                    backgroundColor: "#A995D6",
+                    backgroundColor: "#1FA88F",
                     display: "flex",
                     alignItems: "center",
                     overflow: "hidden",

@@ -58,7 +58,7 @@ export function FAQ() {
   };
 
   return (
-    <section className="bg-[#D9A3B0] py-20 md:py-28" data-testid="faq-section">
+    <section className="bg-[#EDE3E1] py-20 md:py-28" data-testid="faq-section">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -71,10 +71,10 @@ export function FAQ() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12 md:mb-16"
         >
-          <span className="text-[#A995D6] text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-3 block">
+          <span className="text-[#1FA88F] text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-3 block">
             Got Questions?
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display uppercase text-[#1A1A1A]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display uppercase text-[#111111]">
             Frequently Asked Questions
           </h2>
         </motion.div>
@@ -90,14 +90,14 @@ export function FAQ() {
             >
               <button
                 onClick={() => toggle(index)}
-                className="w-full text-left flex items-center justify-between gap-4 py-5 px-5 bg-[#1A1A1A]/[0.04] hover:bg-[#1A1A1A]/[0.06] border border-[#1A1A1A]/[0.06] transition-colors group"
+                className="w-full text-left flex items-center justify-between gap-4 py-5 px-5 bg-[#111111]/[0.04] hover:bg-[#111111]/[0.06] border border-[#111111]/[0.06] transition-colors group"
                 data-testid={`button-faq-${index}`}
               >
-                <span className="text-[#1A1A1A] font-sans text-sm md:text-base font-medium pr-4">
+                <span className="text-[#111111] font-sans text-sm md:text-base font-medium pr-4">
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 text-[#A995D6] shrink-0 transition-transform duration-300 ${
+                  className={`w-5 h-5 text-[#1FA88F] shrink-0 transition-transform duration-300 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />
@@ -111,8 +111,8 @@ export function FAQ() {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="px-5 py-4 bg-[#1A1A1A]/[0.03] border border-t-0 border-[#1A1A1A]/[0.06]">
-                      <p className="text-[#2A2A2A]/60 text-sm font-sans leading-relaxed">
+                    <div className="px-5 py-4 bg-[#111111]/[0.03] border border-t-0 border-[#111111]/[0.06]">
+                      <p className="text-[#2B2B2B]/60 text-sm font-sans leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>

@@ -40,63 +40,63 @@
 }
 
 :root {
-  /* Dusty Pink background */
-  --background: 340 30% 75%;
-  --foreground: 0 0% 10%;
+  /* Warm Off-White */
+  --background: 10 18% 91%;
+  --foreground: 0 0% 7%;
 
-  /* Lavender / Purple */
-  --primary: 262 42% 71%;
+  /* Teal Green */
+  --primary: 166 68% 39%;
   --primary-foreground: 0 0% 100%;
 
-  /* Soft Blush Pink */
-  --card: 345 38% 80%;
-  --card-foreground: 0 0% 10%;
+  /* Soft Beige/Pink */
+  --card: 345 24% 86%;
+  --card-foreground: 0 0% 7%;
   
-  --popover: 345 38% 80%;
-  --popover-foreground: 0 0% 10%;
+  --popover: 345 24% 86%;
+  --popover-foreground: 0 0% 7%;
 
   /* Golden Yellow */
   --secondary: 43 87% 62%;
-  --secondary-foreground: 0 0% 10%;
+  --secondary-foreground: 0 0% 7%;
 
-  /* Light Gray */
+  /* Muted */
   --muted: 0 0% 85%;
   --muted-foreground: 0 0% 35%;
 
-  /* Lavender accent */
-  --accent: 262 42% 71%;
+  /* Burnt Orange accent */
+  --accent: 16 87% 57%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 340 20% 70%;
+  --border: 10 10% 80%;
   --input: 0 0% 96%;
-  --ring: 262 42% 71%;
+  --ring: 166 68% 39%;
   
   --radius: 0;
 }
 
 .dark {
-  --background: 340 30% 75%;
-  --foreground: 0 0% 10%;
-  --primary: 262 42% 71%;
+  --background: 10 18% 91%;
+  --foreground: 0 0% 7%;
+  --primary: 166 68% 39%;
   --primary-foreground: 0 0% 100%;
-  --card: 345 38% 80%;
-  --card-foreground: 0 0% 10%;
-  --popover: 345 38% 80%;
-  --popover-foreground: 0 0% 10%;
+  --card: 345 24% 86%;
+  --card-foreground: 0 0% 7%;
+  --popover: 345 24% 86%;
+  --popover-foreground: 0 0% 7%;
   --secondary: 43 87% 62%;
-  --secondary-foreground: 0 0% 10%;
+  --secondary-foreground: 0 0% 7%;
   --muted: 0 0% 85%;
   --muted-foreground: 0 0% 35%;
-  --accent: 262 42% 71%;
+  --accent: 16 87% 57%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --border: 340 20% 70%;
+  --border: 10 10% 80%;
   --input: 0 0% 96%;
-  --ring: 262 42% 71%;
+  --ring: 166 68% 39%;
 }
 
 @layer base {

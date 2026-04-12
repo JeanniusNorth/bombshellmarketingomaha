@@ -34,7 +34,7 @@ Preferred communication style: Simple, everyday language.
 
 ### Design System
 - **Typography**: Anton (headlines/display), Montserrat (body/sans)
-- **Color Scheme**: Dusty Pink (#D9A3B0) background, Lavender (#A995D6) primary, Golden Yellow (#F2C94C) secondary, Soft Blush (#E5B6C1) cards, Primary Black (#1A1A1A) text
+- **Color Scheme**: Warm Off-White (#EDE3E1) background, Teal Green (#1FA88F) primary, Golden Yellow (#F2C94C) secondary, Burnt Orange (#F26430) accent, Charcoal (#1F1F1F) dark sections, Jet Black (#111111) text
 - **Border Radius**: Set to 0 for sharp, modern aesthetic
 - **Custom Animations**: Marquee scrolling effect, custom keyframe animations
 

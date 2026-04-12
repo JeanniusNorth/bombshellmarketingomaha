@@ -6,7 +6,7 @@ export function CallToAction() {
   const { openContactModal } = useContactModal();
 
   return (
-    <section className="bg-[#D9A3B0] py-20 text-[#1A1A1A] relative overflow-hidden" data-testid="cta-section">
+    <section className="bg-[#1F1F1F] py-20 text-white relative overflow-hidden" data-testid="cta-section">
       <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
       </div>
@@ -22,14 +22,14 @@ export function CallToAction() {
           Ready To Start Your Project?
         </h2>
         
-        <p className="text-[#2A2A2A]/70 max-w-2xl mx-auto mb-10 text-sm md:text-base leading-relaxed">
+        <p className="text-white/70 max-w-2xl mx-auto mb-10 text-sm md:text-base leading-relaxed">
           Let's create something explosive together. Get a free brand audit and see how we can transform your business with stunning web design, logo design, or brand photography.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 
             onClick={openContactModal}
-            className="group px-8 py-4 bg-[#A995D6] text-[#1A1A1A] border border-[#A995D6] hover:bg-white hover:border-[#1A1A1A] transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
+            className="group px-8 py-4 bg-[#1FA88F] text-white border border-[#1FA88F] hover:bg-[#0E7C6B] hover:border-[#0E7C6B] transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
             data-testid="cta-contact-button"
           >
             Contact Us
@@ -40,7 +40,7 @@ export function CallToAction() {
             href="https://audit.bombshellmarketingomaha.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group px-8 py-4 bg-transparent text-[#1A1A1A] border border-[#1A1A1A] hover:bg-white hover:text-black transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
+            className="group px-8 py-4 bg-transparent text-white border border-white/30 hover:bg-white hover:text-[#1F1F1F] transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
             data-testid="cta-audit-button"
           >
             Free Website Audit
