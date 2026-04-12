@@ -128,7 +128,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="mt-4 md:mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-[50px] md:mb-[150px]"
+              className="mt-4 md:mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-[100px] md:mb-[150px]"
             >
                 <p className="text-white/80 text-sm leading-relaxed font-medium max-w-md text-center px-4">
                   We combine explosive creativity with precision to deliver stunning web design, logo design, and brand photography for businesses. Based in Omaha, NE.
