@@ -104,23 +104,23 @@ export function Hero() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-[20vw] md:text-[15vw] leading-[0.8] font-display text-primary uppercase relative z-0 tracking-tighter mix-blend-normal mt-0 md:mt-[50px]"
+              className="text-[12vw] md:text-[8vw] leading-[0.9] font-display text-primary relative z-0 tracking-tight mix-blend-normal mt-0 md:mt-[50px] text-center"
             >
               <motion.span
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                BOMBSHELL
+                Blow Up Your
               </motion.span>
               <motion.span 
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="block text-[20vw] md:text-[15vw] leading-[0.8] font-display text-transparent uppercase relative z-20 tracking-tighter mt-[-2vw]"
-                style={{ WebkitTextStroke: '1px #ccff00' }}
+                className="block text-[12vw] md:text-[8vw] leading-[0.9] font-display text-transparent relative z-20 tracking-tight mt-[-1vw]"
+                style={{ WebkitTextStroke: '2px #ccff00' }}
               >
-                MARKETING
+                Marketing
               </motion.span>
             </motion.h1>
 
