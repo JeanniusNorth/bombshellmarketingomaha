@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Play, Star } from "lucide-react";
-import heroImage from "@/assets/hero-creative.png";
-import heroWomanImage from "@/assets/images/hero-woman.png";
+import heroImage from "@/assets/hero-creative.webp";
+import heroWomanImage from "@/assets/images/hero-woman.webp";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useContactModal } from "@/contexts/ContactModalContext";
 
