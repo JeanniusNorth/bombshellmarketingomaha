@@ -77,7 +77,7 @@ export function Hero() {
           </div>
           <p className="text-gray-400 text-[10px] font-bold tracking-widest uppercase mb-3">Client Feedback</p>
           <div className="bg-[#ffffff] text-black px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
-            Top Rated
+            Top Rated in Omaha
           </div>
         </motion.div>
 
