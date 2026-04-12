@@ -97,7 +97,7 @@ export function Hero() {
         </motion.div>
 
         {/* === CENTER: Headline & Image === */}
-        <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none pt-[100px] md:pt-[50px]">
+        <div className="absolute inset-0 z-0 flex flex-col items-center justify-center pointer-events-none pt-[20px] md:pt-[-30px]">
             
             {/* Top Text: BOMBSHELL - Behind Image */}
             <motion.h1 
