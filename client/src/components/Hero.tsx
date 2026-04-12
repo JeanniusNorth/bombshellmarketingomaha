@@ -72,7 +72,6 @@ export function Hero() {
               <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-current" />
             ))}
           </div>
-          <p className="text-gray-400 text-[10px] font-bold tracking-widest uppercase mb-1">Client Feedback</p>
           <p className="text-black text-[10px] font-bold uppercase tracking-wider">
             Top Rated in Omaha
           </p>
