@@ -46,13 +46,13 @@ function renderMarkdownLinks(text: string) {
       const isExternal = linkMatch[2].startsWith("http");
       if (isExternal) {
         return (
-          <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-[#EDE3E1] font-bold hover:underline">
+          <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-[#201cc5] font-bold hover:underline">
             {linkMatch[1]}
           </a>
         );
       }
       return (
-        <Link key={i} href={linkMatch[2]} className="text-[#EDE3E1] font-bold hover:underline">
+        <Link key={i} href={linkMatch[2]} className="text-[#201cc5] font-bold hover:underline">
           {linkMatch[1]}
         </Link>
       );
@@ -100,7 +100,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
 
     case "blockquote":
       return (
-        <blockquote className="my-10 border-l-4 border-primary bg-[#1FA88F]/5 py-6 px-8 relative">
+        <blockquote className="my-10 border-l-4 border-primary bg-[#ccff00]/5 py-6 px-8 relative">
           <div className="absolute -top-4 left-6 text-primary text-6xl font-serif leading-none">"</div>
           <p className="text-xl italic text-black/80 leading-relaxed pt-4">
             {renderMarkdownLinks(section.text)}
@@ -115,10 +115,10 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
 
     case "stat":
       return (
-        <div className="my-10 bg-[#EDE3E1] text-[#111111] p-8 md:p-10 text-center">
+        <div className="my-10 bg-[#201cc5] text-white p-8 md:p-10 text-center">
           <div className="text-5xl md:text-6xl font-display text-primary mb-2">{section.value}</div>
           <div className="text-lg font-semibold uppercase tracking-wider mb-3">{section.label}</div>
-          <p className="text-[#2B2B2B]/70 max-w-lg mx-auto">{section.description}</p>
+          <p className="text-white/70 max-w-lg mx-auto">{section.description}</p>
         </div>
       );
 
@@ -126,9 +126,9 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
       return (
         <div className="my-10 grid grid-cols-2 md:grid-cols-3 gap-4">
           {section.stats.map((stat, i) => (
-            <div key={i} className="bg-black text-[#111111] p-6 text-center">
+            <div key={i} className="bg-black text-white p-6 text-center">
               <div className="text-3xl md:text-4xl font-display text-primary mb-2">{stat.value}</div>
-              <div className="text-sm text-[#2B2B2B]/70 uppercase tracking-wider">{stat.label}</div>
+              <div className="text-sm text-white/70 uppercase tracking-wider">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -156,7 +156,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
     case "callout":
       const variants = {
         info: "bg-blue-50 border-blue-200 text-blue-900",
-        tip: "bg-[#1FA88F]/10 border-primary/30 text-black",
+        tip: "bg-[#ccff00]/10 border-primary/30 text-black",
         warning: "bg-amber-50 border-amber-200 text-amber-900",
       };
       const variant = section.variant || "info";
@@ -171,14 +171,14 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
       const isExternal = section.linkHref.startsWith("http");
       const isContact = section.linkHref === "/contact";
       return (
-        <div className="my-12 bg-[#EDE3E1] p-8 md:p-12 text-center">
-          <p className="text-xl md:text-2xl font-display uppercase text-[#111111] mb-6">{section.text}</p>
+        <div className="my-12 bg-[#201cc5] p-8 md:p-12 text-center">
+          <p className="text-xl md:text-2xl font-display uppercase text-white mb-6">{section.text}</p>
           {isExternal ? (
             <a
               href={section.linkHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-[#111111] font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
+              className="inline-flex items-center gap-2 bg-primary text-black font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
               data-testid="cta-blog-external"
             >
               {section.linkText}
@@ -187,7 +187,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
           ) : isContact ? (
             <button
               onClick={openContactModal}
-              className="inline-flex items-center gap-2 bg-primary text-[#111111] font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
+              className="inline-flex items-center gap-2 bg-primary text-black font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
               data-testid="cta-blog-contact"
             >
               {section.linkText}
@@ -196,7 +196,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
           ) : (
             <Link
               href={section.linkHref}
-              className="inline-flex items-center gap-2 bg-primary text-[#111111] font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
+              className="inline-flex items-center gap-2 bg-primary text-black font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
               data-testid="cta-blog-link"
             >
               {section.linkText}
@@ -284,10 +284,10 @@ export default function BlogArticlePage() {
                     {article.category}
                   </span>
                 </div>
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-display uppercase text-[#111111] leading-tight mb-4">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-display uppercase text-white leading-tight mb-4">
                   {article.title}
                 </h1>
-                <div className="flex items-center gap-6 text-[#2B2B2B]/60 text-sm">
+                <div className="flex items-center gap-6 text-white/60 text-sm">
                   <span className="flex items-center gap-1.5">
                     <Calendar className="w-4 h-4" />
                     {formatDate(article.datePublished)}
@@ -322,7 +322,7 @@ export default function BlogArticlePage() {
         {relatedArticles.length > 0 && (
           <section className="bg-black py-16 md:py-20">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl font-display uppercase text-[#111111] text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-display uppercase text-white text-center mb-12">
                 Keep Reading
               </h2>
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -332,7 +332,7 @@ export default function BlogArticlePage() {
                     <Link
                       key={related.slug}
                       href={`/blog/${related.slug}`}
-                      className="group block bg-[#111111]/5 border border-[#111111]/10 hover:border-primary/50 transition-all"
+                      className="group block bg-white/5 border border-white/10 hover:border-primary/50 transition-all"
                       data-testid={`related-article-${related.slug}`}
                     >
                       <div className="aspect-video overflow-hidden">
@@ -347,10 +347,10 @@ export default function BlogArticlePage() {
                         <span className={`inline-block px-2 py-0.5 text-xs font-semibold uppercase tracking-wider border mb-3 ${relCatColor}`}>
                           {related.category}
                         </span>
-                        <h3 className="text-lg font-display uppercase text-[#111111] group-hover:text-primary transition-colors mb-2">
+                        <h3 className="text-lg font-display uppercase text-white group-hover:text-primary transition-colors mb-2">
                           {related.title}
                         </h3>
-                        <p className="text-[#2B2B2B]/60 text-sm line-clamp-2">{related.excerpt}</p>
+                        <p className="text-white/50 text-sm line-clamp-2">{related.excerpt}</p>
                       </div>
                     </Link>
                   );

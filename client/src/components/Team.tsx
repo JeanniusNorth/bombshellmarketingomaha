@@ -89,7 +89,7 @@ export function Team() {
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 p-8 w-full translate-y-0 opacity-100 transition-all duration-300 transform">
-                  <h3 className="text-3xl font-display uppercase text-[#111111] mb-1 leading-none">{member.name}</h3>
+                  <h3 className="text-3xl font-display uppercase text-white mb-1 leading-none">{member.name}</h3>
                   <p className="text-primary text-xs font-bold uppercase tracking-widest">{member.role}</p>
                 </div>
               </div>

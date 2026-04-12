@@ -46,11 +46,11 @@ export default function GoodLifeStoryPage() {
           { name: "The Good Life", url: "/portfolio/good-life" }
         ]}
       />
-    <div className="min-h-screen bg-[#1F1F1F]">
+    <div className="min-h-screen bg-[#1a1a1a]">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#EDE3E1] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -76,7 +76,7 @@ export default function GoodLifeStoryPage() {
       </section>
 
       {/* Project Info */}
-      <section className="bg-[#1F1F1F] py-16 border-b border-[#111111]/10">
+      <section className="bg-[#1a1a1a] py-16 border-b border-white/10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -100,7 +100,7 @@ export default function GoodLifeStoryPage() {
       </section>
 
       {/* Masonry Gallery */}
-      <section className="py-12 bg-[#1F1F1F]">
+      <section className="py-12 bg-[#1a1a1a]">
         <div className="container mx-auto px-4">
           <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
             {galleryImages.slice(0, 4).map((image, index) => (
@@ -119,7 +119,7 @@ export default function GoodLifeStoryPage() {
             ))}
             
             {/* CTA Box */}
-            <div className="break-inside-avoid bg-[#EDE3E1] p-8 flex flex-col justify-center items-center text-center min-h-[300px]">
+            <div className="break-inside-avoid bg-[#201cc5] p-8 flex flex-col justify-center items-center text-center min-h-[300px]">
               <span className="text-primary text-2xl mb-4">✦</span>
               <h3 className="text-2xl font-display text-white uppercase mb-4">
                 Showcase Your Vibe
@@ -179,7 +179,7 @@ export default function GoodLifeStoryPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#EDE3E1] py-20 relative overflow-hidden">
+      <section className="bg-[#201cc5] py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -193,14 +193,14 @@ export default function GoodLifeStoryPage() {
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button 
               onClick={openContactModal}
-              className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-[#111111] transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <a 
               href="/brand-photography" 
-              className="group px-8 py-4 border border-white/20 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>View Photography Services</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -219,7 +219,7 @@ export default function GoodLifeStoryPage() {
             <Button 
               variant="ghost" 
               size="icon" 
-              className="absolute top-4 right-4 z-50 text-white bg-black/50 hover:bg-black/80 rounded-full h-12 w-12 border border-white/15"
+              className="absolute top-4 right-4 z-50 text-white bg-black/50 hover:bg-black/80 rounded-full h-12 w-12 border border-white/30"
             >
               <X className="w-7 h-7" />
             </Button>

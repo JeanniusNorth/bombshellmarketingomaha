@@ -164,22 +164,22 @@ export default function WebDesignPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#EDE3E1] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-[#111111] uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
             Web Design & Development
           </h1>
-          <div className="flex items-center justify-center gap-2 text-[#2B2B2B]/70 text-sm uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>
             <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
             <span>/</span>
             <span className="text-white">Web Design</span>
           </div>
-          <p className="mt-6 text-[#2B2B2B]/70 max-w-2xl mx-auto">
+          <p className="mt-6 text-white/70 max-w-2xl mx-auto">
             Custom websites that don't just look stunning—they perform. We build high-octane digital experiences that convert visitors into customers.
           </p>
         </div>
@@ -210,7 +210,7 @@ export default function WebDesignPage() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <div className="bg-primary text-[#111111] px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                    <div className="bg-primary text-black px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
                       Preview Website <ExternalLink className="w-4 h-4" />
                     </div>
                   </div>
@@ -230,15 +230,15 @@ export default function WebDesignPage() {
             <DialogTitle>{selectedProject?.title}</DialogTitle>
           </VisuallyHidden.Root>
           <div className="w-full h-full flex flex-col">
-            <div className="bg-black text-[#111111] px-4 py-3 flex items-center justify-between border-b border-[#111111]/10">
+            <div className="bg-black text-white px-4 py-3 flex items-center justify-between border-b border-white/10">
               <div className="flex items-center gap-3">
                 <h3 className="font-display uppercase text-lg">{selectedProject?.title}</h3>
-                <a href={selectedProject?.url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#2B2B2B]/60 hover:text-primary flex items-center gap-1">
+                <a href={selectedProject?.url} target="_blank" rel="noopener noreferrer" className="text-xs text-white/50 hover:text-primary flex items-center gap-1">
                   Open in new tab <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
               <DialogClose asChild>
-                <Button variant="ghost" size="icon" className="text-[#111111] hover:bg-[#111111]/5 rounded-full h-8 w-8">
+                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 rounded-full h-8 w-8">
                   <X className="w-4 h-4" />
                 </Button>
               </DialogClose>
@@ -277,7 +277,7 @@ export default function WebDesignPage() {
               return (
                 <div 
                   key={index}
-                  className="group relative p-8 bg-white hover:bg-[#EDE3E1] transition-colors duration-300"
+                  className="group relative p-8 bg-white hover:bg-[#201cc5] transition-colors duration-300"
                 >
                   <div className="w-14 h-14 rounded-lg bg-primary/20 border border-primary flex items-center justify-center mb-6 group-hover:bg-primary/30">
                     <IconComponent className="w-7 h-7 text-primary" />
@@ -285,7 +285,7 @@ export default function WebDesignPage() {
                   <h3 className="text-xl font-display uppercase text-black group-hover:text-white mb-4 leading-tight transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-black/60 group-hover:text-[#2B2B2B]/70 transition-colors">
+                  <p className="text-sm leading-relaxed text-black/60 group-hover:text-white/70 transition-colors">
                     {service.description}
                   </p>
                 </div>
@@ -312,10 +312,10 @@ export default function WebDesignPage() {
                 At Bombshell Marketing, we understand that your website is more than just a digital brochure—it's the foundation of your brand's online presence. As an Omaha-based web design agency, we've helped dozens of local businesses across Nebraska build websites that not only look exceptional but drive real results. From small startups in the Old Market to established companies in West Omaha, we bring the same level of dedication and creativity to every project.
               </p>
               <p>
-                What sets us apart from other web design agencies in Omaha is our holistic approach. We don't just design websites—we craft complete digital experiences that align with your brand identity. Our team works closely with you to understand your business goals, target audience, and competitive landscape before writing a single line of code. This strategic foundation ensures your website serves as a powerful tool for growth, not just a pretty face online. Take a look at our <Link href="/portfolio" className="text-[#EDE3E1] font-bold hover:underline">portfolio</Link> to see the results for yourself.
+                What sets us apart from other web design agencies in Omaha is our holistic approach. We don't just design websites—we craft complete digital experiences that align with your brand identity. Our team works closely with you to understand your business goals, target audience, and competitive landscape before writing a single line of code. This strategic foundation ensures your website serves as a powerful tool for growth, not just a pretty face online. Take a look at our <Link href="/portfolio" className="text-[#201cc5] font-bold hover:underline">portfolio</Link> to see the results for yourself.
               </p>
               <p>
-                Every website we build is custom-designed and hand-coded for maximum performance. We don't rely on cookie-cutter templates—your business is unique, and your website should be too. Our designs are rooted in your brand's visual identity, and if you need help refining your brand before we build, our <Link href="/logo-branding" className="text-[#EDE3E1] font-bold hover:underline">logo and branding services</Link> can create a cohesive look that carries across every touchpoint, from your website to your business cards.
+                Every website we build is custom-designed and hand-coded for maximum performance. We don't rely on cookie-cutter templates—your business is unique, and your website should be too. Our designs are rooted in your brand's visual identity, and if you need help refining your brand before we build, our <Link href="/logo-branding" className="text-[#201cc5] font-bold hover:underline">logo and branding services</Link> can create a cohesive look that carries across every touchpoint, from your website to your business cards.
               </p>
               <p>
                 Beyond beautiful design, we prioritize the technical details that matter: fast load times, mobile responsiveness, clean code architecture, and SEO best practices baked in from the start. Nebraska businesses deserve a web partner who understands the local market and delivers websites that compete on a national level. Whether you need a sleek single-page site or a complex e-commerce platform, Bombshell Marketing is ready to bring your vision to life.
@@ -326,7 +326,7 @@ export default function WebDesignPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-[#1F1F1F]">
+      <section className="py-20 bg-[#1a1a1a]">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-display text-white uppercase leading-[0.9] mb-4 text-center">
             Our Design Process
@@ -350,28 +350,28 @@ export default function WebDesignPage() {
       <FAQSection faqs={webDesignFAQs} heading="Web Design FAQs" subheading="Common questions about our Omaha web design services" />
 
       {/* CTA Section */}
-      <section className="bg-[#EDE3E1] py-20 relative overflow-hidden">
+      <section className="bg-[#201cc5] py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display text-[#111111] uppercase mb-6">
+          <h2 className="text-4xl md:text-6xl font-display text-white uppercase mb-6">
             Ready for a New Website?
           </h2>
-          <p className="text-[#2B2B2B]/70 max-w-2xl mx-auto mb-8">
+          <p className="text-white/70 max-w-2xl mx-auto mb-8">
             Let's create a website that works as hard as you do. Get a free website audit and see how we can transform your online presence.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button 
               onClick={openContactModal}
-              className="group px-8 py-4 bg-primary text-[#111111] border border-primary hover:bg-white hover:text-black hover:border-[#111111] transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <a 
               href="https://audit.bombshellmarketingomaha.com/" 
-              className="group px-8 py-4 border border-[#111111]/20 hover:bg-primary hover:text-white hover:border-primary transition-all text-[#111111] text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Free Website Audit</span>
               <ArrowUpRight className="w-4 h-4" />

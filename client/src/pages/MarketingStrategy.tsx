@@ -101,18 +101,18 @@ export default function MarketingStrategyPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#EDE3E1] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-[#111111] uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
             Marketing & Digital Strategy
           </h1>
-          <p className="text-[#2B2B2B]/70 max-w-2xl mx-auto mb-6">
+          <p className="text-white/70 max-w-2xl mx-auto mb-6">
             Strategic marketing that drives real business growth. We combine data-driven insights with creative excellence to help you dominate your market.
           </p>
-          <div className="flex items-center justify-center gap-2 text-[#2B2B2B]/70 text-sm uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>
             <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
@@ -134,19 +134,19 @@ export default function MarketingStrategyPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="text-center">
-                <div className="text-4xl font-display text-[#EDE3E1] mb-2">150+</div>
+                <div className="text-4xl font-display text-[#201cc5] mb-2">150+</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Strategies Built</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#EDE3E1] mb-2">3x</div>
+                <div className="text-4xl font-display text-[#201cc5] mb-2">3x</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Avg ROI Increase</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#EDE3E1] mb-2">20+</div>
+                <div className="text-4xl font-display text-[#201cc5] mb-2">20+</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#EDE3E1] mb-2">100%</div>
+                <div className="text-4xl font-display text-[#201cc5] mb-2">100%</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Data-Driven</div>
               </div>
             </div>
@@ -185,11 +185,11 @@ export default function MarketingStrategyPage() {
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <div className="text-3xl font-display text-[#EDE3E1] mb-1">+250%</div>
+                  <div className="text-3xl font-display text-[#201cc5] mb-1">+250%</div>
                   <div className="text-xs text-black/50 uppercase tracking-wider">Increase in Monthly Leads</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-display text-[#EDE3E1] mb-1">25+</div>
+                  <div className="text-3xl font-display text-[#201cc5] mb-1">25+</div>
                   <div className="text-xs text-black/50 uppercase tracking-wider">Years Serving Omaha</div>
                 </div>
               </div>
@@ -199,16 +199,16 @@ export default function MarketingStrategyPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-[#EDE3E1] relative overflow-hidden">
+      <section className="py-20 bg-[#201cc5] relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-[#111111] uppercase mb-4">
+            <h2 className="text-3xl md:text-4xl font-display text-white uppercase mb-4">
               Our Strategy Services
             </h2>
-            <p className="text-[#2B2B2B]/60 max-w-2xl mx-auto">
+            <p className="text-white/60 max-w-2xl mx-auto">
               From market research to campaign execution, we provide the strategic guidance you need to grow.
             </p>
           </div>
@@ -219,11 +219,11 @@ export default function MarketingStrategyPage() {
               return (
                 <div 
                   key={index}
-                  className={`p-8 ${service.highlight ? 'bg-primary text-white' : 'bg-[#111111]/5 text-white'} transition-all hover:scale-[1.02]`}
+                  className={`p-8 ${service.highlight ? 'bg-primary text-black' : 'bg-white/10 text-white'} transition-all hover:scale-[1.02]`}
                 >
                   <Icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-black' : 'text-primary'}`} />
                   <h3 className="text-xl font-display uppercase mb-3">{service.title}</h3>
-                  <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/70' : 'text-[#2B2B2B]/70'}`}>
+                  <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/70' : 'text-white/70'}`}>
                     {service.description}
                   </p>
                 </div>
@@ -247,7 +247,7 @@ export default function MarketingStrategyPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#EDE3E1] text-[#111111] rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#201cc5] text-white rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
                 01
               </div>
               <h3 className="text-lg font-display text-black uppercase mb-2">Discovery</h3>
@@ -256,7 +256,7 @@ export default function MarketingStrategyPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#EDE3E1] text-[#111111] rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#201cc5] text-white rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
                 02
               </div>
               <h3 className="text-lg font-display text-black uppercase mb-2">Strategy</h3>
@@ -265,7 +265,7 @@ export default function MarketingStrategyPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#EDE3E1] text-[#111111] rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#201cc5] text-white rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
                 03
               </div>
               <h3 className="text-lg font-display text-black uppercase mb-2">Execute</h3>
@@ -274,7 +274,7 @@ export default function MarketingStrategyPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#EDE3E1] text-[#111111] rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#201cc5] text-white rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
                 04
               </div>
               <h3 className="text-lg font-display text-black uppercase mb-2">Optimize</h3>
@@ -301,7 +301,7 @@ export default function MarketingStrategyPage() {
               Omaha is a city built on strong businesses and even stronger relationships. At Bombshell Marketing, we understand the Nebraska market because we're part of it. Our marketing strategy services are designed specifically for local businesses that want to grow their reach, attract new customers, and build lasting brand loyalty in the Omaha metro and beyond. Whether you're a startup finding your footing or an established company looking to scale, our data-driven approach ensures every marketing dollar works harder for you.
             </p>
             <p className="text-black/60 text-lg leading-relaxed mb-6">
-              What sets us apart is our ability to blend creative storytelling with cutting-edge technology. We leverage AI-powered marketing tools to analyze consumer behavior, optimize ad spend, and identify growth opportunities that traditional agencies miss. Combined with our expertise in <Link href="/web-design" className="text-[#EDE3E1] underline hover:text-primary transition-colors">web design</Link> and <Link href="/logo-branding" className="text-[#EDE3E1] underline hover:text-primary transition-colors">logo and branding</Link>, we deliver cohesive strategies that connect every touchpoint of your customer's journey—from first impression to loyal advocate.
+              What sets us apart is our ability to blend creative storytelling with cutting-edge technology. We leverage AI-powered marketing tools to analyze consumer behavior, optimize ad spend, and identify growth opportunities that traditional agencies miss. Combined with our expertise in <Link href="/web-design" className="text-[#201cc5] underline hover:text-primary transition-colors">web design</Link> and <Link href="/logo-branding" className="text-[#201cc5] underline hover:text-primary transition-colors">logo and branding</Link>, we deliver cohesive strategies that connect every touchpoint of your customer's journey—from first impression to loyal advocate.
             </p>
             <p className="text-black/60 text-lg leading-relaxed mb-6">
               Our team has helped hundreds of Omaha and Nebraska businesses transform their marketing from guesswork into a predictable growth engine. We don't believe in cookie-cutter strategies—every plan we build is tailored to your unique industry, audience, and goals. From local SEO and social media marketing to full-scale digital campaigns, we bring the strategic depth and creative firepower that drives real, measurable results.

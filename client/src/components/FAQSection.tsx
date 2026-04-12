@@ -59,7 +59,7 @@ export function FAQSection({ faqs, heading = "Frequently Asked Questions", subhe
                     className="w-full flex items-center justify-between py-6 text-left group"
                     data-testid={`faq-toggle-${index}`}
                   >
-                    <h3 className="text-lg font-bold text-black group-hover:text-[#EDE3E1] transition-colors pr-8">
+                    <h3 className="text-lg font-bold text-black group-hover:text-[#201cc5] transition-colors pr-8">
                       {faq.question}
                     </h3>
                     <ChevronDown

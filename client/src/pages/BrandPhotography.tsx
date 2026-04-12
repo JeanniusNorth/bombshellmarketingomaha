@@ -123,18 +123,18 @@ export default function BrandPhotographyPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#EDE3E1] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-[#111111] uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
             Brand Photography
           </h1>
-          <p className="text-[#2B2B2B]/70 max-w-2xl mx-auto mb-6">
+          <p className="text-white/70 max-w-2xl mx-auto mb-6">
             Capture the raw energy of your brand with professional photography that tells your story instantly and makes scrolling thumbs stop dead in their tracks.
           </p>
-          <div className="flex items-center justify-center gap-2 text-[#2B2B2B]/70 text-sm uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>
             <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
@@ -184,7 +184,7 @@ export default function BrandPhotographyPage() {
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                     <div>
                       <p className="text-primary text-xs uppercase tracking-wider">{img.category}</p>
-                      <p className="text-[#111111] text-sm font-bold">{img.title}</p>
+                      <p className="text-white text-sm font-bold">{img.title}</p>
                     </div>
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function BrandPhotographyPage() {
                   key={index}
                   className={`group relative p-8 min-h-[280px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 ${
                     service.highlight 
-                      ? 'bg-[#EDE3E1]' 
+                      ? 'bg-[#201cc5]' 
                       : 'bg-[#1a1a2e]'
                   }`}
                 >
@@ -222,10 +222,10 @@ export default function BrandPhotographyPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-display uppercase text-[#111111] mb-4 leading-tight">
+                    <h3 className="text-xl font-display uppercase text-white mb-4 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-[#2B2B2B]/60">
+                    <p className="text-sm leading-relaxed text-white/60">
                       {service.description}
                     </p>
                   </div>
@@ -237,7 +237,7 @@ export default function BrandPhotographyPage() {
       </section>
 
       {/* Process Section */}
-      <section className="bg-[#1F1F1F] py-20">
+      <section className="bg-[#1a1a1a] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -284,11 +284,11 @@ export default function BrandPhotographyPage() {
               </p>
 
               <p>
-                We've partnered with some of Omaha's most recognized brands to deliver photography that drives real results. From capturing the energy and flavor of local restaurants like <Link href="/portfolio/good-life" className="text-[#EDE3E1] underline hover:text-primary transition-colors">Good Life Eat & Drink</Link> to producing polished product photography for growing e-commerce brands, our portfolio speaks for itself. Every shoot is backed by strategic thinking—we don't just take pretty pictures, we create visual assets designed to convert visitors into customers.
+                We've partnered with some of Omaha's most recognized brands to deliver photography that drives real results. From capturing the energy and flavor of local restaurants like <Link href="/portfolio/good-life" className="text-[#201cc5] underline hover:text-primary transition-colors">Good Life Eat & Drink</Link> to producing polished product photography for growing e-commerce brands, our portfolio speaks for itself. Every shoot is backed by strategic thinking—we don't just take pretty pictures, we create visual assets designed to convert visitors into customers.
               </p>
 
               <p>
-                What sets us apart is our full-service approach. Brand photography is just one piece of the puzzle. We integrate your photography with <Link href="/web-design" className="text-[#EDE3E1] underline hover:text-primary transition-colors">custom web design</Link>, social media strategy, and brand identity so every visual touchpoint is consistent and compelling. Small businesses in Omaha trust us because we treat every project—whether it's a quick headshot session or a full-day brand shoot—with the same level of professionalism and attention to detail.
+                What sets us apart is our full-service approach. Brand photography is just one piece of the puzzle. We integrate your photography with <Link href="/web-design" className="text-[#201cc5] underline hover:text-primary transition-colors">custom web design</Link>, social media strategy, and brand identity so every visual touchpoint is consistent and compelling. Small businesses in Omaha trust us because we treat every project—whether it's a quick headshot session or a full-day brand shoot—with the same level of professionalism and attention to detail.
               </p>
 
               <p>

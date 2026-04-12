@@ -45,14 +45,14 @@ export function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8 border-b border-[#111111]/10 pb-8"
+          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8 border-b border-white/10 pb-8"
         >
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-[#2B2B2B]/60 uppercase tracking-widest text-xs font-bold">What We Do</span>
+              <span className="text-white/60 uppercase tracking-widest text-xs font-bold">What We Do</span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-display text-[#111111] uppercase max-w-3xl leading-[0.9]">
+            <h2 className="text-4xl md:text-6xl font-display text-white uppercase max-w-3xl leading-[0.9]">
               Creative Firepower For Brands That Refuse To Blend In
             </h2>
           </div>
@@ -72,7 +72,7 @@ export function Services() {
             <Component 
               key={index}
               href={service.link}
-              className={`group relative border ${service.highlight ? 'border-primary bg-primary' : 'border-[#111111]/10 bg-[#111111]/5'} p-8 min-h-[400px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 block`}
+              className={`group relative border ${service.highlight ? 'border-primary bg-primary' : 'border-white/10 bg-white/5'} p-8 min-h-[400px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 block`}
             >
               <div className="flex justify-between items-start mb-8">
                 <h3 className={`text-2xl font-display uppercase max-w-[70%] leading-none ${service.highlight ? 'text-black' : 'text-white'}`}>
@@ -93,7 +93,7 @@ export function Services() {
                 />
               </div>
 
-              <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/80' : 'text-[#2B2B2B]/60'}`}>
+              <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/80' : 'text-white/60'}`}>
                 {service.description}
               </p>
             </Component>
@@ -105,7 +105,7 @@ export function Services() {
           <Link 
             href="/services"
             onClick={() => window.scrollTo(0, 0)}
-            className="group px-8 py-4 bg-primary text-[#111111] border border-primary hover:bg-white hover:text-black hover:border-[#111111] transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3"
+            className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3"
           >
             <span>All Services</span>
             <ArrowUpRight className="w-4 h-4" />

@@ -85,13 +85,13 @@ export function Testimonials() {
 
   const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
     <div 
-      className="bg-[#222] rounded-2xl p-6 mb-4 hover:bg-[#2a2a2a] transition-all duration-300 border border-[#111111]/5"
+      className="bg-[#222] rounded-2xl p-6 mb-4 hover:bg-[#2a2a2a] transition-all duration-300 border border-white/5"
       data-testid={`testimonial-card-${testimonial.id}`}
     >
       {/* Stars */}
       <div className="flex gap-0.5 mb-4">
         {[...Array(5)].map((_, i) => (
-          <Star key={i} className="w-4 h-4 fill-[#1FA88F] text-[#1FA88F]" />
+          <Star key={i} className="w-4 h-4 fill-[#ccff00] text-[#ccff00]" />
         ))}
       </div>
 
@@ -102,14 +102,14 @@ export function Testimonials() {
 
       {/* Author */}
       <div className="flex items-center gap-3">
-        <Avatar className="w-10 h-10 border-2 border-[#1FA88F]">
-          <AvatarFallback className="text-white bg-[#1FA88F] font-bold text-sm">
+        <Avatar className="w-10 h-10 border-2 border-[#ccff00]">
+          <AvatarFallback className="text-black bg-[#ccff00] font-bold text-sm">
             {testimonial.author[0]}
           </AvatarFallback>
         </Avatar>
         <div>
           <h4 className="font-semibold text-white text-sm">{testimonial.author}</h4>
-          <p className="text-white/60 text-xs">{testimonial.role}</p>
+          <p className="text-white/50 text-xs">{testimonial.role}</p>
         </div>
       </div>
     </div>
@@ -148,8 +148,8 @@ export function Testimonials() {
         </motion.div>
         
         {/* Gradient overlays */}
-        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#1F1F1F] to-transparent pointer-events-none z-10" />
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1F1F1F] to-transparent pointer-events-none z-10" />
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#1a1a1a] to-transparent pointer-events-none z-10" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1a1a1a] to-transparent pointer-events-none z-10" />
       </div>
     );
   };
@@ -194,7 +194,7 @@ export function Testimonials() {
           })
         }}
       />
-    <section className="bg-[#1F1F1F] py-24 text-white font-sans overflow-hidden" data-testid="testimonials-section">
+    <section className="bg-[#1a1a1a] py-24 text-white font-sans overflow-hidden" data-testid="testimonials-section">
       <div className="container mx-auto px-4">
         
         {/* Header */}
@@ -206,7 +206,7 @@ export function Testimonials() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="text-[#1FA88F] text-xl">✦</span>
+            <span className="text-[#ccff00] text-xl">✦</span>
             <span className="uppercase tracking-widest text-xs font-bold">Testimonials</span>
           </div>
           

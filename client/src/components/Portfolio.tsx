@@ -116,7 +116,7 @@ export function Portfolio() {
           
           <button onClick={openContactModal} className="group px-6 py-3 border border-black hover:bg-black hover:text-white transition-all text-black text-xs font-bold uppercase tracking-widest flex items-center gap-2">
             Contact Us
-            <div className="w-5 h-5 rounded-full bg-black text-[#111111] group-hover:bg-white group-hover:text-black flex items-center justify-center transition-colors">
+            <div className="w-5 h-5 rounded-full bg-black text-white group-hover:bg-white group-hover:text-black flex items-center justify-center transition-colors">
                <ArrowRight className="w-3 h-3 -rotate-45" />
             </div>
           </button>
@@ -211,7 +211,7 @@ function PortfolioItem({ item }: { item: any }) {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                 <div className="bg-primary text-[#111111] px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                 <div className="bg-primary text-black px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
                     Preview Website <ExternalLink className="w-4 h-4" />
                  </div>
               </div>
@@ -231,7 +231,7 @@ function PortfolioItem({ item }: { item: any }) {
              <div className="bg-black text-white px-4 py-3 flex items-center justify-between border-b border-white/10">
                 <div className="flex items-center gap-3">
                    <h3 className="font-display uppercase text-lg">{item.title}</h3>
-                   <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-xs text-white/60 hover:text-primary flex items-center gap-1">
+                   <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-xs text-white/50 hover:text-primary flex items-center gap-1">
                       Open in new tab <ExternalLink className="w-3 h-3" />
                    </a>
                 </div>
@@ -269,7 +269,7 @@ function PortfolioItem({ item }: { item: any }) {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-               <div className="bg-primary text-[#111111] px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+               <div className="bg-primary text-black px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
                   View Portfolio <Camera className="w-4 h-4" />
                </div>
             </div>

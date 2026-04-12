@@ -108,18 +108,18 @@ export default function LogoBrandingPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#EDE3E1] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-[#111111] uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
             Logo & Branding
           </h1>
-          <p className="text-[#2B2B2B]/70 max-w-2xl mx-auto mb-6">
+          <p className="text-white/70 max-w-2xl mx-auto mb-6">
             Your logo is the face of your brand. We create distinctive, memorable identities that capture your essence and leave lasting impressions.
           </p>
-          <div className="flex items-center justify-center gap-2 text-[#2B2B2B]/70 text-sm uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>
             <Link href="/services" className="hover:text-primary transition-colors">Services</Link>
@@ -141,19 +141,19 @@ export default function LogoBrandingPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="text-center">
-                <div className="text-4xl font-display text-[#EDE3E1] mb-2">200+</div>
+                <div className="text-4xl font-display text-[#201cc5] mb-2">200+</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Logos Designed</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#EDE3E1] mb-2">50+</div>
+                <div className="text-4xl font-display text-[#201cc5] mb-2">50+</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Brand Systems</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#EDE3E1] mb-2">15+</div>
+                <div className="text-4xl font-display text-[#201cc5] mb-2">15+</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#EDE3E1] mb-2">100%</div>
+                <div className="text-4xl font-display text-[#201cc5] mb-2">100%</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Client Satisfaction</div>
               </div>
             </div>
@@ -209,13 +209,13 @@ export default function LogoBrandingPage() {
                 key={index}
                 className={`p-8 transition-all hover:-translate-y-1 ${
                   service.highlight 
-                    ? 'bg-[#EDE3E1] text-white' 
+                    ? 'bg-[#201cc5] text-white' 
                     : 'bg-white text-black'
                 }`}
               >
-                <service.icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-primary' : 'text-[#EDE3E1]'}`} />
+                <service.icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-primary' : 'text-[#201cc5]'}`} />
                 <h3 className="text-xl font-display uppercase mb-4">{service.title}</h3>
-                <p className={`text-sm leading-relaxed ${service.highlight ? 'text-[#2B2B2B]/70' : 'text-black/60'}`}>
+                <p className={`text-sm leading-relaxed ${service.highlight ? 'text-white/70' : 'text-black/60'}`}>
                   {service.description}
                 </p>
               </div>
@@ -239,7 +239,7 @@ export default function LogoBrandingPage() {
                 Our approach goes beyond aesthetics. Every logo we create is rooted in research and brand strategy, ensuring your visual identity communicates the right message to your target customers. We take the time to understand your industry, competition, and goals before a single sketch is drawn. This discovery-first process is why Omaha businesses trust us to build brands that drive real results.
               </p>
               <p>
-                A great logo is just the beginning. We build complete brand ecosystems that extend across every touchpoint—from your <Link href="/web-design" className="text-[#EDE3E1] hover:underline font-semibold">custom website design</Link> to print materials, signage, and social media. Our team also offers <Link href="/brand-photography" className="text-[#EDE3E1] hover:underline font-semibold">professional brand photography</Link> to complement your visual identity with authentic, on-brand imagery that tells your story.
+                A great logo is just the beginning. We build complete brand ecosystems that extend across every touchpoint—from your <Link href="/web-design" className="text-[#201cc5] hover:underline font-semibold">custom website design</Link> to print materials, signage, and social media. Our team also offers <Link href="/brand-photography" className="text-[#201cc5] hover:underline font-semibold">professional brand photography</Link> to complement your visual identity with authentic, on-brand imagery that tells your story.
               </p>
               <p>
                 Whether you're launching a new venture in Nebraska or refreshing an established Omaha brand, our collaborative design process ensures you're involved every step of the way. We combine your vision with our expertise to deliver a logo and brand identity that you're proud to put on everything—from business cards to billboards.
@@ -253,10 +253,10 @@ export default function LogoBrandingPage() {
       <section className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-[#111111] uppercase mb-4">
+            <h2 className="text-3xl md:text-4xl font-display text-white uppercase mb-4">
               Our Design Process
             </h2>
-            <p className="text-[#2B2B2B]/60 max-w-2xl mx-auto">
+            <p className="text-white/60 max-w-2xl mx-auto">
               A proven methodology that delivers results. Every project follows our strategic approach.
             </p>
           </div>
@@ -270,8 +270,8 @@ export default function LogoBrandingPage() {
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <div className="text-6xl font-display text-primary mb-4">{item.step}</div>
-                <h3 className="text-xl font-display text-[#111111] uppercase mb-3">{item.title}</h3>
-                <p className="text-[#2B2B2B]/60 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-xl font-display text-white uppercase mb-3">{item.title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
