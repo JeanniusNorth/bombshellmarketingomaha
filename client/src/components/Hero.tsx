@@ -73,7 +73,7 @@ export function Hero() {
             ))}
           </div>
           <p className="text-black text-[10px] font-bold uppercase tracking-wider">
-            Top Rated in Omaha
+            Top Rated Marketing Agency in Omaha
           </p>
         </motion.div>
 
