@@ -130,8 +130,8 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="mt-4 md:mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-[100px] md:mb-[150px]"
             >
-                <p className="text-white/80 text-sm leading-relaxed font-medium max-w-md text-center px-4">
-                  We combine explosive creativity with precision to deliver stunning web design, logo design, and brand photography for businesses. Based in Omaha, NE.
+                <p className="text-white/80 text-[19px] leading-relaxed font-medium max-w-xl text-center px-4">
+                  Based in Omaha, serving businesses everywhere. We craft memorable websites, logos, and brand photography that captivate audiences and convert browsers into believers.
                 </p>
                 
                 <motion.div 
