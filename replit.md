@@ -33,7 +33,7 @@ Preferred communication style: Simple, everyday language.
 - **Scripts**: Custom build script handles both client and server compilation
 
 ### Design System
-- **Typography**: Anton (display), Space Grotesk (sans), Inter (body)
+- **Typography**: Montserrat (all text — display and body)
 - **Color Scheme**: Deep electric blue (#201cc5) background, neon lime (#ccff00) accent
 - **Border Radius**: Set to 0 for sharp, modern aesthetic
 - **Custom Animations**: Marquee scrolling effect, custom keyframe animations
@@ -62,7 +62,7 @@ Preferred communication style: Simple, everyday language.
 - **Build**: Vite, esbuild, TypeScript, Tailwind CSS
 
 ### Fonts
-- Google Fonts: Anton, Space Grotesk, Inter (loaded via CSS)
+- Google Fonts: Montserrat (loaded via CSS)
 
 ### Image Assets
 - Portfolio images stored in `client/src/assets/images/`
