@@ -113,8 +113,7 @@ export function Hero() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="block text-[12vw] md:text-[8vw] leading-[0.9] font-display text-transparent relative z-20 tracking-tight mt-[-1vw]"
-                style={{ WebkitTextStroke: '2px #ffffff' }}
+                className="block text-[12vw] md:text-[8vw] leading-[0.9] font-display text-white relative z-20 tracking-tight mt-[-1vw]"
               >
                 Marketing
               </motion.span>
