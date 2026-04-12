@@ -85,31 +85,31 @@ export function Testimonials() {
 
   const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
     <div 
-      className="bg-[#222] rounded-2xl p-6 mb-4 hover:bg-[#2a2a2a] transition-all duration-300 border border-white/5"
+      className="bg-[#222] rounded-2xl p-6 mb-4 hover:bg-[#2a2a2a] transition-all duration-300 border border-[#1A1A1A]/5"
       data-testid={`testimonial-card-${testimonial.id}`}
     >
       {/* Stars */}
       <div className="flex gap-0.5 mb-4">
         {[...Array(5)].map((_, i) => (
-          <Star key={i} className="w-4 h-4 fill-[#2563EB] text-[#2563EB]" />
+          <Star key={i} className="w-4 h-4 fill-[#A995D6] text-[#A995D6]" />
         ))}
       </div>
 
       {/* Text */}
-      <p className="text-white/80 leading-relaxed text-base mb-6">
+      <p className="text-[#1A1A1A]/80 leading-relaxed text-base mb-6">
         {testimonial.text}
       </p>
 
       {/* Author */}
       <div className="flex items-center gap-3">
-        <Avatar className="w-10 h-10 border-2 border-[#2563EB]">
-          <AvatarFallback className="text-black bg-[#2563EB] font-bold text-sm">
+        <Avatar className="w-10 h-10 border-2 border-[#A995D6]">
+          <AvatarFallback className="text-black bg-[#A995D6] font-bold text-sm">
             {testimonial.author[0]}
           </AvatarFallback>
         </Avatar>
         <div>
-          <h4 className="font-semibold text-white text-sm">{testimonial.author}</h4>
-          <p className="text-white/50 text-xs">{testimonial.role}</p>
+          <h4 className="font-semibold text-[#1A1A1A] text-sm">{testimonial.author}</h4>
+          <p className="text-[#2A2A2A]/60 text-xs">{testimonial.role}</p>
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@ export function Testimonials() {
           })
         }}
       />
-    <section className="bg-[#1a1a1a] py-24 text-white font-sans overflow-hidden" data-testid="testimonials-section">
+    <section className="bg-[#1a1a1a] py-24 text-[#1A1A1A] font-sans overflow-hidden" data-testid="testimonials-section">
       <div className="container mx-auto px-4">
         
         {/* Header */}
@@ -206,7 +206,7 @@ export function Testimonials() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="text-[#2563EB] text-xl">✦</span>
+            <span className="text-[#A995D6] text-xl">✦</span>
             <span className="uppercase tracking-widest text-xs font-bold">Testimonials</span>
           </div>
           

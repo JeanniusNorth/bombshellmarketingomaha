@@ -40,57 +40,63 @@
 }
 
 :root {
-  --background: 0 0% 4%;
-  --foreground: 0 0% 100%;
+  /* Dusty Pink background */
+  --background: 340 30% 75%;
+  --foreground: 0 0% 10%;
 
-  --primary: 216 90% 55%;
+  /* Lavender / Purple */
+  --primary: 262 42% 71%;
   --primary-foreground: 0 0% 100%;
 
-  --card: 0 0% 8%;
-  --card-foreground: 0 0% 100%;
+  /* Soft Blush Pink */
+  --card: 345 38% 80%;
+  --card-foreground: 0 0% 10%;
   
-  --popover: 0 0% 8%;
-  --popover-foreground: 0 0% 100%;
+  --popover: 345 38% 80%;
+  --popover-foreground: 0 0% 10%;
 
-  --secondary: 45 100% 52%;
-  --secondary-foreground: 0 0% 0%;
+  /* Golden Yellow */
+  --secondary: 43 87% 62%;
+  --secondary-foreground: 0 0% 10%;
 
-  --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 70%;
+  /* Light Gray */
+  --muted: 0 0% 85%;
+  --muted-foreground: 0 0% 35%;
 
-  --accent: 16 85% 55%;
+  /* Lavender accent */
+  --accent: 262 42% 71%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 0 0% 18%;
-  --input: 0 0% 18%;
-  --ring: 216 90% 55%;
+  --border: 340 20% 70%;
+  --input: 0 0% 96%;
+  --ring: 262 42% 71%;
   
   --radius: 0;
 }
 
 .dark {
-  --background: 0 0% 4%;
-  --foreground: 0 0% 100%;
-  --primary: 216 90% 55%;
+  --background: 340 30% 75%;
+  --foreground: 0 0% 10%;
+  --primary: 262 42% 71%;
   --primary-foreground: 0 0% 100%;
-  --card: 0 0% 8%;
-  --card-foreground: 0 0% 100%;
-  --popover: 0 0% 8%;
-  --popover-foreground: 0 0% 100%;
-  --secondary: 45 100% 52%;
-  --secondary-foreground: 0 0% 0%;
-  --muted: 0 0% 15%;
-  --muted-foreground: 0 0% 70%;
-  --accent: 16 85% 55%;
+  --card: 345 38% 80%;
+  --card-foreground: 0 0% 10%;
+  --popover: 345 38% 80%;
+  --popover-foreground: 0 0% 10%;
+  --secondary: 43 87% 62%;
+  --secondary-foreground: 0 0% 10%;
+  --muted: 0 0% 85%;
+  --muted-foreground: 0 0% 35%;
+  --accent: 262 42% 71%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --border: 0 0% 18%;
-  --input: 0 0% 18%;
-  --ring: 216 90% 55%;
+  --border: 340 20% 70%;
+  --input: 0 0% 96%;
+  --ring: 262 42% 71%;
 }
 
 @layer base {

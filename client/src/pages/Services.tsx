@@ -69,15 +69,15 @@ export default function ServicesPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#0a0a0a] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#D9A3B0] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-[#1A1A1A] uppercase mb-6">
             Solutions You Need
           </h1>
-          <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-[#2A2A2A]/70 text-sm uppercase tracking-widest">
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Our Services</span>
@@ -132,7 +132,7 @@ export default function ServicesPage() {
                   href={service.link}
                   className={`group relative p-8 min-h-[280px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 ${
                     service.highlight 
-                      ? 'bg-[#0a0a0a]' 
+                      ? 'bg-[#D9A3B0]' 
                       : 'bg-[#1a1a2e]'
                   }`}
                 >
@@ -140,16 +140,16 @@ export default function ServicesPage() {
                     <div className="w-14 h-14 rounded-lg bg-primary/20 border border-primary flex items-center justify-center">
                       <IconComponent className="w-7 h-7 text-primary" />
                     </div>
-                    <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 rounded-full bg-primary text-[#1A1A1A] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <ArrowUpRight size={20} />
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-display uppercase text-white mb-4 leading-tight">
+                    <h3 className="text-xl font-display uppercase text-[#1A1A1A] mb-4 leading-tight">
                       {service.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-white/60">
+                    <p className="text-sm leading-relaxed text-[#2A2A2A]/60">
                       {service.description}
                     </p>
                   </div>
@@ -161,28 +161,28 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#0a0a0a] py-20 relative overflow-hidden">
+      <section className="bg-[#D9A3B0] py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display text-white uppercase mb-6">
+          <h2 className="text-4xl md:text-6xl font-display text-[#1A1A1A] uppercase mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-white/70 max-w-2xl mx-auto mb-8">
+          <p className="text-[#2A2A2A]/70 max-w-2xl mx-auto mb-8">
             Let's create something explosive together. Get in touch to discuss your project and see how we can help your brand stand out.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button 
               onClick={openContactModal}
-              className="group px-8 py-4 bg-primary text-white border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 bg-primary text-[#1A1A1A] border border-primary hover:bg-white hover:text-black hover:border-[#1A1A1A] transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <a 
               href="https://audit.bombshellmarketingomaha.com/" 
-              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-white hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 border border-[#1A1A1A]/20 hover:bg-primary hover:text-white hover:border-primary transition-all text-[#1A1A1A] text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Free Website Audit</span>
               <ArrowUpRight className="w-4 h-4" />

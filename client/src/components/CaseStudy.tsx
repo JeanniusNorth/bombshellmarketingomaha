@@ -4,12 +4,12 @@ import { Link } from "wouter";
 
 export function CaseStudy() {
   return (
-    <section className="bg-[#1a1a1a] py-24 text-white font-sans" data-testid="case-study-section">
+    <section className="bg-[#1a1a1a] py-24 text-[#1A1A1A] font-sans" data-testid="case-study-section">
       <div className="container mx-auto px-4">
         
         {/* Header */}
         <div className="flex items-center gap-2 mb-6">
-          <span className="text-[#2563EB] text-xl">✦</span>
+          <span className="text-[#A995D6] text-xl">✦</span>
           <span className="uppercase tracking-widest text-xs font-bold">Featured Bombshell Success Story</span>
         </div>
 
@@ -35,14 +35,14 @@ export function CaseStudy() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               
               {/* Play button */}
-              <div className="absolute bottom-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center group-hover:bg-[#2563EB] transition-colors">
+              <div className="absolute bottom-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center group-hover:bg-[#A995D6] transition-colors">
                 <Play className="w-6 h-6 text-black fill-black ml-1" />
               </div>
               
               {/* Text overlay */}
               <div className="absolute bottom-6 left-6">
-                <p className="text-white/80 text-sm mb-1">See the story</p>
-                <h3 className="text-white text-2xl font-display uppercase">Merch Club</h3>
+                <p className="text-[#1A1A1A]/80 text-sm mb-1">See the story</p>
+                <h3 className="text-[#1A1A1A] text-2xl font-display uppercase">Merch Club</h3>
               </div>
             </div>
           </motion.div>
@@ -57,7 +57,7 @@ export function CaseStudy() {
             <h2 className="text-4xl md:text-5xl font-display uppercase mb-2">
               Chris
             </h2>
-            <p className="text-white/60 text-lg mb-6">Founder at Merch Club</p>
+            <p className="text-[#2A2A2A]/60 text-lg mb-6">Founder at Merch Club</p>
             
             <blockquote className="text-xl md:text-2xl text-white/90 leading-relaxed mb-8">
               "Bombshell designed our website and handled all of our social media. They nailed the brand feel and helped us connect with the right audience. The web design and social strategy have been a huge part of our growth."
@@ -65,7 +65,7 @@ export function CaseStudy() {
 
             <Link href="/portfolio" onClick={() => window.scrollTo(0, 0)}>
               <button 
-                className="bg-[#2563EB] text-white px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-white transition-colors flex items-center gap-2 group mb-12"
+                className="bg-[#A995D6] text-[#1A1A1A] px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-white transition-colors flex items-center gap-2 group mb-12"
                 data-testid="case-study-portfolio-button"
               >
                 View Full Portfolio
@@ -76,12 +76,12 @@ export function CaseStudy() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <p className="text-4xl md:text-5xl font-display text-[#2563EB] mb-2">+280%</p>
-                <p className="text-white/60 text-sm">Social media engagement growth</p>
+                <p className="text-4xl md:text-5xl font-display text-[#A995D6] mb-2">+280%</p>
+                <p className="text-[#2A2A2A]/60 text-sm">Social media engagement growth</p>
               </div>
               <div>
-                <p className="text-4xl md:text-5xl font-display text-white mb-2">3x</p>
-                <p className="text-white/60 text-sm">Increase in website traffic after redesign</p>
+                <p className="text-4xl md:text-5xl font-display text-[#1A1A1A] mb-2">3x</p>
+                <p className="text-[#2A2A2A]/60 text-sm">Increase in website traffic after redesign</p>
               </div>
             </div>
 

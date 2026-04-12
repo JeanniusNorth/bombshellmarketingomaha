@@ -73,10 +73,10 @@ export default function ContactPage() {
           { name: "Contact", url: "/contact" }
         ]}
       />
-    <div className="min-h-screen bg-[#0a0a0a]">
+    <div className="min-h-screen bg-[#D9A3B0]">
       <Navigation />
       
-      <section className="bg-[#0a0a0a] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#D9A3B0] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -84,9 +84,9 @@ export default function ContactPage() {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-2 mb-6">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-white/60 uppercase tracking-widest text-xs font-bold">Get In Touch</span>
+              <span className="text-[#2A2A2A]/60 uppercase tracking-widest text-xs font-bold">Get In Touch</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+            <h1 className="text-5xl md:text-7xl font-display text-[#1A1A1A] uppercase mb-6">
               Let's Blow Up<br />Your Business
             </h1>
             <div className="sr-only">
@@ -94,7 +94,7 @@ export default function ContactPage() {
               <span>/</span>
               <span>Contact Us</span>
             </div>
-            <p className="text-white/70 max-w-2xl mx-auto">
+            <p className="text-[#2A2A2A]/70 max-w-2xl mx-auto">
               Ready to take your brand to the next level? Get in touch and let's create something explosive together.
             </p>
           </div>
@@ -105,13 +105,13 @@ export default function ContactPage() {
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                   <Send className="w-10 h-10 text-black" />
                 </div>
-                <h2 className="text-4xl font-display text-white uppercase mb-4">Message Sent!</h2>
-                <p className="text-white/70 mb-8 max-w-md mx-auto">
+                <h2 className="text-4xl font-display text-[#1A1A1A] uppercase mb-4">Message Sent!</h2>
+                <p className="text-[#2A2A2A]/70 mb-8 max-w-md mx-auto">
                   Thanks for reaching out! We'll get back to you within 24 hours. Get ready for something explosive.
                 </p>
                 <Link 
                   href="/"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-[#1A1A1A] font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors"
                 >
                   Back to Home
                   <ArrowUpRight className="w-4 h-4" />
@@ -131,7 +131,7 @@ export default function ContactPage() {
                       required
                       value={formData.firstName}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#0a0a0a] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#D9A3B0] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="John"
                       data-testid="input-firstName"
                     />
@@ -147,7 +147,7 @@ export default function ContactPage() {
                       required
                       value={formData.lastName}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#0a0a0a] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#D9A3B0] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="Doe"
                       data-testid="input-lastName"
                     />
@@ -166,7 +166,7 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#0a0a0a] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#D9A3B0] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="john@company.com"
                       data-testid="input-email"
                     />
@@ -181,7 +181,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#0a0a0a] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#D9A3B0] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="(555) 123-4567"
                       data-testid="input-phone"
                     />
@@ -198,7 +198,7 @@ export default function ContactPage() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full bg-white border-2 border-transparent focus:border-[#0a0a0a] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                    className="w-full bg-white border-2 border-transparent focus:border-[#D9A3B0] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                     placeholder="Your Company Name"
                     data-testid="input-company"
                   />
@@ -215,7 +215,7 @@ export default function ContactPage() {
                       required
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#0a0a0a] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#D9A3B0] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
                       data-testid="select-service"
                     >
                       <option value="" className="text-black/30">Select a service...</option>
@@ -235,7 +235,7 @@ export default function ContactPage() {
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#0a0a0a] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#D9A3B0] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
                       data-testid="select-budget"
                     >
                       <option value="" className="text-black/30">Select budget range...</option>
@@ -259,7 +259,7 @@ export default function ContactPage() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full bg-white border-2 border-transparent focus:border-[#0a0a0a] text-black px-4 py-4 outline-none transition-colors resize-none placeholder:text-black/30"
+                    className="w-full bg-white border-2 border-transparent focus:border-[#D9A3B0] text-black px-4 py-4 outline-none transition-colors resize-none placeholder:text-black/30"
                     placeholder="What are your goals? What challenges are you facing? How can we help you stand out?"
                     data-testid="textarea-message"
                   />
@@ -268,7 +268,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#0a0a0a] text-white py-5 font-bold uppercase tracking-widest text-sm hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                  className="w-full bg-[#D9A3B0] text-[#1A1A1A] py-5 font-bold uppercase tracking-widest text-sm hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                   data-testid="button-submit"
                 >
                   {isSubmitting ? (
