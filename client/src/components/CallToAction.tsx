@@ -29,7 +29,7 @@ export function CallToAction() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 
             onClick={openContactModal}
-            className="group px-8 py-4 bg-[#ffffff] text-black border border-[#ffffff] hover:bg-white hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
+            className="group px-8 py-4 rounded-full bg-[#ffffff] text-black border border-[#ffffff] hover:bg-white hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
             data-testid="cta-contact-button"
           >
             Contact Us
@@ -40,7 +40,7 @@ export function CallToAction() {
             href="https://audit.bombshellmarketingomaha.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group px-8 py-4 bg-transparent text-white border border-white hover:bg-white hover:text-black transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
+            className="group px-8 py-4 rounded-full bg-transparent text-white border border-white hover:bg-white hover:text-black transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
             data-testid="cta-audit-button"
           >
             Free Website Audit

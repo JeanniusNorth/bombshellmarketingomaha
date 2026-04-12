@@ -146,7 +146,7 @@ export function Services() {
           <Link
             href="/services"
             onClick={() => window.scrollTo(0, 0)}
-            className="group px-8 py-4 bg-[#000000] text-white border border-[#000000] hover:bg-[#ffffff] hover:text-black hover:border-[#ffffff] transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3"
+            className="group px-8 py-4 rounded-full bg-[#000000] text-white border border-[#000000] hover:bg-[#ffffff] hover:text-black hover:border-[#ffffff] transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3"
             data-testid="link-all-services"
           >
             <span>All Services</span>

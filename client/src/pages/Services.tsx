@@ -175,14 +175,14 @@ export default function ServicesPage() {
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button 
               onClick={openContactModal}
-              className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 rounded-full bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <a 
               href="https://audit.bombshellmarketingomaha.com/" 
-              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 rounded-full border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Free Website Audit</span>
               <ArrowUpRight className="w-4 h-4" />

@@ -27,9 +27,9 @@
   --font-sans: 'Montserrat', sans-serif;
   --font-display: 'Montserrat', sans-serif;
   
-  --radius-sm: 0rem;
-  --radius-md: 0rem;
-  --radius-lg: 0rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
 
   --animate-marquee: marquee 20s linear infinite;
   
