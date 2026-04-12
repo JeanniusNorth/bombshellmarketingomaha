@@ -9,7 +9,7 @@ export function Hero() {
   const { openContactModal } = useContactModal();
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#201cc5]">
+    <div className="relative min-h-[75vh] md:min-h-[80vh] w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#201cc5]">
       {/* Background Texture/Grain */}
       <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
