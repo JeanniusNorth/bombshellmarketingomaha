@@ -29,9 +29,7 @@ export default function Home() {
       <main>
         <Hero />
         {/* <Marquee /> Removed as it is now in Hero */}
-        <div className="-mt-12 relative z-20">
-            <Services />
-        </div>
+        <Services />
         <Portfolio />
         <CaseStudy />
         <Mission />

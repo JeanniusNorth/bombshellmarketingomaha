@@ -1,111 +1,153 @@
+import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import logoDesignImage from "@/assets/images/service-logo-design.png";
 import webDesignImage from "@/assets/images/service-web-design.png";
 import photographyImage from "@/assets/images/service-photography.png";
 
+const services = [
+  {
+    title: "Marketing & Digital Strategy",
+    description: "Campaigns that hit like a shockwave. Strategic planning meets digital innovation — built to dominate your market and drive real growth.",
+    details: ["Market Research & Analysis", "Social Media Strategy", "Paid Advertising (PPC)", "Email Marketing", "SEO & Content Strategy", "Brand Positioning"],
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
+    link: "/marketing-strategy",
+    color: "#ccff00",
+  },
+  {
+    title: "Logo & Brand Design",
+    description: "Logos that sear into memory. Visual identities, brand systems, and guidelines that command attention and refuse to be ignored.",
+    details: ["Logo Design & Concepts", "Brand Guidelines", "Color & Typography Systems", "Business Card & Collateral", "Brand Strategy", "Visual Identity"],
+    image: logoDesignImage,
+    link: "/logo-branding",
+    color: "#201cc5",
+  },
+  {
+    title: "Web Design & Development",
+    description: "Websites that don't just function — they perform. High-octane user experiences engineered for conversion and built to dominate search results.",
+    details: ["Custom Website Design", "Responsive Development", "E-Commerce Solutions", "Landing Pages & Funnels", "CMS Integration", "Speed & SEO Optimization"],
+    image: webDesignImage,
+    link: "/web-design",
+    color: "#0d0d24",
+  },
+  {
+    title: "Brand Photography",
+    description: "Capture the raw energy of your brand. Shots that tell your story instantly and make scrolling thumbs stop dead in their tracks.",
+    details: ["Commercial Photography", "Product Photography", "Team & Headshots", "Restaurant & Food", "Lifestyle & Branding", "Social Media Content"],
+    image: photographyImage,
+    link: "/brand-photography",
+    color: "#f5f0e8",
+  },
+];
+
 export function Services() {
-  const services = [
-    {
-      title: "Marketing & Digital Strategy",
-      description: "Campaigns that hit like a shockwave. Strategic planning meets digital innovation—built to dominate your market.",
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
-      link: "/marketing-strategy"
-    },
-    {
-      title: "Logo & Brand Design",
-      description: "Logos that sear into memory. Visual identities, brand systems, and guidelines that command attention and refuse to be ignored.",
-      image: logoDesignImage,
-      link: "/logo-branding"
-    },
-    {
-      title: "Web Design & Development",
-      description: "Websites that don't just function—they perform. High-octane user experiences engineered for conversion and built to dominate.",
-      image: webDesignImage,
-      highlight: true,
-      link: "/web-design"
-    },
-    {
-      title: "Brand Photography",
-      description: "Capture the raw energy of your brand. Shots that tell your story instantly and make scrolling thumbs stop dead in their tracks.",
-      image: photographyImage,
-      link: "/brand-photography"
-    }
-  ];
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const toggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
-    <section id="services" className="bg-[#121212] py-24 relative overflow-hidden">
+    <section id="services" className="bg-white py-24 relative overflow-hidden" data-testid="services-section">
       <div className="container mx-auto px-4">
-        
-        {/* Section Header */}
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8 border-b border-white/10 pb-8"
+          className="mb-16"
         >
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-primary text-xl">✦</span>
-              <span className="text-white/60 uppercase tracking-widest text-xs font-bold">What We Do</span>
-            </div>
-            <h2 className="text-4xl md:text-6xl font-display text-white uppercase max-w-3xl leading-[0.9]">
-              Creative Firepower For Brands That Refuse To Blend In
-            </h2>
-          </div>
+          <span className="text-[#201cc5] text-xs uppercase tracking-[0.2em] font-semibold mb-3 block">What We Do</span>
+          <h2 className="text-4xl md:text-6xl font-display text-[#0d0d24] uppercase leading-[0.9] max-w-3xl">
+            Creative Firepower For Brands That Refuse To Blend In
+          </h2>
         </motion.div>
 
-        {/* Services Grid */}
-        <motion.div 
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-        >
-          {services.map((service, index) => {
-            const Component = service.link ? 'a' : 'div';
-            return (
-            <Component 
+        <div className="border-t border-black/10">
+          {services.map((service, index) => (
+            <motion.div
               key={index}
-              href={service.link}
-              className={`group relative border ${service.highlight ? 'border-primary bg-primary' : 'border-white/10 bg-white/5'} p-8 min-h-[400px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 block`}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-30px" }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              className="border-b border-black/10"
             >
-              <div className="flex justify-between items-start mb-8">
-                <h3 className={`text-2xl font-display uppercase max-w-[70%] leading-none ${service.highlight ? 'text-black' : 'text-white'}`}>
+              <button
+                onClick={() => toggle(index)}
+                className="w-full text-left py-6 md:py-8 flex items-center justify-between gap-4 group"
+                data-testid={`button-service-${index}`}
+              >
+                <h3 className="text-3xl md:text-5xl lg:text-6xl font-display uppercase text-[#0d0d24] group-hover:text-[#201cc5] transition-colors leading-none">
                   {service.title}
                 </h3>
-                <div className={`w-10 h-10 rounded-full border flex items-center justify-center transition-colors
-                  ${service.highlight ? 'border-black text-black group-hover:bg-black group-hover:text-primary' : 'border-primary text-primary group-hover:bg-primary group-hover:text-black'}`}>
-                  <ArrowUpRight size={20} />
+                <div
+                  className={`w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#0d0d24] flex items-center justify-center shrink-0 transition-all duration-300 group-hover:border-[#201cc5] group-hover:text-[#201cc5] ${
+                    openIndex === index ? "rotate-45 bg-[#201cc5] border-[#201cc5] text-white" : "text-[#0d0d24]"
+                  }`}
+                >
+                  <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
-              </div>
+              </button>
 
-              {/* Image Reveal on Hover (or static for highlight) */}
-              <div className="relative aspect-video w-full overflow-hidden mb-6 grayscale group-hover:grayscale-0 transition-all">
-                <img 
-                  src={service.image} 
-                  alt={`${service.title} - Bombshell Marketing Omaha`} 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <AnimatePresence>
+                {openIndex === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                  >
+                    <div className="pb-8 md:pb-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                      <div className="flex flex-col justify-between">
+                        <div>
+                          <p className="text-[#0d0d24]/70 text-base md:text-lg leading-relaxed mb-6 max-w-md">
+                            {service.description}
+                          </p>
+                          <div className="grid grid-cols-2 gap-x-8 gap-y-2 mb-8">
+                            {service.details.map((detail, i) => (
+                              <span key={i} className="text-[#0d0d24]/50 text-sm py-1">
+                                {detail}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <Link
+                          href={service.link}
+                          onClick={() => window.scrollTo(0, 0)}
+                          className="inline-flex items-center gap-2 text-[#201cc5] text-sm font-bold uppercase tracking-wider hover:gap-3 transition-all group/link"
+                          data-testid={`link-service-${index}`}
+                        >
+                          Learn More
+                          <ArrowUpRight className="w-4 h-4" />
+                        </Link>
+                      </div>
 
-              <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/80' : 'text-white/60'}`}>
-                {service.description}
-              </p>
-            </Component>
-          )})}
-        </motion.div>
+                      <div className="relative overflow-hidden aspect-[4/3]" style={{ backgroundColor: service.color }}>
+                        <img
+                          src={service.image}
+                          alt={`${service.title} - Bombshell Marketing Omaha`}
+                          className="w-full h-full object-cover mix-blend-multiply"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          ))}
+        </div>
 
-        {/* All Services Button */}
         <div className="flex justify-center mt-12">
-          <Link 
+          <Link
             href="/services"
             onClick={() => window.scrollTo(0, 0)}
-            className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3"
+            className="group px-8 py-4 bg-[#201cc5] text-white border border-[#201cc5] hover:bg-[#ccff00] hover:text-black hover:border-[#ccff00] transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3"
+            data-testid="link-all-services"
           >
             <span>All Services</span>
             <ArrowUpRight className="w-4 h-4" />
