@@ -91,11 +91,11 @@ export function Mission() {
                   className="flex flex-wrap justify-center items-center gap-x-2 md:gap-x-4 text-3xl md:text-5xl lg:text-6xl mb-1 md:mb-3"
                 >
                     <motion.div variants={badgeVariant} className="relative inline-block transform">
-                        <span className="bg-blue-600 text-transparent px-4 py-1 rounded-full border border-blue-600 relative z-10 block" style={{ WebkitTextStroke: '1px white' }}>
-                            WE ARE CREATORS,
+                        <span className="bg-white text-transparent px-4 py-1 rounded-full border border-white relative z-10 block" style={{ WebkitTextStroke: '1px black' }}>
+                            We Are Creators,
                         </span>
                     </motion.div>
-                    <span className="text-white">INNOVATORS, AND, STORYTELLERS</span>
+                    <span className="text-white">Innovators, and Storytellers</span>
                 </motion.div>
 
                 {/* Line 2 */}
@@ -107,11 +107,11 @@ export function Mission() {
                   variants={lineVariant}
                   className="flex flex-wrap justify-center items-center gap-x-2 md:gap-x-4 text-3xl md:text-5xl lg:text-6xl mb-1 md:mb-3"
                 >
-                    <span className="text-white">COMMITTED TO UNDERSTANDING</span>
+                    <span className="text-white">Committed to Understanding</span>
                      <motion.div variants={imageVariant} className="h-8 w-16 md:h-12 md:w-32 rounded-full overflow-hidden inline-block align-middle border border-white/20 transform">
                         <img src={missionImage1} alt="Creative" className="w-full h-full object-cover" />
                     </motion.div>
-                    <span className="text-white">EACH BRAND'S</span>
+                    <span className="text-white">Each Brand's</span>
                 </motion.div>
 
                  {/* Line 3 */}
@@ -123,12 +123,12 @@ export function Mission() {
                   variants={lineVariant}
                   className="flex flex-wrap justify-center items-center gap-x-2 md:gap-x-4 text-3xl md:text-5xl lg:text-6xl mb-1 md:mb-3"
                 >
-                    <span className="text-white">UNIQUE</span>
+                    <span className="text-white">Unique</span>
                     <motion.div variants={imageVariant2} className="h-8 w-16 md:h-12 md:w-32 rounded-full overflow-hidden inline-block align-middle border border-white/20 transform">
                         <img src={missionImage2} alt="Identity" className="w-full h-full object-cover" />
                     </motion.div>
-                    <span className="text-white">IDENTITY.</span>
-                    <span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>WE IMMERSE OURSELVES IN</span>
+                    <span className="text-white">Identity.</span>
+                    <span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>We Immerse Ourselves In</span>
                 </motion.div>
 
                 {/* Line 4 */}
@@ -140,9 +140,9 @@ export function Mission() {
                   variants={lineVariant}
                   className="flex flex-wrap justify-center items-center gap-x-2 md:gap-x-4 text-3xl md:text-5xl lg:text-6xl mb-1 md:mb-3"
                 >
-                    <span className="text-white">YOUR VISION, BLENDING STRATEGY WITH</span>
-                    <span className="text-[#ffffff]">CREATIVITY</span>
-                    <span className="text-white">TO</span>
+                    <span className="text-white">Your Vision, Blending Strategy With</span>
+                    <span className="text-white">Creativity</span>
+                    <span className="text-white">To</span>
                  </motion.div>
 
                  {/* Line 5 */}
@@ -155,11 +155,11 @@ export function Mission() {
                   className="flex flex-wrap justify-center items-center gap-x-2 md:gap-x-4 text-3xl md:text-5xl lg:text-6xl mb-1 md:mb-3"
                 >
                     <motion.div variants={badgeVariant2} className="relative inline-block transform">
-                        <span className="bg-[#ffffff] text-transparent px-4 py-1 rounded-full border border-[#ffffff] relative z-10 block" style={{ WebkitTextStroke: '1px black' }}>
-                            BUILD BRANDS
+                        <span className="bg-white text-transparent px-4 py-1 rounded-full border border-white relative z-10 block" style={{ WebkitTextStroke: '1px black' }}>
+                            Build Brands
                         </span>
                     </motion.div>
-                    <span className="text-white">THAT DON'T JUST EXIST BUT THRIVE IN THE</span>
+                    <span className="text-white">That Don't Just Exist but Thrive in the</span>
                  </motion.div>
 
                  {/* Line 6 */}
@@ -171,9 +171,9 @@ export function Mission() {
                   variants={lineVariant}
                   className="flex flex-wrap justify-center items-center gap-x-2 md:gap-x-4 text-3xl md:text-5xl lg:text-6xl mt-1 md:mt-2"
                 >
-                    <span className="text-white">HEARTS OF THEIR</span>
-                    <span className="text-transparent transform -skew-x-12 inline-block" style={{ WebkitTextStroke: '1px #ffffff' }}>
-                        AUDIENCES.
+                    <span className="text-white">Hearts of Their</span>
+                    <span className="text-transparent transform -skew-x-12 inline-block" style={{ WebkitTextStroke: '1px white' }}>
+                        Audiences.
                     </span>
                  </motion.div>
 
