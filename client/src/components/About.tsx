@@ -33,7 +33,7 @@ export function About() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-display text-xl uppercase mb-1">Over 10 Years Experience</h4>
+                  <h4 className="font-display text-xl mb-1">Over 10 Years Experience</h4>
                   <p className="text-sm text-black/60">We've been in the trenches and know what works.</p>
                 </div>
               </div>
@@ -45,7 +45,7 @@ export function About() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-display text-xl uppercase mb-1">Trusted by Global Brands</h4>
+                  <h4 className="font-display text-xl mb-1">Trusted by Global Brands</h4>
                   <p className="text-sm text-black/60">From startups to Fortune 500s, we deliver excellence.</p>
                 </div>
               </div>

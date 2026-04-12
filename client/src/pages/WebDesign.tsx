@@ -169,7 +169,7 @@ export default function WebDesignPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
             Web Design & Development
           </h1>
           <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
@@ -192,7 +192,7 @@ export default function WebDesignPage() {
             <span className="text-primary text-xl">✦</span>
             <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Featured Work</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-12">
+          <h2 className="text-4xl md:text-5xl font-display text-black leading-[0.9] mb-12">
             Recent Web Projects
           </h2>
           
@@ -216,7 +216,7 @@ export default function WebDesignPage() {
                   </div>
                 </div>
                 <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest mb-1">{item.category}</p>
-                <h3 className="text-xl font-display text-black uppercase">{item.title}</h3>
+                <h3 className="text-xl font-display text-black">{item.title}</h3>
               </div>
             ))}
           </div>
@@ -267,7 +267,7 @@ export default function WebDesignPage() {
             <span className="text-primary text-xl">✦</span>
             <span className="text-black/60 uppercase tracking-widest text-xs font-bold">What We Offer</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-12">
+          <h2 className="text-4xl md:text-5xl font-display text-black leading-[0.9] mb-12">
             Web Design Services
           </h2>
           
@@ -303,7 +303,7 @@ export default function WebDesignPage() {
               <span className="text-primary text-xl">✦</span>
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Why Us</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-8">
+            <h2 className="text-4xl md:text-5xl font-display text-black leading-[0.9] mb-8">
               Why Choose Bombshell for Web Design in Omaha
             </h2>
 
@@ -328,7 +328,7 @@ export default function WebDesignPage() {
       {/* Process Section */}
       <section className="py-20 bg-[#1a1a1a]">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-display text-white uppercase leading-[0.9] mb-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-display text-white leading-[0.9] mb-4 text-center">
             Our Design Process
           </h2>
           <p className="text-white/60 text-center max-w-2xl mx-auto mb-16">
@@ -355,7 +355,7 @@ export default function WebDesignPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display text-white uppercase mb-6">
+          <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
             Ready for a New Website?
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">

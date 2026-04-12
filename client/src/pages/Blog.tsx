@@ -97,7 +97,7 @@ export default function BlogPage() {
             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}
           ></div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+            <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
               Insights & Resources
             </h1>
             <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
@@ -137,7 +137,7 @@ export default function BlogPage() {
                       {featuredArticle.readTime}
                     </span>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-display text-black uppercase leading-tight mb-4 group-hover:text-[#201cc5] transition-colors">
+                  <h2 className="text-2xl md:text-3xl font-display text-black leading-tight mb-4 group-hover:text-[#201cc5] transition-colors">
                     {featuredArticle.title}
                   </h2>
                   <p className="text-black/60 leading-relaxed mb-6">
@@ -184,7 +184,7 @@ export default function BlogPage() {
                           {article.readTime}
                         </span>
                       </div>
-                      <h3 className="text-xl font-display text-black uppercase leading-tight mb-2 group-hover:text-[#201cc5] transition-colors">
+                      <h3 className="text-xl font-display text-black leading-tight mb-2 group-hover:text-[#201cc5] transition-colors">
                         {article.title}
                       </h3>
                       <p className="text-black/60 text-sm leading-relaxed mb-4 line-clamp-2">
@@ -208,7 +208,7 @@ export default function BlogPage() {
             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}
           ></div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <h2 className="text-4xl md:text-6xl font-display text-white uppercase mb-6">
+            <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
               Ready to Grow Your Business?
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto mb-8">

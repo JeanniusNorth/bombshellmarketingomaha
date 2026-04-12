@@ -43,7 +43,7 @@ export function FAQSection({ faqs, heading = "Frequently Asked Questions", subhe
                 <span className="text-primary text-xl">✦</span>
                 <span className="text-black/60 uppercase tracking-widest text-xs font-bold">FAQ</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-display text-black uppercase mb-4">
+              <h2 className="text-3xl md:text-5xl font-display text-black mb-4">
                 {heading}
               </h2>
               {subheading && (

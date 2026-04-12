@@ -93,7 +93,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <div className="w-16 h-16 bg-[#201cc5] rounded-full flex items-center justify-center mx-auto mb-6">
               <Send className="w-8 h-8 text-white" />
             </div>
-            <DialogTitle className="text-2xl font-display text-black uppercase mb-4">Message Sent!</DialogTitle>
+            <DialogTitle className="text-2xl font-display text-black mb-4">Message Sent!</DialogTitle>
             <DialogDescription className="text-gray-500 mb-8 max-w-md mx-auto">
               Thanks for reaching out! We'll get back to you within 24 hours.
             </DialogDescription>

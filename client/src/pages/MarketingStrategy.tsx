@@ -106,7 +106,7 @@ export default function MarketingStrategyPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
             Marketing & Digital Strategy
           </h1>
           <p className="text-white/70 max-w-2xl mx-auto mb-6">
@@ -126,7 +126,7 @@ export default function MarketingStrategyPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-6">
+            <h2 className="text-3xl md:text-4xl font-display text-black mb-6">
               Strategy That Delivers Results
             </h2>
             <p className="text-black/60 text-lg leading-relaxed mb-8">
@@ -173,7 +173,7 @@ export default function MarketingStrategyPage() {
                 <span className="text-primary text-xl">✦</span>
                 <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Client Success Story</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-6">
+              <h2 className="text-3xl md:text-4xl font-display text-black mb-6">
                 JAY MOORE LANDSCAPING
               </h2>
               <p className="text-black/70 text-sm uppercase tracking-widest mb-4">Jay Moore, Owner</p>
@@ -205,7 +205,7 @@ export default function MarketingStrategyPage() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-white uppercase mb-4">
+            <h2 className="text-3xl md:text-4xl font-display text-white mb-4">
               Our Strategy Services
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto">
@@ -237,7 +237,7 @@ export default function MarketingStrategyPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-4">
+            <h2 className="text-3xl md:text-4xl font-display text-black mb-4">
               Our Strategic Process
             </h2>
             <p className="text-black/60 max-w-2xl mx-auto">
@@ -250,7 +250,7 @@ export default function MarketingStrategyPage() {
               <div className="w-16 h-16 bg-[#201cc5] text-white rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
                 01
               </div>
-              <h3 className="text-lg font-display text-black uppercase mb-2">Discovery</h3>
+              <h3 className="text-lg font-display text-black mb-2">Discovery</h3>
               <p className="text-sm text-black/60">
                 Deep-dive into your business, market, and competition to uncover opportunities.
               </p>
@@ -259,7 +259,7 @@ export default function MarketingStrategyPage() {
               <div className="w-16 h-16 bg-[#201cc5] text-white rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
                 02
               </div>
-              <h3 className="text-lg font-display text-black uppercase mb-2">Strategy</h3>
+              <h3 className="text-lg font-display text-black mb-2">Strategy</h3>
               <p className="text-sm text-black/60">
                 Develop a comprehensive marketing strategy aligned with your business goals.
               </p>
@@ -268,7 +268,7 @@ export default function MarketingStrategyPage() {
               <div className="w-16 h-16 bg-[#201cc5] text-white rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
                 03
               </div>
-              <h3 className="text-lg font-display text-black uppercase mb-2">Execute</h3>
+              <h3 className="text-lg font-display text-black mb-2">Execute</h3>
               <p className="text-sm text-black/60">
                 Launch campaigns and initiatives with precision, tracking every metric.
               </p>
@@ -277,7 +277,7 @@ export default function MarketingStrategyPage() {
               <div className="w-16 h-16 bg-[#201cc5] text-white rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-4">
                 04
               </div>
-              <h3 className="text-lg font-display text-black uppercase mb-2">Optimize</h3>
+              <h3 className="text-lg font-display text-black mb-2">Optimize</h3>
               <p className="text-sm text-black/60">
                 Continuously refine and improve based on real performance data.
               </p>
@@ -294,7 +294,7 @@ export default function MarketingStrategyPage() {
               <span className="text-primary text-xl">✦</span>
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Why Bombshell</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-display text-black uppercase mb-8">
+            <h2 className="text-3xl md:text-5xl font-display text-black mb-8">
               Why Omaha Businesses Choose Bombshell for Marketing Strategy
             </h2>
             <p className="text-black/60 text-lg leading-relaxed mb-6">

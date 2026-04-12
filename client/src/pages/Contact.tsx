@@ -86,7 +86,7 @@ export default function ContactPage() {
               <span className="text-primary text-xl">✦</span>
               <span className="text-white/60 uppercase tracking-widest text-xs font-bold">Get In Touch</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+            <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
               Let's Blow Up<br />Your Business
             </h1>
             <div className="sr-only">
@@ -105,7 +105,7 @@ export default function ContactPage() {
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                   <Send className="w-10 h-10 text-black" />
                 </div>
-                <h2 className="text-4xl font-display text-white uppercase mb-4">Message Sent!</h2>
+                <h2 className="text-4xl font-display text-white mb-4">Message Sent!</h2>
                 <p className="text-white/70 mb-8 max-w-md mx-auto">
                   Thanks for reaching out! We'll get back to you within 24 hours. Get ready for something explosive.
                 </p>

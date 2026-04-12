@@ -17,7 +17,7 @@ export default function NotFound() {
         <section className="pt-32 pb-20 min-h-[60vh] flex items-center justify-center">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-8xl md:text-9xl font-display text-primary mb-6">404</h1>
-            <h2 className="text-3xl md:text-5xl font-display text-white uppercase mb-6">
+            <h2 className="text-3xl md:text-5xl font-display text-white mb-6">
               Page Not Found
             </h2>
             <p className="text-white/70 max-w-xl mx-auto mb-10">

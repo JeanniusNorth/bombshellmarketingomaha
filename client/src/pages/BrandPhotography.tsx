@@ -128,7 +128,7 @@ export default function BrandPhotographyPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
             Brand Photography
           </h1>
           <p className="text-white/70 max-w-2xl mx-auto mb-6">
@@ -156,7 +156,7 @@ export default function BrandPhotographyPage() {
                 <span className="text-primary text-xl">✦</span>
                 <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Visual Storytelling</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-6">
+              <h2 className="text-4xl md:text-5xl font-display text-black leading-[0.9] mb-6">
                 Photography That <br/>Elevates Your Brand
               </h2>
               <p className="text-black/60 text-sm leading-relaxed mb-8">
@@ -198,7 +198,7 @@ export default function BrandPhotographyPage() {
               <span className="text-primary text-xl">✦</span>
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">What We Offer</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-12">
+            <h2 className="text-4xl md:text-5xl font-display text-black leading-[0.9] mb-12">
               Photography Services
             </h2>
           </div>
@@ -244,7 +244,7 @@ export default function BrandPhotographyPage() {
               <span className="text-primary text-xl">✦</span>
               <span className="text-white/60 uppercase tracking-widest text-xs font-bold">Our Process</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-display text-white uppercase">
+            <h2 className="text-4xl md:text-5xl font-display text-white">
               How It Works
             </h2>
           </div>
@@ -258,7 +258,7 @@ export default function BrandPhotographyPage() {
             ].map((item, i) => (
               <div key={i} className="text-center">
                 <p className="text-6xl font-display text-primary mb-4">{item.step}</p>
-                <h3 className="text-xl font-display text-white uppercase mb-2">{item.title}</h3>
+                <h3 className="text-xl font-display text-white mb-2">{item.title}</h3>
                 <p className="text-white/60 text-sm">{item.desc}</p>
               </div>
             ))}
@@ -274,7 +274,7 @@ export default function BrandPhotographyPage() {
               <span className="text-primary text-xl">✦</span>
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Why Bombshell</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-display text-black uppercase leading-[0.9] mb-10">
+            <h2 className="text-3xl md:text-5xl font-display text-black leading-[0.9] mb-10">
               Why Omaha Businesses Trust Bombshell for Brand Photography
             </h2>
 

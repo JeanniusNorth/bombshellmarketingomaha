@@ -62,7 +62,7 @@ export default function VarsityStoryPage() {
             <span className="text-primary text-xl">✦</span>
             <span className="text-white/60 uppercase tracking-widest text-xs font-bold">Brand Photography Case Study</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
             Varsity Roman Coin
           </h1>
           <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
@@ -124,7 +124,7 @@ export default function VarsityStoryPage() {
             {/* CTA Box */}
             <div className="break-inside-avoid bg-[#201cc5] p-8 flex flex-col justify-center items-center text-center min-h-[300px]">
               <span className="text-primary text-2xl mb-4">✦</span>
-              <h3 className="text-2xl font-display text-white uppercase mb-4">
+              <h3 className="text-2xl font-display text-white mb-4">
                 Want Photos Like These?
               </h3>
               <p className="text-white/70 text-sm mb-6">
@@ -165,7 +165,7 @@ export default function VarsityStoryPage() {
               <span className="text-primary text-xl">✦</span>
               <span className="text-white/60 uppercase tracking-widest text-xs font-bold">About This Project</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-display text-white uppercase leading-[0.9] mb-8">
+            <h2 className="text-4xl md:text-5xl font-display text-white leading-[0.9] mb-8">
               Making Food Look as Good as it Tastes
             </h2>
             <p className="text-white/60 leading-relaxed mb-6">
@@ -187,7 +187,7 @@ export default function VarsityStoryPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display text-white uppercase mb-6">
+          <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
             Ready for Your Brand Story?
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">

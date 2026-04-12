@@ -60,7 +60,7 @@ export function Services() {
           className="mb-16"
         >
           <span className="text-[#201cc5] text-xs uppercase tracking-[0.2em] font-semibold mb-3 block">What We Do</span>
-          <h2 className="text-4xl md:text-6xl font-display text-[#0d0d24] uppercase leading-[0.9] max-w-3xl">
+          <h2 className="text-4xl md:text-6xl font-display text-[#0d0d24] leading-[0.9] max-w-3xl">
             Creative Firepower For Brands That Refuse To Blend In
           </h2>
         </motion.div>

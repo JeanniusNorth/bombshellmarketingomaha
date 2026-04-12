@@ -32,7 +32,7 @@ export default function AboutPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
             About Us
           </h1>
           <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 <span className="text-primary text-xl">✦</span>
                 <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Digital Marketer & Creative Director</span>
               </div>
-              <h2 className="text-5xl md:text-6xl font-display text-black uppercase leading-[0.9] mb-6">
+              <h2 className="text-5xl md:text-6xl font-display text-black leading-[0.9] mb-6">
                 Jeannie North
               </h2>
               <div className="space-y-4 text-black/70 leading-relaxed">
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 <span className="text-primary text-xl">✦</span>
                 <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Digital Marketer & Strategist</span>
               </div>
-              <h2 className="text-5xl md:text-6xl font-display text-black uppercase leading-[0.9] mb-6">
+              <h2 className="text-5xl md:text-6xl font-display text-black leading-[0.9] mb-6">
                 Jess Goldoni
               </h2>
               <div className="space-y-4 text-black/70 leading-relaxed">
@@ -135,7 +135,7 @@ export default function AboutPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display text-white uppercase mb-6">
+          <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
             Ready to Work Together?
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">

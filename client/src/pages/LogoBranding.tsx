@@ -113,7 +113,7 @@ export default function LogoBrandingPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
             Logo & Branding
           </h1>
           <p className="text-white/70 max-w-2xl mx-auto mb-6">
@@ -133,7 +133,7 @@ export default function LogoBrandingPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-6">
+            <h2 className="text-3xl md:text-4xl font-display text-black mb-6">
               Build a Brand That Stands Out
             </h2>
             <p className="text-black/60 text-lg leading-relaxed mb-8">
@@ -165,7 +165,7 @@ export default function LogoBrandingPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-4">
+            <h2 className="text-3xl md:text-4xl font-display text-black mb-4">
               Recent Branding Work
             </h2>
             <p className="text-black/60 max-w-2xl mx-auto">
@@ -184,7 +184,7 @@ export default function LogoBrandingPage() {
                   />
                 </div>
                 <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest mb-1">{item.category}</p>
-                <h3 className="text-xl font-display text-black uppercase">{item.title}</h3>
+                <h3 className="text-xl font-display text-black">{item.title}</h3>
               </div>
             ))}
           </div>
@@ -195,7 +195,7 @@ export default function LogoBrandingPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-4">
+            <h2 className="text-3xl md:text-4xl font-display text-black mb-4">
               Our Branding Services
             </h2>
             <p className="text-black/60 max-w-2xl mx-auto">
@@ -228,7 +228,7 @@ export default function LogoBrandingPage() {
       <section className="sr-only" aria-hidden="true">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display text-black uppercase mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-display text-black mb-8 text-center">
               Why Omaha Businesses Choose Bombshell for Logo Design
             </h2>
             <div className="space-y-6 text-black/60 text-lg leading-relaxed">
@@ -253,7 +253,7 @@ export default function LogoBrandingPage() {
       <section className="py-20 bg-[#121212]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-white uppercase mb-4">
+            <h2 className="text-3xl md:text-4xl font-display text-white mb-4">
               Our Design Process
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto">
@@ -270,7 +270,7 @@ export default function LogoBrandingPage() {
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <div className="text-6xl font-display text-primary mb-4">{item.step}</div>
-                <h3 className="text-xl font-display text-white uppercase mb-3">{item.title}</h3>
+                <h3 className="text-xl font-display text-white mb-3">{item.title}</h3>
                 <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}

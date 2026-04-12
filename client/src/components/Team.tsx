@@ -43,7 +43,7 @@ export function Team() {
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Meet The Experts</span>
             </div>
             
-            <h2 className="text-6xl md:text-7xl font-display text-black uppercase leading-[0.85] mb-8">
+            <h2 className="text-6xl md:text-7xl font-display text-black leading-[0.85] mb-8">
               Creativity <br/> Meets Strategy
             </h2>
             

@@ -30,7 +30,7 @@ export default function PortfolioPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white mb-6">
             Our Portfolio
           </h1>
           <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
@@ -53,7 +53,7 @@ export default function PortfolioPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display text-white uppercase mb-6">
+          <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
             Ready to Start Your Project?
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto mb-8">

@@ -106,7 +106,7 @@ export function Portfolio() {
               <span className="text-primary text-xl">✦</span>
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Our Work</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-display text-black uppercase leading-[0.85]">
+            <h2 className="text-5xl md:text-7xl font-display text-black leading-[0.85]">
               Work That Speaks <br/> Louder Than Words
             </h2>
             <p className="mt-6 text-black/60 max-w-xl text-sm leading-relaxed">
@@ -218,7 +218,7 @@ function PortfolioItem({ item }: { item: any }) {
             </div>
             <div className="space-y-1">
               <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest">{item.category}</p>
-              <h3 className="text-xl font-display text-black uppercase">{item.title}</h3>
+              <h3 className="text-xl font-display text-black">{item.title}</h3>
             </div>
           </div>
         </DialogTrigger>
@@ -276,7 +276,7 @@ function PortfolioItem({ item }: { item: any }) {
           </div>
           <div className="space-y-1">
             <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest">{item.category}</p>
-            <h3 className="text-xl font-display text-black uppercase">{item.title}</h3>
+            <h3 className="text-xl font-display text-black">{item.title}</h3>
           </div>
         </div>
       </Link>
@@ -295,7 +295,7 @@ function PortfolioItem({ item }: { item: any }) {
       </div>
       <div className="space-y-1">
         <p className="text-[10px] font-bold text-black/50 uppercase tracking-widest">{item.category}</p>
-        <h3 className="text-xl font-display text-black uppercase">{item.title}</h3>
+        <h3 className="text-xl font-display text-black">{item.title}</h3>
       </div>
     </div>
   );
