@@ -33,7 +33,7 @@ Preferred communication style: Simple, everyday language.
 - **Scripts**: Custom build script handles both client and server compilation
 
 ### Design System
-- **Typography**: Anton (headlines/display), Montserrat (body/sans)
+- **Typography**: Montserrat Bold (headlines/display), Montserrat (body/sans)
 - **Color Scheme**: Deep electric blue (#201cc5) background, neon lime (#ccff00) accent
 - **Border Radius**: Set to 0 for sharp, modern aesthetic
 - **Custom Animations**: Marquee scrolling effect, custom keyframe animations
