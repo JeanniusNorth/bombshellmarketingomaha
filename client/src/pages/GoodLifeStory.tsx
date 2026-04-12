@@ -46,7 +46,7 @@ export default function GoodLifeStoryPage() {
           { name: "The Good Life", url: "/portfolio/good-life" }
         ]}
       />
-    <div className="min-h-screen bg-[#1a1a1a]">
+    <div className="min-h-screen bg-[#1F1F1F]">
       <Navigation />
       
       {/* Hero Section */}
@@ -57,50 +57,50 @@ export default function GoodLifeStoryPage() {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="flex items-center justify-center gap-2 mb-6">
             <span className="text-primary text-xl">✦</span>
-            <span className="text-[#2B2B2B]/60 uppercase tracking-widest text-xs font-bold">Brand Photography Case Study</span>
+            <span className="text-white/60 uppercase tracking-widest text-xs font-bold">Brand Photography Case Study</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-display text-[#111111] uppercase mb-6">
+          <h1 className="text-5xl md:text-7xl font-display text-white uppercase mb-6">
             The Good Life Bar & Grill
           </h1>
-          <div className="flex items-center justify-center gap-2 text-[#2B2B2B]/70 text-sm uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-2 text-white/70 text-sm uppercase tracking-widest">
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>
             <Link href="/portfolio" className="hover:text-primary transition-colors">Portfolio</Link>
             <span>/</span>
             <span className="text-white">The Good Life</span>
           </div>
-          <p className="mt-6 text-[#2B2B2B]/70 max-w-2xl mx-auto">
+          <p className="mt-6 text-white/70 max-w-2xl mx-auto">
             Capturing the vibrant atmosphere, mouthwatering food, and expertly crafted cocktails of this beloved Omaha destination.
           </p>
         </div>
       </section>
 
       {/* Project Info */}
-      <section className="bg-[#1a1a1a] py-16 border-b border-[#111111]/10">
+      <section className="bg-[#1F1F1F] py-16 border-b border-[#111111]/10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Client</p>
-              <p className="text-[#111111] font-display uppercase">The Good Life</p>
+              <p className="text-white font-display uppercase">The Good Life</p>
             </div>
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Industry</p>
-              <p className="text-[#111111] font-display uppercase">Bar & Restaurant</p>
+              <p className="text-white font-display uppercase">Bar & Restaurant</p>
             </div>
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service</p>
-              <p className="text-[#111111] font-display uppercase">Brand Photography</p>
+              <p className="text-white font-display uppercase">Brand Photography</p>
             </div>
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Location</p>
-              <p className="text-[#111111] font-display uppercase">Omaha, NE</p>
+              <p className="text-white font-display uppercase">Omaha, NE</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Masonry Gallery */}
-      <section className="py-12 bg-[#1a1a1a]">
+      <section className="py-12 bg-[#1F1F1F]">
         <div className="container mx-auto px-4">
           <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
             {galleryImages.slice(0, 4).map((image, index) => (
@@ -121,10 +121,10 @@ export default function GoodLifeStoryPage() {
             {/* CTA Box */}
             <div className="break-inside-avoid bg-[#EDE3E1] p-8 flex flex-col justify-center items-center text-center min-h-[300px]">
               <span className="text-primary text-2xl mb-4">✦</span>
-              <h3 className="text-2xl font-display text-[#111111] uppercase mb-4">
+              <h3 className="text-2xl font-display text-white uppercase mb-4">
                 Showcase Your Vibe
               </h3>
-              <p className="text-[#2B2B2B]/70 text-sm mb-6">
+              <p className="text-white/70 text-sm mb-6">
                 Let's capture what makes your spot special.
               </p>
               <button 
@@ -160,18 +160,18 @@ export default function GoodLifeStoryPage() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-[#2B2B2B]/60 uppercase tracking-widest text-xs font-bold">About This Project</span>
+              <span className="text-white/60 uppercase tracking-widest text-xs font-bold">About This Project</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-display text-[#111111] uppercase leading-[0.9] mb-8">
+            <h2 className="text-4xl md:text-5xl font-display text-white uppercase leading-[0.9] mb-8">
               Where Good Food Meets Good Times
             </h2>
-            <p className="text-[#2B2B2B]/60 leading-relaxed mb-6">
+            <p className="text-white/60 leading-relaxed mb-6">
               The Good Life Bar & Grill is an Omaha staple known for their incredible food, signature cocktails, and welcoming atmosphere. They needed photography that would capture the energy and authenticity of their establishment.
             </p>
-            <p className="text-[#2B2B2B]/60 leading-relaxed mb-6">
+            <p className="text-white/60 leading-relaxed mb-6">
               We spent time in the restaurant capturing real moments—guests enjoying meals, bartenders crafting drinks, and the mouthwatering dishes that keep customers coming back. The result is a collection of images that tell the story of what makes The Good Life so special.
             </p>
-            <p className="text-[#2B2B2B]/60 leading-relaxed">
+            <p className="text-white/60 leading-relaxed">
               From social media to their website and menu boards, these images help The Good Life connect with new customers and remind regulars why they keep coming back.
             </p>
           </div>
@@ -184,10 +184,10 @@ export default function GoodLifeStoryPage() {
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display text-[#111111] uppercase mb-6">
+          <h2 className="text-4xl md:text-6xl font-display text-white uppercase mb-6">
             Ready for Your Brand Story?
           </h2>
-          <p className="text-[#2B2B2B]/70 max-w-2xl mx-auto mb-8">
+          <p className="text-white/70 max-w-2xl mx-auto mb-8">
             Let's create stunning photography that captures your brand's essence and drives real results.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -200,7 +200,7 @@ export default function GoodLifeStoryPage() {
             </button>
             <a 
               href="/brand-photography" 
-              className="group px-8 py-4 border border-[#111111]/20 hover:bg-primary hover:text-black hover:border-primary transition-all text-[#111111] text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 border border-white/20 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>View Photography Services</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -219,7 +219,7 @@ export default function GoodLifeStoryPage() {
             <Button 
               variant="ghost" 
               size="icon" 
-              className="absolute top-4 right-4 z-50 text-[#111111] bg-black/50 hover:bg-black/80 rounded-full h-12 w-12 border border-[#111111]/15"
+              className="absolute top-4 right-4 z-50 text-white bg-black/50 hover:bg-black/80 rounded-full h-12 w-12 border border-white/15"
             >
               <X className="w-7 h-7" />
             </Button>

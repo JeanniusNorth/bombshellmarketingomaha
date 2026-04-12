@@ -101,17 +101,17 @@ export default function ContactPage() {
 
           <div className="max-w-4xl mx-auto">
             {isSubmitted ? (
-              <div className="bg-[#1a1a1a] p-12 text-center">
+              <div className="bg-[#1F1F1F] p-12 text-center">
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                   <Send className="w-10 h-10 text-black" />
                 </div>
-                <h2 className="text-4xl font-display text-[#111111] uppercase mb-4">Message Sent!</h2>
-                <p className="text-[#2B2B2B]/70 mb-8 max-w-md mx-auto">
+                <h2 className="text-4xl font-display text-white uppercase mb-4">Message Sent!</h2>
+                <p className="text-white/70 mb-8 max-w-md mx-auto">
                   Thanks for reaching out! We'll get back to you within 24 hours. Get ready for something explosive.
                 </p>
                 <Link 
                   href="/"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-[#111111] font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold uppercase tracking-widest text-xs hover:bg-[#0E7C6B] transition-colors"
                 >
                   Back to Home
                   <ArrowUpRight className="w-4 h-4" />

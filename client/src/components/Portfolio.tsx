@@ -228,15 +228,15 @@ function PortfolioItem({ item }: { item: any }) {
           </VisuallyHidden.Root>
           <div className="w-full h-full flex flex-col">
              {/* Modal Header */}
-             <div className="bg-black text-[#111111] px-4 py-3 flex items-center justify-between border-b border-[#111111]/10">
+             <div className="bg-black text-white px-4 py-3 flex items-center justify-between border-b border-white/10">
                 <div className="flex items-center gap-3">
                    <h3 className="font-display uppercase text-lg">{item.title}</h3>
-                   <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-xs text-[#2B2B2B]/60 hover:text-primary flex items-center gap-1">
+                   <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-xs text-white/60 hover:text-primary flex items-center gap-1">
                       Open in new tab <ExternalLink className="w-3 h-3" />
                    </a>
                 </div>
                 <DialogClose asChild>
-                   <Button variant="ghost" size="icon" className="text-[#111111] hover:bg-[#111111]/5 rounded-full h-8 w-8">
+                   <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 rounded-full h-8 w-8">
                       <X className="w-4 h-4" />
                    </Button>
                 </DialogClose>

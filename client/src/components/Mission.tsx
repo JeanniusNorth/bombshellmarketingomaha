@@ -91,7 +91,7 @@ export function Mission() {
                   className="flex flex-wrap justify-center items-center gap-x-2 md:gap-x-4 text-3xl md:text-5xl lg:text-6xl mb-1 md:mb-3"
                 >
                     <motion.div variants={badgeVariant} className="relative inline-block transform">
-                        <span className="bg-blue-600 text-transparent px-4 py-1 rounded-full border border-blue-600 relative z-10 block" style={{ WebkitTextStroke: '1px white' }}>
+                        <span className="bg-[#2F80ED] text-transparent px-4 py-1 rounded-full border border-[#2F80ED] relative z-10 block" style={{ WebkitTextStroke: '1px white' }}>
                             WE ARE CREATORS,
                         </span>
                     </motion.div>

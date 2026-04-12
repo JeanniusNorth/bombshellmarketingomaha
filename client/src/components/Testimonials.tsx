@@ -96,20 +96,20 @@ export function Testimonials() {
       </div>
 
       {/* Text */}
-      <p className="text-[#111111]/80 leading-relaxed text-base mb-6">
+      <p className="text-white/80 leading-relaxed text-base mb-6">
         {testimonial.text}
       </p>
 
       {/* Author */}
       <div className="flex items-center gap-3">
         <Avatar className="w-10 h-10 border-2 border-[#1FA88F]">
-          <AvatarFallback className="text-black bg-[#1FA88F] font-bold text-sm">
+          <AvatarFallback className="text-white bg-[#1FA88F] font-bold text-sm">
             {testimonial.author[0]}
           </AvatarFallback>
         </Avatar>
         <div>
-          <h4 className="font-semibold text-[#111111] text-sm">{testimonial.author}</h4>
-          <p className="text-[#2B2B2B]/60 text-xs">{testimonial.role}</p>
+          <h4 className="font-semibold text-white text-sm">{testimonial.author}</h4>
+          <p className="text-white/60 text-xs">{testimonial.role}</p>
         </div>
       </div>
     </div>
@@ -148,8 +148,8 @@ export function Testimonials() {
         </motion.div>
         
         {/* Gradient overlays */}
-        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#1a1a1a] to-transparent pointer-events-none z-10" />
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1a1a1a] to-transparent pointer-events-none z-10" />
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#1F1F1F] to-transparent pointer-events-none z-10" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#1F1F1F] to-transparent pointer-events-none z-10" />
       </div>
     );
   };
@@ -194,7 +194,7 @@ export function Testimonials() {
           })
         }}
       />
-    <section className="bg-[#1a1a1a] py-24 text-[#111111] font-sans overflow-hidden" data-testid="testimonials-section">
+    <section className="bg-[#1F1F1F] py-24 text-white font-sans overflow-hidden" data-testid="testimonials-section">
       <div className="container mx-auto px-4">
         
         {/* Header */}

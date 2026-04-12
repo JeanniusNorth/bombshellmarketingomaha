@@ -237,14 +237,14 @@ export default function BrandPhotographyPage() {
       </section>
 
       {/* Process Section */}
-      <section className="bg-[#1a1a1a] py-20">
+      <section className="bg-[#1F1F1F] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
               <span className="text-primary text-xl">✦</span>
-              <span className="text-[#2B2B2B]/60 uppercase tracking-widest text-xs font-bold">Our Process</span>
+              <span className="text-white/60 uppercase tracking-widest text-xs font-bold">Our Process</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-display text-[#111111] uppercase">
+            <h2 className="text-4xl md:text-5xl font-display text-white uppercase">
               How It Works
             </h2>
           </div>
@@ -258,8 +258,8 @@ export default function BrandPhotographyPage() {
             ].map((item, i) => (
               <div key={i} className="text-center">
                 <p className="text-6xl font-display text-primary mb-4">{item.step}</p>
-                <h3 className="text-xl font-display text-[#111111] uppercase mb-2">{item.title}</h3>
-                <p className="text-[#2B2B2B]/60 text-sm">{item.desc}</p>
+                <h3 className="text-xl font-display text-white uppercase mb-2">{item.title}</h3>
+                <p className="text-white/60 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
