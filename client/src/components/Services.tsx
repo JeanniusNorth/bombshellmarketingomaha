@@ -60,9 +60,12 @@ export function Services() {
           className="mb-16"
         >
           <span className="text-[#000000] text-xs uppercase tracking-[0.2em] font-semibold mb-3 block">What We Do</span>
-          <h2 className="text-4xl md:text-6xl font-display text-[#000000] leading-[0.9] max-w-3xl">
+          <h2 className="text-4xl md:text-6xl font-display text-[#000000] leading-[0.9] max-w-3xl mb-4">
             Creative Firepower For Brands That Refuse To Blend In
           </h2>
+          <p className="text-sm md:text-base text-black/60 max-w-xl leading-relaxed">
+            Web design, branding, and photography that turn heads and drive results — built for Omaha businesses ready to stand out.
+          </p>
         </motion.div>
 
         <div className="border-t border-black/10">
