@@ -13,6 +13,12 @@ const pageContent: Record<string, string> = {
     <p>We combine creative excellence with data-driven strategy to help Omaha businesses grow. Our team has 20+ years of experience in web design, branding, and digital marketing. Every project is custom-built to meet your business goals.</p>
     <h2>Omaha's Trusted Marketing Agency</h2>
     <p>From startups to established brands, Bombshell Marketing has helped hundreds of businesses in Omaha, Lincoln, and across Nebraska build their online presence. We offer free website audits and brand consultations to help you get started.</p>
+    <h2>Latest from the Blog</h2>
+    <ul>
+      <li><a href="/blog/web-design-cost-omaha-2026">How Much Does Web Design Cost in Omaha? (2026 Guide)</a></li>
+      <li><a href="/blog/5-signs-omaha-business-needs-new-logo">5 Signs Your Omaha Business Needs a New Logo</a></li>
+      <li><a href="/blog/omaha-restaurant-professional-brand-photography">Why Every Omaha Restaurant Needs Professional Brand Photography</a></li>
+    </ul>
     <p>Based in Omaha, Nebraska. Serving businesses locally and nationwide. <a href="/contact">Contact us today</a> for a free consultation.</p>
   `,
   "/about": `

@@ -7,6 +7,7 @@ import { CaseStudy } from "@/components/CaseStudy";
 import { Team } from "@/components/Team";
 import { Testimonials } from "@/components/Testimonials";
 import { CallToAction } from "@/components/CallToAction";
+import { BlogPreview } from "@/components/BlogPreview";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 
@@ -35,6 +36,7 @@ export default function Home() {
         <Mission />
         <Team />
         <Testimonials />
+        <BlogPreview />
         <CallToAction />
       </main>
       
