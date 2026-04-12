@@ -58,7 +58,7 @@ export function FAQ() {
   };
 
   return (
-    <section className="bg-[#0d0d24] py-20 md:py-28" data-testid="faq-section">
+    <section className="bg-[#000000] py-20 md:py-28" data-testid="faq-section">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -71,7 +71,7 @@ export function FAQ() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12 md:mb-16"
         >
-          <span className="text-[#ccff00] text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-3 block">
+          <span className="text-[#ffffff] text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-3 block">
             Got Questions?
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-white">
@@ -97,7 +97,7 @@ export function FAQ() {
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 text-[#ccff00] shrink-0 transition-transform duration-300 ${
+                  className={`w-5 h-5 text-[#ffffff] shrink-0 transition-transform duration-300 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />

@@ -40,59 +40,57 @@
 }
 
 :root {
-  /* Deep Electric Blue Background matching image blend */
-  --background: 240 60% 15%; /* #0f1261 approx */
+  --background: 0 0% 0%;
   --foreground: 0 0% 100%;
 
-  /* Neon Lime */
-  --primary: 75 100% 50%; /* #ccff00 */
-  --primary-foreground: 240 60% 10%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
 
-  --card: 240 50% 20%;
+  --card: 0 0% 5%;
   --card-foreground: 0 0% 100%;
   
-  --popover: 240 50% 20%;
+  --popover: 0 0% 5%;
   --popover-foreground: 0 0% 100%;
 
-  --secondary: 0 0% 100%;
-  --secondary-foreground: 240 60% 15%;
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 100%;
 
-  --muted: 240 30% 30%;
-  --muted-foreground: 240 10% 80%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
 
-  --accent: 75 100% 50%;
-  --accent-foreground: 240 60% 15%;
+  --accent: 0 0% 100%;
+  --accent-foreground: 0 0% 0%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 240 30% 30%;
-  --input: 240 30% 30%;
-  --ring: 75 100% 50%;
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 0 0% 100%;
   
   --radius: 0;
 }
 
 .dark {
-  --background: 240 60% 15%;
+  --background: 0 0% 0%;
   --foreground: 0 0% 100%;
-  --primary: 75 100% 50%;
-  --primary-foreground: 240 60% 10%;
-  --card: 240 50% 20%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --card: 0 0% 5%;
   --card-foreground: 0 0% 100%;
-  --popover: 240 50% 20%;
+  --popover: 0 0% 5%;
   --popover-foreground: 0 0% 100%;
-  --secondary: 0 0% 100%;
-  --secondary-foreground: 240 60% 15%;
-  --muted: 240 30% 30%;
-  --muted-foreground: 240 10% 80%;
-  --accent: 75 100% 50%;
-  --accent-foreground: 240 60% 15%;
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+  --accent: 0 0% 100%;
+  --accent-foreground: 0 0% 0%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --border: 240 30% 30%;
-  --input: 240 30% 30%;
-  --ring: 75 100% 50%;
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 0 0% 100%;
 }
 
 @layer base {

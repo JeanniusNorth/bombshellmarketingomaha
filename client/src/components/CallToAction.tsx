@@ -6,7 +6,7 @@ export function CallToAction() {
   const { openContactModal } = useContactModal();
 
   return (
-    <section className="bg-[#201cc5] py-20 text-white relative overflow-hidden" data-testid="cta-section">
+    <section className="bg-[#000000] py-20 text-white relative overflow-hidden" data-testid="cta-section">
       <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
       </div>
@@ -29,7 +29,7 @@ export function CallToAction() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 
             onClick={openContactModal}
-            className="group px-8 py-4 bg-[#ccff00] text-black border border-[#ccff00] hover:bg-white hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
+            className="group px-8 py-4 bg-[#ffffff] text-black border border-[#ffffff] hover:bg-white hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
             data-testid="cta-contact-button"
           >
             Contact Us

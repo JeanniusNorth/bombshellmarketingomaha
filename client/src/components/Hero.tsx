@@ -9,7 +9,7 @@ export function Hero() {
   const { openContactModal } = useContactModal();
 
   return (
-    <div className="relative min-h-[75vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#201cc5]">
+    <div className="relative min-h-[75vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#000000]">
       {/* Background Texture/Grain */}
       <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
@@ -69,14 +69,14 @@ export function Hero() {
         >
           <div className="flex items-center gap-2 md:gap-3 mb-1">
             <span className="text-2xl md:text-4xl font-display text-black font-bold tracking-tight">4.9</span>
-            <div className="flex text-yellow-400 gap-0.5">
+            <div className="flex text-black gap-0.5">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-2 h-2 md:w-3 md:h-3 fill-current" />
               ))}
             </div>
           </div>
           <p className="text-gray-400 text-[10px] font-bold tracking-widest uppercase mb-3">Client Feedback</p>
-          <div className="bg-[#ccff00] text-black px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
+          <div className="bg-[#ffffff] text-black px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
             Top Rated
           </div>
         </motion.div>
@@ -118,7 +118,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="block text-[12vw] md:text-[8vw] leading-[0.9] font-display text-transparent relative z-20 tracking-tight mt-[-1vw]"
-                style={{ WebkitTextStroke: '2px #ccff00' }}
+                style={{ WebkitTextStroke: '2px #ffffff' }}
               >
                 Marketing
               </motion.span>

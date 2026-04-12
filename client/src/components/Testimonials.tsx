@@ -91,7 +91,7 @@ export function Testimonials() {
       {/* Stars */}
       <div className="flex gap-0.5 mb-4">
         {[...Array(5)].map((_, i) => (
-          <Star key={i} className="w-4 h-4 fill-[#ccff00] text-[#ccff00]" />
+          <Star key={i} className="w-4 h-4 fill-[#ffffff] text-[#ffffff]" />
         ))}
       </div>
 
@@ -102,8 +102,8 @@ export function Testimonials() {
 
       {/* Author */}
       <div className="flex items-center gap-3">
-        <Avatar className="w-10 h-10 border-2 border-[#ccff00]">
-          <AvatarFallback className="text-black bg-[#ccff00] font-bold text-sm">
+        <Avatar className="w-10 h-10 border-2 border-[#ffffff]">
+          <AvatarFallback className="text-black bg-[#ffffff] font-bold text-sm">
             {testimonial.author[0]}
           </AvatarFallback>
         </Avatar>
@@ -206,7 +206,7 @@ export function Testimonials() {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="text-[#ccff00] text-xl">✦</span>
+            <span className="text-[#ffffff] text-xl">✦</span>
             <span className="uppercase tracking-widest text-xs font-bold">Testimonials</span>
           </div>
           

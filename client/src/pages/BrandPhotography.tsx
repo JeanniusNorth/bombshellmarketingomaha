@@ -123,7 +123,7 @@ export default function BrandPhotographyPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#000000] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -211,7 +211,7 @@ export default function BrandPhotographyPage() {
                   key={index}
                   className={`group relative p-8 min-h-[280px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 ${
                     service.highlight 
-                      ? 'bg-[#201cc5]' 
+                      ? 'bg-[#000000]' 
                       : 'bg-[#1a1a2e]'
                   }`}
                 >
@@ -284,11 +284,11 @@ export default function BrandPhotographyPage() {
               </p>
 
               <p>
-                We've partnered with some of Omaha's most recognized brands to deliver photography that drives real results. From capturing the energy and flavor of local restaurants like <Link href="/portfolio/good-life" className="text-[#201cc5] underline hover:text-primary transition-colors">Good Life Eat & Drink</Link> to producing polished product photography for growing e-commerce brands, our portfolio speaks for itself. Every shoot is backed by strategic thinking—we don't just take pretty pictures, we create visual assets designed to convert visitors into customers.
+                We've partnered with some of Omaha's most recognized brands to deliver photography that drives real results. From capturing the energy and flavor of local restaurants like <Link href="/portfolio/good-life" className="text-[#000000] underline hover:text-primary transition-colors">Good Life Eat & Drink</Link> to producing polished product photography for growing e-commerce brands, our portfolio speaks for itself. Every shoot is backed by strategic thinking—we don't just take pretty pictures, we create visual assets designed to convert visitors into customers.
               </p>
 
               <p>
-                What sets us apart is our full-service approach. Brand photography is just one piece of the puzzle. We integrate your photography with <Link href="/web-design" className="text-[#201cc5] underline hover:text-primary transition-colors">custom web design</Link>, social media strategy, and brand identity so every visual touchpoint is consistent and compelling. Small businesses in Omaha trust us because we treat every project—whether it's a quick headshot session or a full-day brand shoot—with the same level of professionalism and attention to detail.
+                What sets us apart is our full-service approach. Brand photography is just one piece of the puzzle. We integrate your photography with <Link href="/web-design" className="text-[#000000] underline hover:text-primary transition-colors">custom web design</Link>, social media strategy, and brand identity so every visual touchpoint is consistent and compelling. Small businesses in Omaha trust us because we treat every project—whether it's a quick headshot session or a full-day brand shoot—with the same level of professionalism and attention to detail.
               </p>
 
               <p>

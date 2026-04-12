@@ -73,10 +73,10 @@ export default function ContactPage() {
           { name: "Contact", url: "/contact" }
         ]}
       />
-    <div className="min-h-screen bg-[#201cc5]">
+    <div className="min-h-screen bg-[#000000]">
       <Navigation />
       
-      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#000000] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                       required
                       value={formData.firstName}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#000000] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="John"
                       data-testid="input-firstName"
                     />
@@ -147,7 +147,7 @@ export default function ContactPage() {
                       required
                       value={formData.lastName}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#000000] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="Doe"
                       data-testid="input-lastName"
                     />
@@ -166,7 +166,7 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#000000] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="john@company.com"
                       data-testid="input-email"
                     />
@@ -181,7 +181,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#000000] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                       placeholder="(555) 123-4567"
                       data-testid="input-phone"
                     />
@@ -198,7 +198,7 @@ export default function ContactPage() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
+                    className="w-full bg-white border-2 border-transparent focus:border-[#000000] text-black px-4 py-4 outline-none transition-colors placeholder:text-black/30"
                     placeholder="Your Company Name"
                     data-testid="input-company"
                   />
@@ -215,7 +215,7 @@ export default function ContactPage() {
                       required
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#000000] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
                       data-testid="select-service"
                     >
                       <option value="" className="text-black/30">Select a service...</option>
@@ -235,7 +235,7 @@ export default function ContactPage() {
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
+                      className="w-full bg-white border-2 border-transparent focus:border-[#000000] text-black px-4 py-4 outline-none transition-colors appearance-none cursor-pointer"
                       data-testid="select-budget"
                     >
                       <option value="" className="text-black/30">Select budget range...</option>
@@ -259,7 +259,7 @@ export default function ContactPage() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full bg-white border-2 border-transparent focus:border-[#201cc5] text-black px-4 py-4 outline-none transition-colors resize-none placeholder:text-black/30"
+                    className="w-full bg-white border-2 border-transparent focus:border-[#000000] text-black px-4 py-4 outline-none transition-colors resize-none placeholder:text-black/30"
                     placeholder="What are your goals? What challenges are you facing? How can we help you stand out?"
                     data-testid="textarea-message"
                   />
@@ -268,7 +268,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#201cc5] text-white py-5 font-bold uppercase tracking-widest text-sm hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                  className="w-full bg-[#000000] text-white py-5 font-bold uppercase tracking-widest text-sm hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                   data-testid="button-submit"
                 >
                   {isSubmitting ? (

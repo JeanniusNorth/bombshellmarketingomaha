@@ -34,7 +34,7 @@ Preferred communication style: Simple, everyday language.
 
 ### Design System
 - **Typography**: Montserrat Bold (headlines/display), Montserrat (body/sans)
-- **Color Scheme**: Deep electric blue (#201cc5) background, neon lime (#ccff00) accent
+- **Color Scheme**: Black and white minimal palette
 - **Border Radius**: Set to 0 for sharp, modern aesthetic
 - **Custom Animations**: Marquee scrolling effect, custom keyframe animations
 
