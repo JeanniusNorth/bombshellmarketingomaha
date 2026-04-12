@@ -34,7 +34,7 @@ Preferred communication style: Simple, everyday language.
 
 ### Design System
 - **Typography**: Anton (headlines/display), Montserrat (body/sans)
-- **Color Scheme**: Deep electric blue (#201cc5) background, neon lime (#ccff00) accent
+- **Color Scheme**: Black (#0a0a0a) background, blue (#2563EB) primary, orange (#E0531F) accent, yellow (#D4A017) secondary
 - **Border Radius**: Set to 0 for sharp, modern aesthetic
 - **Custom Animations**: Marquee scrolling effect, custom keyframe animations
 

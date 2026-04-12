@@ -27,7 +27,7 @@ const recentArticles = blogArticles.slice(0, 3);
 
 export function BlogPreview() {
   return (
-    <section className="bg-[#0a0a1a] py-20 md:py-28" data-testid="blog-preview-section">
+    <section className="bg-[#111111] py-20 md:py-28" data-testid="blog-preview-section">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ export function BlogPreview() {
           className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-16"
         >
           <div>
-            <span className="text-[#ccff00] text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-3 block">
+            <span className="text-[#2563EB] text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-3 block">
               Latest Insights
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display uppercase text-white">
@@ -46,7 +46,7 @@ export function BlogPreview() {
           </div>
           <Link
             href="/blog"
-            className="mt-4 md:mt-0 text-white/60 hover:text-[#ccff00] transition-colors text-sm font-sans flex items-center gap-1 group"
+            className="mt-4 md:mt-0 text-white/60 hover:text-[#2563EB] transition-colors text-sm font-sans flex items-center gap-1 group"
             data-testid="link-view-all-blog"
           >
             View all articles
@@ -79,7 +79,7 @@ export function BlogPreview() {
                     <span
                       className="text-[10px] uppercase tracking-wider font-sans font-medium px-2.5 py-1"
                       style={{
-                        backgroundColor: categoryColors[article.category]?.bg || "#ccff00",
+                        backgroundColor: categoryColors[article.category]?.bg || "#2563EB",
                         color: categoryColors[article.category]?.text || "#000",
                       }}
                     >
@@ -97,7 +97,7 @@ export function BlogPreview() {
                   </span>
                 </div>
 
-                <h3 className="text-white font-display uppercase text-lg md:text-xl leading-tight mb-2 group-hover:text-[#ccff00] transition-colors">
+                <h3 className="text-white font-display uppercase text-lg md:text-xl leading-tight mb-2 group-hover:text-[#2563EB] transition-colors">
                   {article.title}
                 </h3>
 
@@ -105,7 +105,7 @@ export function BlogPreview() {
                   {article.excerpt}
                 </p>
 
-                <span className="inline-flex items-center gap-1 text-[#ccff00] text-xs font-sans uppercase tracking-wider mt-4 group-hover:gap-2 transition-all">
+                <span className="inline-flex items-center gap-1 text-[#2563EB] text-xs font-sans uppercase tracking-wider mt-4 group-hover:gap-2 transition-all">
                   Read More
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </span>

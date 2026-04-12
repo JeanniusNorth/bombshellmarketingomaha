@@ -9,7 +9,7 @@ export function Hero() {
   const { openContactModal } = useContactModal();
 
   return (
-    <div className="relative min-h-[75vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#201cc5]">
+    <div className="relative min-h-[75vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#0a0a0a]">
       {/* Background Texture/Grain */}
       <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
@@ -76,7 +76,7 @@ export function Hero() {
             </div>
           </div>
           <p className="text-gray-400 text-[10px] font-bold tracking-widest uppercase mb-3">Client Feedback</p>
-          <div className="bg-[#ccff00] text-black px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
+          <div className="bg-[#2563EB] text-white px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
             Top Rated
           </div>
         </motion.div>
@@ -118,7 +118,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="block text-[20vw] md:text-[15vw] leading-[0.8] font-display text-transparent uppercase relative z-20 tracking-tighter mt-[-2vw]"
-                style={{ WebkitTextStroke: '1px #ccff00' }}
+                style={{ WebkitTextStroke: '1px #2563EB' }}
               >
                 MARKETING
               </motion.span>
@@ -140,13 +140,13 @@ export function Hero() {
                   transition={{ duration: 0.5, delay: 0.8 }}
                   className="flex flex-col md:flex-row gap-4"
                 >
-                  <button onClick={openContactModal} className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3">
+                  <button onClick={openContactModal} className="group px-8 py-4 bg-primary text-white border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-3">
                     <span>Get Started</span>
-                    <div className="w-5 h-5 rounded-full bg-black text-white flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-colors">
+                    <div className="w-5 h-5 rounded-full bg-white text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
                        <ArrowRight className="w-3 h-3" />
                     </div>
                   </button>
-                  <a href="https://audit.bombshellmarketingomaha.com/" className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center gap-3">
+                  <a href="https://audit.bombshellmarketingomaha.com/" className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-white hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center gap-3">
                     <span>Free Website Audit</span>
                     <div className="w-5 h-5 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
                        <ArrowRight className="w-3 h-3" />
@@ -202,7 +202,7 @@ export function Hero() {
       </div>
       
       {/* Integrated Marquee at the bottom */}
-      <div className="absolute -bottom-1 left-0 w-full z-40 bg-primary text-black py-3 transform -rotate-1 scale-105 origin-left border-y-2 border-black font-display text-xl uppercase tracking-widest overflow-hidden whitespace-nowrap">
+      <div className="absolute -bottom-1 left-0 w-full z-40 bg-primary text-white py-3 transform -rotate-1 scale-105 origin-left border-y-2 border-black font-display text-xl uppercase tracking-widest overflow-hidden whitespace-nowrap">
          <div className="animate-marquee flex gap-8 items-center">
             {[...Array(10)].map((_, i) => (
                <div key={i} className="flex items-center gap-8">

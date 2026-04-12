@@ -12,7 +12,7 @@ export default function NotFound() {
         description="The page you're looking for doesn't exist. Return to Bombshell Marketing for web design, logo design, and brand photography services in Omaha."
         canonicalPath="/404"
       />
-      <div className="min-h-screen bg-[#201cc5]">
+      <div className="min-h-screen bg-[#0a0a0a]">
         <Navigation />
         <section className="pt-32 pb-20 min-h-[60vh] flex items-center justify-center">
           <div className="container mx-auto px-4 text-center">
@@ -25,7 +25,7 @@ export default function NotFound() {
             </p>
             <Link 
               href="/"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors"
             >
               Back to Home
               <ArrowUpRight className="w-4 h-4" />

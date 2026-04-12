@@ -90,7 +90,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
         {isSubmitted ? (
           <div className="p-8 md:p-12 text-center">
-            <div className="w-16 h-16 bg-[#201cc5] rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-[#0a0a0a] rounded-full flex items-center justify-center mx-auto mb-6">
               <Send className="w-8 h-8 text-white" />
             </div>
             <DialogTitle className="text-2xl font-display text-black uppercase mb-4">Message Sent!</DialogTitle>
@@ -99,7 +99,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             </DialogDescription>
             <button 
               onClick={handleClose}
-              className="inline-flex items-center gap-2 px-8 py-3 bg-[#201cc5] text-white font-semibold rounded-md hover:bg-[#1a18a0] transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-[#0a0a0a] text-white font-semibold rounded-md hover:bg-[#080808] transition-colors"
             >
               Close
             </button>
@@ -107,8 +107,8 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         ) : (
           <form onSubmit={handleSubmit} className="p-6 md:p-8">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-10 h-10 bg-[#201cc5]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <MessageSquare className="w-5 h-5 text-[#201cc5]" />
+              <div className="w-10 h-10 bg-[#0a0a0a]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <MessageSquare className="w-5 h-5 text-[#0a0a0a]" />
               </div>
               <div>
                 <DialogTitle className="text-xl font-bold text-black mb-1">
@@ -123,7 +123,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label htmlFor="modal-fullName" className="block text-gray-700 text-sm font-medium mb-2">
-                  Full Name <span className="text-[#201cc5]">*</span>
+                  Full Name <span className="text-[#0a0a0a]">*</span>
                 </label>
                 <input
                   type="text"
@@ -132,13 +132,13 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   required
                   value={formData.fullName}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 focus:border-[#201cc5] focus:ring-2 focus:ring-[#201cc5]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all placeholder:text-gray-400"
+                  className="w-full bg-white border border-gray-200 focus:border-[#0a0a0a] focus:ring-2 focus:ring-[#0a0a0a]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all placeholder:text-gray-400"
                   placeholder="John Smith"
                 />
               </div>
               <div>
                 <label htmlFor="modal-email" className="block text-gray-700 text-sm font-medium mb-2">
-                  Work Email <span className="text-[#201cc5]">*</span>
+                  Work Email <span className="text-[#0a0a0a]">*</span>
                 </label>
                 <input
                   type="email"
@@ -147,7 +147,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 focus:border-[#201cc5] focus:ring-2 focus:ring-[#201cc5]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all placeholder:text-gray-400"
+                  className="w-full bg-white border border-gray-200 focus:border-[#0a0a0a] focus:ring-2 focus:ring-[#0a0a0a]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all placeholder:text-gray-400"
                   placeholder="john@company.com"
                 />
               </div>
@@ -156,7 +156,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label htmlFor="modal-company" className="block text-gray-700 text-sm font-medium mb-2">
-                  Company Name <span className="text-[#201cc5]">*</span>
+                  Company Name <span className="text-[#0a0a0a]">*</span>
                 </label>
                 <input
                   type="text"
@@ -165,7 +165,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   required
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 focus:border-[#201cc5] focus:ring-2 focus:ring-[#201cc5]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all placeholder:text-gray-400"
+                  className="w-full bg-white border border-gray-200 focus:border-[#0a0a0a] focus:ring-2 focus:ring-[#0a0a0a]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all placeholder:text-gray-400"
                   placeholder="Acme Corp"
                 />
               </div>
@@ -179,7 +179,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 focus:border-[#201cc5] focus:ring-2 focus:ring-[#201cc5]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all placeholder:text-gray-400"
+                  className="w-full bg-white border border-gray-200 focus:border-[#0a0a0a] focus:ring-2 focus:ring-[#0a0a0a]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all placeholder:text-gray-400"
                   placeholder="(402) 555-1234"
                 />
               </div>
@@ -188,7 +188,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label htmlFor="modal-service" className="block text-gray-700 text-sm font-medium mb-2">
-                  Service Interest <span className="text-[#201cc5]">*</span>
+                  Service Interest <span className="text-[#0a0a0a]">*</span>
                 </label>
                 <select
                   id="modal-service"
@@ -196,7 +196,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   required
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 focus:border-[#201cc5] focus:ring-2 focus:ring-[#201cc5]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all appearance-none cursor-pointer"
+                  className="w-full bg-white border border-gray-200 focus:border-[#0a0a0a] focus:ring-2 focus:ring-[#0a0a0a]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all appearance-none cursor-pointer"
                   style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center', backgroundSize: '20px' }}
                 >
                   <option value="">Select service</option>
@@ -216,7 +216,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   name="budget"
                   value={formData.budget}
                   onChange={handleChange}
-                  className="w-full bg-white border border-gray-200 focus:border-[#201cc5] focus:ring-2 focus:ring-[#201cc5]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all appearance-none cursor-pointer"
+                  className="w-full bg-white border border-gray-200 focus:border-[#0a0a0a] focus:ring-2 focus:ring-[#0a0a0a]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all appearance-none cursor-pointer"
                   style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center', backgroundSize: '20px' }}
                 >
                   <option value="">Select budget</option>
@@ -238,7 +238,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 rows={3}
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full bg-white border border-gray-200 focus:border-[#201cc5] focus:ring-2 focus:ring-[#201cc5]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all resize-none placeholder:text-gray-400"
+                className="w-full bg-white border border-gray-200 focus:border-[#0a0a0a] focus:ring-2 focus:ring-[#0a0a0a]/20 text-black px-4 py-2.5 rounded-md outline-none transition-all resize-none placeholder:text-gray-400"
                 placeholder="What are your goals? What outcomes are you hoping to achieve?"
               />
             </div>
@@ -254,7 +254,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-6 py-2.5 bg-[#201cc5] text-white font-medium rounded-md hover:bg-[#1a18a0] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                className="px-6 py-2.5 bg-[#0a0a0a] text-white font-medium rounded-md hover:bg-[#080808] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
               >
                 {isSubmitting ? (
                   <>

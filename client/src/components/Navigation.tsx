@@ -110,7 +110,7 @@ export function Navigation() {
       {/* Contact Button & Mobile Menu */}
       <div className="flex items-center gap-4">
         
-        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-black md:hidden">
+        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="text-black hover:text-black hover:bg-transparent">

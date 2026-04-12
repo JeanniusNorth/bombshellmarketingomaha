@@ -211,7 +211,7 @@ function PortfolioItem({ item }: { item: any }) {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                 <div className="bg-primary text-black px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                 <div className="bg-primary text-white px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
                     Preview Website <ExternalLink className="w-4 h-4" />
                  </div>
               </div>
@@ -269,7 +269,7 @@ function PortfolioItem({ item }: { item: any }) {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-               <div className="bg-primary text-black px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+               <div className="bg-primary text-white px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
                   View Portfolio <Camera className="w-4 h-4" />
                </div>
             </div>

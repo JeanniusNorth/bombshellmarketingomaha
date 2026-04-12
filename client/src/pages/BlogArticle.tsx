@@ -46,13 +46,13 @@ function renderMarkdownLinks(text: string) {
       const isExternal = linkMatch[2].startsWith("http");
       if (isExternal) {
         return (
-          <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-[#201cc5] font-bold hover:underline">
+          <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-[#0a0a0a] font-bold hover:underline">
             {linkMatch[1]}
           </a>
         );
       }
       return (
-        <Link key={i} href={linkMatch[2]} className="text-[#201cc5] font-bold hover:underline">
+        <Link key={i} href={linkMatch[2]} className="text-[#0a0a0a] font-bold hover:underline">
           {linkMatch[1]}
         </Link>
       );
@@ -100,7 +100,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
 
     case "blockquote":
       return (
-        <blockquote className="my-10 border-l-4 border-primary bg-[#ccff00]/5 py-6 px-8 relative">
+        <blockquote className="my-10 border-l-4 border-primary bg-[#2563EB]/5 py-6 px-8 relative">
           <div className="absolute -top-4 left-6 text-primary text-6xl font-serif leading-none">"</div>
           <p className="text-xl italic text-black/80 leading-relaxed pt-4">
             {renderMarkdownLinks(section.text)}
@@ -115,7 +115,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
 
     case "stat":
       return (
-        <div className="my-10 bg-[#201cc5] text-white p-8 md:p-10 text-center">
+        <div className="my-10 bg-[#0a0a0a] text-white p-8 md:p-10 text-center">
           <div className="text-5xl md:text-6xl font-display text-primary mb-2">{section.value}</div>
           <div className="text-lg font-semibold uppercase tracking-wider mb-3">{section.label}</div>
           <p className="text-white/70 max-w-lg mx-auto">{section.description}</p>
@@ -156,7 +156,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
     case "callout":
       const variants = {
         info: "bg-blue-50 border-blue-200 text-blue-900",
-        tip: "bg-[#ccff00]/10 border-primary/30 text-black",
+        tip: "bg-[#2563EB]/10 border-primary/30 text-black",
         warning: "bg-amber-50 border-amber-200 text-amber-900",
       };
       const variant = section.variant || "info";
@@ -171,14 +171,14 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
       const isExternal = section.linkHref.startsWith("http");
       const isContact = section.linkHref === "/contact";
       return (
-        <div className="my-12 bg-[#201cc5] p-8 md:p-12 text-center">
+        <div className="my-12 bg-[#0a0a0a] p-8 md:p-12 text-center">
           <p className="text-xl md:text-2xl font-display uppercase text-white mb-6">{section.text}</p>
           {isExternal ? (
             <a
               href={section.linkHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-black font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
+              className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
               data-testid="cta-blog-external"
             >
               {section.linkText}
@@ -187,7 +187,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
           ) : isContact ? (
             <button
               onClick={openContactModal}
-              className="inline-flex items-center gap-2 bg-primary text-black font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
+              className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
               data-testid="cta-blog-contact"
             >
               {section.linkText}
@@ -196,7 +196,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
           ) : (
             <Link
               href={section.linkHref}
-              className="inline-flex items-center gap-2 bg-primary text-black font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
+              className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-4 text-lg hover:bg-primary/90 transition-colors uppercase tracking-wider"
               data-testid="cta-blog-link"
             >
               {section.linkText}

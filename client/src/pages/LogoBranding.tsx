@@ -108,7 +108,7 @@ export default function LogoBrandingPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -141,19 +141,19 @@ export default function LogoBrandingPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
               <div className="text-center">
-                <div className="text-4xl font-display text-[#201cc5] mb-2">200+</div>
+                <div className="text-4xl font-display text-[#0a0a0a] mb-2">200+</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Logos Designed</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#201cc5] mb-2">50+</div>
+                <div className="text-4xl font-display text-[#0a0a0a] mb-2">50+</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Brand Systems</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#201cc5] mb-2">15+</div>
+                <div className="text-4xl font-display text-[#0a0a0a] mb-2">15+</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-display text-[#201cc5] mb-2">100%</div>
+                <div className="text-4xl font-display text-[#0a0a0a] mb-2">100%</div>
                 <div className="text-sm text-black/50 uppercase tracking-wider">Client Satisfaction</div>
               </div>
             </div>
@@ -209,11 +209,11 @@ export default function LogoBrandingPage() {
                 key={index}
                 className={`p-8 transition-all hover:-translate-y-1 ${
                   service.highlight 
-                    ? 'bg-[#201cc5] text-white' 
+                    ? 'bg-[#0a0a0a] text-white' 
                     : 'bg-white text-black'
                 }`}
               >
-                <service.icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-primary' : 'text-[#201cc5]'}`} />
+                <service.icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-primary' : 'text-[#0a0a0a]'}`} />
                 <h3 className="text-xl font-display uppercase mb-4">{service.title}</h3>
                 <p className={`text-sm leading-relaxed ${service.highlight ? 'text-white/70' : 'text-black/60'}`}>
                   {service.description}
@@ -239,7 +239,7 @@ export default function LogoBrandingPage() {
                 Our approach goes beyond aesthetics. Every logo we create is rooted in research and brand strategy, ensuring your visual identity communicates the right message to your target customers. We take the time to understand your industry, competition, and goals before a single sketch is drawn. This discovery-first process is why Omaha businesses trust us to build brands that drive real results.
               </p>
               <p>
-                A great logo is just the beginning. We build complete brand ecosystems that extend across every touchpoint—from your <Link href="/web-design" className="text-[#201cc5] hover:underline font-semibold">custom website design</Link> to print materials, signage, and social media. Our team also offers <Link href="/brand-photography" className="text-[#201cc5] hover:underline font-semibold">professional brand photography</Link> to complement your visual identity with authentic, on-brand imagery that tells your story.
+                A great logo is just the beginning. We build complete brand ecosystems that extend across every touchpoint—from your <Link href="/web-design" className="text-[#0a0a0a] hover:underline font-semibold">custom website design</Link> to print materials, signage, and social media. Our team also offers <Link href="/brand-photography" className="text-[#0a0a0a] hover:underline font-semibold">professional brand photography</Link> to complement your visual identity with authentic, on-brand imagery that tells your story.
               </p>
               <p>
                 Whether you're launching a new venture in Nebraska or refreshing an established Omaha brand, our collaborative design process ensures you're involved every step of the way. We combine your vision with our expertise to deliver a logo and brand identity that you're proud to put on everything—from business cards to billboards.

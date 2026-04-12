@@ -69,7 +69,7 @@ export default function ServicesPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -132,7 +132,7 @@ export default function ServicesPage() {
                   href={service.link}
                   className={`group relative p-8 min-h-[280px] flex flex-col justify-between hover:translate-y-[-8px] transition-transform duration-300 ${
                     service.highlight 
-                      ? 'bg-[#201cc5]' 
+                      ? 'bg-[#0a0a0a]' 
                       : 'bg-[#1a1a2e]'
                   }`}
                 >
@@ -140,7 +140,7 @@ export default function ServicesPage() {
                     <div className="w-14 h-14 rounded-lg bg-primary/20 border border-primary flex items-center justify-center">
                       <IconComponent className="w-7 h-7 text-primary" />
                     </div>
-                    <div className="w-10 h-10 rounded-full bg-primary text-black flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center group-hover:scale-110 transition-transform">
                       <ArrowUpRight size={20} />
                     </div>
                   </div>
@@ -161,7 +161,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#201cc5] py-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -175,14 +175,14 @@ export default function ServicesPage() {
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button 
               onClick={openContactModal}
-              className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 bg-primary text-white border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <a 
               href="https://audit.bombshellmarketingomaha.com/" 
-              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-white hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Free Website Audit</span>
               <ArrowUpRight className="w-4 h-4" />

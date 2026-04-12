@@ -164,7 +164,7 @@ export default function WebDesignPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -210,7 +210,7 @@ export default function WebDesignPage() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <div className="bg-primary text-black px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                    <div className="bg-primary text-white px-4 py-2 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
                       Preview Website <ExternalLink className="w-4 h-4" />
                     </div>
                   </div>
@@ -277,7 +277,7 @@ export default function WebDesignPage() {
               return (
                 <div 
                   key={index}
-                  className="group relative p-8 bg-white hover:bg-[#201cc5] transition-colors duration-300"
+                  className="group relative p-8 bg-white hover:bg-[#0a0a0a] transition-colors duration-300"
                 >
                   <div className="w-14 h-14 rounded-lg bg-primary/20 border border-primary flex items-center justify-center mb-6 group-hover:bg-primary/30">
                     <IconComponent className="w-7 h-7 text-primary" />
@@ -312,10 +312,10 @@ export default function WebDesignPage() {
                 At Bombshell Marketing, we understand that your website is more than just a digital brochure—it's the foundation of your brand's online presence. As an Omaha-based web design agency, we've helped dozens of local businesses across Nebraska build websites that not only look exceptional but drive real results. From small startups in the Old Market to established companies in West Omaha, we bring the same level of dedication and creativity to every project.
               </p>
               <p>
-                What sets us apart from other web design agencies in Omaha is our holistic approach. We don't just design websites—we craft complete digital experiences that align with your brand identity. Our team works closely with you to understand your business goals, target audience, and competitive landscape before writing a single line of code. This strategic foundation ensures your website serves as a powerful tool for growth, not just a pretty face online. Take a look at our <Link href="/portfolio" className="text-[#201cc5] font-bold hover:underline">portfolio</Link> to see the results for yourself.
+                What sets us apart from other web design agencies in Omaha is our holistic approach. We don't just design websites—we craft complete digital experiences that align with your brand identity. Our team works closely with you to understand your business goals, target audience, and competitive landscape before writing a single line of code. This strategic foundation ensures your website serves as a powerful tool for growth, not just a pretty face online. Take a look at our <Link href="/portfolio" className="text-[#0a0a0a] font-bold hover:underline">portfolio</Link> to see the results for yourself.
               </p>
               <p>
-                Every website we build is custom-designed and hand-coded for maximum performance. We don't rely on cookie-cutter templates—your business is unique, and your website should be too. Our designs are rooted in your brand's visual identity, and if you need help refining your brand before we build, our <Link href="/logo-branding" className="text-[#201cc5] font-bold hover:underline">logo and branding services</Link> can create a cohesive look that carries across every touchpoint, from your website to your business cards.
+                Every website we build is custom-designed and hand-coded for maximum performance. We don't rely on cookie-cutter templates—your business is unique, and your website should be too. Our designs are rooted in your brand's visual identity, and if you need help refining your brand before we build, our <Link href="/logo-branding" className="text-[#0a0a0a] font-bold hover:underline">logo and branding services</Link> can create a cohesive look that carries across every touchpoint, from your website to your business cards.
               </p>
               <p>
                 Beyond beautiful design, we prioritize the technical details that matter: fast load times, mobile responsiveness, clean code architecture, and SEO best practices baked in from the start. Nebraska businesses deserve a web partner who understands the local market and delivers websites that compete on a national level. Whether you need a sleek single-page site or a complex e-commerce platform, Bombshell Marketing is ready to bring your vision to life.
@@ -350,7 +350,7 @@ export default function WebDesignPage() {
       <FAQSection faqs={webDesignFAQs} heading="Web Design FAQs" subheading="Common questions about our Omaha web design services" />
 
       {/* CTA Section */}
-      <section className="bg-[#201cc5] py-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -364,14 +364,14 @@ export default function WebDesignPage() {
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button 
               onClick={openContactModal}
-              className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 bg-primary text-white border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <a 
               href="https://audit.bombshellmarketingomaha.com/" 
-              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-white hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Free Website Audit</span>
               <ArrowUpRight className="w-4 h-4" />

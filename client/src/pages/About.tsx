@@ -27,7 +27,7 @@ export default function AboutPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#201cc5] py-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -144,14 +144,14 @@ export default function AboutPage() {
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button 
               onClick={openContactModal}
-              className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 bg-primary text-white border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <a 
               href="https://audit.bombshellmarketingomaha.com/" 
-              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+              className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-white hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
             >
               <span>Free Website Audit</span>
               <ArrowUpRight className="w-4 h-4" />

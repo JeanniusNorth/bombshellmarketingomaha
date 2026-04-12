@@ -53,7 +53,7 @@ export default function VarsityStoryPage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>
@@ -122,7 +122,7 @@ export default function VarsityStoryPage() {
             ))}
             
             {/* CTA Box */}
-            <div className="break-inside-avoid bg-[#201cc5] p-8 flex flex-col justify-center items-center text-center min-h-[300px]">
+            <div className="break-inside-avoid bg-[#0a0a0a] p-8 flex flex-col justify-center items-center text-center min-h-[300px]">
               <span className="text-primary text-2xl mb-4">✦</span>
               <h3 className="text-2xl font-display text-white uppercase mb-4">
                 Want Photos Like These?
@@ -182,7 +182,7 @@ export default function VarsityStoryPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#201cc5] py-20 relative overflow-hidden">
+      <section className="bg-[#0a0a0a] py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
              style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
         </div>

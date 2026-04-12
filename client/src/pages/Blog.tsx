@@ -91,7 +91,7 @@ export default function BlogPage() {
       <div className="min-h-screen bg-white">
         <Navigation />
 
-        <section className="bg-[#201cc5] pt-32 pb-20 relative overflow-hidden">
+        <section className="bg-[#0a0a0a] pt-32 pb-20 relative overflow-hidden">
           <div
             className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay"
             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}
@@ -137,13 +137,13 @@ export default function BlogPage() {
                       {featuredArticle.readTime}
                     </span>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-display text-black uppercase leading-tight mb-4 group-hover:text-[#201cc5] transition-colors">
+                  <h2 className="text-2xl md:text-3xl font-display text-black uppercase leading-tight mb-4 group-hover:text-[#0a0a0a] transition-colors">
                     {featuredArticle.title}
                   </h2>
                   <p className="text-black/60 leading-relaxed mb-6">
                     {featuredArticle.excerpt}
                   </p>
-                  <span className="inline-flex items-center gap-2 text-[#201cc5] text-xs font-bold uppercase tracking-widest">
+                  <span className="inline-flex items-center gap-2 text-[#0a0a0a] text-xs font-bold uppercase tracking-widest">
                     Read Article
                     <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </span>
@@ -184,13 +184,13 @@ export default function BlogPage() {
                           {article.readTime}
                         </span>
                       </div>
-                      <h3 className="text-xl font-display text-black uppercase leading-tight mb-2 group-hover:text-[#201cc5] transition-colors">
+                      <h3 className="text-xl font-display text-black uppercase leading-tight mb-2 group-hover:text-[#0a0a0a] transition-colors">
                         {article.title}
                       </h3>
                       <p className="text-black/60 text-sm leading-relaxed mb-4 line-clamp-2">
                         {article.excerpt}
                       </p>
-                      <span className="inline-flex items-center gap-2 text-[#201cc5] text-xs font-bold uppercase tracking-widest">
+                      <span className="inline-flex items-center gap-2 text-[#0a0a0a] text-xs font-bold uppercase tracking-widest">
                         Read Article
                         <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                       </span>
@@ -202,7 +202,7 @@ export default function BlogPage() {
           </div>
         </section>
 
-        <section className="bg-[#201cc5] py-20 relative overflow-hidden">
+        <section className="bg-[#0a0a0a] py-20 relative overflow-hidden">
           <div
             className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay"
             style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}
@@ -218,7 +218,7 @@ export default function BlogPage() {
               <button
                 onClick={openContactModal}
                 data-testid="blog-cta-contact"
-                className="group px-8 py-4 bg-primary text-black border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+                className="group px-8 py-4 bg-primary text-white border border-primary hover:bg-white hover:text-black hover:border-white transition-all text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
               >
                 <span>Contact Us</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -226,7 +226,7 @@ export default function BlogPage() {
               <a
                 href="https://audit.bombshellmarketingomaha.com/"
                 data-testid="blog-cta-audit"
-                className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-black hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
+                className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-white hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3"
               >
                 <span>Free Website Audit</span>
                 <ArrowUpRight className="w-4 h-4" />
