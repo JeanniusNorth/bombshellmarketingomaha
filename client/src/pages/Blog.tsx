@@ -11,6 +11,9 @@ import blogLogoRedesign from "@/assets/images/blog-logo-redesign.jpg";
 import blogRestaurantPhotography from "@/assets/images/blog-restaurant-photography.jpg";
 import blogSeoGuide from "@/assets/images/blog-seo-guide.jpg";
 import blogBrandingRoi from "@/assets/images/blog-branding-roi.jpg";
+import blogChooseAgency from "@/assets/images/blog-choose-agency.png";
+import blogSocialMedia from "@/assets/images/blog-social-media.png";
+import blogWhyWebsite from "@/assets/images/blog-why-website.png";
 
 const imageMap: Record<string, string> = {
   "blog-web-design-cost": blogWebDesignCost,
@@ -18,6 +21,9 @@ const imageMap: Record<string, string> = {
   "blog-restaurant-photography": blogRestaurantPhotography,
   "blog-seo-guide": blogSeoGuide,
   "blog-branding-roi": blogBrandingRoi,
+  "blog-choose-agency": blogChooseAgency,
+  "blog-social-media": blogSocialMedia,
+  "blog-why-website": blogWhyWebsite,
 };
 
 const BASE_URL = "https://bombshellmarketingomaha.com";

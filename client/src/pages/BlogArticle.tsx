@@ -13,6 +13,9 @@ import blogSeoGuide from "@/assets/images/blog-seo-guide.jpg";
 import blogBrandingRoi from "@/assets/images/blog-branding-roi.jpg";
 import blogInlineTeam from "@/assets/images/blog-inline-team.jpg";
 import blogInlineMobile from "@/assets/images/blog-inline-mobile.jpg";
+import blogChooseAgency from "@/assets/images/blog-choose-agency.png";
+import blogSocialMedia from "@/assets/images/blog-social-media.png";
+import blogWhyWebsite from "@/assets/images/blog-why-website.png";
 
 const imageMap: Record<string, string> = {
   "blog-web-design-cost": blogWebDesignCost,
@@ -22,6 +25,9 @@ const imageMap: Record<string, string> = {
   "blog-branding-roi": blogBrandingRoi,
   "blog-inline-team": blogInlineTeam,
   "blog-inline-mobile": blogInlineMobile,
+  "blog-choose-agency": blogChooseAgency,
+  "blog-social-media": blogSocialMedia,
+  "blog-why-website": blogWhyWebsite,
 };
 
 function formatDate(dateStr: string) {

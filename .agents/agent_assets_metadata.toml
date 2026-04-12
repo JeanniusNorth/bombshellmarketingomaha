@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "mIi1nSB7g-H6nk8myvW5_"
+uri = "file://client/src/assets/images/blog-choose-agency.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Nr9V4tRGV8FRXHyQCHlKl"
+uri = "file://client/src/assets/images/blog-social-media.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "WM8o-soSBC2hDdxE1_cZv"
+uri = "file://client/src/assets/images/blog-why-website.png"
+type = "image"
+title = "generated_image"

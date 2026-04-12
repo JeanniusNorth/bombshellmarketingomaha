@@ -159,6 +159,9 @@ const pageContent: Record<string, string> = {
       <li><a href="/blog/omaha-restaurant-professional-brand-photography">Why Every Omaha Restaurant Needs Professional Brand Photography</a></li>
       <li><a href="/blog/seo-small-businesses-omaha-beginners-guide">SEO for Small Businesses in Omaha: A Beginner's Guide</a></li>
       <li><a href="/blog/roi-professional-branding-omaha-companies">The ROI of Professional Branding for Omaha Companies</a></li>
+      <li><a href="/blog/how-to-choose-best-marketing-agency-omaha">How to Choose the Best Marketing Agency in Omaha (2026 Guide)</a></li>
+      <li><a href="/blog/social-media-marketing-omaha-small-businesses">Social Media Marketing for Omaha Small Businesses</a></li>
+      <li><a href="/blog/why-omaha-business-needs-website-2026">Why Your Omaha Business Still Needs a Website in 2026</a></li>
     </ul>
   `,
 };
@@ -229,6 +232,50 @@ const blogContent: Record<string, string> = {
       <h2>Why Branding Matters</h2>
       <p>A strong brand identity builds trust, increases recognition, and commands premium pricing. For Omaha businesses competing in a growing market, professional branding is a strategic investment.</p>
       <p>By <a href="/">Bombshell Marketing</a>, <a href="/logo-branding">branding agency in Omaha</a>.</p>
+    </article>
+  `,
+  "how-to-choose-best-marketing-agency-omaha": `
+    <article>
+      <h1>How to Choose the Best Marketing Agency in Omaha (2026 Guide)</h1>
+      <p>Not all marketing agencies are created equal. Here's what Omaha business owners should look for—and watch out for—when choosing a marketing partner.</p>
+      <h2>What to Look For in an Omaha Marketing Agency</h2>
+      <ul>
+        <li>A professional website and strong brand of their own</li>
+        <li>Case studies and results from local Omaha businesses</li>
+        <li>Transparent pricing and clear deliverables</li>
+        <li>Full-service capabilities: web design, branding, photography, strategy</li>
+        <li>Good communication and cultural fit</li>
+      </ul>
+      <p>By <a href="/">Bombshell Marketing</a>, Omaha's full-service <a href="/marketing-strategy">marketing agency</a>.</p>
+    </article>
+  `,
+  "social-media-marketing-omaha-small-businesses": `
+    <article>
+      <h1>Social Media Marketing for Omaha Small Businesses: What Actually Works in 2026</h1>
+      <p>Tired of posting with no results? Here's what's actually working for Omaha small businesses on social media—and what's a waste of your time.</p>
+      <h2>Best Social Media Platforms for Omaha Businesses</h2>
+      <ul>
+        <li>Facebook — #1 for local businesses targeting customers 30+</li>
+        <li>Instagram — Essential for visual businesses like restaurants and retail</li>
+        <li>LinkedIn — Best for B2B and professional services</li>
+        <li>Google Business Profile — Critical for local SEO</li>
+      </ul>
+      <p>By <a href="/">Bombshell Marketing</a>, <a href="/marketing-strategy">social media marketing in Omaha</a>.</p>
+    </article>
+  `,
+  "why-omaha-business-needs-website-2026": `
+    <article>
+      <h1>Why Your Omaha Business Still Needs a Website in 2026</h1>
+      <p>Think social media is enough? Here's why a professional website is still the most important digital asset for Omaha businesses—and what you're losing without one.</p>
+      <h2>Why Every Business Needs a Website</h2>
+      <ul>
+        <li>You don't own social media — your website is property you control</li>
+        <li>Google ranks websites, not Facebook pages</li>
+        <li>75% of consumers judge credibility by website design</li>
+        <li>Your website works 24/7 collecting leads while you sleep</li>
+        <li>Professional websites start at just $2,500 in Omaha</li>
+      </ul>
+      <p>By <a href="/">Bombshell Marketing</a>, <a href="/web-design">web design in Omaha</a>.</p>
     </article>
   `,
 };

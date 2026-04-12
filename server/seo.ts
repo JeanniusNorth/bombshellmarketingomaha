@@ -134,6 +134,21 @@ const blogArticleMeta: Record<string, { title: string; description: string; keyw
     description: "Professional branding isn't just about looking good—it's about business growth. Discover why more Omaha companies are investing in their brand.",
     keywords: "branding ROI Omaha, professional branding Nebraska, brand investment, Omaha branding agency, brand strategy ROI",
   },
+  "how-to-choose-best-marketing-agency-omaha": {
+    title: "How to Choose the Best Marketing Agency in Omaha (2026 Guide) | Bombshell Marketing",
+    description: "Not all marketing agencies are created equal. Here's what Omaha business owners should look for—and watch out for—when choosing a marketing partner.",
+    keywords: "best marketing agency Omaha, choose marketing agency Nebraska, Omaha marketing company, marketing agency near me Omaha, top marketing firms Omaha",
+  },
+  "social-media-marketing-omaha-small-businesses": {
+    title: "Social Media Marketing for Omaha Small Businesses: What Actually Works | Bombshell Marketing",
+    description: "Tired of posting with no results? Here's what's actually working for Omaha small businesses on social media—and what's a waste of your time.",
+    keywords: "social media marketing Omaha, social media small business Nebraska, Instagram marketing Omaha, Facebook marketing Omaha, social media agency Omaha",
+  },
+  "why-omaha-business-needs-website-2026": {
+    title: "Why Your Omaha Business Still Needs a Website in 2026 | Bombshell Marketing",
+    description: "Think social media is enough? Here's why a professional website is still the most important digital asset for Omaha businesses.",
+    keywords: "why need website Omaha, business website Nebraska, website importance 2026, Omaha web design, do I need a website Omaha",
+  },
 };
 
 export function getPageMeta(pathname: string): PageMeta {

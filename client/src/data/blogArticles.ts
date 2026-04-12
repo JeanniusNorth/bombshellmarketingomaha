@@ -243,6 +243,158 @@ export const blogArticles: BlogArticleData[] = [
       { type: "paragraph", text: "At Bombshell Marketing, we help Omaha companies build brands that aren't just beautiful—they're strategic assets that drive growth, build loyalty, and deliver measurable ROI." },
       { type: "cta", text: "Ready to invest in your brand's future?", linkText: "Start the Conversation", linkHref: "/contact" }
     ]
+  },
+  {
+    id: "choose-marketing-agency-omaha",
+    slug: "how-to-choose-best-marketing-agency-omaha",
+    category: "Strategy",
+    title: "How to Choose the Best Marketing Agency in Omaha (2026 Guide)",
+    excerpt: "Not all marketing agencies are created equal. Here's what Omaha business owners should look for—and watch out for—when choosing a marketing partner.",
+    readTime: "7 min read",
+    datePublished: "2026-03-01",
+    dateModified: "2026-04-12",
+    heroImage: "blog-choose-agency",
+    heroImageAlt: "Marketing agency workspace with branding materials and strategy planning session",
+    relatedSlugs: ["roi-professional-branding-omaha-companies", "web-design-cost-omaha-2026"],
+    sections: [
+      { type: "paragraph", text: "Choosing a marketing agency is one of the most important decisions an Omaha business owner can make. The right partner can accelerate your growth, strengthen your brand, and bring in a steady stream of new customers. The wrong one can waste your budget and set you back months. So how do you tell the difference?" },
+      { type: "stat", value: "63%", label: "of businesses have hired the wrong agency", description: "A recent survey found that 63% of businesses have worked with an agency that didn't deliver on its promises. Knowing what to look for prevents costly mistakes." },
+      { type: "heading", text: "Look at Their Own Brand First" },
+      { type: "paragraph", text: "This might sound obvious, but it's the most telling sign: **does the agency's own website look professional?** If a marketing agency can't market itself well—with a polished website, consistent branding, and clear messaging—how will they do it for you? Check their site on mobile, look at their social media presence, and read their blog. An agency that practices what it preaches is one you can trust." },
+      { type: "blockquote", text: "If an agency's website looks like it was built in 2015, their strategies probably haven't evolved much either." },
+      { type: "heading", text: "Ask for Local Results" },
+      { type: "paragraph", text: "Omaha isn't New York or LA. Marketing strategies that work in major metros don't always translate to the Midwest. Look for an agency that understands the Omaha market specifically—one that has worked with local businesses, knows the community, and can point to real results for Nebraska clients." },
+      { type: "list", items: [
+        "**Ask for case studies** from Omaha or Nebraska businesses they've worked with",
+        "**Check Google reviews** and testimonials from local clients",
+        "**Look for portfolio examples** that match your industry or business type",
+        "**Ask about local SEO experience** — ranking in Omaha is different from ranking nationally"
+      ]},
+      { type: "heading", text: "Understand What You're Paying For" },
+      { type: "paragraph", text: "Marketing agency pricing varies wildly. Some charge monthly retainers, others work on a project basis, and some do hourly billing. None of these are inherently better—what matters is transparency. A good agency will clearly explain what you're getting for your money and set realistic expectations about results." },
+      { type: "callout", title: "Red Flags to Watch For", text: "Be cautious of agencies that guarantee specific rankings on Google (no one can guarantee that), lock you into long contracts without clear deliverables, won't share analytics or reporting, or can't explain their strategy in plain English.", variant: "warning" },
+      { type: "stats_row", stats: [
+        { value: "$500–$2K", label: "Small Business Monthly" },
+        { value: "$2K–$5K", label: "Growth-Stage Monthly" },
+        { value: "$5K+", label: "Enterprise Monthly" }
+      ]},
+      { type: "heading", text: "Chemistry Matters" },
+      { type: "paragraph", text: "You'll be working closely with your marketing agency, so the relationship matters. Do they listen to your goals? Do they ask smart questions about your business? Do they communicate clearly and respond promptly? The best agency-client relationships feel like partnerships, not vendor transactions." },
+      { type: "heading", text: "Full-Service vs. Specialists" },
+      { type: "paragraph", text: "Some agencies specialize in one thing—like SEO or social media—while others offer a full suite of services. For most Omaha small businesses, a full-service agency that handles [web design](/web-design), [branding](/logo-branding), [photography](/brand-photography), and [digital strategy](/marketing-strategy) under one roof is the most efficient and cost-effective choice. It ensures brand consistency and eliminates the headache of coordinating multiple vendors." },
+      { type: "heading", text: "Why Omaha Businesses Choose Bombshell" },
+      { type: "paragraph", text: "At Bombshell Marketing, we've built our reputation on delivering real results for Omaha businesses. We're a full-service agency that handles everything from web design and logo creation to brand photography and marketing strategy. Every project is custom, every client gets direct access to our creative team, and we measure success by your growth—not vanity metrics." },
+      { type: "cta", text: "Looking for a marketing partner that gets Omaha?", linkText: "Let's Talk", linkHref: "/contact" }
+    ]
+  },
+  {
+    id: "social-media-omaha-small-business",
+    slug: "social-media-marketing-omaha-small-businesses",
+    category: "Marketing",
+    title: "Social Media Marketing for Omaha Small Businesses: What Actually Works in 2026",
+    excerpt: "Tired of posting with no results? Here's what's actually working for Omaha small businesses on social media right now—and what's a waste of your time.",
+    readTime: "8 min read",
+    datePublished: "2026-03-15",
+    dateModified: "2026-04-12",
+    heroImage: "blog-social-media",
+    heroImageAlt: "Social media marketing planning with content calendar and analytics on modern desk",
+    relatedSlugs: ["seo-small-businesses-omaha-beginners-guide", "how-to-choose-best-marketing-agency-omaha"],
+    sections: [
+      { type: "paragraph", text: "Social media can feel overwhelming for small business owners. Between Instagram, Facebook, TikTok, LinkedIn, and whatever platform launched last week, it's hard to know where to focus. The good news? You don't need to be everywhere. For Omaha small businesses, a focused strategy on the right platforms will always beat spreading yourself thin across all of them." },
+      { type: "stats_row", stats: [
+        { value: "78%", label: "of consumers discover local businesses on social" },
+        { value: "2–3", label: "Platforms are enough for most businesses" },
+        { value: "3x", label: "More engagement from local vs. generic content" }
+      ]},
+      { type: "heading", text: "Pick the Right Platforms" },
+      { type: "paragraph", text: "Not every platform is right for every business. Here's a practical breakdown for Omaha businesses:" },
+      { type: "list", items: [
+        "**Facebook** — Still the #1 platform for local businesses in Omaha. Best for restaurants, retail, home services, and any business targeting customers 30+. Facebook Groups for Omaha neighborhoods are goldmines for local reach.",
+        "**Instagram** — Essential for visual businesses: restaurants, salons, fitness, photography, real estate, and retail. Reels are the #1 way to reach new audiences in 2026.",
+        "**LinkedIn** — Best for B2B companies, professional services, recruiting, and establishing thought leadership in the Omaha business community.",
+        "**TikTok** — Growing fast in Omaha. Best for businesses targeting younger demographics or those with entertaining, behind-the-scenes content to share.",
+        "**Google Business Profile** — Not technically social media, but posting here regularly helps your local SEO and shows up when people search for your business."
+      ]},
+      { type: "heading", text: "Content That Actually Works Locally" },
+      { type: "paragraph", text: "Generic motivational quotes and stock photos won't cut it. Omaha customers want to see the real you. The content that performs best for local businesses is authentic, specific, and community-oriented." },
+      { type: "callout", title: "High-Performing Local Content Ideas", text: "Behind-the-scenes of your day-to-day operations. Before-and-after project photos. Customer spotlights and testimonials (with permission). Local community involvement and events. Team introductions and culture content. Educational tips related to your industry. Location-specific content mentioning Omaha neighborhoods.", variant: "tip" },
+      { type: "blockquote", text: "The businesses winning on social media in Omaha aren't the ones posting the most—they're the ones posting the most relevant, authentic content consistently." },
+      { type: "heading", text: "Consistency Beats Perfection" },
+      { type: "paragraph", text: "One of the biggest mistakes Omaha small businesses make is posting a flurry of content, then going silent for weeks. The algorithm rewards consistency, not volume. Three quality posts per week will always outperform ten mediocre ones followed by two weeks of silence." },
+      { type: "stats_row", stats: [
+        { value: "3–5x", label: "Posts per week is ideal" },
+        { value: "1–2", label: "Reels/videos per week" },
+        { value: "30 min", label: "Daily for engagement" }
+      ]},
+      { type: "heading", text: "Professional Photos Make a Massive Difference" },
+      { type: "paragraph", text: "This is where most small businesses fall short. Your phone camera is fine for stories and casual content, but your feed and ads need [professional brand photography](/brand-photography). Posts with professional images get 2–3x more engagement than phone snapshots. For restaurants, retail, and service businesses in Omaha, a single photo shoot can provide months of high-quality social content." },
+      { type: "heading", text: "Paid Ads: When and How" },
+      { type: "paragraph", text: "Organic reach on social media has declined significantly. For Omaha small businesses, a modest ad budget of $300–$500/month on Facebook and Instagram can dramatically extend your reach. The key is targeting: narrow your audience to Omaha and the surrounding metro area, target by interests and behaviors, and always drive traffic to a [well-designed website](/web-design) that converts visitors into leads." },
+      { type: "heading", text: "Measuring What Matters" },
+      { type: "paragraph", text: "Likes and followers are nice, but they don't pay the bills. The metrics that actually matter for Omaha small businesses are:" },
+      { type: "list", items: [
+        "**Website clicks** — How many people are going from your social profiles to your website?",
+        "**Messages and inquiries** — Are people reaching out to ask about your products or services?",
+        "**Saves and shares** — These signal that your content is valuable enough for people to come back to.",
+        "**Direction requests** — For businesses with physical locations, this is a direct measure of foot traffic intent.",
+        "**Conversion rate** — Of the people who visit your website from social, how many become customers?"
+      ]},
+      { type: "heading", text: "Need Help with Social Media?" },
+      { type: "paragraph", text: "At Bombshell Marketing, we help Omaha businesses build social media strategies that actually drive results. From content planning and [brand photography](/brand-photography) to full [marketing strategy](/marketing-strategy) development, we'll help you stop guessing and start growing." },
+      { type: "cta", text: "Ready to transform your social media presence?", linkText: "Get a Free Consultation", linkHref: "/contact" }
+    ]
+  },
+  {
+    id: "why-business-needs-website-2026",
+    slug: "why-omaha-business-needs-website-2026",
+    category: "Web Design",
+    title: "Why Your Omaha Business Still Needs a Website in 2026",
+    excerpt: "Think social media is enough? Think again. Here's why a professional website is still the most important digital asset for Omaha businesses—and what you're losing without one.",
+    readTime: "6 min read",
+    datePublished: "2026-04-01",
+    dateModified: "2026-04-12",
+    heroImage: "blog-why-website",
+    heroImageAlt: "Modern responsive website design displayed on desktop, tablet and smartphone devices",
+    relatedSlugs: ["web-design-cost-omaha-2026", "seo-small-businesses-omaha-beginners-guide"],
+    sections: [
+      { type: "paragraph", text: "We hear it more often than you'd think: \"Do I really need a website? I have a Facebook page.\" The short answer is **yes, you absolutely need a website.** In 2026, your website is still the single most important digital asset your Omaha business can have. Here's why." },
+      { type: "stat", value: "97%", label: "of consumers search online for local businesses", description: "Nearly every potential customer in Omaha is looking for your type of business online. If you don't have a website, you're invisible to them." },
+      { type: "heading", text: "You Don't Own Your Social Media" },
+      { type: "paragraph", text: "This is the biggest reason every Omaha business needs its own website: **you don't own Facebook, Instagram, or any social media platform.** These companies can change their algorithms, restrict your reach, or even shut down your account at any time. We've seen it happen to local businesses. Your website is the one digital property you fully own and control." },
+      { type: "blockquote", text: "Social media is rented land. Your website is property you own. Build your business on a foundation you control." },
+      { type: "heading", text: "Google Can't Rank What Doesn't Exist" },
+      { type: "paragraph", text: "When someone in Omaha searches \"plumber near me\" or \"best pizza in Midtown,\" Google shows websites in the results—not Facebook pages. Without a website, you're invisible in the #1 way people find local businesses. A [professionally built website](/web-design) with proper [SEO](/blog/seo-small-businesses-omaha-beginners-guide) puts you in front of customers at the exact moment they're looking for what you offer." },
+      { type: "stats_row", stats: [
+        { value: "75%", label: "Never scroll past page 1 of Google" },
+        { value: "46%", label: "Of all Google searches are local" },
+        { value: "88%", label: "Of mobile local searches lead to action within 24 hours" }
+      ]},
+      { type: "heading", text: "Credibility and Trust" },
+      { type: "paragraph", text: "In 2026, not having a website makes your business look less legitimate. That's not an opinion—it's what consumers report. Studies show that 75% of people judge a company's credibility based on its website. For Omaha businesses competing against others who have polished online presences, showing up without a website puts you at an immediate disadvantage." },
+      { type: "callout", title: "What Customers Think Without a Website", text: "\"Are they still in business?\" — \"Are they too small to be reliable?\" — \"Can I trust them with my money?\" — \"I'll go with the competitor that has a professional site instead.\" These are real thoughts potential customers have when they can't find you online.", variant: "warning" },
+      { type: "heading", text: "Your Website Works 24/7" },
+      { type: "paragraph", text: "Unlike your physical location or your phone line, your website never closes. It answers questions, showcases your work, collects leads, and sells your services around the clock. An Omaha homeowner searching for a roofer at 11 PM will find your website, read your reviews, look at your portfolio, and submit a contact form—all while you're asleep. That's a lead you'd never get without a website." },
+      { type: "heading", text: "It's More Affordable Than You Think" },
+      { type: "paragraph", text: "Many Omaha business owners assume a professional website costs tens of thousands of dollars. That's not the case anymore. A quality custom website for a small business typically runs [$2,500–$7,500](/blog/web-design-cost-omaha-2026), and the return on that investment is exponential. Think of it this way: if your website brings in just one or two new customers per month, it pays for itself many times over." },
+      { type: "stats_row", stats: [
+        { value: "$2.5K", label: "Starting cost for custom sites" },
+        { value: "10–50x", label: "Typical ROI in first year" },
+        { value: "∞", label: "The website works forever" }
+      ]},
+      { type: "heading", text: "What a Good Website Should Include" },
+      { type: "list", items: [
+        "**Clear messaging** — What you do, who you serve, and why customers should choose you",
+        "**Mobile-responsive design** — Over 60% of searches happen on phones",
+        "**Fast load times** — Under 3 seconds or visitors leave",
+        "**Contact information** — Phone, email, and a contact form on every page",
+        "**Social proof** — Reviews, testimonials, and portfolio examples",
+        "**Local SEO** — Optimized for Omaha-specific searches",
+        "**Professional photography** — Real photos of your work, team, and space"
+      ]},
+      { type: "heading", text: "Ready to Get Started?" },
+      { type: "paragraph", text: "At Bombshell Marketing, we build [custom websites for Omaha businesses](/web-design) that look stunning, load fast, and rank on Google. Whether you're starting from scratch or replacing an outdated site, we make the process simple and stress-free. Pair it with [professional brand photography](/brand-photography) and a [strong logo](/logo-branding) for a complete digital presence that sets you apart." },
+      { type: "cta", text: "Let's build you a website that works as hard as you do.", linkText: "Get Your Free Website Audit", linkHref: "https://audit.bombshellmarketingomaha.com/" }
+    ]
   }
 ];
 
