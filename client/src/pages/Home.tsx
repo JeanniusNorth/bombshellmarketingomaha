@@ -8,6 +8,7 @@ import { Team } from "@/components/Team";
 import { Testimonials } from "@/components/Testimonials";
 import { CallToAction } from "@/components/CallToAction";
 import { BlogPreview } from "@/components/BlogPreview";
+import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 
@@ -37,6 +38,7 @@ export default function Home() {
         <Team />
         <Testimonials />
         <BlogPreview />
+        <FAQ />
         <CallToAction />
       </main>
       

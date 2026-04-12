@@ -13,6 +13,23 @@ const pageContent: Record<string, string> = {
     <p>We combine creative excellence with data-driven strategy to help Omaha businesses grow. Our team has 20+ years of experience in web design, branding, and digital marketing. Every project is custom-built to meet your business goals.</p>
     <h2>Omaha's Trusted Marketing Agency</h2>
     <p>From startups to established brands, Bombshell Marketing has helped hundreds of businesses in Omaha, Lincoln, and across Nebraska build their online presence. We offer free website audits and brand consultations to help you get started.</p>
+    <h2>Frequently Asked Questions</h2>
+    <dl>
+      <dt>How much does a website cost in Omaha?</dt>
+      <dd>Our custom websites start at $2,500 for a professional 5-page business site. Pricing depends on the number of pages, features, and complexity.</dd>
+      <dt>How long does it take to build a website?</dt>
+      <dd>Most websites are completed in 2–4 weeks from start to launch. More complex projects may take 4–6 weeks.</dd>
+      <dt>Do you offer logo design and branding packages?</dt>
+      <dd>Yes! We offer complete branding packages that include logo design, brand guidelines, color palettes, typography, and brand collateral.</dd>
+      <dt>What is brand photography and do I need it?</dt>
+      <dd>Brand photography is professional imagery that captures your business, team, products, and culture. It's essential for building trust online.</dd>
+      <dt>Do you help with SEO and getting found on Google?</dt>
+      <dd>Every website we build is optimized for search engines from the ground up, including technical SEO, local SEO for Omaha and Nebraska, and structured data.</dd>
+      <dt>Do you work with businesses outside of Omaha?</dt>
+      <dd>Yes! While we're based in Omaha, we serve clients across Nebraska and nationwide.</dd>
+      <dt>What makes Bombshell Marketing different from other agencies?</dt>
+      <dd>We're a boutique agency with direct access to senior creatives, real marketing strategy, and a track record of 300+ successful projects.</dd>
+    </dl>
     <h2>Latest from the Blog</h2>
     <ul>
       <li><a href="/blog/web-design-cost-omaha-2026">How Much Does Web Design Cost in Omaha? (2026 Guide)</a></li>
