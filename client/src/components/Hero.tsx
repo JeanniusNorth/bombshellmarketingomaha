@@ -67,18 +67,15 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
           className="absolute left-4 md:left-24 top-1 md:top-auto md:bottom-32 z-40 bg-white p-2 md:p-5 rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.3)] max-w-[120px] md:max-w-[200px] scale-75 md:scale-100 hidden md:block"
         >
-          <div className="flex items-center gap-2 md:gap-3 mb-1">
-            <span className="text-2xl md:text-4xl font-display text-black font-bold tracking-tight">4.9</span>
-            <div className="flex text-black gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-2 h-2 md:w-3 md:h-3 fill-current" />
-              ))}
-            </div>
+          <div className="flex text-black gap-1 mb-2">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-current" />
+            ))}
           </div>
-          <p className="text-gray-400 text-[10px] font-bold tracking-widest uppercase mb-3">Client Feedback</p>
-          <div className="bg-[#ffffff] text-black px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider inline-block">
+          <p className="text-gray-400 text-[10px] font-bold tracking-widest uppercase mb-1">Client Feedback</p>
+          <p className="text-black text-[10px] font-bold uppercase tracking-wider">
             Top Rated in Omaha
-          </div>
+          </p>
         </motion.div>
 
 
