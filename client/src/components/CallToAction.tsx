@@ -18,7 +18,7 @@ export function CallToAction() {
         transition={{ duration: 0.6 }}
         className="container mx-auto px-4 relative z-10 text-center"
       >
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase mb-6">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6">
           Ready To Start Your Project?
         </h2>
         

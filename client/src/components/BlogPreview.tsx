@@ -40,7 +40,7 @@ export function BlogPreview() {
             <span className="text-[#ccff00] text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-3 block">
               Latest Insights
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display uppercase text-white">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-white">
               From The Blog
             </h2>
           </div>
@@ -97,7 +97,7 @@ export function BlogPreview() {
                   </span>
                 </div>
 
-                <h3 className="text-white font-display uppercase text-lg md:text-xl leading-tight mb-2 group-hover:text-[#ccff00] transition-colors">
+                <h3 className="text-white font-display text-lg md:text-xl leading-tight mb-2 group-hover:text-[#ccff00] transition-colors">
                   {article.title}
                 </h3>
 

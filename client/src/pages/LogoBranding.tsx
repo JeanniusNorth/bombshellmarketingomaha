@@ -214,7 +214,7 @@ export default function LogoBrandingPage() {
                 }`}
               >
                 <service.icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-primary' : 'text-[#201cc5]'}`} />
-                <h3 className="text-xl font-display uppercase mb-4">{service.title}</h3>
+                <h3 className="text-xl font-display mb-4">{service.title}</h3>
                 <p className={`text-sm leading-relaxed ${service.highlight ? 'text-white/70' : 'text-black/60'}`}>
                   {service.description}
                 </p>

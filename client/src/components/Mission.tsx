@@ -79,7 +79,7 @@ export function Mission() {
     <section className="bg-[#201cc5] py-16 relative overflow-hidden">
         {/* Container */}
         <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-7xl mx-auto text-center leading-[1.1] font-display uppercase tracking-tighter">
+            <div className="max-w-7xl mx-auto text-center leading-[1.1] font-display tracking-tighter">
                 
                 {/* Line 1 */}
                 <motion.div 

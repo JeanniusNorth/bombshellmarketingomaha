@@ -210,7 +210,7 @@ export function Testimonials() {
             <span className="uppercase tracking-widest text-xs font-bold">Testimonials</span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-display uppercase">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-display">
             What Our Clients Say
           </h2>
         </motion.div>

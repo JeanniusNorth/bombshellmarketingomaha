@@ -74,7 +74,7 @@ export function FAQ() {
           <span className="text-[#ccff00] text-xs md:text-sm font-sans uppercase tracking-[0.2em] mb-3 block">
             Got Questions?
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display uppercase text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-white">
             Frequently Asked Questions
           </h2>
         </motion.div>

@@ -41,7 +41,7 @@ export default function SocialMediaPage() {
   return (
     <div className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-16 max-w-5xl">
-        <h1 className="text-4xl font-display uppercase tracking-tight text-black mb-2" data-testid="text-page-title">
+        <h1 className="text-4xl font-display tracking-tight text-black mb-2" data-testid="text-page-title">
           Social Media Assets
         </h1>
         <p className="text-black/50 text-sm font-medium mb-12">
@@ -51,7 +51,7 @@ export default function SocialMediaPage() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <h2 className="text-xl font-display uppercase tracking-tight text-black" data-testid="text-cover-title">
+              <h2 className="text-xl font-display tracking-tight text-black" data-testid="text-cover-title">
                 Facebook Cover Photo
               </h2>
               <p className="text-black/40 text-xs font-medium mt-1">820 × 312px</p>

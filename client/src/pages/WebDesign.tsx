@@ -232,7 +232,7 @@ export default function WebDesignPage() {
           <div className="w-full h-full flex flex-col">
             <div className="bg-black text-white px-4 py-3 flex items-center justify-between border-b border-white/10">
               <div className="flex items-center gap-3">
-                <h3 className="font-display uppercase text-lg">{selectedProject?.title}</h3>
+                <h3 className="font-display text-lg">{selectedProject?.title}</h3>
                 <a href={selectedProject?.url} target="_blank" rel="noopener noreferrer" className="text-xs text-white/50 hover:text-primary flex items-center gap-1">
                   Open in new tab <ExternalLink className="w-3 h-3" />
                 </a>
@@ -282,7 +282,7 @@ export default function WebDesignPage() {
                   <div className="w-14 h-14 rounded-lg bg-primary/20 border border-primary flex items-center justify-center mb-6 group-hover:bg-primary/30">
                     <IconComponent className="w-7 h-7 text-primary" />
                   </div>
-                  <h3 className="text-xl font-display uppercase text-black group-hover:text-white mb-4 leading-tight transition-colors">
+                  <h3 className="text-xl font-display text-black group-hover:text-white mb-4 leading-tight transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-sm leading-relaxed text-black/60 group-hover:text-white/70 transition-colors">
@@ -339,7 +339,7 @@ export default function WebDesignPage() {
             {processSteps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="text-7xl font-display text-primary mb-4">{step.number}</div>
-                <h3 className="text-lg font-display uppercase text-white mb-3">{step.title}</h3>
+                <h3 className="text-lg font-display text-white mb-3">{step.title}</h3>
                 <p className="text-sm text-white/60 leading-relaxed">{step.description}</p>
               </div>
             ))}

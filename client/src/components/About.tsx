@@ -17,7 +17,7 @@ export function About() {
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Who We Are</span>
             </div>
             
-            <h2 className="text-5xl md:text-7xl font-display uppercase leading-[0.85] mb-8">
+            <h2 className="text-5xl md:text-7xl font-display leading-[0.85] mb-8">
               Creativity <br/> Meets Strategy.
             </h2>
             

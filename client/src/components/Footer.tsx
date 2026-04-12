@@ -23,7 +23,7 @@ export function Footer() {
             <div className="space-y-6" itemScope itemType="https://schema.org/LocalBusiness">
               <meta itemProp="name" content="Bombshell AI Marketing" />
               <div>
-                <h4 className="font-display uppercase text-lg mb-2">Our Location</h4>
+                <h4 className="font-display text-lg mb-2">Our Location</h4>
                 <address className="text-white/60 text-sm leading-relaxed not-italic" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                   <span itemProp="addressLocality">Omaha</span>, <span itemProp="addressRegion">Nebraska</span><br />
                   <span itemProp="addressCountry">United States</span>
@@ -39,7 +39,7 @@ export function Footer() {
 
           {/* Column 3: Connect With Us */}
           <div>
-            <h4 className="font-display uppercase text-[#ccff00] text-2xl mb-8">Connect With Us</h4>
+            <h4 className="font-display text-[#ccff00] text-2xl mb-8">Connect With Us</h4>
             <ul className="space-y-4 text-sm text-white/60">
               <li>
                 <a href="https://www.facebook.com/share/1Ro1Funqhk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-[#ccff00] transition-colors">

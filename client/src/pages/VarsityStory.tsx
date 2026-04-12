@@ -84,19 +84,19 @@ export default function VarsityStoryPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Client</p>
-              <p className="text-white font-display uppercase">Varsity Roman Coin</p>
+              <p className="text-white font-display">Varsity Roman Coin</p>
             </div>
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Industry</p>
-              <p className="text-white font-display uppercase">Restaurant</p>
+              <p className="text-white font-display">Restaurant</p>
             </div>
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Service</p>
-              <p className="text-white font-display uppercase">Brand Photography</p>
+              <p className="text-white font-display">Brand Photography</p>
             </div>
             <div>
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Location</p>
-              <p className="text-white font-display uppercase">Omaha, NE</p>
+              <p className="text-white font-display">Omaha, NE</p>
             </div>
           </div>
         </div>

@@ -222,7 +222,7 @@ export default function BrandPhotographyPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-display uppercase text-white mb-4 leading-tight">
+                    <h3 className="text-xl font-display text-white mb-4 leading-tight">
                       {service.title}
                     </h3>
                     <p className="text-sm leading-relaxed text-white/60">

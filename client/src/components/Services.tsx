@@ -80,7 +80,7 @@ export function Services() {
                 className="w-full text-left py-6 md:py-8 flex items-center justify-between gap-4 group"
                 data-testid={`button-service-${index}`}
               >
-                <h3 className="text-3xl md:text-5xl lg:text-6xl font-display uppercase text-[#0d0d24] group-hover:text-[#201cc5] transition-colors leading-none">
+                <h3 className="text-3xl md:text-5xl lg:text-6xl font-display text-[#0d0d24] group-hover:text-[#201cc5] transition-colors leading-none">
                   {service.title}
                 </h3>
                 <div

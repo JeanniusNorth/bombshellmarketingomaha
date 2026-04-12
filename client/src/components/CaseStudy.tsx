@@ -42,7 +42,7 @@ export function CaseStudy() {
               {/* Text overlay */}
               <div className="absolute bottom-6 left-6">
                 <p className="text-white/80 text-sm mb-1">See the story</p>
-                <h3 className="text-white text-2xl font-display uppercase">Merch Club</h3>
+                <h3 className="text-white text-2xl font-display">Merch Club</h3>
               </div>
             </div>
           </motion.div>
@@ -54,7 +54,7 @@ export function CaseStudy() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-display uppercase mb-2">
+            <h2 className="text-4xl md:text-5xl font-display mb-2">
               Chris
             </h2>
             <p className="text-white/60 text-lg mb-6">Founder at Merch Club</p>

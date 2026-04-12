@@ -222,7 +222,7 @@ export default function MarketingStrategyPage() {
                   className={`p-8 ${service.highlight ? 'bg-primary text-black' : 'bg-white/10 text-white'} transition-all hover:scale-[1.02]`}
                 >
                   <Icon className={`w-10 h-10 mb-6 ${service.highlight ? 'text-black' : 'text-primary'}`} />
-                  <h3 className="text-xl font-display uppercase mb-3">{service.title}</h3>
+                  <h3 className="text-xl font-display mb-3">{service.title}</h3>
                   <p className={`text-sm leading-relaxed ${service.highlight ? 'text-black/70' : 'text-white/70'}`}>
                     {service.description}
                   </p>

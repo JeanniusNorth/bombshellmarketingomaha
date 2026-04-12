@@ -78,7 +78,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
 
     case "heading":
       return (
-        <h2 className="text-2xl md:text-3xl font-display uppercase text-black mt-14 mb-6 relative">
+        <h2 className="text-2xl md:text-3xl font-display text-black mt-14 mb-6 relative">
           <span className="absolute -left-4 top-0 bottom-0 w-1 bg-primary" />
           {section.text}
         </h2>
@@ -162,7 +162,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
       const variant = section.variant || "info";
       return (
         <div className={`my-8 border-l-4 p-6 ${variants[variant]}`}>
-          <div className="font-display uppercase text-lg mb-2">{section.title}</div>
+          <div className="font-display text-lg mb-2">{section.title}</div>
           <p className="leading-relaxed">{renderMarkdownLinks(section.text)}</p>
         </div>
       );
@@ -172,7 +172,7 @@ function SectionRenderer({ section }: { section: ArticleSection }) {
       const isContact = section.linkHref === "/contact";
       return (
         <div className="my-12 bg-[#201cc5] p-8 md:p-12 text-center">
-          <p className="text-xl md:text-2xl font-display uppercase text-white mb-6">{section.text}</p>
+          <p className="text-xl md:text-2xl font-display text-white mb-6">{section.text}</p>
           {isExternal ? (
             <a
               href={section.linkHref}
@@ -284,7 +284,7 @@ export default function BlogArticlePage() {
                     {article.category}
                   </span>
                 </div>
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-display uppercase text-white leading-tight mb-4">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-display text-white leading-tight mb-4">
                   {article.title}
                 </h1>
                 <div className="flex items-center gap-6 text-white/60 text-sm">
@@ -322,7 +322,7 @@ export default function BlogArticlePage() {
         {relatedArticles.length > 0 && (
           <section className="bg-black py-16 md:py-20">
             <div className="container mx-auto px-4">
-              <h2 className="text-3xl md:text-4xl font-display uppercase text-white text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-display text-white text-center mb-12">
                 Keep Reading
               </h2>
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -347,7 +347,7 @@ export default function BlogArticlePage() {
                         <span className={`inline-block px-2 py-0.5 text-xs font-semibold uppercase tracking-wider border mb-3 ${relCatColor}`}>
                           {related.category}
                         </span>
-                        <h3 className="text-lg font-display uppercase text-white group-hover:text-primary transition-colors mb-2">
+                        <h3 className="text-lg font-display text-white group-hover:text-primary transition-colors mb-2">
                           {related.title}
                         </h3>
                         <p className="text-white/50 text-sm line-clamp-2">{related.excerpt}</p>

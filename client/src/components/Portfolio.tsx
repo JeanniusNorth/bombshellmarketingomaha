@@ -230,7 +230,7 @@ function PortfolioItem({ item }: { item: any }) {
              {/* Modal Header */}
              <div className="bg-black text-white px-4 py-3 flex items-center justify-between border-b border-white/10">
                 <div className="flex items-center gap-3">
-                   <h3 className="font-display uppercase text-lg">{item.title}</h3>
+                   <h3 className="font-display text-lg">{item.title}</h3>
                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-xs text-white/50 hover:text-primary flex items-center gap-1">
                       Open in new tab <ExternalLink className="w-3 h-3" />
                    </a>
