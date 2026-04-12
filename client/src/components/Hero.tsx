@@ -9,7 +9,7 @@ export function Hero() {
   const { openContactModal } = useContactModal();
 
   return (
-    <div className="relative min-h-[75vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#D9A3B0]">
+    <div className="relative min-h-[75vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#1A1A1A]">
       {/* Background Texture/Grain */}
       <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay" 
            style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
@@ -35,8 +35,8 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="space-y-1"
             >
-              <h3 className="text-3xl font-display text-[#1A1A1A] flex items-center gap-1">225<span className="text-primary text-2xl">+</span></h3>
-              <p className="text-[10px] uppercase tracking-widest text-[#2A2A2A]/70 font-bold">Happy Clients</p>
+              <h3 className="text-3xl font-display text-white flex items-center gap-1">225<span className="text-[#F2C94C] text-2xl">+</span></h3>
+              <p className="text-[10px] uppercase tracking-widest text-white/70 font-bold">Happy Clients</p>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -44,8 +44,8 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.7 }}
               className="space-y-1"
             >
-              <h3 className="text-3xl font-display text-[#1A1A1A] flex items-center gap-1">300<span className="text-primary text-2xl">+</span></h3>
-              <p className="text-[10px] uppercase tracking-widest text-[#2A2A2A]/70 font-bold">Projects Done</p>
+              <h3 className="text-3xl font-display text-white flex items-center gap-1">300<span className="text-[#F2C94C] text-2xl">+</span></h3>
+              <p className="text-[10px] uppercase tracking-widest text-white/70 font-bold">Projects Done</p>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -53,8 +53,8 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.9 }}
               className="space-y-1"
             >
-              <h3 className="text-3xl font-display text-[#1A1A1A] flex items-center gap-1">220<span className="text-primary text-2xl">+</span></h3>
-              <p className="text-[10px] uppercase tracking-widest text-[#2A2A2A]/70 font-bold">Media Features</p>
+              <h3 className="text-3xl font-display text-white flex items-center gap-1">220<span className="text-[#F2C94C] text-2xl">+</span></h3>
+              <p className="text-[10px] uppercase tracking-widest text-white/70 font-bold">Media Features</p>
             </motion.div>
           </div>
         </motion.div>
@@ -104,7 +104,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-[20vw] md:text-[15vw] leading-[0.8] font-display text-[#1A1A1A] uppercase relative z-0 tracking-tighter mix-blend-normal mt-0 md:mt-[50px]"
+              className="text-[20vw] md:text-[15vw] leading-[0.8] font-display text-[#D9A3B0] uppercase relative z-0 tracking-tighter mix-blend-normal mt-0 md:mt-[50px]"
             >
               <motion.span
                 initial={{ opacity: 0, x: -50 }}
@@ -118,7 +118,7 @@ export function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="block text-[20vw] md:text-[15vw] leading-[0.8] font-display text-transparent uppercase relative z-20 tracking-tighter mt-[-2vw]"
-                style={{ WebkitTextStroke: '2px #1A1A1A' }}
+                style={{ WebkitTextStroke: '2px #F2C94C' }}
               >
                 MARKETING
               </motion.span>
@@ -130,7 +130,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="mt-4 md:mt-8 flex flex-col items-center gap-6 relative z-30 pointer-events-auto mb-[100px] md:mb-[150px]"
             >
-                <p className="text-[#1A1A1A]/80 text-[19px] leading-relaxed font-medium max-w-xl text-center px-4">
+                <p className="text-white/80 text-[19px] leading-relaxed font-medium max-w-xl text-center px-4">
                   Based in Omaha, serving businesses everywhere. We craft memorable websites, logos, and brand photography that captivate audiences and convert browsers into believers.
                 </p>
                 
@@ -146,7 +146,7 @@ export function Hero() {
                        <ArrowRight className="w-3 h-3" />
                     </div>
                   </button>
-                  <a href="https://audit.bombshellmarketingomaha.com/" className="group px-8 py-4 border border-[#1A1A1A]/20 hover:bg-primary hover:text-white hover:border-primary transition-all text-[#1A1A1A] text-xs font-bold uppercase tracking-widest flex items-center gap-3">
+                  <a href="https://audit.bombshellmarketingomaha.com/" className="group px-8 py-4 border border-white/40 hover:bg-primary hover:text-white hover:border-primary transition-all text-white text-xs font-bold uppercase tracking-widest flex items-center gap-3">
                     <span>Free Website Audit</span>
                     <div className="w-5 h-5 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
                        <ArrowRight className="w-3 h-3" />
