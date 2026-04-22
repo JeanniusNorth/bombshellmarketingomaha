@@ -2,7 +2,6 @@ import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { Mission } from "@/components/Mission";
 import { Services } from "@/components/Services";
-import { Portfolio } from "@/components/Portfolio";
 import { CaseStudy } from "@/components/CaseStudy";
 import { Team } from "@/components/Team";
 import { Testimonials } from "@/components/Testimonials";
@@ -28,8 +27,6 @@ export default function Home() {
       
       <main>
         <Hero />
-        {/* <Marquee /> Removed as it is now in Hero */}
-        <Portfolio />
         <Services />
         <CaseStudy />
         <Mission />

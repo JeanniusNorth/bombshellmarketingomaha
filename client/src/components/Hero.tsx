@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 import { useContactModal } from "@/contexts/ContactModalContext";
+import { PortfolioScroller } from "@/components/Portfolio";
 
 export function Hero() {
   const { openContactModal } = useContactModal();
@@ -8,7 +9,7 @@ export function Hero() {
   const videoId = "ytCiUPO4ef0";
 
   return (
-    <div className="relative min-h-[85vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 bg-[#000000]">
+    <div className="relative min-h-[85vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 pb-12 bg-[#000000]">
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
         <iframe
@@ -59,23 +60,18 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Integrated Marquee at the bottom */}
-      <div className="absolute -bottom-1 left-0 w-full z-40 bg-white text-black py-3 transform -rotate-1 scale-105 origin-left border-y-2 border-black font-display text-xl uppercase tracking-widest overflow-hidden whitespace-nowrap">
-        <div className="animate-marquee flex gap-8 items-center">
-          {[...Array(10)].map((_, i) => (
-            <div key={i} className="flex items-center gap-8">
-              <span>Marketing & Digital Strategy</span>
-              <span>*</span>
-              <span>Logo & Brand Design</span>
-              <span>*</span>
-              <span>Web Design</span>
-              <span>*</span>
-              <span>Brand Photography</span>
-              <span>*</span>
-            </div>
-          ))}
+      {/* Brands That Trust Us — Auto-Scroller */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="relative z-10 mt-8 md:mt-12"
+      >
+        <div className="container mx-auto px-6 md:px-12 mb-4">
+          <p className="text-white/60 uppercase tracking-widest text-[11px] font-bold">Omaha Brands That Trust Us</p>
         </div>
-      </div>
+        <PortfolioScroller cardWidthClass="w-[260px] md:w-[380px]" />
+      </motion.div>
     </div>
   );
 }

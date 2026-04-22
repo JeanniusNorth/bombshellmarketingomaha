@@ -18,10 +18,7 @@ import goodLifeImage from "@/assets/portfolio-good-life.png";
 import mensHealthImage from "@/assets/images/portfolio-mens-health-clinic.png";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
-export function Portfolio() {
-  const [selectedProject, setSelectedProject] = useState<{title: string, url: string} | null>(null);
-
-  const portfolioItems = [
+export const portfolioItems = [
     {
       category: "WEB DESIGN",
       title: "NEBRASK.AI - AI TRAINING PLATFORM",
@@ -88,15 +85,31 @@ export function Portfolio() {
       url: "",
       link: "/portfolio/varsity-roman-coin"
     }
-  ];
+];
 
+export function PortfolioScroller({ cardWidthClass = "w-[340px] md:w-[560px]" }: { cardWidthClass?: string }) {
+  return (
+    <div
+      className="relative overflow-hidden group w-full"
+      data-testid="scroll-portfolio"
+    >
+      <div className="flex gap-4 md:gap-6 w-max animate-portfolio-scroll group-hover:[animation-play-state:paused]">
+        {[...portfolioItems, ...portfolioItems].map((item, index) => (
+          <div key={index} className={`shrink-0 ${cardWidthClass}`}>
+            <PortfolioItem item={item} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function Portfolio() {
   const { openContactModal } = useContactModal();
 
   return (
     <section id="portfolio" className="bg-white py-16 md:py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        
-        {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -123,26 +136,7 @@ export function Portfolio() {
         </motion.div>
       </div>
 
-      {/* Auto-Scrolling Marquee Row */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="relative overflow-hidden group"
-        data-testid="scroll-portfolio"
-      >
-        <div className="flex gap-4 md:gap-6 w-max animate-portfolio-scroll group-hover:[animation-play-state:paused]">
-          {[...portfolioItems, ...portfolioItems].map((item, index) => (
-            <div
-              key={index}
-              className="shrink-0 w-[340px] md:w-[560px]"
-            >
-              <PortfolioItem item={item} />
-            </div>
-          ))}
-        </div>
-      </motion.div>
+      <PortfolioScroller />
     </section>
   );
 }
