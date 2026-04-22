@@ -54,7 +54,9 @@ export function serveStatic(app: Express) {
 
     res.status(200).set({
       "Content-Type": "text/html",
-      "Cache-Control": "public, max-age=300, s-maxage=600",
+      "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+      "Pragma": "no-cache",
+      "Expires": "0",
     }).end(html);
   });
 }
