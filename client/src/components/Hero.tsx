@@ -33,9 +33,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="max-w-3xl mx-auto text-center"
+          className="max-w-5xl mx-auto text-center"
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-white leading-[0.95] tracking-tight mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display text-white leading-[1.05] tracking-tight mb-6">
             Omaha's Top-Rated Agency For Web Design
           </h1>
           <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-lg mb-10 mx-auto">
