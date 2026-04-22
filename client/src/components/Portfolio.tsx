@@ -128,7 +128,7 @@ export function Portfolio() {
           {[...portfolioItems, ...portfolioItems].map((item, index) => (
             <div
               key={index}
-              className="shrink-0 w-[280px] md:w-[420px]"
+              className="shrink-0 w-[340px] md:w-[560px]"
             >
               <PortfolioItem item={item} />
             </div>
@@ -148,7 +148,7 @@ function PortfolioItem({ item }: { item: any }) {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
           <div className="group cursor-pointer">
-            <div className="overflow-hidden mb-4 bg-gray-200 relative aspect-[4/3] rounded-lg">
+            <div className="overflow-hidden mb-4 bg-gray-200 relative aspect-[16/10] rounded-lg">
               <img 
                 src={item.image} 
                 alt={item.title}
@@ -206,7 +206,7 @@ function PortfolioItem({ item }: { item: any }) {
     return (
       <Link href={item.link} onClick={() => window.scrollTo(0, 0)}>
         <div className="group cursor-pointer">
-          <div className="overflow-hidden mb-4 bg-gray-200 relative aspect-[4/3] rounded-lg">
+          <div className="overflow-hidden mb-4 bg-gray-200 relative aspect-[16/10] rounded-lg">
             <img 
               src={item.image} 
               alt={item.title}
