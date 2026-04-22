@@ -41,22 +41,6 @@ export const portfolioItems = [
       url: "https://merch-club.replit.app/"
     },
     {
-      category: "LOGO & BRANDING",
-      title: "THE LEAGUE - MEN'S HEALTH CLINIC",
-      image: theLeagueImage,
-      height: "h-[300px]",
-      url: "",
-      link: "/logo-branding"
-    },
-    {
-      category: "PHOTOGRAPHY",
-      title: "THE GOOD LIFE BAR & GRILL",
-      image: goodLifeImage,
-      link: "/portfolio/good-life",
-      height: "h-[350px]",
-      url: ""
-    },
-    {
       category: "WEB DESIGN",
       title: "MIDWEST GRIT FITNESS",
       image: midwestGritImage,
@@ -76,14 +60,6 @@ export const portfolioItems = [
       image: tennisxImage,
       height: "h-[400px]",
       url: "https://tennis-x-website.replit.app/"
-    },
-    {
-      category: "PHOTOGRAPHY",
-      title: "VARSITY ROMAN COIN",
-      image: varsityPizzaImage,
-      height: "h-[350px]",
-      url: "",
-      link: "/portfolio/varsity-roman-coin"
     }
 ];
 
