@@ -33,10 +33,10 @@ export function Hero() {
           className="max-w-2xl"
         >
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-white leading-[0.95] tracking-tight mb-6">
-            Blow Up Your Marketing
+            Omaha's Top-Rated Agency For Web Design
           </h1>
           <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-lg mb-10">
-            Omaha's top-rated agency for web design, branding, and brand photography that turn heads and drive results.
+            Branding, photography, and websites that turn heads and drive results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <button
