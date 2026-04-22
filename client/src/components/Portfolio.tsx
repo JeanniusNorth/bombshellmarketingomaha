@@ -110,7 +110,7 @@ export function Portfolio() {
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Our Work</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-display text-black leading-[0.95]">
-              Work That Speaks Louder Than Words
+              Omaha Brands That Trust Us
             </h2>
           </div>
           
