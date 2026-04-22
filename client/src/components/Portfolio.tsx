@@ -85,12 +85,7 @@ export function Portfolio() {
   const { openContactModal } = useContactModal();
 
   return (
-    <section id="portfolio" className="bg-white py-24 relative overflow-hidden">
-      {/* Noise Texture */}
-      <div className="absolute inset-0 opacity-40 pointer-events-none mix-blend-multiply" 
-           style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/noise.png")' }}>
-      </div>
-
+    <section id="portfolio" className="bg-white py-16 md:py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         
         {/* Header */}
@@ -99,98 +94,50 @@ export function Portfolio() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8"
+          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6 px-2 md:px-4"
         >
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-primary text-xl">✦</span>
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-black text-xl">✦</span>
               <span className="text-black/60 uppercase tracking-widest text-xs font-bold">Our Work</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-display text-black leading-[0.85]">
-              Work That Speaks <br/> Louder Than Words
+            <h2 className="text-4xl md:text-5xl font-display text-black leading-[0.95]">
+              Work That Speaks Louder Than Words
             </h2>
-            <p className="mt-6 text-black/60 max-w-xl text-sm leading-relaxed">
-              Based in Omaha, serving businesses everywhere. We craft memorable websites, logos, and brand photography that captivate audiences and convert browsers into believers.
-            </p>
           </div>
           
-          <button onClick={openContactModal} className="group px-6 py-3 rounded-full border border-black hover:bg-black hover:text-white transition-all text-black text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+          <button onClick={openContactModal} className="group px-6 py-3 rounded-full border border-black hover:bg-black hover:text-white transition-all text-black text-xs font-bold uppercase tracking-widest flex items-center gap-2 shrink-0" data-testid="button-contact-portfolio">
             Contact Us
             <div className="w-5 h-5 rounded-full bg-black text-white group-hover:bg-white group-hover:text-black flex items-center justify-center transition-colors">
                <ArrowRight className="w-3 h-3 -rotate-45" />
             </div>
           </button>
         </motion.div>
-
-        {/* Portfolio Grid - Masonry-ish Layout */}
-        <motion.div 
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
-        >
-          
-          {/* Left Column */}
-          <div className="flex flex-col gap-12">
-            {/* TennisX - shows at top on mobile only */}
-            <div className="block md:hidden">
-              <PortfolioItem item={portfolioItems[6]} />
-            </div>
-
-            {/* Nebrask.AI */}
-            <PortfolioItem item={portfolioItems[0]} />
-
-            {/* Merch Club */}
-            <PortfolioItem item={portfolioItems[1]} />
-
-            {/* Good Life - shows here on mobile only */}
-            <div className="block md:hidden">
-              <PortfolioItem item={portfolioItems[3]} />
-            </div>
-
-            {/* Midwest Grit - shows here on desktop, hidden on mobile */}
-            <div className="hidden md:block">
-              <PortfolioItem item={portfolioItems[4]} />
-            </div>
-
-            {/* Midwest Grit - shows here on mobile, hidden on desktop */}
-            <div className="block md:hidden">
-              <PortfolioItem item={portfolioItems[4]} />
-            </div>
-
-            {/* Roman Coin - hidden on mobile, shows on desktop */}
-            <div className="hidden md:block">
-              <PortfolioItem item={portfolioItems[7]} />
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div className="flex flex-col gap-12 md:mt-24">
-             {/* TennisX - hidden on mobile, shows on desktop */}
-             <div className="hidden md:block">
-               <PortfolioItem item={portfolioItems[6]} />
-             </div>
-
-             {/* Good Life - hidden on mobile, shows on desktop */}
-             <div className="hidden md:block">
-               <PortfolioItem item={portfolioItems[3]} />
-             </div>
-
-             {/* Roman Coin - shows here on mobile, hidden on desktop */}
-             <div className="block md:hidden">
-               <PortfolioItem item={portfolioItems[7]} />
-             </div>
-
-            {/* The League */}
-            <PortfolioItem item={portfolioItems[2]} />
-            
-            {/* Jay Moore */}
-            <PortfolioItem item={portfolioItems[5]} />
-          </div>
-
-        </motion.div>
       </div>
+
+      {/* Horizontal Scrolling Row */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="relative"
+      >
+        <div 
+          className="flex gap-4 md:gap-6 overflow-x-auto pb-6 px-4 md:px-8 snap-x snap-mandatory scrollbar-hide"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          data-testid="scroll-portfolio"
+        >
+          {portfolioItems.map((item, index) => (
+            <div
+              key={index}
+              className="snap-start shrink-0 w-[280px] md:w-[420px]"
+            >
+              <PortfolioItem item={item} />
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 }
@@ -204,7 +151,7 @@ function PortfolioItem({ item }: { item: any }) {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
           <div className="group cursor-pointer">
-            <div className="overflow-hidden mb-6 bg-gray-200 relative">
+            <div className="overflow-hidden mb-4 bg-gray-200 relative aspect-[4/3] rounded-lg">
               <img 
                 src={item.image} 
                 alt={item.title}
@@ -262,7 +209,7 @@ function PortfolioItem({ item }: { item: any }) {
     return (
       <Link href={item.link} onClick={() => window.scrollTo(0, 0)}>
         <div className="group cursor-pointer">
-          <div className="overflow-hidden mb-6 bg-gray-200 relative">
+          <div className="overflow-hidden mb-4 bg-gray-200 relative aspect-[4/3] rounded-lg">
             <img 
               src={item.image} 
               alt={item.title}

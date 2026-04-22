@@ -29,8 +29,8 @@ export default function Home() {
       <main>
         <Hero />
         {/* <Marquee /> Removed as it is now in Hero */}
-        <Services />
         <Portfolio />
+        <Services />
         <CaseStudy />
         <Mission />
         <Team />
