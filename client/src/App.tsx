@@ -21,6 +21,7 @@ import BlogArticlePage from "@/pages/BlogArticle";
 import EmailSignaturePage from "@/pages/EmailSignature";
 import SocialMediaPage from "@/pages/SocialMedia";
 import ProposalPage from "@/pages/Proposal";
+import CharmingChildrenProposalPage from "@/pages/CharmingChildrenProposal";
 import MccoyInvoicePage from "@/pages/MccoyInvoice";
 import MerchClubInvoicePage from "@/pages/MerchClubInvoice";
 
@@ -43,6 +44,7 @@ function Router() {
       <Route path="/email-signature" component={EmailSignaturePage} />
       <Route path="/social-media" component={SocialMediaPage} />
       <Route path="/MccoyRoofingProposal" component={ProposalPage} />
+      <Route path="/CharmingChildrenProposal" component={CharmingChildrenProposalPage} />
       <Route path="/MccoyRoofingInvoice" component={MccoyInvoicePage} />
       <Route path="/MerchClubInvoice" component={MerchClubInvoicePage} />
       <Route component={NotFound} />
