@@ -186,6 +186,7 @@ export default function CharmingChildrenProposalPage() {
                 items={[
                   "A polished, professional website that builds trust instantly",
                   "A structure designed to convert visitors into inquiries",
+                  "SEO-optimized pages built to rank on Google for local childcare searches",
                   "A simple backend so you can easily make updates anytime",
                   "Ongoing support available if needed",
                 ]}
