@@ -28,7 +28,7 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent" />
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10 flex-1 flex flex-col justify-center pb-32">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 flex-1 flex flex-col justify-center pb-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
