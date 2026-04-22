@@ -112,3 +112,11 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@keyframes portfolio-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-portfolio-scroll {
+  animation: portfolio-scroll 60s linear infinite;
+}

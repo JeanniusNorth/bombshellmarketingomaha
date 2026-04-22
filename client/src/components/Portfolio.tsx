@@ -115,23 +115,20 @@ export function Portfolio() {
         </motion.div>
       </div>
 
-      {/* Horizontal Scrolling Row */}
+      {/* Auto-Scrolling Marquee Row */}
       <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="relative"
+        className="relative overflow-hidden group"
+        data-testid="scroll-portfolio"
       >
-        <div 
-          className="flex gap-4 md:gap-6 overflow-x-auto pb-6 px-4 md:px-8 snap-x snap-mandatory scrollbar-hide"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          data-testid="scroll-portfolio"
-        >
-          {portfolioItems.map((item, index) => (
+        <div className="flex gap-4 md:gap-6 w-max animate-portfolio-scroll group-hover:[animation-play-state:paused]">
+          {[...portfolioItems, ...portfolioItems].map((item, index) => (
             <div
               key={index}
-              className="snap-start shrink-0 w-[280px] md:w-[420px]"
+              className="shrink-0 w-[280px] md:w-[420px]"
             >
               <PortfolioItem item={item} />
             </div>
