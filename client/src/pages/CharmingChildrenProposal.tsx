@@ -122,8 +122,34 @@ export default function CharmingChildrenProposalPage() {
               />
             </Section>
 
+            {/* Suggested Add-On Pages */}
+            <Section title="Suggested Add-On Pages" number="03">
+              <P>
+                Optional pages we recommend adding to strengthen trust, pre-qualify leads, and help your
+                website convert more parent inquiries.
+              </P>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <AddOnCard
+                  title="Enrollment / Tuition & Rates"
+                  description="Pricing transparency builds trust and pre-qualifies leads before the inquiry call."
+                />
+                <AddOnCard
+                  title="Daily Schedule / A Day in the Life"
+                  description="Parents want to picture exactly what their child's day looks like."
+                />
+                <AddOnCard
+                  title="Curriculum / Learning Philosophy"
+                  description="Differentiates from competitors and shows expertise."
+                />
+                <AddOnCard
+                  title="Meet the Teachers / Staff"
+                  description="Trust-building — parents are choosing people, not just a place."
+                />
+              </div>
+            </Section>
+
             {/* Investment */}
-            <Section title="Investment" number="03">
+            <Section title="Investment" number="04">
               <div className="border border-black mb-6">
                 <PriceRow label="Total Project Cost" value="$2,500" />
                 <PriceRow label="Referral Discount" value="–$500" muted />
@@ -147,7 +173,7 @@ export default function CharmingChildrenProposalPage() {
             </Section>
 
             {/* Timeline */}
-            <Section title="Timeline" number="04">
+            <Section title="Timeline" number="05">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <TimelineCard label="Project Kickoff" value="Immediate" sub="Upon proposal approval" />
                 <TimelineCard label="Estimated Completion" value="2–3 Weeks" sub="From kickoff date" />
@@ -155,7 +181,7 @@ export default function CharmingChildrenProposalPage() {
             </Section>
 
             {/* What You Can Expect */}
-            <Section title="What You Can Expect" number="05">
+            <Section title="What You Can Expect" number="06">
               <CheckList
                 items={[
                   "A polished, professional website that builds trust instantly",
@@ -167,7 +193,7 @@ export default function CharmingChildrenProposalPage() {
             </Section>
 
             {/* Next Steps */}
-            <Section title="Next Steps" number="06" last>
+            <Section title="Next Steps" number="07" last>
               <ol className="space-y-4">
                 {[
                   "Approve this proposal",
@@ -255,6 +281,18 @@ function CheckList({ items }: { items: string[] }) {
         </li>
       ))}
     </ul>
+  );
+}
+
+function AddOnCard({ title, description }: { title: string; description: string }) {
+  return (
+    <div className="border border-black/10 p-5 hover:border-black transition-colors">
+      <div className="flex items-start gap-3 mb-2">
+        <span className="shrink-0 mt-1 w-2 h-2 bg-black rounded-full" />
+        <h4 className="text-sm font-bold text-black leading-snug">{title}</h4>
+      </div>
+      <p className="text-xs text-black/60 leading-relaxed pl-5">{description}</p>
+    </div>
   );
 }
 
