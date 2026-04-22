@@ -29,9 +29,8 @@ export default function Home() {
         <Hero />
         <Services />
         <CaseStudy />
-        <Mission />
-        <Team />
         <Testimonials />
+        <Team />
         <BlogPreview />
         <FAQ />
         <CallToAction />
