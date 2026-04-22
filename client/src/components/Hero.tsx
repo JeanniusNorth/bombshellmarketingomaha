@@ -69,7 +69,7 @@ export function Hero() {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="relative z-10 mt-8 md:mt-12"
       >
-        <div className="container mx-auto px-6 md:px-12 mb-4">
+        <div className="container mx-auto px-6 md:px-12 mb-4 text-center">
           <p className="text-white/60 uppercase tracking-widest text-[11px] font-bold">Omaha Brands That Trust Us</p>
         </div>
         <PortfolioScroller cardWidthClass="w-[260px] md:w-[380px]" />
