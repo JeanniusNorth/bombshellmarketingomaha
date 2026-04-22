@@ -86,10 +86,10 @@ export default function CharmingChildrenProposalPage() {
               <CheckList
                 items={[
                   "Home",
-                  "About",
-                  "Programs / Services",
-                  "Contact",
-                  "One additional page (custom as needed)",
+                  "Infants",
+                  "Toddlers & Early Preschool",
+                  "Preschool",
+                  "Contact Us",
                 ]}
               />
 
@@ -135,6 +135,15 @@ export default function CharmingChildrenProposalPage() {
               <p className="text-xs text-black/50">
                 A 50% deposit is required to begin. Final 50% due upon project completion.
               </p>
+
+              <div className="mt-8 border border-black/10 px-6 py-5">
+                <p className="text-[10px] uppercase tracking-widest text-black/40 font-bold mb-2">Ownership & Hosting</p>
+                <p className="text-sm text-black/80 leading-relaxed">
+                  Hosting, the domain, the website, and all content developed as part of this project will be
+                  fully owned by The Charming Children. Upon completion and final payment, full ownership and
+                  access transfers to the brand.
+                </p>
+              </div>
             </Section>
 
             {/* Timeline */}
@@ -157,21 +166,8 @@ export default function CharmingChildrenProposalPage() {
               />
             </Section>
 
-            {/* Optional Ongoing Support */}
-            <Section title="Optional Ongoing Support" number="06">
-              <P>(Recommended but not required)</P>
-              <CheckList
-                items={[
-                  "Hosting & maintenance",
-                  "Website updates",
-                  "SEO improvements",
-                  "Marketing & lead generation support",
-                ]}
-              />
-            </Section>
-
             {/* Next Steps */}
-            <Section title="Next Steps" number="07" last>
+            <Section title="Next Steps" number="06" last>
               <ol className="space-y-4">
                 {[
                   "Approve this proposal",
