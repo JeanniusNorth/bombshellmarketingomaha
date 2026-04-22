@@ -139,7 +139,6 @@ function PortfolioItem({ item }: { item: any }) {
               </div>
             </div>
             <div className="space-y-1">
-              <p className="text-[10px] font-bold text-white/40 uppercase tracking-widest">{item.category}</p>
               <h3 className="text-xl font-display text-white/60">{item.title}</h3>
             </div>
           </div>
@@ -197,7 +196,6 @@ function PortfolioItem({ item }: { item: any }) {
             </div>
           </div>
           <div className="space-y-1">
-            <p className="text-[10px] font-bold text-white/40 uppercase tracking-widest">{item.category}</p>
             <h3 className="text-xl font-display text-white/60">{item.title}</h3>
           </div>
         </div>
@@ -216,7 +214,6 @@ function PortfolioItem({ item }: { item: any }) {
         />
       </div>
       <div className="space-y-1">
-        <p className="text-[10px] font-bold text-white/40 uppercase tracking-widest">{item.category}</p>
         <h3 className="text-xl font-display text-white/60">{item.title}</h3>
       </div>
     </div>
