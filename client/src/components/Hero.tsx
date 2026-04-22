@@ -33,15 +33,15 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="max-w-2xl"
+          className="max-w-3xl mx-auto text-center"
         >
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-white leading-[0.95] tracking-tight mb-6">
             Omaha's Top-Rated Agency For Web Design
           </h1>
-          <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-lg mb-10">
+          <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-lg mb-10 mx-auto">
             Branding, photography, and websites that turn heads and drive results.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <button
               onClick={openContactModal}
               className="group px-7 py-3.5 rounded-full bg-white text-black hover:bg-black hover:text-white border border-white transition-all text-sm font-bold flex items-center gap-3"
