@@ -12,14 +12,16 @@ export function Hero() {
     <div className="relative min-h-[85vh] md:min-h-screen w-full overflow-hidden flex flex-col pt-24 md:pt-32 pb-12 bg-[#000000]">
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
-        <iframe
-          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&disablekb=1`}
-          title="Background video"
-          allow="autoplay; encrypted-media"
-          frameBorder="0"
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77vh] min-w-full h-[56.25vw] min-h-full"
-          data-testid="hero-video"
-        />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[max(177.77vh,100vw)] h-[max(56.25vw,100vh)] scale-150">
+          <iframe
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&disablekb=1`}
+            title="Background video"
+            allow="autoplay; encrypted-media"
+            frameBorder="0"
+            className="w-full h-full"
+            data-testid="hero-video"
+          />
+        </div>
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-black/55" />
         {/* Subtle bottom fade */}
