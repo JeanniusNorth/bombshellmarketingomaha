@@ -39,7 +39,7 @@ export function Hero() {
             Omaha's Top-Rated Agency For Web Design
           </h1>
           <p className="text-white/85 text-lg md:text-xl leading-relaxed max-w-lg mb-10 mx-auto">
-            Branding, photography, and websites that turn heads and drive results.
+            Digital marketing, branding, photography, and websites that turn heads and drive results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <button
