@@ -15,6 +15,7 @@ import merchclubImage from "@/assets/images/portfolio-merchclub.png";
 import omahaCookieImage from "@/assets/images/portfolio-omahacookie.png";
 import varsityPizzaImage from "@/assets/portfolio-varsity-pizza.jpg";
 import goodLifeImage from "@/assets/portfolio-good-life.png";
+import mensHealthImage from "@/assets/images/portfolio-mens-health-clinic.png";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 export function Portfolio() {
@@ -27,6 +28,13 @@ export function Portfolio() {
       image: nebraskaiImage,
       height: "h-[350px]",
       url: "https://nebraskai.replit.app/"
+    },
+    {
+      category: "WEB DESIGN",
+      title: "THE MEN'S HEALTH CLINIC",
+      image: mensHealthImage,
+      height: "h-[350px]",
+      url: "https://themenshealthclinic.com"
     },
     {
       category: "WEB DESIGN",
