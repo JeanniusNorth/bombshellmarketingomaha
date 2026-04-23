@@ -169,7 +169,17 @@ export function getPageMeta(pathname: string): PageMeta {
   return pageMeta[pathname] || pageMeta["/"];
 }
 
-const noIndexPages = ["/social-media", "/email-signature", "/MccoyRoofingProposal", "/MccoyRoofingInvoice", "/MerchClubInvoice"];
+const noIndexPages = ["/social-media", "/email-signature", "/MccoyRoofingProposal", "/MccoyRoofingInvoice", "/MerchClubInvoice", "/CharmingChildrenProposal"];
+
+export function getAllRoutes(): string[] {
+  const staticRoutes = Object.keys(pageMeta);
+  const blogRoutes = Object.keys(blogArticleMeta).map((slug) => `/blog/${slug}`);
+  const portfolioRoutes = ["/portfolio/good-life", "/portfolio/varsity-roman-coin"];
+  const unlisted = [...noIndexPages];
+  return Array.from(new Set([...staticRoutes, ...blogRoutes, ...portfolioRoutes, ...unlisted]));
+}
+
+export { noIndexPages };
 
 export function injectMetaTags(html: string, pathname: string): string {
   const meta = getPageMeta(pathname);

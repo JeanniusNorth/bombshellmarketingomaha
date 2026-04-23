@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a marketing agency website for Bombshell Marketing, a web design, logo design, and brand photography agency based in Omaha, Nebraska. The application is a full-stack React/Express project with a modern component-based frontend and a simple backend API structure. The site showcases the agency's portfolio, services, team, and provides contact functionality.
+This is a marketing agency website for Bombshell Marketing, a web design, logo design, and brand photography agency based in Omaha, Nebraska. The application is a **static React SPA** with a build-time prerendering step for SEO. The site showcases the agency's portfolio, services, team, and provides contact functionality. Form submissions are sent client-side directly to GoHighLevel.
 
 ## User Preferences
 
@@ -20,17 +20,14 @@ Preferred communication style: Simple, everyday language.
 - **Build Tool**: Vite with custom plugins for development
 
 ### Backend Architecture
-- **Runtime**: Node.js with Express 5
-- **Language**: TypeScript with ESM modules
-- **API Pattern**: RESTful API with `/api` prefix convention
-- **Storage**: Pluggable storage interface (currently in-memory, prepared for PostgreSQL)
-- **Database ORM**: Drizzle ORM with PostgreSQL dialect configured
-- **Schema Validation**: Zod with drizzle-zod integration
+- **None.** This is a static frontend-only project. There is no Express server, no API, no database.
+- Contact form submissions POST directly from the browser to a GoHighLevel webhook.
 
 ### Build System
-- **Development**: Vite dev server with HMR, proxied through Express
-- **Production**: esbuild bundles server code, Vite builds client to `dist/public`
-- **Scripts**: Custom build script handles both client and server compilation
+- **Development**: `npx vite dev --port 5000` (pure Vite)
+- **Production build**: `npx tsx prerender/index.ts` runs Vite build, then prerenders 26 routes (static + blog + portfolio + unlisted) into `dist/<route>/index.html` with per-route SEO meta tags and hidden SSR content for crawlers. Also writes Cloudflare `_redirects` (SPA fallback) and `_headers` (cache control).
+- **SEO modules**: `prerender/seo.ts` (per-route meta), `prerender/ssr-content.ts` (hidden crawler content)
+- **Deployment target**: Cloudflare Pages (static site). Build command: `npx tsx prerender/index.ts`. Publish directory: `dist/`.
 
 ### Design System
 - **Typography**: Montserrat Bold (headlines/display), Montserrat (body/sans)
@@ -52,14 +49,11 @@ Preferred communication style: Simple, everyday language.
 - **Website Audit Tool**: External link to audit.bombshellmarketingomaha.com
 
 ### Database
-- **PostgreSQL**: Configured via `DATABASE_URL` environment variable
-- **Drizzle Kit**: Database migrations stored in `/migrations` directory
-- **Schema**: User authentication table defined in `shared/schema.ts`
+- None. The project no longer uses any database.
 
 ### Key NPM Packages
-- **Frontend**: React, Wouter, Framer Motion, TanStack Query, Radix UI components
-- **Backend**: Express 5, Drizzle ORM, connect-pg-simple for sessions
-- **Build**: Vite, esbuild, TypeScript, Tailwind CSS
+- **Frontend**: React 19, Wouter, Framer Motion, TanStack Query, Radix UI components
+- **Build**: Vite 7, TypeScript, Tailwind CSS v4, tsx (runs the prerender script)
 
 ### Fonts
 - Google Fonts: Montserrat (loaded via CSS)
